@@ -1,0 +1,1 @@
+This is the website of Stanichor. I write.
