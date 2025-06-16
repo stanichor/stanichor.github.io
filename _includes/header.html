@@ -1,0 +1,8 @@
+<nav style="background-color: #f6f8fa; border-bottom: 1px solid #d1d5da; padding: 16px 0; margin-bottom: 32px;">
+  <div style="max-width: 1012px; margin: 0 auto; display: flex; align-items: center; padding: 0 16px;">
+    <a href="{{ '/' | relative_url }}" style="font-weight: 600; color: #0366d6; text-decoration: none; margin-right: auto;">{{ site.title }}</a>
+    {% for item in site.navigation %}
+      <a href="{{ item.url | relative_url }}" style="color: #586069; text-decoration: none; margin-left: 24px; font-weight: 500;">{{ item.text }}</a>
+    {% endfor %}
+  </div>
+</nav>
