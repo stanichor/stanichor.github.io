@@ -60,14 +60,14 @@ This suggests that the SQ measures domain-specific interests, not domain-general
 
 Independent analysis by Tailcalled reinforces the concerns above.
 
-In [Empathy/Systemizing Quotient is a poor/biased model for the autism/sex link](https://www.lesswrong.com/posts/eTHvMqxaLsrxtRLq3/empathy-systemizing-quotient-is-a-poor-biased-model-for-the), two of the factors they find are the Empathy factor and the Systems Interests factor. The Empathy factor breaks down into a Mind-Reading factor (which has a significant autistic-allistic difference, with non-autists scoring higher) and a Compassion factor. The Systems Interests factor breaks down in Tech Interests (which has a significant male-female difference, with men scoring higher) factor and a Details Interests factor (which has a significant autistic-allistic difference, with autists scoring higher).
+In [Empathy/Systemizing Quotient is a poor/biased model for the autism/sex link](https://www.lesswrong.com/posts/eTHvMqxaLsrxtRLq3/empathy-systemizing-quotient-is-a-poor-biased-model-for-the), two of the factors they find are an Empathy factor and a Systems Interests factor. The Empathy factor breaks down into a Mind-Reading factor (which has a significant autistic-allistic difference, with non-autists scoring higher) and a Compassion factor. The Systems Interests factor breaks down in Tech Interests (which has a significant male-female difference, with men scoring higher) factor and a Details Interests factor (which has a significant autistic-allistic difference, with autists scoring higher).
 
 In a [factor analysis](https://www.lesswrong.com/posts/ZjXtjRQaD2b4PAser/a-hill-of-validity-in-defense-of-meaning?commentId=mhnZjEjj9bdHxSFkv) of the SQ (including filler items), they find four orthogonal factors:
 
-1. Technical Interests
-2. Nature Interests 
-3. Social Difficulties
-4. “Jockyness”
+- Technical Interests
+- Nature Interests 
+- Social Difficulties
+- “Jockyness”
 
 Only the Technical Interests factor is strongly sex-differentiated. This supports my observations above.
 
