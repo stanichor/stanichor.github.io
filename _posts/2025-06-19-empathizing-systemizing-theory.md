@@ -81,7 +81,7 @@ The E–S theory of autism conflates three distinct phenomena:
 2. A deficit in *social skills*, which correlates with autism traits
 3. A vague construct called “systemizing” that may not describe a real cognitive trait at all
 
-The theory claims autism is an “extreme male brain,” but the evidence is stronger for “low social skills” than “high systemizing.” The SQ, its primary measurement tool, may be too confounded with sex-stereotyped content to isolate a domain-general trait. And the EQ, once decomposed, shows autism is related to specific social impairments rather than a general lack of empathy.
+The theory claims autism is an “extreme male brain,” but the evidence is stronger for “low social skills” than “high systemizing.” The SQ, one of its primary measurement tool, is too confounded with sex-stereotyped content to isolate a domain-general trait. And the EQ, once decomposed, shows autism is related to specific social impairments rather than a general lack of empathy.
 
 The E-S theory of autism is false.
 
