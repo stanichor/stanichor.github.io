@@ -9,7 +9,7 @@ categories:
 In an [old tweet](https://twitter.com/Aella_Girl/status/1659045052180471808), Aella presented a factor analysis of her kink survey, identifying eight factors:
 
 1. Power/Sadomasochism/Bondage
-2. Big Boobies/bimbos/Skirts/Pigtails
+2. Big Boobies/Bimbos/Skirts/Pigtails
 3. Romance/Kissing/Gentleness
 4. Orgies/Freeuse/Anonymous Sex/Exhibitionism
 5. Furries/Bestiality/Monsters
@@ -17,7 +17,7 @@ In an [old tweet](https://twitter.com/Aella_Girl/status/1659045052180471808), Ae
 7. Genderplay/Futa/Gender Transforms
 8. Ageplay/Incest/Age Gaps
 
-Given that biological sex strongly influences sexual preferences, we might expect these factors to differ between men and women. For example, a BDSM factor might emphasize dominance for men and submission for women. Additionally, novel factors may emerge from analyzing men and women separately. To test this, I performed separate factor analyses for cis men and cis women. (Trans respondents were excluded due to insufficient sample sizes for reliable analysis.)   
+Given that biological sex strongly influences sexual preferences, we might expect these factors to differ between men and women. For example, a BDSM factor might emphasize dominance for men and submission for women. Additionally, novel factors may emerge from analyzing men and women separately. To test these hypotheses, I performed separate factor analyses for cis men and cis women. (Trans respondents were excluded due to insufficient sample sizes for reliable analysis.)   
 
 ---
 

@@ -5,7 +5,7 @@ date: 2025-06-17
 permalink: /college-major-iq/
 categories: 
 ---
-There is this widely circulated chart claiming to show the average IQ of students by college major, citing the Educational Testing Service (ETS) as its source. 
+There is a widely circulated chart claiming to show the average IQ of students by college major. 
 <div style="text-align: center;">
     <figure>
         <img src="/assets/images/statistic-brain-college-major-iq.jpg" width="200" alt="Alt Text">
@@ -14,11 +14,11 @@ There is this widely circulated chart claiming to show the average IQ of student
 The original data comes from [Statistic Brain][statbrain], which estimates IQ using GRE scores from 2006. While the data itself is plausibly accurate—[matching other records of GRE scores by major](http://www.kyoolee.net/gre_2005-6_score_chart_and_philosophy_majors.pdf)—the methodology for converting GRE scores to IQ contains two critical errors: 
 
 1. **Incorrect Standard Deviation Assumption**: The original analysis assumes that a standard deviation on the GRE corresponds to 22 IQ points, which not only ignores [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean), but assumes the *opposite*, yielding estimates that are more extreme than reality.
-2. **Overestimated Mean IQ**: The analysis assumes GRE test-takers have an average IQ of 115. This is likely too high; a mean of 112 (consistent with Master’s degree holders) is more plausible. 
+2. **Overestimated Mean IQ**: The analysis assumes GRE test-takers have an average IQ of 115 which is likely too high; a mean of 112 ([consistent with Master’s degree holders][rc-analysis]) is more plausible. 
 
 ## A Better Estimation Method
 
-To correct this, I estimate IQ by major using the following assumptions:
+To accurately estimate IQ by major, I use the following assumptions:
 1. **GRE-IQ correlation**: 0.7 (based on typical correlations between IQ and standardized tests)
 2. **Mean IQ of GRE test-takers**: 112 (consistent with [estimates for Master's degree holders][rc-analysis]).
 3. **IQ standard deviation for GRE test-takers**: 12 (slighly higher than the [observed variance][rc-analysis] found for Master's degree holders).

@@ -31,18 +31,18 @@ If autism is caused by “extreme systemizing,” we would expect the systemizin
 
 The data is consistent. Autism is more closely associated with low empathizing, rather than high systemizing. Additionally, a closer analysis of the EQ shows that most of the negative correlation between the EQ and the AQ is due to a deficit in social skills.
 
-In [Groen et al. 2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4553147/), the partial correlations between the AQ and the subfactors of the EQ break down like this:
+In [Groen et al. 2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4553147/), the partial correlations between the AQ and the subfactors of the EQ break down as follows:
 - Emotional Empathy: –0.03
 - Cognitive Empathy: –0.07
 - Social Skills: –0.62
 
-This implies that the association between the EQ and autism may not reflect an emotional deficit, but rather difficulty navigating social situations.
+These results imply that the association between the EQ and autism may not reflect an emotional deficit, but rather difficulty navigating social situations.
 
 ---
 
 ## Measurement Bias in the Systemizing Quotient
 
-The SQ does not measure a general drive to understand rule-based systems. Instead, many items measure interest in male-dominated technical domains. This distinction matters: if men score higher on the SQ because the items are male-coded, then the observed sex differences may be artifacts of item content rather than cognitive style.
+The SQ does not measure a general drive to understand rule-based systems. Instead, many items measure interest in male-dominated technical domains—a distinction that matters. If men score higher on the SQ because the items are male-coded, then the observed sex differences may be artifacts of item content rather than cognitive style.
 
 A factor analysis of the SQ reveals six correlated factors:
 - Technical Curiosity
@@ -54,7 +54,7 @@ A factor analysis of the SQ reveals six correlated factors:
 
 Only the first three show large sex differences. The others are relatively neutral. When systemizing is operationalized in terms of neutral items–such as nature, language, or detail orientation—rather than male-coded items—such as cars, computers, sports, or stocks—the sex bias largely disappears.
 
-This suggests that the SQ measures domain-specific interests, not domain-general cognitive drives. A more domain-neutral test of systemizing would likely show weaker sex differences.
+These results suggest that the SQ measures domain-specific interests, not domain-general cognitive drives. A more domain-neutral test of systemizing would likely show weaker sex differences.
 
 ## Tailcalled's Analysis
 
@@ -69,7 +69,7 @@ In a [factor analysis](https://www.lesswrong.com/posts/ZjXtjRQaD2b4PAser/a-hill-
 - Social Difficulties
 - “Jockyness”
 
-Only the Technical Interests factor is strongly sex-differentiated. This supports my observations above.
+Only the Technical Interests factor is strongly sex-differentiated, consistent with my observations above.
 
 ---
 
