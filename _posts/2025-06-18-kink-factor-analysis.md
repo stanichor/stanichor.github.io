@@ -17,7 +17,7 @@ In an [old tweet](https://twitter.com/Aella_Girl/status/1659045052180471808), Ae
 7. Genderplay/Futa/Gender Transforms
 8. Ageplay/Incest/Age Gaps
 
-Given that biological sex strongly influences sexual preferences, we might expect these factors to differ between men and women. For example, a BDSM factor might emphasize dominance for men and submission for women. Additionally, novel factors may emerge from analyzing men and women separately. To test these hypotheses, I performed separate factor analyses for cis men and cis women. (Trans respondents were excluded due to insufficient sample sizes for reliable analysis.)   
+Given biological sex strongly influences sexual preferences, we might expect these factors to differ between men and women. For example, a BDSM factor might emphasize dominance for men and submission for women. Additionally, novel factors may emerge from analyzing men and women separately. To test these hypotheses, I performed separate factor analyses for cis men and cis women. (Trans respondents were excluded due to insufficient sample sizes for reliable analysis.)   
 
 ---
 
@@ -85,7 +85,7 @@ Since the factors are themselves correlated, I performed a second factor analysi
 - Sensuality/Romance (0.28)  
 - Incest/Ageplay (0.22)  
 
-The loading patterns align with intuition: factors that load strongly on the general kink factor (e.g. Gay, Sensuality/Romance) are less likely to be labeled as "kinks" than factors that load weakly (e.g. BDSM, Sensory/Roleplay).
+The loading patterns align with intuition: factors loading strongly on the general kink factor (e.g. Gay, Sensuality/Romance) are less likely to be labeled as "kinks" than factors loading weakly (e.g. BDSM, Sensory/Roleplay).
 
 ---
 

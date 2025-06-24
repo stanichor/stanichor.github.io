@@ -13,7 +13,7 @@ There is a widely circulated chart claiming to show the average IQ of students b
 </div>
 The original data comes from [Statistic Brain][statbrain], which estimates IQ using GRE scores from 2006. While the data itself is plausibly accurate—[matching other records of GRE scores by major](http://www.kyoolee.net/gre_2005-6_score_chart_and_philosophy_majors.pdf)—the methodology for converting GRE scores to IQ contains two critical errors: 
 
-1. **Incorrect Standard Deviation Assumption**: The original analysis assumes that a standard deviation on the GRE corresponds to 22 IQ points, which not only ignores [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean), but assumes the *opposite*, yielding estimates that are more extreme than reality.
+1. **Incorrect Standard Deviation Assumption**: The original analysis assumes a standard deviation on the GRE corresponds to 22 IQ points, which not only ignores [regression toward the mean](https://en.wikipedia.org/wiki/Regression_toward_the_mean), but assumes the *opposite*, yielding extreme estimates.
 2. **Overestimated Mean IQ**: The analysis assumes GRE test-takers have an average IQ of 115 which is likely too high; a mean of 112 ([consistent with Master’s degree holders][rc-analysis]) is more plausible. 
 
 ## A Better Estimation Method
@@ -28,7 +28,7 @@ I also account for:
 - **Ceiling effects**: Some majors (e.g., Mathematical Sciences) have many test-takers achieve the maximum score on some GRE sections, lowering the estimate of their IQs
 - **Floor effects**: Other majors (e.g. Early Childhood Education) have many test-takers achieve scores that are lower than should be achievable by chance.
 
-## Results
+## Results[^1]
 
 | Major                                                  | IQ  |
 |--------------------------------------------------------|-----|
@@ -98,3 +98,12 @@ The Statistic Brain article erroneously refers to "SAT" scores, but the categori
 [statbrain]: https://web.archive.org/web/20120117212741/http://www.statisticbrain.com/iq-estimates-by-intended-college-major/
 [rc-analysis]: https://randomcriticalanalysis.com/2015/06/11/iq-test-scores-gpa-income-and-related-correlations-from-nlsy97/#rcatoc-iq-test-score-by-educational-attainment-level
 
+[^1]: Based on [2018-2021 score distributions](https://web.archive.org/web/20220901054633/https://www.ets.org/s/gre/pdf/gre_table4A.pdf)
+
+{% highlight ruby %}Add commentMore actions
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
