@@ -93,17 +93,10 @@ I also account for:
 
 
 ## Notes on Data Sources
-The Statistic Brain article erroneously refers to "SAT" scores, but the categories and values align with GRE data. The 2006 GRE scores are consistent with [historical ETS reports](https://nces.ed.gov/programs/digest/d13/tables/dt13_327.10.asp), so the raw data is likely reliable—only the IQ conversion is problematic.
+The Statistic Brain article erroneously refers to "SAT" scores, but the categories and values align with GRE data. The 2006 GRE scores are consistent with [historical ETS reports](https://nces.ed.gov/programs/digest/d13/tables/dt13_327.10.asp), so the raw data is likely reliable—only the IQ conversion is problematic. 
 
 [statbrain]: https://web.archive.org/web/20120117212741/http://www.statisticbrain.com/iq-estimates-by-intended-college-major/
 [rc-analysis]: https://randomcriticalanalysis.com/2015/06/11/iq-test-scores-gpa-income-and-related-correlations-from-nlsy97/#rcatoc-iq-test-score-by-educational-attainment-level
 
 [^1]: Based on [2018-2021 score distributions](https://web.archive.org/web/20220901054633/https://www.ets.org/s/gre/pdf/gre_table4A.pdf)
 
-{% highlight ruby %}Add commentMore actions
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
