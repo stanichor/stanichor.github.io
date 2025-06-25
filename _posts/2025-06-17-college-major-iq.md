@@ -22,7 +22,7 @@ To accurately estimate IQ by major, I use the following assumptions:
 1. **GRE-IQ correlation**: 0.7 (based on typical correlations between IQ and standardized tests)
 2. **Mean IQ of GRE test-takers**: 112 (consistent with [estimates for Master's degree holders][rc-analysis]).
 3. **IQ standard deviation for GRE test-takers**: 12 (slighly higher than the [observed variance][rc-analysis] found for Master's degree holders).
-4. **Quant-Verbal correlation**: 0.35 (per [ETS data](https://www.ets.org/pdfs/gre/gre-guide-table-1a.pdf)).
+4. **Quant-Verbal correlation**: 0.35 (per [ETS data](https://web.archive.org/web/20221016110719/http://www.ets.org/pdfs/gre/gre-guide-table-1a.pdf)).
 
 I also account for: 
 - **Ceiling effects**: Some majors (e.g., Mathematical Sciences) have many test-takers achieve the maximum score on some GRE sections, lowering the estimate of their IQs
