@@ -31,7 +31,7 @@ I also account for:
 ## Results[^1]
 
 | Major                                                  | IQ  |
-|--------------------------------------------------------|-----|
+|-------------------------------------------------------|------|
 | Mathematical Sciences                                  | 119 |
 | Physics & Astronomy                                    | 118 |
 | Economics                                              | 118 |
@@ -40,12 +40,10 @@ I also account for:
 | Banking & Finance                                      | 117 |
 | Chemical Engineering                                   | 116 |
 | Engineering — Other                                    | 116 |
-| Physical Sciences                                      | 116 |
 | Computer & Information Sciences                        | 115 |
 | Political Science                                      | 115 |
-| Engineering                                            | 115 |
 | Electrical & Electronics Engineering                   | 114 |
-| Humanities & Arts, Other                               | 114 |
+| Humanities & Arts - Other                              | 114 |
 | Chemistry                                              | 114 |
 | Mechanical Engineering                                 | 114 |
 | Arts — History, Theory, & Criticism                    | 114 |
@@ -54,9 +52,7 @@ I also account for:
 | Industrial Engineering                                 | 114 |
 | Religion & Theology                                    | 113 |
 | Earth, Atmospheric, & Marine Sciences                  | 113 |
-| Business                                               | 113 |
-| Humanities & Arts                                      | 113 |
-| Business, Other                                        | 113 |
+| Business - Other                                       | 113 |
 | Business Admin & Management                            | 113 |
 | Civil Engineering                                      | 113 |
 | Library & Archival Sciences                            | 112 |
@@ -64,26 +60,23 @@ I also account for:
 | English Language & Literature                          | 112 |
 | Accounting                                             | 112 |
 | History                                                | 112 |
-| Social & Behavioral Sciences                           | 112 |
 | Architecture & Environmental Design                    | 112 |
 | Arts — Performance & Studio                            | 112 |
 | Education - Secondary                                  | 111 |
 | Anthropology & Archaeology                             | 111 |
 | Public Administration                                  | 111 |
 | Sociology                                              | 111 |
-| Education, Other                                       | 110 |
+| Education - Other                                      | 110 |
 | Agriculture, Natural Res. & Conservation               | 110 |
 | Communcations & Journalism                             | 110 |
 | Education - Higher                                     | 109 |
-| Social & Behavioral Sciences, Other                    | 109 |
-| Life Sciences                                          | 109 |
+| Social & Behavioral Sciences - Other                   | 109 |
 | Psychology                                             | 109 |
 | Natural Sciences — Other                               | 109 |
 | Health & Medical Sciences                              | 108 |
 | Education - Curriculum & Instruction                   | 108 |
 | Education - Evaluation & Research                      | 108 |
 | Education - Administration                             | 108 |
-| Education                                              | 108 |
 | Family & Consumer Sciences                             | 107 |
 | Education - Elementary                                 | 106 |
 | Education - Student Counseling & Personnel Services    | 105 |
