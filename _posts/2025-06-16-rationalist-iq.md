@@ -1,19 +1,22 @@
 ---
 layout: post
-title: "The average rationalist IQ is about 122"
+title: "The Average Rationalist IQ is About 122"
 date: 2025-06-16 
 permalink: /rationalist-iq/
 categories: 
 ---
-In [The Mystery Of Internet Survey IQs](https://www.astralcodexten.com/p/the-mystery-of-internet-survey-iqs), Scott revises his estimate of the average LessWrong IQ from 138 to 128. He doesn’t explicitly explain how he arrived at this number, but the figure appears to be an average of the demographics norm method (123) and the SAT method (134). However, using the information in his post, the SAT method doesn’t actually yield 134 but rather 123.  
+In [The Mystery Of Internet Survey IQs](https://www.astralcodexten.com/p/the-mystery-of-internet-survey-iqs), Scott revises his estimate of the average LessWrong IQ from 138 to 128. He doesn’t explicitly explain how he arrived at this number, but the figure appears to be an average of the demographics norm method (123) and the SAT method (134). However, using the information in his post, the SAT method doesn’t actually yield 134 but rather 123.
 
-Here’s the breakdown: a median SAT score of 1490 (from the LessWrong 2014 survey) corresponds to +2.42 SD, which using an SAT-IQ correlation of +0.80, regresses to +1.93 SD for IQ—an IQ of 129. Subtracting 6 points (since, according to the ClearerThinking test, the IQs of people who took the SAT and remember their score is ~6 points higher than the group average) brings the adjusted IQ estimate to 123. 
+Here’s the breakdown: IQ has a mean of 100 and a standard deviation of 15, while the SAT has a mean of 1020 and a standard deviation of 194[^1]. A median SAT score of 1490 (from the LessWrong 2014 survey) corresponds to +2.42 SD. Using an SAT-IQ correlation of +0.80, this regresses to +1.93 SD for IQ—an IQ of 129. Subtracting 6 points (since, according to the ClearerThinking test, people who took the SAT and remember their score have IQs ~6 points higher than the group average) brings the adjusted IQ estimate to 123.
 
-The ClearerThinking test also provides a way to adjust self-reported IQs. Subtracting 17 points (because people who report having taken an IQ test claim an average score of 131, but their tested average is only 114) gives an adjusted IQ of 121, based on a self-reported average of 138.  
+The ClearerThinking test also provides a way to adjust self-reported IQs. Based on a self-reported average of 138, subtracting 17 points (since people who report having taken an IQ test claim an average score of 131, but their tested average is only 114—a difference of 17 points) gives an adjusted IQ of 121.
 
-Aggregating the data across all LessWrong and SSC surveys[^1] with available information, the estimates consistently cluster around 122. While some might think an average IQ of 122 sounds too low, it’s worth noting [the average IQ of PhD holders is around 122](https://randomcriticalanalysis.com/2015/06/11/iq-test-scores-gpa-income-and-related-correlations-from-nlsy97/#rcatoc-iq-test-score-by-educational-attainment-level).  
+Aggregating the data across all LessWrong and SSC surveys[^2] with available information, the estimates—whether calculated from self-reported IQs, or self-reported SAT scores—consistently cluster around 122. While some might think an average IQ of 122 sounds too low, it’s worth noting [the average IQ of PhD holders is around 122](https://randomcriticalanalysis.com/2015/06/11/iq-test-scores-gpa-income-and-related-correlations-from-nlsy97/#rcatoc-iq-test-score-by-educational-attainment-level).
 
-[^1]: - [2017 SSC Survey](https://slatestarcodex.com/2017/03/17/ssc-survey-2017-results/): Estimated IQ Mean = 122  
+[^1]: [2017 SAT Suite of Assessments Technical Manual](https://satsuite.collegeboard.org/media/pdf/sat-suite-assessments-technical-manual.pdf)
+
+[^2]: Estimated IQs Across LessWrong and SlateStarCodex Surveys
+      - [2017 SSC Survey](https://slatestarcodex.com/2017/03/17/ssc-survey-2017-results/): Estimated IQ Mean = 122  
         - From Self-Reported IQ: 122 (average reported IQ: 138.5)
         - From Self-Reported SAT: 122 (average SAT score: 1471.9, regressed IQ: 128 - 6 = 122)
       - [2009 LessWrong Survey](https://www.lesswrong.com/posts/ZWC3n9c6v4s35rrZ3/survey-results): Estimated IQ Mean = 125
