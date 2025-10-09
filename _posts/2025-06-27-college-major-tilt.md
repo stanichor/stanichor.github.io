@@ -9,7 +9,7 @@ Graphing the relationship between the average intelligence and math/verbal tilt 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/college-major-tilt-gre-iq-vs-tilt.png" width="700">
+        <img src="/assets/images/college-major-tilt/gre-iq-vs-tilt.png" width="700">
     </figure>
 </div>
 
@@ -17,13 +17,13 @@ Additionally, among intended majors, average math ability correlates more strong
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/college-major-tilt-gre-iq-vs-math.png" width="700">
+        <img src="/assets/images/college-major-tilt/gre-iq-vs-math.png" width="700">
     </figure>
 </div>
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/college-major-tilt-gre-iq-vs-verbal.png" width="700">
+        <img src="/assets/images/college-major-tilt/gre-iq-vs-verbal.png" width="700">
     </figure>
 </div>
 
@@ -31,7 +31,7 @@ Tilt—the difference between math and verbal scores—cleanly separates high-ma
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/college-major-tilt-gre-tilt-vs-math.png" width="700">
+        <img src="/assets/images/college-major-tilt/gre-tilt-vs-math.png" width="700">
     </figure>
 </div>
 
@@ -39,7 +39,7 @@ Verbal ability, however, doesn’t follow this pattern: majors appear in all qua
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/college-major-tilt-gre-tilt-vs-verbal.png" width="700">
+        <img src="/assets/images/college-major-tilt/gre-tilt-vs-verbal.png" width="700">
     </figure>
 </div>
 
