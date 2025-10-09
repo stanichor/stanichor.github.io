@@ -96,117 +96,117 @@ The following plots are what I call "Tailcalled diagrams". Basically, we create 
 ### **Cis Men**  
 #### BDSM
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-bdsm.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-bdsm.png" width="700">
 </figure> 
 
 #### Hyperfeminity
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-hyperfemininity.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-hyperfemininity.png" width="700">
 </figure> 
 
 #### Sensuality/Romance
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-sensuality-romance.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-sensuality-romance.png" width="700">
 </figure> 
 
 #### Conventional Kink
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-conventional-kink.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-conventional-kink.png" width="700">
 </figure> 
 
 #### Monsters/Animals
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-monsters-animals.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-monsters-animals.png" width="700">
 </figure> 
 
 #### Disgust
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-disgust.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-disgust.png" width="700">
 </figure> 
 
 #### Genderplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-genderplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-genderplay.png" width="700">
 </figure> 
 
 #### Incest/Ageplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-incest-ageplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-incest-ageplay.png" width="700">
 </figure> 
 
 #### Gay
 <figure>
-    <img src="/assets/images/kink-factor-analysis-men-gay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-gay.png" width="700">
 </figure> 
 
 
 ### **Cis Women**  
 #### BDSM
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-bdsm.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-bdsm.png" width="700">
 </figure> 
 
 #### Hyperfeminity
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-hyperfemininity.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-hyperfemininity.png" width="700">
 </figure> 
 
 #### Sensuality/Romance
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-sensuality-romance.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-sensuality-romance.png" width="700">
 </figure> 
 
 #### Conventional Kink
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-conventional-kink.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-conventional-kink.png" width="700">
 </figure> 
 
 #### Monsters/Animals
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-monsters-animals.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-monsters-animals.png" width="700">
 </figure> 
 
 #### Disgust
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-disgust.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-disgust.png" width="700">
 </figure> 
 
 #### Genderplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-genderplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-genderplay.png" width="700">
 </figure> 
 
 #### Incest/Ageplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-incest-ageplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-incest-ageplay.png" width="700">
 </figure> 
 
 #### Cum
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-cum.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-cum.png" width="700">
 </figure> 
 
 #### Toys
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-toys.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-toys.png" width="700">
 </figure> 
 
 #### Sensory/Roleplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-sensory-roleplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-sensory-roleplay.png" width="700">
 </figure> 
 
 #### Ethnicities
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-ethnicities.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-ethnicities.png" width="700">
 </figure> 
 
 #### Nonconsent
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-nonconsent.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-nonconsent.png" width="700">
 </figure> 
 
 #### Brutality
 <figure>
-    <img src="/assets/images/kink-factor-analysis-women-brutality.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-brutality.png" width="700">
 </figure> 
