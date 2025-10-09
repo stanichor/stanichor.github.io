@@ -8,7 +8,7 @@ categories:
 There is a widely circulated chart claiming to show the average IQ of students by college major. 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/statistic-brain-college-major-iq.jpg" width="200" alt="Alt Text">
+        <img src="/assets/images/college-major-iq/statistic-brain.jpg" width="200" alt="Alt Text">
     </figure>
 </div>
 The original data comes from [Statistic Brain][statbrain], which estimates IQ using GRE scores from 2006. While the data itself is plausibly accurate—[matching other records of GRE scores by major](http://www.kyoolee.net/gre_2005-6_score_chart_and_philosophy_majors.pdf)—the methodology for converting GRE scores to IQ contains two critical errors: 
