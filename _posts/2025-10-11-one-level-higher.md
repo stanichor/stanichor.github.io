@@ -32,9 +32,9 @@ In [this paper](https://sci-hub.usualwant.com/10.2307/2950991), the author runs 
 For $0 \leq p < 1$, there exists only one Nash equilibrium: when all players choose 0. For $p = 1$, the game is a coordination game, and there are infinitely many equilibrium points. For $p > 1$ and $2p < M$ (where $M$ is the number of players), there are two equilibrium points: everyone choosing 0 and everyone choosing 100 (however, it seems reasonable to predict that typical populations of humans will tend towards the equilbrium of choosing 100). 
 
 For the first rounds of each experiment, we can view the mean scores as the population level. The median scores tell us the level of the median player. 
-- $p = \frac{1}{2}$: The mean score was 27.05 (Level 0.9) and the median was 17 (Level 1.6).
-- $p = \frac{2}{3}$: The mean score was 36.73 (Level 0.8) and the median was 33 (Level 1).
-- $p = \frac{4}{3}$: The mean score was 60.12 (Level 0.6) and the median was 66 (Level 1).
+- $p = \frac{1}{2}$: The mean score was 27.05 (population level 0.9) and the median was 17 (median level 1.6).
+- $p = \frac{2}{3}$: The mean score was 36.73 (population level 0.8) and the median was 33 (median level 1).
+- $p = \frac{4}{3}$: The mean score was 60.12 (population level 0.6) and the median was 66 (median level 1).
 
 We might also want to know the *distribution* of player levels. The paper splits guesses into those that fall into *neighborhood intervals* (corresponding with the discrete levels), and those falling into *interim intervals* (between the neighborhood intervals).
 - $p = \frac{1}{2}$
@@ -48,7 +48,7 @@ We might also want to know the *distribution* of player levels. The paper splits
   - 27% of players guessed below the mean, 12% were in between Levels 0 and 1, 12% were in between Levels 1 and 2, and 0% were in between Levels 2 and 3. It was not possible for guesses to be above Level 3.
 
 
-Since there are multiple rounds per experiment session, we can see the mean/median level changes as the game repeats.
+Since there are multiple rounds per experiment session, we can how see the mean/median level changes as the game repeats.
 
 
 <div style="text-align: center;">
@@ -59,8 +59,6 @@ Since there are multiple rounds per experiment session, we can see the mean/medi
         <img src="/assets/images/one-level-higher/two_thirds_medians.png" width="400" alt="Alt Text">
     </figure>
 </div>
-
-Generally, the median player moves up ~1 level from Round 1 to Round 2, moves up 1-2 levels from Round 2 to Round 3, and moves up 1-3 levels from Round 3 to Round 4. Generally, the population level moves up ~1 level from Round 1 to Round 2, moves up 1-2 levels from Round 2 to Round 3, and moves up 1-3 levels from Round 3 to Round 4 (ignoring the outlier sessions in the $p = \frac{1}{2}$ experiments).
 
 For a more fine-grained analysis, we can look at the distribution of how each person adjusts their level from round to round. In the following data, the authors classify the data of each of the subsequent periods according to the reference point ($r$, the mean of the *previous* period, not necessarily Period 1) and iteration steps (where step $n$ indicates a guess of $r\cdot p^n$). Guesses above the previous-period mean are aggregated into "Above mean₋₁".
 
@@ -81,7 +79,6 @@ For a more fine-grained analysis, we can look at the distribution of how each pe
 | Step 0 | 14.9% | 7.5% | 3.0% |
 | Above mean₋₁ | 13.4% | 10.5% | 6.0% |
 
-While there is a persistent proportion of players who make clearly irrational guesses, or who fail to update, most people *do* update, and move to higher levels. In fact, as time goes on, they learn to update *more*, as if to get ahead of everyone else. 
 
 Two clear pattern emerge. First, most people start near Level 1: Level 1 and Level 2 together typically account for the plurality of guesses. Second, repetition moves players upwards. Across rounds the median player typically advances about one level from round 1 to round 2, another 1–2 levels by round 3, and another 1–3 levels by round 4 in many sessions. The move toward higher levels is not uniform: a persistent minority make irrational or non-updating choices, but the modal behaviour is updating towards higher levels.
 
