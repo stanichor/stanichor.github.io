@@ -65,6 +65,25 @@ We might expect there to be interactions between genres. Restricting ourselves t
 | Ecchi:Romance | -0.31 |
 | Drama:Mystery | -0.35 |
 
+## A Sanity Check: The Top Anime
+
+Looking at the highest-quality anime (excluding sequels) gives us a sense of how credible the genre-quality associations are. The genre most strongly associated with quality, Thriller, is overrepresented, appearing twice in the Top 10. The runner-ups, Mystery and Drama, are also overrepresented. At the other end, none of the top anime belong to sexually themed genres. We can also find positively associated interactions such as *Slice of Life × Supernatural* and *Comedy × Parody* represented among the top anime.
+
+| Anime | Genres |
+|-|-|
+| Fullmetal Alchemist:Brotherhood | Action, Adventure, Comedy, Drama, Fantasy, Magic, Military, Shounen |
+| Legend of the Galactic Heroes | Drama, Military, Sci-Fi, Space |
+| Steins;Gate | Sci-Fi, Thriller |
+| Gintama | Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen |
+| Clannad: After Story | Comedy, Drama, Romance, Slice of Life, Supernatural |
+| Code Geass:Lelouch of the Rebellion R2 | Action, Drama, Mecha, Military, Sci-Fi, Super Power |
+| Your Name. | Drama, Romance, School, Supernatural |
+| A Silent Voice | Drama, School, Shounen |
+| Monster | Drama, Horror, Mystery, Police, Psychological, Seinen, Thriller |
+| Gintama Season 5 | Action, Comedy, Historical, Parody, Samurai, Sci-Fi, Shounen |
+| Mushi-Shi | Adventure, Fantasy, Historical, Mystery, Seinen, Slice of Life, Supernatural |
+
+
 ## Caveats
 The estimated effects aren't causal. We don't know why certain genres are associated with higher (or lower) anime quality. It may be that some genres are inherently more appealing, or it could be that competent anime creators focus more on certain genres over others. Or possibly neither of these explanations fit and the truth is something else. 
 
