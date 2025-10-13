@@ -75,7 +75,7 @@ Only the Technical Interests factor is strongly sex-differentiated, consistent w
 
 ## Conclusion
 
-The E–S theory of autism conflates three distinct phenomena:
+The E-S theory of autism conflates three distinct phenomena:
 
 1. A sex difference in *interests*, reflected in high SQ scores among men
 2. A deficit in *social skills*, which correlates with autism traits
