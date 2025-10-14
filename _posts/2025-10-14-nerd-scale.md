@@ -20,7 +20,7 @@ The analysis uses the [public NPAS dataset](https://openpsychometrics.org/_rawda
 
 ## Factor Structure
 
-Exploratory factor analysis produced a clear one-factor solution: additional factors were uninterpretable. The factor loadings are as follows: 
+Exploratory factor analysis produced a clear one-factor solution; additional factors were uninterpretable. The factor loadings are as follows: 
 
 | Question | Loading |
 |-|-|
