@@ -50,7 +50,7 @@ The following items loaded onto this factor:
 - Fertile (0.36)
 - Little Black Dresses (-0.32)
 
-This factor is straight forward. The items mostly focus on symptoms of being overweight, and the items focusing on thinness (e.g., 'Slender', 'Narrow hips') have negative loadings. As we can see in the Tailcalled diagram, a large number of items of varying difficulties means we're able to measure this factor pretty well.
+This factor is straightforward. The items mostly focus on bodily features of the overweight, and the items focusing on thinness (e.g., 'Slender', 'Narrow hips') have negative loadings. As we can see in the Tailcalled diagram, a large number of items of varying difficulties means we're able to measure this factor pretty well.
 
 <div style="text-align: center;">
     <figure>
