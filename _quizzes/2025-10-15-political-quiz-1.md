@@ -172,7 +172,7 @@ document.getElementById("quiz1-submit").addEventListener("click", () => {
     likelihoods[party] = Math.round((likelihoods[party] / total) * 100);
   }
 
-  resultEl.innerHTML = `You are more politically liberal than ${percentile}% of study participants.<br>` +
+  resultEl.innerHTML = `You are more politically liberal than ${percentile}% of Americans.<br>` +
                        `Republican: ${likelihoods.R}%<br>` +
                        `Independent: ${likelihoods.I}%<br>` +
                        `Democrat: ${likelihoods.D}%`;
