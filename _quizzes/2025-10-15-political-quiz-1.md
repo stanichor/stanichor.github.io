@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Political Quiz #1"
-date: 2025-10-14
+date: 2025-10-15
 permalink: /political-quiz-1/
 categories: 
 ---
