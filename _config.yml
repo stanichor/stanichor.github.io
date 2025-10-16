@@ -29,11 +29,11 @@ navigation:
   - text: "Home"
     url: "/"
   - text: "Archive"
-    url: "/archive/"
+    url: "/archive"
   - text: "Quizzes"
     url: "/quizzes/"
   - text: "About"
-    url: "/about/"
+    url: "/about"
 
 collections:
   quizzes:
