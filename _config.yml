@@ -30,8 +30,14 @@ navigation:
     url: "/"
   - text: "Archive"
     url: "/archive"
+  - text: "Quizzes"
+    url: "/quizzes"
   - text: "About"
     url: "/about"
+
+collections:
+  quizzes:
+    output: true        # ensure Jekyll writes HTML pages for each quiz
 
 # Build settings
 theme: jekyll-theme-primer
