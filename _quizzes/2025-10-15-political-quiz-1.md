@@ -108,7 +108,7 @@ You can answer the questions and view your most likely party identification, alo
 </form>
 
 <!-- Include your shared script -->
-<script src="{{ '/assets/js/quiz.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/irt-quiz.js' | relative_url }}"></script>
 <script>
 document.getElementById("quiz1-submit").addEventListener("click", () => {
   const loadings = { q1: -0.564, q2: 0.742, q3: -0.692, q4: 0.787, q5: 0.655, q6: 0.666, q7: 0.703, q8: 0.801 };
