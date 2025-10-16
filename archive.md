@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+permalink: /archive/
 ---
 <h1>All Posts</h1>
 <ul>
