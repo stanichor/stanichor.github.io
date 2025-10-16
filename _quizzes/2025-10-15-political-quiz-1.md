@@ -143,8 +143,11 @@ document.getElementById("quiz1-submit").addEventListener("click", () => {
     return;
   }
 
+  // Difference between study population and American population on political liberalism
+  const delta = 0.346;
+
   // Compute latent score
-  const score = estimateLatentScore(observation, loadings, thresholds, false);
+  const score = estimateLatentScore(observation, loadings, thresholds, false) + delta;
 
   // Convert latent score to percentile
   const percentile = Math.round(normalCDF(score) * 100);
@@ -152,9 +155,9 @@ document.getElementById("quiz1-submit").addEventListener("click", () => {
   // --- Party likelihoods ---
   const priors = { R: 0.31, I: 0.41, D: 0.28 };
   const distributions = {
-    R: { mean: -1.07, sd: 0.76 },
-    I: { mean: -0.36, sd: 0.83 },
-    D: { mean: 0.46, sd: 0.74 }
+    R: { mean: -1.07 + delta, sd: 0.76 },
+    I: { mean: -0.36 + delta, sd: 0.83 },
+    D: { mean: 0.46 + delta, sd: 0.74 }
   };
 
   const likelihoods = {};
