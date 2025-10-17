@@ -6,11 +6,11 @@ permalink: /nerd-scale/
 categories: 
 ---
 
-What is a nerd? Definitions vary, but one practical way to answer that question is empirical: identify the traits that predict someone's self-label of "nerd". The [Nerdy Personality Attributes Scale](https://openpsychometrics.org/tests/NPAS/) (NPAS) does exactly that. The creators began with 445 candidate items, had participants rate themselves on the items, report how nerdy they were, then kept the 26 items most strongly correlated with self-reported nerdiness[^1]. Below I describe the data, the factor structure, reliability and validity, gender bias in items, a reduced 12-item set, and what the findings imply about the prototypical “nerd.”
+What is a nerd? Definitions vary, but one practical way to answer that question is empirical: identify the traits that predict someone's self-label of "nerd". The [Nerdy Personality Attributes Scale](https://openpsychometrics.org/tests/NPAS/) (NPAS) does exactly that. The creators began with 445 candidate items, had participants rate themselves on the items, report how nerdy they were, and then kept the 26 items most strongly correlated with self-reported nerdiness[^1]. Below I describe the data, the factor structure, reliability and validity, gender bias in items, a reduced 12-item set, and what the findings imply about the prototypical “nerd.”
 
 ## Data
 
-The analysis uses the [public NPAS dataset](https://openpsychometrics.org/_rawdata/) from Open Psychometrics (N = 14,167). Respondents rated 26 items on a five-point scale from Disagree (1) to Agree (5). The sample is self-selected (visitors to an online psychometrics site); the sample is probably nerdier than average.
+The analysis uses the [public NPAS dataset](https://openpsychometrics.org/_rawdata/) from Open Psychometrics (N = 14,167). Respondents rated 26 items on a five-point scale from Strongly Disagree (1) to Strongly Agree (5). The sample is self-selected (visitors to an online psychometrics site); the sample is probably nerdier than average.
 
 <div style="text-align: center;">
     <figure>
@@ -53,7 +53,7 @@ Exploratory factor analysis produced a clear one-factor solution; additional fac
 
 ### Internal Consistency
 
-The coefficient omega is 0.87, a level of internal consistency that supports treating the 26 items as a coherent scale. However, test information begins to fall off above +1 SD on the latent trait, indicating the NPAS has fewer items that discriminate high levels of nerdiness in this sample. This is consistent with a ceiling effect in the population, probably as a result of the self-selection. The latent nerdiness score correlates r = 0.51 with self-reported nerdiness (1–7 scale) which is encouraging.
+The coefficient omega is 0.87, a level of internal consistency that supports treating the 26 items as a coherent scale. However, test information begins to fall off above +1 SD on the latent trait, indicating the NPAS has fewer items that discriminate high levels of nerdiness in this sample. This is consistent with a ceiling effect in the population, probably as a result of the self-selection. The latent nerdiness score correlates r = 0.51 with self-reported nerdiness (1–7 scale) which supports validity.
 
 <div style="text-align: center;">
     <figure>
@@ -86,7 +86,7 @@ Several biased items reflect cultural differences in hobby expression and media 
     </figure>
 </div>
 
-Adjusting for bias, there's not much difference between average male vs female nerdiness.
+Adjusting for bias, there's little difference between average male and female nerdiness.
 
 ## Reduced Item Set
 
@@ -105,7 +105,7 @@ To make a shorter scale, I applied [Bayesian Design Optimization](https://haines
 - Q10: I would rather read a book than go to a party.
 - Q14: I like to read technology news reports.
 
-Displayed is the reliability across the scale. The 12-item set reduces reliability slightly (coefficient omega has dropped to 0.80), although the effect is more pronounced at the higher end of the scale.
+The plot below shows the reliability across the scale. The 12-item set reduces reliability slightly (coefficient omega has dropped to 0.80), although the effect is more pronounced at the higher end of the scale.
 
 <div style="text-align: center;">
     <figure>
@@ -113,7 +113,7 @@ Displayed is the reliability across the scale. The 12-item set reduces reliabili
     </figure>
 </div>
 
-The following plot is a Tailcalled diagram for the reduced set. Basically, we create a standardized (mean=0, SD=1) latent variable summarizing the displayed items in the bottom of the plot. The rows below the histogram show the median response to each question for a given level of the latent variable. 
+The following plot is a Tailcalled diagram for the reduced set. We create a standardized (mean=0, SD=1) latent variable summarizing the displayed items in the bottom of the plot. The rows below the histogram show the median response to each question for a given level of the latent variable. 
 
 <div style="text-align: center;">
     <figure>
@@ -124,8 +124,8 @@ The following plot is a Tailcalled diagram for the reduced set. Basically, we cr
 ## What is a nerd?
 
 In essence, the prototypical nerd is **a socially awkward introvert who values intelligence, learning, and education over popularity**. This definition captures the central cluster of traits: intellectual interests and a lack of social success. Others have also attempted to define what a nerd is:  
-- Paul Graham, in his 2003 essay, [Why Nerds Are Unpopular](https://paulgraham.com/nerds.html), argues nerds are people who value intelligence over popularity. This trait aligns closely with items Q4 and Q6, so Graham’s definition fits the data well.
-- In [On “Geek” Versus “Nerd”](https://slackprop.wordpress.com/2013/06/03/on-geek-versus-nerd/), the author investigates the distinction between geeks and nerds by performing textual analysis of Twitter. They conclude that "*geeky* words are more about *stuff* (e.g., “#stuff”), while *nerdy* words are more about *ideas* (e.g., “hypothesis”). Geeks are fans, and fans collect stuff; nerds are practitioners, and practitioners play with ideas." This contrast is interesting given that the highest-loading item, Q5, is “I collect books.” Yet most NPAS items are idea-oriented. A nerd collects books not to own them, but to read and absorb the ideas inside. Other items are about interests in science, research, and learning.
+- Paul Graham, in his 2003 essay, [Why Nerds Are Unpopular](https://paulgraham.com/nerds.html), argues that nerds are people who value intelligence over popularity. This trait aligns closely with items Q4 and Q6, so Graham’s definition fits the data well.
+- In [On “Geek” Versus “Nerd”](https://slackprop.wordpress.com/2013/06/03/on-geek-versus-nerd/), the author investigates the distinction between geeks and nerds by performing textual analysis of Twitter. They conclude that "*geeky* words are more about *stuff* (e.g., “#stuff”), while *nerdy* words are more about *ideas* (e.g., “hypothesis”). Geeks are fans, and fans collect stuff; nerds are practitioners, and practitioners play with ideas." This contrast is interesting given that the highest-loading item, Q5, is “I collect books.” Yet most NPAS items are idea-oriented, emphasizing curiosity and intellect rather than collecting or fandom. A nerd collects books not to own them, but to read and absorb the ideas inside. Other items are about interests in science, research, and learning.
 
 [^1]: [Development of the Nerdy Personality Attributes Scale](https://openpsychometrics.org/tests/NPAS/development/)
 

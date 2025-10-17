@@ -10,9 +10,9 @@ What makes a good anime? While taste is subjective, there tends to be some sort 
 
 ## Estimating anime quality from ratings
 
-I obtained the rating data from [Anime Recommendation Database 2020](https://www.kaggle.com/datasets/hernan4444/anime-recommendation-database-2020). Then, I estimate a simple matrix factorization model:
+I obtained the rating data from [Anime Recommendation Database 2020](https://www.kaggle.com/datasets/hernan4444/anime-recommendation-database-2020). I then estimate a simple matrix factorization model:
 
-$ r\_{u,i} = \mu + b_u + b_i + p_u^Tq_i + \epsilon_{u,i}$
+$ r\_{u,i} = \mu + b_u + b_i + p_u^\top q_i + \epsilon_{u,i}$
 
 where: 
 - $r_{u,i}$ is the rating user $u$ gave item $i$
@@ -47,7 +47,7 @@ While a few genres (mostly those that appear infrequently) have wide error bars,
 
 ## Estimating the effect of genre combinations
 
-We might expect there to be interactions between genres. Restricting ourselves to two-way interactions, there are 946 possible interactions, but only 771 of them actually occur, and only 179 of them are present in at least 100 anime. Because testing many interactions inflates false positives, I adjust p-values with the Benjamini–Hochberg procedure and list the interactions with adjusted p-values less than 0.01, which are as follows:  
+We might expect there to be interactions between genres. Restricting ourselves to two-way interactions, there are 946 possible interactions, but only 771 of them actually occur, and only 179 of them are present in at least 100 anime. Because testing many interactions inflates false positives, I adjust p-values with the Benjamini-Hochberg procedure and list the interactions with adjusted p-values less than 0.01, which are as follows:  
 
 | Interaction | Estimate (SD units) |
 |-|-|
@@ -128,7 +128,7 @@ MyAnimeList has a [page describing the different genres](https://myanimelist.net
 - **Shoujo**: Targeted at teenage girls
 - **Shoujo Ai**: Romantic stories focusing on female-female relationships
 - **Shounen**: Targeted at teenage boys
-- **Shounen Ai**: omantic stories focusing on male-male relationships
+- **Shounen Ai**: Romantic stories focusing on male-male relationships
 - **Slice of Life**: Everyday activities and realistic settings
 - **Space**: Set in outer space or involving interplanetary travel
 - **Sports**: Athletic competition, teamwork, and personal improvement
@@ -138,4 +138,4 @@ MyAnimeList has a [page describing the different genres](https://myanimelist.net
 - **Unknown**: Genre not specified
 - **Vampire**: Features vampires
 - **Yaoi**: Explicit stories focusing on male-male relationships
-- **Yuri**: Explicit stories focusing on female–female relationships
+- **Yuri**: Explicit stories focusing on female-female relationships

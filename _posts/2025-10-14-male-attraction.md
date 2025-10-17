@@ -6,7 +6,7 @@ permalink: /male-attraction/
 categories: 
 ---
 
-In [What Do We Desire in a Woman?](https://thingstoread.substack.com/p/what-do-we-desire-in-a-woman), Apple Pie conducted surveys on romantic preferences, asking participants to rate several traits based on how attractiveness. The following is a replication of the analysis using confirmatory factor analysis (CFA) and item response theory (IRT), rather than using principal components analysis (PCA) as Apple Pie did. PCA forces factors to be independent, while CFA allows factors to correlate. IRT also provides more item-level information.
+In [What Do We Desire in a Woman?](https://thingstoread.substack.com/p/what-do-we-desire-in-a-woman), Apple Pie conducted surveys on romantic preferences, asking participants to rate several traits based on how attractive they are. The following is a replication of the analysis using confirmatory factor analysis (CFA) and item response theory (IRT), rather than using principal components analysis (PCA) as Apple Pie did. PCA forces factors to be independent, while CFA allows factors to correlate. IRT also provides more item-level information.
 
 ## Factor Analysis Results
 I found 8 interpretable factors of male attraction towards women. I've labeled them by the archetypes that best exemplify them: 
@@ -19,7 +19,7 @@ I found 8 interpretable factors of male attraction towards women. I've labeled t
 7. Fashionista
 8. Innocent Girl
 
-For reference, here are the factors that Applie Pie found: 
+For reference, here are the factors that Apple Pie found: 
 - Factor 0: The Overall Average
 - Factor 1: Skinny Girls vs BBWs
 - Factor 2: Vapid Chicks vs Great Personalities
@@ -31,7 +31,7 @@ Some similarities:
 - Apple Pie's "Skinny Girls vs BBWs" factor most closely matched my "Curvy Girls" factor. 
 - Apple Pie's "Vapid Chicks vs Great Personalities" most closely matched my "Intellectual" factor.
 - Apple Pie's "Barbie" factor most closely matched my "Fashionista" factor.
-- Apple Pie's "MILF" factor most closely matched a mixture of my "Girl Next Door" factor and (a reversed version of) my "Innocent Girl" factor.
+- Apple Pie's "MILF" factor most closely matched a mixture of my "Girl Next Door" factor and and a reversed version of my 'Innocent Girl' factor.
 - Apple Pie's "Temptresses vs Trad Wives" factor most closely matched a mixture of my "Innocent Girl" factor and my "Nice Girl" factor.
 
 ## Factor 1: Curvy Girls
@@ -70,7 +70,7 @@ The following items loaded onto this factor:
 - Dangerous (0.40)
 - Unfaithful (0.28)
 
-This factor is a bit more abstract. Looking at the items, I can't help but be reminded of the [Manic Pixie Dream Girl](https://tvtropes.org/pmwiki/pmwiki.php/Main/ManicPixieDreamGirl) (MPDG) trope, with the items about adventurousness, artistic talents, and especially the item about being 'Extremely Amorous'; all various facets of the trope.
+This factor is a bit more abstract. Looking at the items, I can't help but be reminded of the [Manic Pixie Dream Girl](https://tvtropes.org/pmwiki/pmwiki.php/Main/ManicPixieDreamGirl) (MPDG) trope, with the items about adventurousness, artistic talents, and especially the item about being 'Extremely Amorous', all various facets of the trope.
 
 <div style="text-align: center;">
     <figure>
@@ -121,7 +121,7 @@ The following items loaded onto this factor:
 - Humorous (0.29)
 - Dangerous (-0.24)
 
-There aren't many items that on this factor, and half of them have low loadings. Nevertheless, we can gather an idea of what the factor is measuring: niceness. Unfortunately, a low number of items + low loadings for some of them + low ceilings (most men find niceness attractive!) means we're not able to measure this factor well, *especially* at the upper end.
+There aren't many items on this factor, and half of them have low loadings. Nevertheless, we can gather an idea of what the factor is measuring: niceness. Unfortunately, a low number of items + low loadings for some of them + low ceilings (most men find niceness attractive!) means we're not able to measure this factor well, *especially* at the upper end.
 
 <div style="text-align: center;">
     <figure>
@@ -145,7 +145,7 @@ The following items loaded onto this factor:
 - Short (0.31)
 - Broad shoulders (0.28)
 
-This factor contains a lot of seemingly disparate items. As such, none of the items loads especially high. 
+This factor contains a lot of seemingly disparate items. As such, none of the items load especially high. 
 
 <div style="text-align: center;">
     <figure>
@@ -193,7 +193,7 @@ The following items loaded onto this factor:
 - Short hair (-0.34)
 - Broad shoulders (-0.30)
 
-This factor contains items connected to youth (e.g., 'Young', 'Fertile', 'Teenagers') and (housewife-themed) submissiveness (e.g., 'Submissive', 'Good with Children', 'A Good Cook'). There are also items relating to traditional beauty standards (e.g, 'Slender', 'Fair skin', 'Broad shoulders' \[reversed]). Overall, the items measure the factor decently.
+This factor contains items connected to youth (e.g., 'Young', 'Fertile', 'Teenagers') and (housewife-themed) submissiveness (e.g., 'Submissive', 'Good with Children', 'A Good Cook'). There are also items relating to traditional beauty standards (e.g., 'Slender', 'Fair skin', 'Broad shoulders' \[reversed]). Overall, the items measure the factor decently.
 
 <div style="text-align: center;">
     <figure>
@@ -205,7 +205,7 @@ This factor contains items connected to youth (e.g., 'Young', 'Fertile', 'Teenag
 [Coefficient omega](https://en.wikipedia.org/wiki/Congeneric_reliability) is a measure of a scale's internal consistency. It represents the proportion of total variance in the responses that is explained by a single, underlying factor. If we calculate the coefficient omega for each factor, they end up clustering into three groups, giving us a sense of how coherent the factors are:
 - The Curvy Girl ($\omega = 0.54$) and Innocent Girl ($\omega = 0.55$) factors both have mediocre internal consistencies, albeit, the highest of the factors we've extracted. 
 - The Free Spirit ($\omega = 0.29$), Intellectual ($\omega = 0.26$), Girl Next Door ($\omega = 0.28$), and Fashionista ($\omega = 0.26$) factors have low internal consistencies. These factors didn't have as many items as the above two factors (an average of 9.5 vs 15.5). Additionally, they also have less items with particularly high loadings.
-- The Amazon ($\omega = 0.09$) and Nice Girl ($\omega = 0.04$) factors have atrocious internal consistencies. In addition to have a low number of items (4 and 6 respectively), they have few items with high loadings (they both have only 1 item with a loading over 0.60).
+- The Amazon ($\omega = 0.09$) and Nice Girl ($\omega = 0.04$) factors have atrocious internal consistencies. In addition ing a low number of items (4 and 6 respectively), they have few items with high loadings (they both have only 1 item with a loading over 0.60).
 
 While these results may be discouraging, it's important to realize that the items weren't designed as a scale, merely as part of an exploratory data analysis process. Using the information gained from analyses like these, future researchers will be able to design better scales.
 
@@ -224,7 +224,7 @@ While these results may be discouraging, it's important to realize that the item
 
 Notable positive correlations include the ones between Free Spirit & Intellectual, Free Spirit & Girl Next Door, and Free Spirit & Fashionista. I don't know why these correlations appear.
 
-Notable negative correlations include the ones between Curvy Girl & Innocent Girl, and Amazon & Innocent Girl. This also make sense: both the Curvy Girl archetype and the Amazon archetype are "big", and that's reflected in the items that load on them. Meanwhile, the Innocent Girl factor has items that reflect smallness, such as 'Slender', 'Small Hands', and 'Little noses'.
+Notable negative correlations include the ones between Curvy Girl & Innocent Girl, and Amazon & Innocent Girl. This also makes sense: both the Curvy Girl archetype and the Amazon archetype are "big", and that's reflected in the items that load on them. Meanwhile, the Innocent Girl factor has items that reflect smallness, such as 'Slender', 'Small Hands', and 'Little noses'.
 
 ## Takeaways
 

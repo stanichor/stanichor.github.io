@@ -5,9 +5,9 @@ date: 2025-06-16
 permalink: /rationalist-iq/
 categories: 
 ---
-In [The Mystery Of Internet Survey IQs](https://www.astralcodexten.com/p/the-mystery-of-internet-survey-iqs), Scott revises his estimate of the average LessWrong IQ from 138 to 128. He doesn’t explicitly explain how he arrived at this number, but the figure appears to be an average of the demographics norm method (123) and the SAT method (134). However, using the information in his post, the SAT method doesn’t actually yield 134 but rather 123.
+In [The Mystery Of Internet Survey IQs](https://www.astralcodexten.com/p/the-mystery-of-internet-survey-iqs), Scott revises his estimate of the average LessWrong IQ from 138 to 128. He doesn’t explicitly explain how he arrived at this number, but the figure appears to be an average of the demographic-norm method (123) and the SAT method (134). However, using the information in his post, the SAT method doesn’t actually yield 134 but rather 123.
 
-Here’s the breakdown: IQ has a mean of 100 and a standard deviation of 15, while the SAT has a mean of 1020 and a standard deviation of 194[^1]. A median SAT score of 1490 (from the LessWrong 2014 survey) corresponds to +2.42 SD. Using an SAT-IQ correlation of +0.80, this regresses to +1.93 SD for IQ—an IQ of 129. Subtracting 6 points (since, according to the ClearerThinking test, people who took the SAT and remember their score have IQs ~6 points higher than the group average) brings the adjusted IQ estimate to 123.
+Here’s the breakdown: IQ has a mean of 100 and a standard deviation of 15, while the SAT has a mean of 1020 and a standard deviation of 194[^1]. A median SAT score of 1490 (from the LessWrong 2014 survey) corresponds to +2.42 SD. Using an SAT-IQ correlation of +0.80, this regresses to +1.93 SD for IQ—an IQ of 129. Subtracting 6 points (since, according to the ClearerThinking test, people who took the SAT and remember their score have IQs about 6 points higher than the group average) brings the adjusted IQ estimate to 123.
 
 The ClearerThinking test also provides a way to adjust self-reported IQs. Based on a self-reported average of 138, subtracting 17 points (since people who report having taken an IQ test claim an average score of 131, but their tested average is only 114—a difference of 17 points) gives an adjusted IQ of 121.
 

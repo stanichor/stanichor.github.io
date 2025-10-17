@@ -5,13 +5,14 @@ date: 2025-06-24
 permalink: /simple-recsys/
 categories: 
 ---
+
 There's more art available now than ever before. In 2010, Google Books estimated that there were around [130 million published books](https://booksearch.blogspot.com/2010/08/books-of-world-stand-up-and-be-counted.html). As of March 2022, [IMDb's databases contained 605,284 movies and 222,655 TV series](https://web.archive.org/web/20220429162254/https://www.imdb.com/pressroom/stats/). As of January 2020, [MyAnimeList tracked 23,744 anime and 62,056 manga](https://myanimelist.net/forum/?topicid=2068385). 
 
 The sheer volume makes it hard to find works you’ll actually enjoy. You could:
 
 - Read every author until you find one you like, but that means wading through dozens you don’t.
 - Ask friends for recommendations, but then *they* must sift through content on your behalf.
-- Rely on Netflix or Spotify-style algorithms, which requires trusting opaque algorithms—the user never sees the algorithm's predictions, only the results of what the system *does* with the predictions.
+- Rely on Netflix- or Spotify-style algorithms, which requires trusting opaque algorithms—the user never sees the algorithm's predictions, only the results of what the system *does* with the predictions.
 
 Each of these approaches forces you—or someone else—to do a lot of work before you find the art you like. I built a transparent recommendation system that avoids these problems. Let's see how it works.  
 
@@ -32,14 +33,14 @@ The user chooses which item they prefer or declares a tie. After each comparison
 I obtained the data for my movie embeddings from the [MovieLens 25M Dataset](https://grouplens.org/datasets/movielens/). To ensure I only considered movies with sufficient popularity, I only considered movies with at least 100 ratings. A useful feature of the MovieLens dataset is that they've created [tag genomes](https://files.grouplens.org/papers/tag_genome.pdf)—a set of 1128 (continuous!) relevance scores (0 to 1) per movie, where each score represents how strongly a tag—like "sci-fi," "dark humor," or "nonlinear plot"—applies to that film. I compressed these tags into 159 dimensions via PCA with varimax rotation. Originally, I normalized the embeddings, but I now regard this as a mistake. Normalizing embeddings to unit length (L2 norm) distorts relative feature importance; standardizing (mean=0, std=1) per dimension preserves information.
 
 ### Books
-I obtained the data for my book embeddings from [Goodreads Book Graph Datasets](https://mengtingwan.github.io/data/goodreads.html). A peculiar feature of Goodreads is their user-generated "shelves", which users can use to organize/classify books. In practice, they function much like tags, so that is how I will refer to them. To ensure I only considered books with sufficient popularity, I only considered books with at least one 5-star rating and that were added at least 100 times to their 2nd most popular tag. For the 4000 most popular tags, I created five relevant metrics per book-tag pair, based on what MovieLens used to create tag genomes:
+I obtained the data for my book embeddings from [Goodreads Book Graph Datasets](https://mengtingwan.github.io/data/goodreads.html). A peculiar feature of Goodreads is their user-generated "shelves", which users can use to organize or classify books. In practice, they function much like tags, so that is how I will refer to them. To ensure I only considered books with sufficient popularity, I only considered books with at least one 5-star rating and that were added at least 100 times to their 2nd most popular tag. For the 4000 most popular tags, I created five relevant metrics per book-tag pair, based on what MovieLens used to create tag genomes:
 - tag_applied(t, i)
     - 1 if tag $t$ has been applied to item $i$, 0 otherwise
 - tag_count(t, i)
     - Number of times tag $t$ has been applied to item $i$
 - tag_share(t, i)
     - The log-scaled smoothed proportion of tag $t$ among all tags for item $i$.
-    - Calculated as: (tag-count(t, i) + $\alpha$) / (# of tags for i + $\alpha$ + $\beta$)
+    - Calculated as: (tag_count(t, i) + $\alpha$) / (# of tags for i + $\alpha$ + $\beta$)
     - Where $\alpha$ and $\beta$ are tag-specific Beta distribution parameters for smoothing
 - tag_lsi_sim(t, i)
     - Similarity between tag $t$ and item $i$ using latent semantic indexing, where each document $d_i$ is the set of tags applied to item $i$
@@ -48,14 +49,14 @@ I obtained the data for my book embeddings from [Goodreads Book Graph Datasets](
     - Average rating of item $i$
     - We first subtract the user’s mean from each rating, then compute each item’s mean rating based on these user-mean adjusted ratings
 
-After assigning these scores to each tag-book pair, I perform PCA tag-wise, and use the 1st PC score as the tag value for each book. I compressed these tag values into 387 dimensions via PCA with varimax rotation. Originally, I normalized the embeddings, but I now regard this as a mistake. Normalizing embeddings to unit length (L2 norm) distorts relative feature importance; standardizing (mean=0, std=1) per dimension preserves information.
+After assigning these scores to each tag-book pair, I perform PCA tag-wise, and use the 1st PC score as the tag value for each book. I compressed these tag values into 387 dimensions via PCA with varimax rotation. 
 
 ### Anime
 I obtained the data for my anime embeddings from [Anime Recommendation Database 2020](https://www.kaggle.com/datasets/hernan4444/anime-recommendation-database-2020). This dataset had no fine-grained tag data—there are 42 categories that either apply to the anime or don't—so I had to use a matrix factorization model to create the embeddings. The model predicts $\hat{r}_{ui}$ as $\mu + b_i + b_u + q_i^Tp_u$ where $\mu$ is the global average, $b_i$ is the item bias, $b_u$ is the user bias, $q_i$ represents the item factors, and $p_u$ represents the user factors. The model minimizes the following equation: 
 
-$ \sum\_{(u,i)\in\kappa} (r\_{ui} - \mu - b_u - b_i - p_u^Tq_i)^2 + \lambda\_{p_u}\lVert p_u \rVert^2 + \lambda\_{q_i}\lVert q_i \rVert^2 + \lambda\_{b_u}(b_u^2) + \lambda\_{b_i}(b_i^2)$
+$ \sum_{(u,i)\in\kappa} (r_{ui} - \mu - b_u - b_i - p_u^\top q_i)^2 + \lambda\_{p_u}\lVert p_u \rVert^2 + \lambda\_{q_i}\lVert q_i \rVert^2 + \lambda\_{b_u}(b_u^2) + \lambda\_{b_i}(b_i^2)$
 
-Hyperparameters were tuned via random search[^2]. After training the model, I concatenated the item biases with the item factors. Then, I standardize the resulting embeddings column-wise, applied a square-root transform to the factors to normalize skew, then restandardized. 
+Hyperparameters were tuned via random search[^2]. After training the model, I concatenated the item biases with the item factors. Then, I standardize the resulting embeddings column-wise, applied a square root transform to the factors to normalize skew, then restandardized. 
 
 ## Predicting Future Ratings
 For predictions, I used the [scikit-learn](https://scikit-learn.org/stable/) Python library. I use [ElasticNetCV](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNetCV.html) to select the important (nonzero coefficient) features, followed by [RidgeCV](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeCV.html) to predict the ratings using the selected features.

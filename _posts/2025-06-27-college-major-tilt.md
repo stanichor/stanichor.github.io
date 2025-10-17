@@ -5,6 +5,7 @@ date: 2025-06-27
 permalink: /college-major-tilt/
 categories: 
 ---
+
 Graphing the relationship between the average intelligence and math/verbal tilt of the intended majors of GRE test-takers reveals a striking pattern: low-IQ math-tilted majors are nearly absent.
 
 <div style="text-align: center;">
@@ -47,7 +48,7 @@ Two patterns stand out:
 1. A major's average intelligence relates more strongly to its average math ability than to its average verbal ability.
 2. Low-IQ math-tilted majors are rare.
 
-The gap disappears when accounting for gender. Women outnumber men in college enrollment (8.9 million vs. 6.5 million in 2021[^1]) and graduation (1.1 million vs. 0.8 million bachelor's degrees in 2022[^2]). Men who reach graduate testing are more filtered: among 2023 SAT-takers, women outnumbered men (966,726 vs. 936,481), outscored men on the verbal section by 0.05 SD, while men outscored women on the math section by 0.12 SD[^3]. On the GRE, US citizen test-takers were 62% women, but men outscored women by 0.50 SD in math and 0.43 SD in verbal[^4]. Foreign test-takers—69% of the pool—were 60% men, scored 1.12 SD higher in math than US citizens, and skewed the overall sample toward higher-IQ, math-tilted men[^4].
+The gap disappears once gender is accounted for. Women outnumber men in college enrollment (8.9 million vs. 6.5 million in 2021[^1]) and graduation (1.1 million vs. 0.8 million bachelor's degrees in 2022[^2]). Men who reach graduate testing are more filtered: among 2023 SAT-takers, women outnumbered men (966,726 vs. 936,481), outscored men on the verbal section by 0.05 SD, while men outscored women on the math section by 0.12 SD[^3]. On the GRE, US citizen test-takers were 62% women, but men outscored women by 0.50 SD in math and 0.43 SD in verbal[^4]. Foreign test-takers—69% of the pool—were 60% men, scored 1.12 SD higher in math than US citizens, and skewed the overall GRE sample toward higher-IQ, math-tilted men[^4].
 
 This explains the missing low-IQ, math-tilted majors: lower-IQ men are less likely to take the GRE, while higher-IQ foreign men with strong math tilts are overrepresented. Controlling for gender reverses the tilt-IQ correlation (from 0.43 to -0.24) and weakens the math-IQ correlation (from 0.86 to 0.52).
 

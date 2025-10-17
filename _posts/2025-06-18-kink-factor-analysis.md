@@ -91,7 +91,7 @@ The loading patterns align with intuition: factors loading strongly on the gener
 
 ## **Visualizations**
 
-The following plots are what I call "Tailcalled diagrams". Basically, we create a standardized (mean=0, SD=1) latent variable summarizing the displayed items in the bottom of the plot. The rows below the histogram show the median response to each question for a given level of the latent variable. For these plots, while the exact loadings are inflated, the rank orderings are roughly accurate.  
+The following plots are what I call "Tailcalled diagrams". We create a standardized (mean=0, SD=1) latent variable summarizing the displayed items in the bottom of the plot. The rows below the histogram show the median response to each question for a given level of the latent variable. For these plots, while the exact loadings are inflated, the rank orderings are roughly accurate.  
 
 ### **Cis Men**  
 #### BDSM

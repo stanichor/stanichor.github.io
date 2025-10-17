@@ -5,11 +5,11 @@ date: 2025-06-19
 permalink: /empathizing-systemizing-theory/
 categories: 
 ---
-The **Empathizing–Systemizing (E–S) theory** of autism, proposed by Simon Baron-Cohen, claims autism arises from an imbalance between two cognitive traits: 
+The **Empathizing-Systemizing (E-S) theory** of autism, proposed by Simon Baron-Cohen, claims autism arises from an imbalance between two cognitive traits: 
 - **Empathizing (E)**: the capacity to recognize others' mental states and respond to them appropriately
 - **Systemizing (S)**: the drive to analyze, construct, or understand rule-based systems
 
-The theory claims men tend toward *type S* brains (higher systemizing than empathizing), while women tend toward *type E* brains (higher empathizing than systemizing). Autism reflects an *extreme male brain*—very high systemizing and very low empathizing.
+The theory claims men tend to have *type S* brains (higher systemizing than empathizing), while women tend to have *type E* brains (higher empathizing than systemizing). Autism reflects an *extreme male brain*—characterized by very high systemizing and very low empathizing.
 
 I critique E-S theory on two grounds:
 1. Empirical evidence suggests autistic traits correlate more strongly with low empathizing than with high systemizing.
@@ -19,8 +19,8 @@ I critique E-S theory on two grounds:
 
 ## The Association Between Autism and Empathizing/Systemizing
 
-If autism is caused by “extreme systemizing,” we would expect the systemizing quotient (SQ) to be strongly and positively correlated with the autism quotient (AQ). But most studies find a much stronger negative correlation between the empathizing quotient (EQ) and the AQ, and only a weak positive correlation between the SQ and AQ.
-- In [Morsanyi et al. 2012](https://www.wellesu.com/10.1111/j.2044-8295.2011.02089.x), the EQ has a partial correlation of –0.45 with the AQ; the SQ has a partial correlation of +0.10.
+If autism is caused by "extreme systemizing," we would expect the systemizing quotient (SQ) to be strongly and positively correlated with the autism quotient (AQ). But most studies find a much stronger negative correlation between the empathizing quotient (EQ) and the AQ, and only a weak positive correlation between the SQ and AQ.
+- In [Morsanyi et al. 2012](https://www.wellesu.com/10.1111/j.2044-8295.2011.02089.x), the EQ has a partial correlation of -0.45 with the AQ; the SQ has a partial correlation of +0.10.
 - In [Svedholm-Häkkinen et al. 2018](https://www.sciencedirect.com/science/article/pii/S1697260017300698), the EQ has a correlation of -0.66 with the AQ; the SQ has a correlation of +0.11.
 - In [Pan et al. 2022](https://www.researchgate.net/profile/Xiuhong-Li-5/publication/361417907_Empathizing_systemizing_empathizing-systemizing_difference_and_their_association_with_autistic_traits_in_children_with_autism_spectrum_disorder_with_and_without_intellectual_disability/links/62bbb9ce60e77b7db83bb2c6/Empathizing-systemizing-empathizing-systemizing-difference-and-their-association-with-autistic-traits-in-children-with-autism-spectrum-disorder-with-and-without-intellectual-disability.pdf), autistic children differ from controls by 1.75 SD on the SQ and 0.73 SD on the EQ.
 - In [Sindermann et al. 2019](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2019.00307/full), partial correlations with AQ:
@@ -29,12 +29,12 @@ If autism is caused by “extreme systemizing,” we would expect the systemizin
 - In [Reed 2017](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5357270/), both EQ and SQ mediate the sex–autism link, but EQ shows stronger effects.
 - In [Baron-Cohen et al. 2003](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1693117/pdf/12639333.pdf), individuals with Asperger differ from controls by **1.75 SD** on the EQ and **0.46 SD** on the SQ.
 
-The data is consistent. Autism is more closely associated with low empathizing, rather than high systemizing. Additionally, a closer analysis of the EQ shows most of the negative correlation between the EQ and the AQ is due to a deficit in social skills.
+The data is consistent. Autism is more closely associated with low empathizing rather than high systemizing. Additionally, a closer analysis of the EQ shows most of the negative correlation between the EQ and the AQ is due to a deficit in social skills.
 
 In [Groen et al. 2015](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4553147/), the partial correlations between the AQ and the subfactors of the EQ break down as follows:
-- Emotional Empathy: –0.03
-- Cognitive Empathy: –0.07
-- Social Skills: –0.62
+- Emotional Empathy: -0.03
+- Cognitive Empathy: -0.07
+- Social Skills: -0.62
 
 These results imply that the association between the EQ and autism may not reflect an emotional deficit, but rather difficulty navigating social situations.
 
@@ -52,7 +52,7 @@ A factor analysis of the SQ reveals six correlated factors:
 - Attention to Detail
 - Linguistic/Musical Structural Awareness
 
-Only the first three show large sex differences. The others are relatively neutral. When systemizing is operationalized in terms of neutral items–such as nature, language, or detail orientation—rather than male-coded items—such as cars, computers, sports, or stocks—the sex bias largely disappears.
+Only the first three show large sex differences. The others are relatively neutral. When systemizing is operationalized in terms of neutral items (such as nature, language, or detail orientation) rather than male-coded items (such as cars, computers, sports, or stocks) the sex bias largely disappears.
 
 These results suggest that the SQ measures domain-specific interests, not domain-general cognitive drives. A more domain-neutral test of systemizing would likely show weaker sex differences.
 
@@ -67,9 +67,9 @@ In a [factor analysis](https://www.lesswrong.com/posts/ZjXtjRQaD2b4PAser/a-hill-
 - Technical Interests
 - Nature Interests 
 - Social Difficulties
-- “Jockyness”
+- "Jockyness"
 
-Only the Technical Interests factor is strongly sex-differentiated, consistent with my observations above.
+Only the Technical Interests factor is strongly sex-differentiated, consistent with the observations above.
 
 ---
 
@@ -79,9 +79,9 @@ The E-S theory of autism conflates three distinct phenomena:
 
 1. A sex difference in *interests*, reflected in high SQ scores among men
 2. A deficit in *social skills*, which correlates with autism traits
-3. A vague construct called “systemizing” that may not describe a real cognitive trait at all
+3. A vague construct called "systemizing" that may not describe a real cognitive trait at all
 
-The theory claims autism is an “extreme male brain,” but the evidence is stronger for “low social skills” than “high systemizing.” The SQ, one of its primary measurement tool, is too confounded with sex-stereotyped content to isolate a domain-general trait. And the EQ, once decomposed, shows autism is related to specific social impairments rather than a general lack of empathy.
+The theory claims autism is an "extreme male brain," but the evidence is stronger for "low social skills" than "high systemizing." The SQ, one of its primary measurement tools, is too confounded with sex-stereotyped content to isolate a domain-general trait. And the EQ, once decomposed, shows autism is related to specific social impairments rather than a general lack of empathy.
 
 The E-S theory of autism is false.
 

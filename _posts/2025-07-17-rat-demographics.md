@@ -33,7 +33,7 @@ categories:
 </div>
 
 ### Summary
-The LessWrong gender proportions are somewhat erratic. There’s a dip in the proportion of cis males in 2016, likely caused by the survey being sent to the broader LessWrong diaspora rather than the LessWrong site specifically. Another dip in cis men occurs in 2023, corresponding to a spike in "Other" responses, though the cause is unknown. Ignoring those anomalies, from 2012 to 2024, there’s been a slight steady decrease in cis males (~6 percentage points, from 87% to 81%) and an increase in trans females (~4 percentage points, from 1.4% to 5.1%—a roughly 4x increase).
+The LessWrong gender proportions are somewhat erratic. There’s a dip in the proportion of cis males in 2016, likely caused by the survey being sent to the broader LessWrong diaspora rather than the LessWrong site specifically. Another dip in cis men occurs in 2023, corresponding to a spike in "Other" responses, though the cause is unknown. Ignoring those anomalies, from 2012 to 2024, there’s been a steady, slight decrease in cis males (~6 percentage points, from 87% to 81%) and an increase in trans females (~4 percentage points, from 1.4% to 5.1%—an approximately fourfold increase).
 
 SSC/ACX gender proportions have remained remarkably stable from 2017 to 2024, with ~85% cis males, ~10% cis females, ~2% trans females, ~0.5% trans males, and ~2.5% selecting "Other."
 
@@ -70,7 +70,7 @@ Overall, SSC/ACX is the most cis-male-dominated community, followed closely by L
 
 ### Summary
 
-The 2009 LessWrong racial proportions were atypical, with 94% of survey respondents identifying as White—statistically significantly higher than any other year (based on 90% confidence intervals). By 2012, that proportion had declined to 86%. From 2012 to 2024, LessWrong saw a steady decrease in the proportion of White respondents (~8 percentage points, from 86% to 78%), alongside increases in Asians (~2 percentage points, from 6.6% to 8.5%), Middle Easterners (~2 percentage points, from 0.3% to 2.6%), and those selecting "Other" (~2 percentage points, from 2.8% to 4.8%).
+The 2009 LessWrong racial proportions were atypical, with 94% of survey respondents identifying as White—significantly higher than any other year. By 2012, that proportion had declined to 86%. From 2012 to 2024, LessWrong saw a steady decrease in the proportion of White respondents (~8 percentage points, from 86% to 78%), alongside increases in Asians (~2 percentage points, from 6.6% to 8.5%), Middle Easterners (~2 percentage points, from 0.3% to 2.6%), and those selecting "Other" (~2 percentage points, from 2.8% to 4.8%).
 
 In contrast, SSC/ACX racial proportions have remained stable from 2017 to 2024: ~87% White, ~6% Asian (3.5% East Asian + 2.5% Indian), 2.3% Hispanic, 1.0% Middle Eastern, 0.5% Black, and 3.0% selecting "Other".
 
@@ -108,9 +108,9 @@ Overall, both LessWrong and SSC/ACX remain heavily White-dominated, while EA is 
 ### Summary
 
 From 2009 to 2024, the LessWrong community experienced a steady decline in non-spiritual atheists (~18 percentage points, from 82% to 64%). This trend occurred in distinct phases:
-- From 2009 to 2011: Non-spiritual atheists declined (~7 points, 82% to 75%) while spiritual atheists rose (~7 points, 3% to 10%)
-- From 2012 to 2016: Non-spiritual atheists declined further (~6 points, 75% to 69%) with corresponding increases in agnostics (~4 points, 8% to 12%) and theists (~5 points, 7% to 12%)
-- From 2022 to 2024: Non-spiritual atheists declined again (~6 points, 70% to 64%) while spiritual atheists rose (~8 points, 5% to 13%)
+- From 2009 to 2011, non-spiritual atheists declined (~7 points, 82% to 75%) while spiritual atheists rose (~7 points, 3% to 10%)
+- From 2012 to 2016, non-spiritual atheists declined further (~6 points, 75% to 69%) with corresponding increases in agnostics (~4 points, 8% to 12%) and theists (~5 points, 7% to 12%)
+- From 2022 to 2024, non-spiritual atheists declined again (~6 points, 70% to 64%) while spiritual atheists rose (~8 points, 5% to 13%)
 
 SSC/ACX showed more moderate changes from 2017 to 2024:
 - Non-spiritual atheists decreased slightly (~7 points, 56% to 49%)
@@ -143,13 +143,13 @@ Overall, LessWrong remains the least religious community, followed closely by EA
 ### Summary
 
 From 2011 to 2024, LessWrong's user base became more educated:
-- No degree/high school/2-year degree proportions fell by 9 percentage points (from 39% to 30%)
+- The share with no degree, only high school, or a two-year degree fell by 9 percentage points (from 39% to 30%)
 - Bachelor's degrees rose by 2 percentage points (from 37% to 39%)
 - Master's degrees rose by 3 percentage points (from 16% to 19%)
 - PhD/Professional degrees rose by 4 percentage points (from 8% to 12%)
 
 A similar trend occurred for SSC/ACX from 2017 to 2024:
-- No degree/high school/2-year degree proportions fell by 8 percentage points (from 22% to 14%)
+- The share with no degree, only high school, or a two-year degree fell by 8 percentage points (from 22% to 14%)
 - Bachelor's degrees fell by 3 percentage points (from 40% to 37%)
 - Master's degrees rose by 6 percentage points (from 22% to 28%)
 - PhD/Professional degrees rose by 5 percentage points (from 16% to 21%)
@@ -187,13 +187,13 @@ Overall, SSC/ACX users show higher educational attainment than LessWrong users.
 
 ### Summary
 
-The LessWrong community has undergone an interesting political trajectory. Libertarians were dominant in 2009 at 45% of survey respondents, dropped to a low of 26% by 2016, and rebounded to 32% by 2024. Social Democrats started at just 12% in 2009, peaked at 40% in 2014, and fell to 21% by 2024. Liberals have been more stable, starting at 38% in 2009, dipping to 29% in 2014, and rising to a dominant 42% by 2024. Conservatives have remained mostly stable, hovering between 4% and 6% throughout the years.
+The LessWrong community has undergone an interesting political trajectory. Libertarians were the plurality in 2009 at 45% of survey respondents, dropped to a low of 26% by 2016, and rebounded to 32% by 2024. Social Democrats started at just 12% in 2009, peaked at 40% in 2014, and fell to 21% by 2024. Liberals have been more stable, starting at 38% in 2009, dipping to 29% in 2014, and rising to 42% by 2024. Conservatives have remained mostly stable, hovering between 4% and 6% throughout the years.
 
 From 2017 to 2024, the SSC/ACX community saw a rise in liberals (~7 percentage points, from 28% to 35%) beginning in 2019, a fall in libertarians (~7 percentage points, from 27% to 20%) that ended by 2020, a steady increase in conservatives (~4 percentage points, from 6% to 10%), and a decline in neoreactionaries (~3 percentage points, from 5% to 2%) starting in 2020.
 
 In EA from 2015 to 2024, the proportion of libertarians fell ~5 percentage points (from 13% to 8%), while centrists rose ~5 percentage points (from 8% to 13%). Among left-leaning respondents, those identifying as center-left rose steadily (~11 percentage points, from 36% to 47%), while those identifying as left remained stable (34%-40%) until 2024, when they suddenly dropped ~12 percentage points (from 40% to 28%).
 
-Overall, LessWrong and SSC/ACX are *much* more libertarian than EA, with LessWrong being moderately more libertarian than SSC/ACX. SSC/ACX is also more conservative than either LessWrong or EA.
+Overall, LessWrong and SSC/ACX are *much* more libertarian than EA, with LessWrong being moderately more libertarian than SSC/ACX. SSSC/ACX is also more conservative than both LessWrong and EA.
 
 [^1]: LessWrong Surveys Featuring Gender
     - [2024 LW Survey](https://www.lesswrong.com/posts/gpZBWNFxymsqnPB92/2024-unofficial-lesswrong-survey-results)

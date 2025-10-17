@@ -21,7 +21,7 @@ The original data comes from [Statistic Brain][statbrain], which estimates IQ us
 To accurately estimate IQ by major, I use the following assumptions:
 1. **GRE-IQ correlation**: 0.7 (based on typical correlations between IQ and standardized tests)
 2. **Mean IQ of GRE test-takers**: 112 (consistent with [estimates for Master's degree holders][rc-analysis]).
-3. **IQ standard deviation for GRE test-takers**: 12 (slighly higher than the [observed variance][rc-analysis] found for Master's degree holders).
+3. **IQ standard deviation for GRE test-takers**: 12 (slightly higher than the [observed variance][rc-analysis] found for Master's degree holders).
 4. **Quant-Verbal correlation**: 0.35 (per [ETS data](https://web.archive.org/web/20221016110719/http://www.ets.org/pdfs/gre/gre-guide-table-1a.pdf)).
 
 I also account for: 
@@ -68,7 +68,7 @@ I also account for:
 | Sociology                                              | 111 |
 | Education - Other                                      | 110 |
 | Agriculture, Natural Res. & Conservation               | 110 |
-| Communcations & Journalism                             | 110 |
+| Communications & Journalism                            | 110 |
 | Education - Higher                                     | 109 |
 | Social & Behavioral Sciences - Other                   | 109 |
 | Psychology                                             | 109 |
