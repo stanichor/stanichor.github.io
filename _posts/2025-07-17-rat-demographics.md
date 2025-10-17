@@ -6,6 +6,10 @@ permalink: /rat-demographics/
 categories: 
 ---
 
+## Table of Contents
+* TOC
+{:toc}
+
 ## Gender
 
 ### LessWrong[^1]
