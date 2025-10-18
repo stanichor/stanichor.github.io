@@ -10,7 +10,7 @@ What is a nerd? Definitions vary, but one practical way to answer that question 
 
 ## Data
 
-The analysis uses the [public NPAS dataset](https://openpsychometrics.org/_rawdata/) from Open Psychometrics (N = 14,167). Respondents rated 26 items on a five-point scale from Strongly Disagree (1) to Strongly Agree (5). The sample is self-selected (visitors to an online psychometrics site); the sample is probably nerdier than average.
+The analysis uses the [public NPAS dataset](https://openpsychometrics.org/_rawdata/) from Open Psychometrics (N = 14,167). Respondents rated 26 items on a five-point scale from Strongly Disagree (1) to Strongly Agree (5). The sample is self-selected (visitors to an online psychometrics site); the sample is likely nerdier than average.
 
 <div style="text-align: center;">
     <figure>
@@ -53,7 +53,7 @@ Exploratory factor analysis produced a clear one-factor solution; additional fac
 
 ### Internal Consistency
 
-The coefficient omega is 0.87, a level of internal consistency that supports treating the 26 items as a coherent scale. However, test information begins to fall off above +1 SD on the latent trait, indicating the NPAS has fewer items that discriminate high levels of nerdiness in this sample. This is consistent with a ceiling effect in the population, probably as a result of the self-selection. The latent nerdiness score correlates r = 0.51 with self-reported nerdiness (1–7 scale) which supports validity.
+The coefficient omega is 0.87, a level of internal consistency that supports treating the 26 items as a coherent scale. However, test information declines above +1 SD on the latent trait, indicating the NPAS has fewer items that discriminate high levels of nerdiness in this sample. This is consistent with a ceiling effect in the population, probably as a result of the self-selection. The latent nerdiness score correlates r = 0.51 with self-reported nerdiness (1–7 scale) which supports validity.
 
 <div style="text-align: center;">
     <figure>
@@ -86,7 +86,7 @@ Several biased items reflect cultural differences in hobby expression and media 
     </figure>
 </div>
 
-Adjusting for bias, there's little difference between average male and female nerdiness.
+Adjusting for bias, there's little difference between average male and female nerdiness (at least, in this highly-selected sample).
 
 ## Reduced Item Set
 
@@ -113,7 +113,7 @@ The plot below shows the reliability across the scale. The 12-item set reduces r
     </figure>
 </div>
 
-The following plot is a Tailcalled diagram for the reduced set. We create a standardized (mean=0, SD=1) latent variable summarizing the displayed items in the bottom of the plot. The rows below the histogram show the median response to each question for a given level of the latent variable. 
+The following plot is a Tailcalled diagram for the reduced set. We create a standardized (mean = 0, SD = 1) latent variable summarizing the displayed items in the bottom of the plot. The rows below the histogram show the median response to each question for a given level of the latent variable. 
 
 <div style="text-align: center;">
     <figure>
