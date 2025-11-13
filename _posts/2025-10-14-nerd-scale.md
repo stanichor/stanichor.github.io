@@ -61,6 +61,14 @@ The coefficient omega is 0.87, a level of internal consistency that supports tre
     </figure>
 </div>
 
+The latent nerd scores and self-reported nerdiness correlate *relatively* weakly for two measures intended to assess the same construct. Examining the self-reported nerdiness histogram, one issue appears to be that the data is *highly* skewed: the vast majority of respondents agree at least a little that they are nerdy. One way to address this is to resample the data to obtain a broader (in this case, uniform) distribution. When this is done, the correlation between latent nerdiness and self-reported nerdiness increases to 0.57. Alternatively, computing a polyserial correlation (appropriate for an ordinal and a continuous variable) yields a correlation of 0.56, similar to the resampled correlation. 
+
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/nerd-scale/self-reported-nerd-scores.png" width="600" alt="Alt text">
+    </figure>
+</div>
+
 ## Examination of Sex Differences
 I tested for differential item functioning[^2] (DIF) by gender. Items with absolute DIF magnitude > 0.10 are shown below; positive values indicate greater probability of endorsement for women at the same latent level; negative values favor men.
 
