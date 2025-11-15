@@ -69,21 +69,55 @@ The latent nerd scores and self-reported nerdiness correlate *relatively* weakly
     </figure>
 </div>
 
-## Examination of Sex Differences
-I tested for differential item functioning[^2] (DIF) by gender. Items with absolute DIF magnitude > 0.10 are shown below; positive values indicate greater probability of endorsement for women at the same latent level; negative values favor men.
+## Examination of Gender Differences
+
+Before analyzing gender differences, it is necessary to verify that the scale functions similarly for men and women. First, I check whether any item loadings differ by gender. An item whose loading varies substantially across genders indicates a difference in how central that item is to the underlying construct of nerdiness. The table below shows item loadings for each gender and the between-group differences. Items in **bold** are those whose loadings differ meaningfully by gender.
+
+| | Male | Female | Difference |
+|-|-|-|-|
+| Q1: I am interested in science. | 0.48 | 0.48 | -0.00 |
+| Q2: I was in advanced classes. | 0.38 | 0.44 | -0.07 |
+| Q3: I like to play RPGs. (Ex. D&D) | 0.44 | 0.44 | 0.01 |
+| Q4: My appearance is not as important as my intelligence. | 0.49 | 0.51 | -0.02 |
+| Q5: I collect books. | 0.57 | 0.59 | -0.02 |
+| Q6: I prefer academic success to social success. | 0.54 | 0.54 | -0.00 |
+| Q7: I watch science related shows. | 0.46 | 0.43 | 0.03 |
+| Q8: I spend recreational time researching topics others might find dry or overly rigorous. | 0.46 | 0.50 | -0.04 |
+| Q9: I like science fiction. | 0.55 | 0.57 | -0.02 |
+| Q10: I would rather read a book than go to a party. | 0.51 | 0.47 | 0.04 |
+| Q11: I am more comfortable with my hobbies than I am with other people. | 0.27 | 0.31 | -0.04 |
+| Q12: I spend more time at the library than any other public place. | 0.44 | 0.49 | -0.05 |
+| Q13: I would describe my smarts as bookish. | 0.58 | 0.56 | 0.03 |
+| Q14: I like to read technology news reports. | 0.50 | 0.45 | 0.06 |
+| **Q15: I have started writing a novel.** | **0.22** | **0.32** | **-0.10** |
+| Q16: I gravitate towards introspection. | 0.36 | 0.40 | -0.04 |
+| Q17: I am more comfortable interacting online than in person. | 0.54 | 0.53 | 0.01 |
+| Q18: I love to read challenging material. | 0.32 | 0.29 | 0.03 |
+| Q19: I have played a lot of video games. | 0.20 | 0.25 | -0.05 |
+| Q20: I was a very odd child. | 0.53 | 0.48 | 0.04 |
+| Q21: I sometimes prefer fictional people to real ones. | 0.34 | 0.36 | -0.02 |
+| Q22: I enjoy learning more than I need to. | 0.42 | 0.42 | -0.00 |
+| Q23: I get excited about my ideas and research. | 0.47 | 0.49 | -0.03 |
+| Q24: I am a strange person. | 0.56 | 0.54 | 0.01 |
+| Q25: I care about super heroes. | 0.38 | 0.41 | -0.02 |
+| Q26: I can be socially awkward at times. | 0.56 | 0.57 | -0.01 |
+
+The only item that showed a substantial difference in loadings was Q15: “I have started writing a novel,” which loaded more strongly for women than for men. This suggests that novel-writing relates to nerdiness differently across genders; it is less central to the idea of male nerdiness than to female nerdiness. Because the loadings differ for this item, it will be excluded from the gender difference analysis.
+
+Next, I tested for differential item functioning[^2] (DIF) by gender. Items with absolute DIF magnitude > 0.10 are shown below; positive values indicate greater probability of endorsement for women at the same latent level; negative values favor men.
 
 Biased in favor of women:
 - Q8: I spend recreational time researching topics others might find dry or overly rigorous. (+0.19)
 - Q23: I get excited about my ideas and research. (+0.17)
 - Q21: I sometimes prefer fictional people to real ones. (+0.16)
 - Q13: I would describe my smarts as bookish. (+0.14)
-- Q22: I enjoy learning more than I need to. (+0.11)
+- Q22: I enjoy learning more than I need to. (+0.12)
 
 Biased in favor of men:
-- Q19: I have played a lot of video games. (-0.26)
+- Q19: I have played a lot of video games. (-0.25)
 - Q25: I care about super heroes. (-0.24)
-- Q7: I watch science related shows. (-0.15)
 - Q11: I am more comfortable with my hobbies than I am with other people. (-0.15)
+- Q7: I watch science related shows. (-0.15)
 - Q5: I collect books. (-0.11)
 
 Several biased items reflect cultural differences in hobby expression and media consumption rather than differences in the underlying latent trait. The distribution of latent nerdiness by gender is displayed below:
@@ -100,20 +134,20 @@ Adjusting for bias, there's little difference between average male and female ne
 
 To make a shorter scale, I applied [Bayesian Design Optimization](https://haines-lab.com/post/bayesian-design-optimization-an-application-to-item-reduction-in-scale-development-research/) to reduce the number of items while maximizing information. Reducing the number of items to 12 (while excluding items displaying DIF), yields the following items (ordered by expected information contribution): 
 
-- Q4: My appearance is not as important as my intelligence.
-- Q9: I like science fiction.
 - Q6: I prefer academic success to social success.
-- Q17: I am more comfortable interacting online than in person.
-- Q2: I was in advanced classes.
-- Q26: I can be socially awkward at times.
 - Q1: I am interested in science.
-- Q20: I was a very odd child.
-- Q24: I am a strange person.
-- Q3: I like to play RPGs. (Ex. D&D)
-- Q10: I would rather read a book than go to a party.
+- Q12: I spend more time at the library than any other public place.
+- Q17: I am more comfortable interacting online than in person.
+- Q9: I like science fiction.
 - Q14: I like to read technology news reports.
+- Q25: I care about super heroes.
+- Q4: My appearance is not as important as my intelligence.
+- Q23: I get excited about my ideas and research.
+- Q10: I would rather read a book than go to a party.
+- Q16: I gravitate towards introspection.
+- Q2: I was in advanced classes.
 
-The plot below shows the reliability across the scale. The 12-item set reduces reliability slightly (coefficient omega has dropped to 0.80), although the effect is more pronounced at the higher end of the scale.
+The plot below shows the reliability across the scale. The 12-item set reduces reliability slightly (coefficient omega has dropped to 0.79), although the effect is more pronounced at the higher end of the scale.
 
 <div style="text-align: center;">
     <figure>
