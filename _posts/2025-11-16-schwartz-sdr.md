@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Schwartz Values and Social Desirability"
-date: 2025-11-15
+date: 2025-11-16
 permalink: /schwartz-sdr/
 categories: 
 ---
