@@ -423,7 +423,7 @@ As with the Gender Satisfaction survey, this factor includes items endorsing mas
     </figure>
 </div>
 
-Although it contained many items, the loadings were not especially strong, yielding a scale with only acceptable reliability across the distribution.
+Although it contained many items, the loadings were not especially strong, yielding a scale with merely acceptable reliability across the distribution.
 
 <div style="text-align: center;">
     <figure>
