@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An Explanation of Acquiescence Bias"
+title: "Understanding Acquiescence Bias"
 date: 2025-11-20
 permalink: /acquiescence/
 categories: 
