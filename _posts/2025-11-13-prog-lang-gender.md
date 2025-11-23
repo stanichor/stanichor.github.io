@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Programming Language Use by Gender"
+title: "Programming Language Use by Gender Identity"
 date: 2025-11-13
 permalink: /prog-lang-gender/
 categories: 
