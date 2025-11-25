@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mediation as the Test of a Good Construct"
+title: "Mediation as a Test of a Good Construct"
 date: 2025-11-24
 permalink: /mediation/
 categories: 
