@@ -6,6 +6,11 @@ permalink: /game-theory-morality/
 categories: 
 ---
 
+> The strong do what they can and the weak suffer what they must.
+
+— Thucydides, History of the Peloponnesian War
+
+
 Moral realism is false. Yet the desire to base morality on something “objective” remains. In the past, we could ground morality in God, in natural law, or in tradition. Today, these positions are much less tenable. All we have left is reason. So modern man attempts to ground morality in reason, in logic, in math. The hope is that we can derive moral rules that everyone—man, machine, and monster alike—will be bound by. And so we turn to game theory.
 
 ## Game theory does not imply that we be moral 
