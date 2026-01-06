@@ -6,9 +6,9 @@ permalink: /game-theory-morality/
 categories: 
 ---
 
-> The strong do what they can and the weak suffer what they must.
+> It is a shallow soul who fights to the cry of ‘might makes right’. The truth is more concise: might makes.
 
-— Thucydides, History of the Peloponnesian War
+— ErraticErrata, A Practical Guide to Evil (Book 3: [Villainous Interlude: Chiaroscuro](https://practicalguidetoevil.wordpress.com/2017/04/19/villainous-interlude-chiaroscuro/))
 
 
 Moral realism is false. Yet the desire to base morality on something “objective” remains. In the past, we could ground morality in God, in natural law, or in tradition. Today, these positions are much less tenable. All we have left is reason. So modern man attempts to ground morality in reason, in logic, in math. The hope is that we can derive moral rules that everyone—man, machine, and monster alike—will be bound by. And so we turn to game theory.
