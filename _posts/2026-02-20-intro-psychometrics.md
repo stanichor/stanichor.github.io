@@ -6,7 +6,7 @@ permalink: /intro-psychometrics/
 categories: 
 ---
 
-I enjoy [writing](https://stanichor.net/nerd-scale/) [about](https://stanichor.net/acquiescence/) [psychometrics](https://stanichor.net/mediation/). I also enjoy people reading what I write.Unfortunately, I don’t think many people do, and a big reason is probably that few people actually understand psychometrics. To help with that, I’m sharing some resources that make the field more accessible.
+I enjoy [writing](https://stanichor.net/nerd-scale/) [about](https://stanichor.net/acquiescence/) [psychometrics](https://stanichor.net/mediation/). I also enjoy people reading what I write. Unfortunately, I don’t think many people do, and a big reason is probably that few people actually understand psychometrics. To help with that, I’m sharing some resources that make the field more accessible.
 
 The [Personality Project](<https://www.personality-project.org/>) has a surprisingly nice (and free) textbook which covers the basics.
 - [Chapter 4 - Covariance, Regression, and Correlation](<https://www.personality-project.org/r/book/chapter4.pdf>): Explains covariance, correlation, and other measures of association, along with issues that affect correlations (e.g., restriction of range, spurious correlations, Simpson's paradox, etc.)
