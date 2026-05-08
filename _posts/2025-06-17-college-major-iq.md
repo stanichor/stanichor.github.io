@@ -8,7 +8,7 @@ categories:
 There is a widely circulated chart claiming to show the average IQ of students by college major. 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/college-major-iq/statistic-brain.jpg" width="200" alt="Alt Text">
+        <img src="/assets/images/college-major-iq/statistic-brain.jpg" width="200" alt="Chart titled ‘Average IQ by College Major’ listing estimated IQs for various majors, with physics, mathematics, and philosophy near the top and education-related majors near the bottom.">
     </figure>
 </div>
 The original data comes from [Statistic Brain][statbrain], which estimates IQ using GRE scores from 2006. While the data itself is plausibly accurate—[matching other records of GRE scores by major](http://www.kyoolee.net/gre_2005-6_score_chart_and_philosophy_majors.pdf)—the methodology for converting GRE scores to IQ contains two critical errors: 
@@ -25,7 +25,7 @@ To accurately estimate IQ by major, I use the following assumptions:
 4. **Quant-Verbal correlation**: 0.35 (per [ETS data](https://web.archive.org/web/20221016110719/http://www.ets.org/pdfs/gre/gre-guide-table-1a.pdf)).
 
 I also account for: 
-- **Ceiling effects**: Some majors (e.g., Mathematical Sciences) have many test-takers achieve the maximum score on some GRE sections, lowering the estimate of their IQs
+- **Ceiling effects**: Some majors (e.g., Mathematical Sciences) have many test-takers achieve the maximum score on some GRE sections, lowering the estimate of their IQs.
 - **Floor effects**: Other majors (e.g. Early Childhood Education) have many test-takers achieve scores that are lower than should be achievable by chance.
 
 ## Results[^1]
