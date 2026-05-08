@@ -20,7 +20,7 @@ The [2012 LessWrong Survey](https://www.lesswrong.com/posts/x9FNKTEt68Rz6wQ6P/20
 
 Using the [raw data](https://web.archive.org/web/20130116004605/http://raikoth.net/Stuff/LessWrong/for_public.csv) from the 2012 survey, we can do some Bayesian inference[^bayes] to estimate what fraction of rats are autistic. Since we have the raw score distribution, we can calculate the posterior probability of autism for each individual, then average those probabilities across respondents.
 
-The main uncertainty is the base rate of autism, which is hard to pin down because of [diagnostic drift over time](https://substack.com/@cremieux/p-161498315). Because the autistic and non-autistic AQ distributions overlap substantially, the estimated autistic fraction is prior-sensitive, especially for intermediate AQ scores. That said, here's what we get under different base rates:
+The main uncertainty is the base rate of autism, which is hard to pin down because of [diagnostic drift over time](https://substack.com/@cremieux/p-161498315). Because the autistic and non-autistic AQ distributions overlap substantially, the estimated autistic fraction is prior-sensitive, especially for intermediate AQ scores. That said, here's what we get under different base rates (code [here](https://gist.github.com/stanichor/f9192fb93f249879f946680f5ecddf5a)):
 
 - **3%** under a 0.1% base rate
 - **7%** under a 0.5% base rate
