@@ -159,16 +159,623 @@ The following plot is a Tailcalled diagram for the reduced set. We create a stan
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nerd-scale/reduced-set-tailcalled-diagram.png" width="600" alt="Alt text">
+        <img src="/assets/images/nerd-scale/reduced-set-tailcalled-diagram.png" width="800" alt="Alt text">
     </figure>
 </div>
 
 ## What is a nerd?
 
-In essence, the prototypical nerd is **a socially awkward introvert who values intelligence, learning, and education over popularity**. This definition captures the central cluster of traits: intellectual interests and a lack of social success. Others have also attempted to define what a nerd is:  
-- Paul Graham, in his 2003 essay, [Why Nerds Are Unpopular](https://paulgraham.com/nerds.html), argues that nerds are people who value intelligence over popularity. This trait aligns closely with items Q4 and Q6, so Graham’s definition fits the data well.
+In essence, the prototypical nerd is **a socially awkward introvert who values intelligence, learning, and education over popularity**. This definition captures the central cluster of traits revealed by the NPAS: intellectual interests combined with a lack of interest (or success) in social affairs. 
+
+Others have also attempted to define what a nerd is:  
+
+- In his 2003 essay, [Why Nerds Are Unpopular](https://paulgraham.com/nerds.html), Paul Graham argues that nerds are people who value intelligence over popularity. This matches the definition that I came up with.
 - In [On “Geek” Versus “Nerd”](https://slackprop.wordpress.com/2013/06/03/on-geek-versus-nerd/), the author investigates the distinction between geeks and nerds by performing textual analysis of Twitter. They conclude that "*geeky* words are more about *stuff* (e.g., “#stuff”), while *nerdy* words are more about *ideas* (e.g., “hypothesis”). Geeks are fans, and fans collect stuff; nerds are practitioners, and practitioners play with ideas." This contrast is interesting given that the highest-loading item, Q5, is “I collect books.” Yet most NPAS items are idea-oriented, emphasizing curiosity and intellect rather than collecting or fandom. A nerd collects books not to own them, but to read and absorb the ideas inside. Other items are about interests in science, research, and learning.
+- In [What's in a Nerd?](https://www.sebjenseb.net/p/whats-in-a-nerd), Sebastian Jensen argues that the traits that make up the concept of ‘nerd’ are those that “allow people to acquire status in bureaucracies and educational institutions”. He then makes use of a rather interesting procedure[^sebjenseb-method] to argue that the traits correlated with being a nerd are those that are correlated with being more successful in the education system over the organic social environment. This is consistent with what I've found. In fact, one of the highest-loading NPAS items is “I prefer academic success to social success.”
+
+## Appendix
+
+### Erroneous Definitions of Nerd
+
+In [All the nerds are dead](https://samkriss.substack.com/p/all-the-nerds-are-dead), Sam Kriss claims that a nerd is “someone who *likes things that aren’t good*”. This claim is straightforwardly false. Nerds tend to like books, science fiction, learning, RPGs, and similar pursuits. None of these things are inherently ‘not good’. 
+
+Later in the article, Kriss writes: “The nerd doesn’t like bad things because of their actual qualities; the nerd likes bad things simply because they’re there. What counts is collecting, itemising, *consuming*.” But this description seems closer to the [geek](https://slackprop.wordpress.com/2013/06/03/on-geek-versus-nerd/) than the nerd. The NPAS is dominated by items related to curiosity, learning, intelligence, and intellectual engagement rather than collecting or consumption. Even where collecting appears (e.g., books), the broader pattern suggests interest in ideas rather than accumulation itself.
+
+In response to Kriss's post, Scott Alexander offered [his own definition](https://www.astralcodexten.com/p/contra-kriss-on-nerds-and-hipsters): "My theory is: hipsterism and nerdism are both forms of trying to invest your identity in a cultural product. If there’s no competition, you become a hipster; if there’s high competition, you become a nerd." 
+
+The problem with this definition is that nerds do not necessarily invest their identity in cultural products. Rather, they invest it in intellectual pursuits. This includes academics, reading, science, and learning generally. Cultural products such as RPGs and superheroes are part of the picture, but they appear to be relatively peripheral, as indicated by their comparatively low factor loadings.
+
+### Examination of Age Differences
+
+#### Loadings by Age
+
+The following graphs show how item loadings vary by age. The number in parentheses indicates the item's overall standardized loading.
+
+<details>
+  <summary>Q1: I am interested in science. (0.48)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q1.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q2: I was in advanced classes. (0.42)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q2.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q3: I like to play RPGs. (Ex. D&D) (0.44)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q3.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q4: My appearance is not as important as my intelligence. (0.50)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q4.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q5: I collect books. (0.58)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q5.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q6: I prefer academic success to social success. (0.54)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q6.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q7: I watch science related shows. (0.43)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q7.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q8: I spend recreational time researching topics others might find dry or overly rigorous. (0.48)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q8.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q9: I like science fiction. (0.56)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q9.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q10: I would rather read a book than go to a party. (0.49)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q10.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q11: I am more comfortable with my hobbies than I am with other people. (0.29)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q11.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q12: I spend more time at the library than any other public place. (0.47)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q12.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q13: I would describe my smarts as bookish. (0.56)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q13.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q14: I like to read technology news reports. (0.47)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q14.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q15: I have started writing a novel. (0.28)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q15.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q16: I gravitate towards introspection. (0.39)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q16.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q17: I am more comfortable interacting online than in person. (0.54)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q17.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q18: I love to read challenging material. (0.30)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q18.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q19: I have played a lot of video games. (0.22)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q19.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q20: I was a very odd child. (0.50)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q20.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q21: I sometimes prefer fictional people to real ones. (0.35)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q21.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q22: I enjoy learning more than I need to. (0.42)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q22.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q23: I get excited about my ideas and research. (0.47)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q23.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q24: I am a strange person. (0.55)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q24.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q25: I care about super heroes. (0.38)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q25.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q26: I can be socially awkward at times. (0.57)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/loadings-by-age/q26.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+
+
+#### Intercepts by Age
+
+##### Items biased towards younger people
+
+<details>
+  <summary>Q1: I am interested in science.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q1.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q3: I like to play RPGs. (Ex. D&D)</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q3.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q4: My appearance is not as important as my intelligence.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q4.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q8: I spend recreational time researching topics others might find dry or overly rigorous.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q8.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q11: I am more comfortable with my hobbies than I am with other people.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q11.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q15: I have started writing a novel.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q15.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q16: I gravitate towards introspection.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q16.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q17: I am more comfortable interacting online than in person.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q17.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q19: I have played a lot of video games.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q19.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q21: I sometimes prefer fictional people to real ones.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q21.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+##### Items biased towards older people
+
+<details>
+  <summary>Q5: I collect books.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q5.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q6: I prefer academic success to social success.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q6.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q7: I watch science related shows.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q7.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q9: I like science fiction.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q9.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q12: I spend more time at the library than any other public place.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q12.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q25: I care about super heroes.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q25.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q26: I can be socially awkward at times.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q26.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+##### Other items
+
+<details>
+  <summary>Q2: I was in advanced classes.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q2.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q10: I would rather read a book than go to a party.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q10.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q13: I would describe my smarts as bookish.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q13.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q14: I like to read technology news reports.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q14.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q18: I love to read challenging material.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q18.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q20: I was a very odd child.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q20.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q22: I enjoy learning more than I need to.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q22.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q23: I get excited about my ideas and research.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q23.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
+<details>
+  <summary>Q24: I am a strange person.</summary>
+  <div style="margin-left: 15px; border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+    <div style="text-align: center;">
+        <figure>
+            <img src="/assets/images/nerd-scale/intercepts-by-age/q24.png" width="1000" alt="Alt text">
+        </figure>
+    </div>
+  </div>
+</details>
+
 
 [^1]: [Development of the Nerdy Personality Attributes Scale](https://openpsychometrics.org/tests/NPAS/development/)
 
 [^2]: Basically, whether the items display bias.
+
+[^sebjenseb-method]: He labels various traits based on how strongly he believes they correlate with nerdiness, popularity, and education. He then subtracts the popularity vector from the education vector, creating a measure of the extent to which a trait is associated more with education than popularity. The resulting measure correlates 0.90 with the degree to which a trait is associated with nerdiness.
