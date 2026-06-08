@@ -16,7 +16,7 @@ Because items differ in their loadings, factor analysis estimates how strongly e
 
 This is a simple model, and can be extended. You can use factor analysis to test the assumption that the scale measures *only* one latent trait, or the assumption that the items are only related through the latent trait. You can even have hierarchical factors or incorporate item response theory, along with other advanced techniques. But even our simple model is an improvement over sum scoring.
 
-A practical approximation of single-factor analysis can be obtained through principal components analysis (PCA). While PCA and factor analysis have different assumptions and goals, in practice, they tend to agree (as long as we keep the factor analysis simple, as we're doing). Here's a Python function that computes factor scores (for a single factor) from data (each observation is a row, each question a column):
+A practical approximation of single-factor analysis can be obtained through principal components analysis (PCA). While PCA and factor analysis have different assumptions and goals, in practice, they tend to agree (as long as we keep the factor analysis simple, as we're doing). Here's a Python function[^bartlett] that computes factor scores (for a single factor) from data (each observation is a row, each question a column):
 
 {% highlight python %}
 import numpy as np
@@ -95,3 +95,5 @@ def compute_factor_scores(data: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 [^2]: McNeish, D., Wolf, M.G. *Thinking twice about sum scores.* Behav Res 52, 2287–2305 (2020). https://doi.org/10.3758/s13428-020-01398-0
 
 [^3]: In more complex models, we can allow the residual variation between items to correlate (for instance, when items share similar wording).
+
+[^bartlett]: The Python function uses Bartlett's method of computing factor scores. You can think of Bartlett's method as a weighted linear regression in which the design matrix ($X$) is the loading matrix ($\Lambda$), the response vector ($y$) is the standardized item response vector (z_i), and the weight matrix ($W$) is the inverse of the unique matrix ($\Theta^{-1}$). Specifically, we assume that $z_i = \Lambda f_i + \epsilon_i$, where $\epsilon_i \sim N(0, \Theta)$, $z_i$ is the person's standardized response vector, $\Lambda$ is the loading matrix, and $f_i$ is the (unknown) factor score. Using the inverse uniqueness matrix as the weight matrix means that items with smaller uniquenesses (and thus, larger loadings) receive more weight when estimating the factor score.
