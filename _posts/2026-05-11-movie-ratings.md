@@ -355,7 +355,7 @@ It's nice to see that the recsys works. Though, to make it work better, I'd have
 [^10-star]: 1 = An Abomination (Shouldn’t exist; I find it repulsive, deeply offensive, and/or a complete waste of  time and resources)<br>
     2 = Hated It (Self-explanatory)<br>
     3 = Plain Bad (Glaringly amateur or lazy in all the worst ways. Has bad acting, cheesy visual effects, cringy dialogue, and/or a ridiculous story)<br>
-    4 = Poor (Somethings are done well in a technical sense, but just not very entertaining)<br>
+    4 = Poor (Some things are done well in a technical sense, but just not very entertaining)<br>
     5 = Meh (Wasn’t completely bored to tears, but it didn’t exactly captivate me)<br>
     6 = Watchable (Not exactly a ‘good’ movie, but easy to watch and enjoy with the right mindset)<br>
     7 = Good (A solid, well-made movie. It didn’t just hold my attention, it also provided me with a good time.)<br>
