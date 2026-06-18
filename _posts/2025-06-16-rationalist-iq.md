@@ -4,6 +4,8 @@ title: "The Average Rationalist IQ is About 122"
 date: 2025-06-16 
 permalink: /rationalist-iq/
 categories: 
+section: rationalist
+favorite: true
 ---
 In [The Mystery Of Internet Survey IQs](https://www.astralcodexten.com/p/the-mystery-of-internet-survey-iqs), Scott revises his estimate of the average LessWrong IQ from 138 to 128. He doesn’t explicitly explain how he arrived at this number, but the figure appears to be an average of the demographic-norm method (123) and the SAT method (134). However, using the information in his post, the SAT method doesn’t actually yield 134, but rather 123.
 

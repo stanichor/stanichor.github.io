@@ -4,6 +4,7 @@ title: "A Psychometric Analysis of Tailcalled's Gender Satisfaction Survey"
 date: 2025-11-18
 permalink: /gender-satisfaction/
 categories: 
+section: psychometrics-practical
 ---
 
 [Tailcalled](https://surveyanon.wordpress.com/) ran a "Gender satisfaction and other things" survey, so I decided to analyze the data. The responses came from 185 cis men recruited on Prolific. 

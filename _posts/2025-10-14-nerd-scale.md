@@ -4,6 +4,8 @@ title: "What Is A Nerd? (A Psychometric Analysis of the NPAS)"
 date: 2025-10-14
 permalink: /nerd-scale/
 categories: 
+section: psychometrics-practical
+favorite: true
 ---
 
 What is a nerd? Definitions vary, but one practical way to answer that question is empirical: identify the traits that predict someone's self-label of "nerd". The [Nerdy Personality Attributes Scale](https://openpsychometrics.org/tests/NPAS/) (NPAS) does exactly that. The creators began with 445 candidate items, had participants rate themselves on the items, report how nerdy they were, and then kept the 26 items most strongly correlated with self-reported nerdiness[^1]. Below I describe the data, the factor structure, reliability and validity, gender bias in items, a reduced 12-item set, and what the findings imply about the prototypical “nerd.”

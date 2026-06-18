@@ -4,6 +4,7 @@ title: "A Psychometric Analysis of Tailcalled's Gender Themes Survey"
 date: 2025-11-19
 permalink: /gender-themes/
 categories: 
+section: psychometrics-practical
 ---
 
 [Tailcalled](https://surveyanon.wordpress.com/) ran a "Gender themes" survey, so I decided to analyze the data. The responses came from 188 cis men recruited on Prolific. 

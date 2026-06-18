@@ -4,6 +4,7 @@ title: "Modeling the General Kink Factor"
 date: 2025-11-27
 permalink: /general-kink-factor/
 categories: 
+section: psychometrics-practical
 ---
 
 Surveys of sexual interests frequently show a positive manifold: many items correlate positively with one another.

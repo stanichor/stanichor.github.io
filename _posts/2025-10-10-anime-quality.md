@@ -4,6 +4,7 @@ title: "What makes a good anime?"
 date: 2025-10-10
 permalink: /anime-quality/
 categories: 
+section: media-analysis
 ---
 
 What makes a good anime? While taste is subjective, there tends to be some sort of consensus on quality. For example, most people think [Frieren is a good anime](https://myanimelist.net/anime/52991/Sousou_no_Frieren). Using user ratings and genre tags, I measure which genres correlate with higher anime quality. I estimate an item-level quality score for each anime using a matrix-factorization model, then investigate how that score varies with genre and with genre combinations. 

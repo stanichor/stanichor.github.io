@@ -4,6 +4,7 @@ title: "Rationalist(-Adjacent) Demographics"
 date: 2025-07-17
 permalink: /rat-demographics/
 categories: 
+section: rationalist
 ---
 
 ## Table of Contents

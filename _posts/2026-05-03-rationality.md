@@ -4,6 +4,7 @@ title: "We Still Can't Measure Rationality"
 date: 2026-05-03
 permalink: /rationality/
 categories: 
+section: rationalist
 ---
 
 I am, [I suppose](https://stanichor.net/not-an-ea/), a rationalist. In the olden days, it was popular to call oneself an *aspiring* rationalist, to emphasize that one still falls short of the ideal, though one aspires to it. Yet, in our journey to become more rational, how do we know whether our reasoning has improved? How do I know if I’m more rational than I was a year ago? Or if I’m even more rational than average? ¯\\\_(ツ)_/¯

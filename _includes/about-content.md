@@ -1,1 +1,1 @@
-This is the website of Stanichor. I write.
+This is the website of Stanichor. I write, I guess, about psychometrics and rationalists, though occasionally about other things too. You can email me at stanichor [at] gmail [dot] com. You can also contact me via [Twitter](https://x.com/stanichor785) (formerly known as X), [LessWrong](https://www.lesswrong.com/users/stanichor), [Substack](https://substack.com/@stanichor), or Discord (iykyk).

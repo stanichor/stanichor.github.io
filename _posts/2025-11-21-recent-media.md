@@ -4,6 +4,7 @@ title: "Why Consume Recent Media?"
 date: 2025-11-21
 permalink: /recent-media/
 categories: 
+section: media-analysis
 ---
 
 In [Culture Is Not About Esthetics](https://gwern.net/culture-is-not-about-esthetics), Gwern argues that the supply of high-quality art from the past now exceeds the capacity of any individual to experience it. Someone who reads one award-winning science-fiction novel each week could spend nearly a decade working through only the winners and major contenders of the Hugo and Nebula Awards—and that is a tiny slice of a single genre. 

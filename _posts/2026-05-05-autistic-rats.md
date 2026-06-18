@@ -4,6 +4,7 @@ title: "How Autistic Are Rationalists?"
 date: 2026-05-05
 permalink: /autistic-rats/
 categories: 
+section: rationalist
 ---
 
 It's popular to call oneself autistic these days, especially in the rationalist community. But how many rats are actually autistic? I'll look at three quantities: diagnosed autism, autism rates inferred from Autism Quotient scores, and average level of autistic traits.

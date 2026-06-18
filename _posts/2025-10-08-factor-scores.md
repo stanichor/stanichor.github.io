@@ -4,6 +4,7 @@ title: "Use Factor Scores, Not Sum Scores"
 date: 2025-10-08
 permalink: /factor-scores/
 categories: 
+section: psychometrics-theoretical
 ---
 
 When researchers design a scale (a set of questions intended to measure some latent trait, such as anxiety, political ideology, or social trust), the simplest way to score the scale is to add up the answers[^1] (or take their average). This is the standard approach in psychology and most social sciences. Yet, it rests on a very strong assumption: that every item measures the trait equally well[^2].

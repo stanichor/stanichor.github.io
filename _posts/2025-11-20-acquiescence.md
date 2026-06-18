@@ -4,6 +4,7 @@ title: "Understanding Acquiescence Bias"
 date: 2025-11-20
 permalink: /acquiescence/
 categories: 
+section: psychometrics-theoretical
 ---
 
 Acquiescence bias, also known as yea-saying bias, is the tendency to agree with statements in a questionnaire regardless of what those statements assert. Evidence for this pattern is unambiguous. As social psychologist Jon Krosnick [noted](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.50.1.537), 

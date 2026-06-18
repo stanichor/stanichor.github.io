@@ -4,6 +4,7 @@ title: "Against the Empathizing-Systemizing Theory of Autism"
 date: 2025-06-19
 permalink: /empathizing-systemizing-theory/
 categories: 
+section: psychometrics-practical
 ---
 The **Empathizing-Systemizing (E-S) theory** of autism, proposed by Simon Baron-Cohen, claims autism arises from an imbalance between two cognitive traits: 
 - **Empathizing (E)**: the capacity to recognize others' mental states and respond to them appropriately

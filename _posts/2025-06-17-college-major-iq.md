@@ -4,6 +4,7 @@ title: "Accurate IQ Estimates By College Major"
 date: 2025-06-17 
 permalink: /college-major-iq/
 categories: 
+section: other
 ---
 There is a widely circulated chart claiming to show the average IQ of students by college major. 
 <div style="text-align: center;">
