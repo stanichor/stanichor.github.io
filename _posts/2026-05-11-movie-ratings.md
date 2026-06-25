@@ -10,6 +10,17 @@ favorite: true
 
 I [built a movie recommendation system](https://stanichor.net/simple-recsys/). I'd like to know things about it. What do my ratings look like? How accurate is the recsys? How accurate could it be? How does it compare to external rating sites? Are newer movies better or worse for me? Let’s see.
 
+The short version:
+
+* I seem to subconsciously split movies into three tiers: good, mid, and terrible.
+* Accuracy seems to be roughly linear in the log number of movies rated, independent of the regression method or accuracy metric.
+* Standardizing embeddings degrades performance. Dimensions after the first ~100, which explain 68% of the variance, don’t add much.
+* External ratings are decent predictors, though regression-based methods become better once I’ve rated more than ~50 movies. Interestingly, aggregating external ratings doesn’t improve performance much, probably because they’re all so highly correlated.
+* Adding genre information doesn’t help.
+* Movie enjoyment doesn’t seem to have any significant relationship with when the movie was made.
+* Star ratings seem about as accurate as comparison-based ratings. 7 stars seems like enough for my purposes.
+
+
 ## What My Ratings Look Like
 
 <div style="text-align: center;">
