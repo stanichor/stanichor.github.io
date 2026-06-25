@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Contra Seemingly Everyone on Reversing Advice"
-date: 2026-06-19
+date: 2026-06-25
 permalink: /reverse-advice/
 categories: 
 section: rant
