@@ -4,7 +4,7 @@ title: "Contra Alexander on Metis and Bodybuilders"
 date: 2025-07-13
 permalink: /metis-and-bodybuilders/
 categories: 
-section: other
+section: rant
 ---
 
 In [Metis and Bodybuilders](https://www.astralcodexten.com/p/metis-and-bodybuilders), Scott argues that bodybuilding *metis*—the practical, experience-based knowledge of gym-goers—failed to optimize rest periods correctly before academic studies did. He presents this as evidence that *metis* is inferior to academic science, at least in the field of bodybuilding. 

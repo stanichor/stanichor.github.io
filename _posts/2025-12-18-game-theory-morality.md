@@ -4,7 +4,7 @@ title: "Game theory does not imply we get (or do) nice things"
 date: 2025-12-18
 permalink: /game-theory-morality/
 categories: 
-section: other
+section: rant
 ---
 
 > It is a shallow soul who fights to the cry of ‘might makes right’. The truth is more concise: might makes.

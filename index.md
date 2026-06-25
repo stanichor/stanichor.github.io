@@ -11,6 +11,7 @@ layout: home
    psychometrics-theoretical:Psychometrics (Theoretical),
    psychometrics-practical:Psychometrics (Practical),
    media-analysis:Media Analysis,
+   rant:Rants,
    other:Other" | split: "," %}
 
 <h2>My Favorites</h2>
