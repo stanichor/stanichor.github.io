@@ -2,7 +2,9 @@
 layout: post
 title: "Resources for Understanding Psychometrics"
 date: 2026-02-20
-permalink: /intro-psychometrics/
+permalink: /psychometrics/
+redirect_from:
+  - /intro-psychometrics/
 categories: 
 section: psychometrics-theoretical
 ---

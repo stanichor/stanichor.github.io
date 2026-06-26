@@ -2,7 +2,9 @@
 layout: post
 title: "How Autistic Are Rationalists?"
 date: 2026-05-05
-permalink: /autistic-rats/
+permalink: /rat-autism/
+redirect_from:
+  - /autistic-rats/
 categories: 
 section: rationalist
 ---

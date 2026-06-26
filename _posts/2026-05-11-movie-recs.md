@@ -2,7 +2,9 @@
 layout: post
 title: "Evaluating My Movie Recommendation System"
 date: 2026-05-11
-permalink: /movie-ratings/
+permalink: /movie-recs/
+redirect_from:
+  - /movie-ratings/
 categories: 
 section: media-analysis
 favorite: true

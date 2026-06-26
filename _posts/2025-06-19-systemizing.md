@@ -2,7 +2,9 @@
 layout: post
 title: "Against the Empathizing-Systemizing Theory of Autism"
 date: 2025-06-19
-permalink: /empathizing-systemizing-theory/
+permalink: /systemizing/
+redirect_from:
+  - /empathizing-systemizing-theory/
 categories: 
 section: psychometrics-practical
 ---

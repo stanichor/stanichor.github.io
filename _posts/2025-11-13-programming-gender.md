@@ -2,7 +2,9 @@
 layout: post
 title: "Programming Language Use by Gender Identity"
 date: 2025-11-13
-permalink: /prog-lang-gender/
+permalink: /programming-gender/
+redirect_from:
+  - /prog-lang-gender/
 categories: 
 section: other
 ---

@@ -2,7 +2,9 @@
 layout: post
 title: "Game theory does not imply we get (or do) nice things"
 date: 2025-12-18
-permalink: /game-theory-morality/
+permalink: /game-theory/
+redirect_from:
+  - /game-theory-morality/
 categories: 
 section: rant
 ---

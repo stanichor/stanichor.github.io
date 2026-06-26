@@ -2,7 +2,9 @@
 layout: post
 title: "Modeling the General Kink Factor"
 date: 2025-11-27
-permalink: /general-kink-factor/
+permalink: /general-kink/
+redirect_from:
+  - /general-kink-factor/
 categories: 
 section: psychometrics-practical
 ---

@@ -2,7 +2,9 @@
 layout: post
 title: "Factor Analysis of Kink Preferences"
 date: 2025-06-18
-permalink: /kink-factor-analysis/
+permalink: /kink-factors/
+redirect_from:
+  - /kink-factor-analysis/
 categories: 
 section: psychometrics-practical
 ---
