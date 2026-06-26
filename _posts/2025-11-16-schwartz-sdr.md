@@ -5,6 +5,10 @@ date: 2025-11-16
 permalink: /schwartz-sdr/
 categories: 
 section: psychometrics-practical
+related:
+  - /tpt/
+  - /mfq-2/
+  - /acquiescence/
 ---
 
 Shalom Schwartz's [Theory of Basic Human Values](https://en.wikipedia.org/wiki/Theory_of_basic_human_values) states that there are ten basic human values that act as guiding principles in people's lives. These values are: universalism, benevolence, conformity, tradition, security, power, achievement, hedonism, stimulation, and self-direction. There used to be another value—spirituality—but it was later rejected as one of the basic human values.

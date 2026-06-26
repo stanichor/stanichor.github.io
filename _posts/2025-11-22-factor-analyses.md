@@ -7,6 +7,10 @@ redirect_from:
   - /nice-factor-analyses/
 categories: 
 section: other
+related:
+  - /mediation/
+  - /factor-scores/
+  - /oblique/
 ---
 
 ## Rethinking the Human Development Index

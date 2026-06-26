@@ -7,6 +7,10 @@ redirect_from:
   - /intro-psychometrics/
 categories: 
 section: psychometrics-theoretical
+related:
+  - /mediation/
+  - /factor-scores/
+  - /acquiescence/
 ---
 
 I enjoy [writing](https://stanichor.net/nerd-scale/) [about](https://stanichor.net/acquiescence/) [psychometrics](https://stanichor.net/mediation/). I also enjoy people reading what I write. Unfortunately, I don’t think many people do, and a big reason is probably that few people actually understand psychometrics. To help with that, I’m sharing some resources that make the field more accessible.

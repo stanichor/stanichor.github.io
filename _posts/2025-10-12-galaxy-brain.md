@@ -5,6 +5,10 @@ date: 2025-10-12
 permalink: /galaxy-brain/
 categories: 
 section: other
+related:
+  - /factor-analyses/
+  - /metis/
+  - /rationality/
 ---
 
 I keep seeing experts offer elaborate causal stories for phenomena that have a much simpler and more proximate explanation. The complicated account is often interesting to hear, but the simple one usually suffices to explain the observed facts. Below, I provide examples.

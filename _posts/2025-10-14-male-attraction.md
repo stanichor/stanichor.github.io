@@ -5,6 +5,10 @@ date: 2025-10-14
 permalink: /male-attraction/
 categories: 
 section: psychometrics-practical
+related:
+  - /gender-satisfaction/
+  - /gender-themes/
+  - /general-kink/
 ---
 
 In [What Do We Desire in a Woman?](https://thingstoread.substack.com/p/what-do-we-desire-in-a-woman), Apple Pie conducted surveys on romantic preferences, asking participants to rate several traits based on how attractive they are. The following is a replication of the analysis using confirmatory factor analysis (CFA) and item response theory (IRT), rather than using principal components analysis (PCA) as Apple Pie did. PCA forces factors to be independent, while CFA allows factors to correlate. IRT also provides more item-level information.

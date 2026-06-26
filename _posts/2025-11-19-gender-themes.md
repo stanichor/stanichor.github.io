@@ -5,6 +5,10 @@ date: 2025-11-19
 permalink: /gender-themes/
 categories: 
 section: psychometrics-practical
+related:
+  - /gender-satisfaction/
+  - /general-kink/
+  - /male-attraction/
 ---
 
 [Tailcalled](https://surveyanon.wordpress.com/) ran a "Gender themes" survey, so I decided to analyze the data. The responses came from 188 cis men recruited on Prolific. 

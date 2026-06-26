@@ -5,6 +5,10 @@ date: 2025-09-20
 permalink: /true-atheism/
 categories: 
 section: other
+related:
+  - /rat-demos/
+  - /not-ea/
+  - /schwartz-sdr/
 ---
 
 The number of Americans with no religious affiliation has grown from 16% in 2007 to 28% in 2023. At first glance, this suggests that naturalism, though not common, is hardly rare. But rejecting organized religion is not the same as rejecting the supernatural. If we look specifically at naturalism (the idea that natural, rather than supernatural, laws and forces are the only ones at work in the universe), we see that it remains rare.

@@ -7,6 +7,10 @@ redirect_from:
   - /game-theory-morality/
 categories: 
 section: rant
+related:
+  - /higher/
+  - /earring/
+  - /reverse-advice/
 ---
 
 > It is a shallow soul who fights to the cry of ‘might makes right’. The truth is more concise: might makes.

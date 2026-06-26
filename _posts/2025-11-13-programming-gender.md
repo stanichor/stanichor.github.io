@@ -7,6 +7,10 @@ redirect_from:
   - /prog-lang-gender/
 categories: 
 section: other
+related:
+  - /rat-demos/
+  - /gender-themes/
+  - /gender-satisfaction/
 ---
 
 People often claim that Rust is unusually popular among trans women. Every year, the [Stack Overflow Survey](https://survey.stackoverflow.co/) records, among other things, which languages developers use and their gender identity. This allows us to estimate how each language’s user base is distributed across gender identities. I examined the survey data to see whether it supports the perception of Rust's popularity among trans women.

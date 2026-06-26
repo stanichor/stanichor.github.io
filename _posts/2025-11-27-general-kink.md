@@ -7,6 +7,10 @@ redirect_from:
   - /general-kink-factor/
 categories: 
 section: psychometrics-practical
+related:
+  - /gender-satisfaction/
+  - /gender-themes/
+  - /kink-factors/
 ---
 
 Surveys of sexual interests frequently show a positive manifold: many items correlate positively with one another.

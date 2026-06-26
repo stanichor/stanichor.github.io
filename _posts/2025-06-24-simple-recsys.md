@@ -5,6 +5,10 @@ date: 2025-06-24
 permalink: /simple-recsys/
 categories: 
 section: media-analysis
+related:
+  - /movie-recs/
+  - /anime-quality/
+  - /factor-scores/
 ---
 
 There's more art available now than ever before. In 2010, Google Books estimated that there were around [130 million published books](https://booksearch.blogspot.com/2010/08/books-of-world-stand-up-and-be-counted.html). As of March 2022, [IMDb's databases contained 605,284 movies and 222,655 TV series](https://web.archive.org/web/20220429162254/https://www.imdb.com/pressroom/stats/). As of January 2020, [MyAnimeList tracked 23,744 anime and 62,056 manga](https://myanimelist.net/forum/?topicid=2068385). 

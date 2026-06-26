@@ -5,6 +5,10 @@ date: 2026-06-25
 permalink: /reverse-advice/
 categories: 
 section: rant
+related:
+  - /metis/
+  - /game-theory/
+  - /earring/
 ---
 
 Something that annoys me is when people turn "reverse all advice you hear" into a generic warning that advice might not apply to everyone, when in the [original essay](https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/) Scott was talking about a specific mechanism behind a specific class of [advice failures](https://dynomight.net/advice/). If you read the post, he notes that people are often drawn to groups that share the same views/opinions/tendencies as them (e.g., if selfish people are disproportionately drawn to Objectivism). And when such groups give advice (e.g., you should be more selfish), the advice might even be good for the average person (e.g., perhaps the average person should actually be more selfish). But it may be particularly bad advice for the average *recipient* of the advice, because the recipient has been selected to be the kind of person who *already* leans in that direction and should consider going in the *other* direction (to reverse the advice, as it were).
