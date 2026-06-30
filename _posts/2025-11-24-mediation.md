@@ -7,9 +7,9 @@ categories:
 section: psychometrics-theoretical
 favorite: true
 related:
+  - /ses/
   - /factor-scores/
   - /psychometrics/
-  - /acquiescence/
 ---
 
 > [T]he appropriate level of analysis is the highest level such that no lower level gives different predictions.
