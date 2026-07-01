@@ -8,7 +8,7 @@ redirect_from:
 categories: 
 section: rant
 related:
-  - /higher/
+  - /fence/
   - /earring/
   - /reverse-advice/
 ---
