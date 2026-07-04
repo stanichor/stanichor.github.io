@@ -23,8 +23,8 @@ Fortunately, some economists have taken an interest. The authors of [Using Spati
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/hdi-posterior-top-10.png" width="400" alt="Alt text">
-        <img src="/assets/images/nice-factor-analyses/hdi-posterior-bottom-10.png" width="400" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/hdi-posterior-top-10.png" width="400" alt="Dot plot comparing official HDI ranks with the model-based probability that each country belongs in the top ten.">
+        <img src="/assets/images/nice-factor-analyses/hdi-posterior-bottom-10.png" width="400" alt="Dot plot comparing official HDI ranks with the model-based probability that each country belongs in the bottom ten.">
         <figcaption>The Probability to be Model Based "Top/Bottom 10" vs Official HDI Ranks</figcaption>
     </figure>
 </div>
@@ -45,7 +45,7 @@ Their work led to the following plot:
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/city-conservatism.png" width="700" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/city-conservatism.png" width="700" alt="Ranked dot-and-interval plot of estimated policy conservatism for large U.S. cities, with credibility intervals.">
         <figcaption>Mean Policy Conservatism of Large Cities</figcaption>
     </figure>
 </div>
@@ -74,7 +74,7 @@ They also noticed that certain factors appeared to constrain others. For example
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/conspiracy-partial-ordering.png" width="700" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/conspiracy-partial-ordering.png" width="700" alt="Diagram showing a partial ordering among conspiracy-belief factors, with Generic Conspiracy branching toward Climate Change, Aliens and Satanism, Judaism, Fakery, and Flat Earth.">
         <figcaption>Conspiracist Beliefs Partial Ordering</figcaption>
     </figure>
 </div>
@@ -87,7 +87,7 @@ It really is impressive that this just works. I'd never thought of factor-analyz
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/national-gaming-ability.png" width="700" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/national-gaming-ability.png" width="700" alt="Scatterplot of national general gaming ability against national IQ, with weighted linear and local-regression fits.">
         <figcaption>General gaming ability score and national IQ. Orange line = linear fit (top left), blue line = local regression fit (span = 1.00). Weighted by square root of population size.</figcaption>
     </figure>
 </div>
@@ -106,7 +106,7 @@ The SEM for the Chill Rankings is shown below:
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/sem-chill.png" width="500" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/sem-chill.png" width="500" alt="Structural equation diagram for the Chill city-livability factor, showing positive and negative paths from city characteristics to latent livability.">
     </figure>
 </div>
 
@@ -114,7 +114,7 @@ Here is the corresponding "livability map" of the most Chill cities, with the to
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/map-chill.png" width="600" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/map-chill.png" width="600" alt="U.S. map of Chill livability scores, with green circles for above-average cities, red circles for below-average cities, and labeled top cities.">
     </figure>
 </div>
 
@@ -122,7 +122,7 @@ The SEM for the Jetsetter Rankings is shown here:
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/sem-jetsetter.png" width="500" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/sem-jetsetter.png" width="500" alt="Structural equation diagram for the Jetsetter city-livability factor, showing positive and negative paths from city characteristics to latent livability.">
     </figure>
 </div>
 
@@ -130,7 +130,7 @@ And here is the corresponding Jetsetter livability map, again with the top ten c
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/nice-factor-analyses/map-jetsetter.png" width="600" alt="Alt text">
+        <img src="/assets/images/nice-factor-analyses/map-jetsetter.png" width="600" alt="U.S. map of Jetsetter livability scores, with green circles for above-average cities, red circles for below-average cities, and labeled top cities.">
     </figure>
 </div>
 

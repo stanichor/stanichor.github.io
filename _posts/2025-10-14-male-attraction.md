@@ -59,7 +59,7 @@ This factor is straightforward. The items mostly focus on bodily features of the
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-curvy-girl.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-curvy-girl.png" width="600" alt="Tailcalled diagram for the Curvy Girl attraction factor, showing the latent-score distribution and response patterns for body-shape items.">
     </figure>
 </div>
 
@@ -79,7 +79,7 @@ This factor is a bit more abstract. Looking at the items, I can't help but be re
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-free-spirit.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-free-spirit.png" width="600" alt="Tailcalled diagram for the Free Spirit attraction factor, showing the latent-score distribution and response patterns for adventurous, artistic, and party-oriented traits.">
     </figure>
 </div>
 
@@ -98,7 +98,7 @@ This is another straightforward factor. The positive-loading items are related t
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-intellectual.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-intellectual.png" width="600" alt="Tailcalled diagram for the Intellectual attraction factor, showing the latent-score distribution and response patterns for intelligence-related traits.">
     </figure>
 </div>
 
@@ -115,7 +115,7 @@ Yet another straightforward factor. I don't have any commentary.
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-amazon.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-amazon.png" width="600" alt="Tailcalled diagram for the Amazon attraction factor, showing the latent-score distribution and response patterns for tall, broad-shouldered, and athletic traits.">
     </figure>
 </div>
 
@@ -130,7 +130,7 @@ There aren't many items on this factor, and half of them have low loadings. Neve
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-nice-girl.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-nice-girl.png" width="600" alt="Tailcalled diagram for the Nice Girl attraction factor, showing the latent-score distribution and response patterns for kindness and sympathy-related traits.">
     </figure>
 </div>
 
@@ -154,7 +154,7 @@ This factor contains a lot of seemingly disparate items. As such, none of the it
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-girl-next-door.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-girl-next-door.png" width="600" alt="Tailcalled diagram for the Girl Next Door attraction factor, showing the latent-score distribution and response patterns for casual and approachable female traits.">
     </figure>
 </div>
 
@@ -173,7 +173,7 @@ This factor deals with (fashionable?) clothes and accessories, along with sexy l
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-fashionista.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-fashionista.png" width="600" alt="Tailcalled diagram for the Fashionista attraction factor, showing the latent-score distribution and response patterns for makeup, heels, dresses, and related style items.">
     </figure>
 </div>
 
@@ -202,7 +202,7 @@ This factor contains items connected to youth (e.g., 'Young', 'Fertile', 'Teenag
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-innocent-girl.png" width="600" alt="Alt text">
+        <img src="/assets/images/male-attraction/tailcalled-diagram-innocent-girl.png" width="600" alt="Tailcalled diagram for the Innocent Girl attraction factor, showing the latent-score distribution and response patterns for youth, submissiveness, and traditional-femininity items.">
     </figure>
 </div>
 

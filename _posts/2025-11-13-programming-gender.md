@@ -36,7 +36,7 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
     <summary>2017</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2017/cis-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2017/cis-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis men among users of each programming language in 2017, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -46,7 +46,7 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
     <summary>2018</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2018/cis-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2018/cis-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis men among users of each programming language in 2018, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
 </div>
 </details>
@@ -56,7 +56,7 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
     <summary>2019</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2019/cis-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2019/cis-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis men among users of each programming language in 2019, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -65,7 +65,7 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
     <summary>2020</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2020/cis-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2020/cis-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis men among users of each programming language in 2020, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -74,7 +74,7 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
     <summary>2021</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2021/cis-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2021/cis-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis men among users of each programming language in 2021, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -83,7 +83,7 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
     <summary>2022</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2022/cis-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2022/cis-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis men among users of each programming language in 2022, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -111,7 +111,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
     <summary>2017</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2017/cis-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2017/cis-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis women among users of each programming language in 2017, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -121,7 +121,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
     <summary>2018</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2018/cis-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2018/cis-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis women among users of each programming language in 2018, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
 </div>
 </details>
@@ -131,7 +131,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
     <summary>2019</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2019/cis-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2019/cis-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis women among users of each programming language in 2019, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -140,7 +140,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
     <summary>2020</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2020/cis-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2020/cis-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis women among users of each programming language in 2020, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -149,7 +149,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
     <summary>2021</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2021/cis-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2021/cis-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis women among users of each programming language in 2021, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -158,7 +158,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
     <summary>2022</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2022/cis-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2022/cis-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of cis women among users of each programming language in 2022, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -184,7 +184,7 @@ R attracts the largest proportions of cis-women respondents in almost every year
     <summary>2017</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2017/trans-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2017/trans-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans women among users of each programming language in 2017, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -194,7 +194,7 @@ R attracts the largest proportions of cis-women respondents in almost every year
     <summary>2018</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2018/trans-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2018/trans-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans women among users of each programming language in 2018, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
 </div>
 </details>
@@ -204,7 +204,7 @@ R attracts the largest proportions of cis-women respondents in almost every year
     <summary>2019</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2019/trans-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2019/trans-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans women among users of each programming language in 2019, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -213,7 +213,7 @@ R attracts the largest proportions of cis-women respondents in almost every year
     <summary>2020</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2020/trans-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2020/trans-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans women among users of each programming language in 2020, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -222,7 +222,7 @@ R attracts the largest proportions of cis-women respondents in almost every year
     <summary>2021</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2021/trans-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2021/trans-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans women among users of each programming language in 2021, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -231,7 +231,7 @@ R attracts the largest proportions of cis-women respondents in almost every year
     <summary>2022</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2022/trans-women-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2022/trans-women-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans women among users of each programming language in 2022, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -259,7 +259,7 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
     <summary>2017</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2017/trans-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2017/trans-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans men among users of each programming language in 2017, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -269,7 +269,7 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
     <summary>2018</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2018/trans-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2018/trans-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans men among users of each programming language in 2018, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
 </div>
 </details>
@@ -279,7 +279,7 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
     <summary>2019</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2019/trans-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2019/trans-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans men among users of each programming language in 2019, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -288,7 +288,7 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
     <summary>2020</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2020/trans-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2020/trans-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans men among users of each programming language in 2020, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -297,7 +297,7 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
     <summary>2021</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2021/trans-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2021/trans-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans men among users of each programming language in 2021, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>
@@ -306,7 +306,7 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
     <summary>2022</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/prog-lang-gender/2022/trans-men-graph.png" width="900" alt="Alt text">
+            <img src="/assets/images/prog-lang-gender/2022/trans-men-graph.png" width="900" alt="Point-and-error-bar chart showing the estimated share of trans men among users of each programming language in 2022, ordered from highest to lowest, with 94 percent credible intervals.">
         </figure>
     </div>
 </details>

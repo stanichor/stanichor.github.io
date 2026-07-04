@@ -133,7 +133,7 @@ Most items that load on this factor concern same-sex attraction and behavior. Th
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-0-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-0-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Homosexuality factor, showing the latent-score distribution and response patterns for same-sex attraction and related items.">
     </figure>
 </div>
 
@@ -141,7 +141,7 @@ As with previous homosexuality scales[^1] [^2], this scale had *very* low reliab
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-0-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-0-reliability.png" width="1000" alt="Reliability curve for the Homosexuality factor across the latent trait.">
     </figure>
 </div>
 
@@ -424,7 +424,7 @@ As with the Gender Satisfaction survey, this factor includes items endorsing mas
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-1-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-1-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Gender Conservatism factor, showing the latent-score distribution and response patterns for gender-identity and traditional-norm items.">
     </figure>
 </div>
 
@@ -432,7 +432,7 @@ Although it contained many items, the loadings were not especially strong, yield
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-1-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-1-reliability.png" width="1000" alt="Reliability curve for the Gender Conservatism factor across the latent trait.">
     </figure>
 </div>
 
@@ -581,7 +581,7 @@ Items emphasize feeling at ease in social situations and being more extroverted 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-2-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-2-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Social Comfort factor, showing the latent-score distribution and response patterns for social ease and belonging-related items.">
     </figure>
 </div>
 
@@ -589,7 +589,7 @@ This scale had moderate reliability across the distribution, due to a modest num
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-2-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-2-reliability.png" width="1000" alt="Reliability curve for the Social Comfort factor across the latent trait.">
     </figure>
 </div>
 
@@ -680,7 +680,7 @@ Items reflect sexual experience, primarily heterosexual. For example, the threes
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-3-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-3-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Sexual Experience factor, showing the latent-score distribution and response patterns for sexual-experience items.">
     </figure>
 </div>
 
@@ -688,7 +688,7 @@ This scale had somewhat poor reliability across the distribution, largely due to
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-3-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-3-reliability.png" width="1000" alt="Reliability curve for the Sexual Experience factor across the latent trait.">
     </figure>
 </div>
 
@@ -809,7 +809,7 @@ Items relate to participation in female friend groups and being trusted by women
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-4-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-4-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Female Social Affiliation factor, showing the latent-score distribution and response patterns for affinity with women and feminine social spaces.">
     </figure>
 </div>
 
@@ -817,7 +817,7 @@ This scale had somewhat poor reliability across the distribution, with reliabili
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-4-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-4-reliability.png" width="1000" alt="Reliability curve for the Female Social Affiliation factor across the latent trait.">
     </figure>
 </div>
 
@@ -999,7 +999,7 @@ As in the Gender Satisfaction survey[^3], this factor contains items involving s
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-5-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-5-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Autogynephilia factor, showing the latent-score distribution and response patterns for cross-gender identification and fantasy items.">
     </figure>
 </div>
 
@@ -1007,7 +1007,7 @@ This scale had acceptable reliability on the average-to-high end of the distribu
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-5-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-5-reliability.png" width="1000" alt="Reliability curve for the Autogynephilia factor across the latent trait.">
     </figure>
 </div>
 
@@ -1151,7 +1151,7 @@ This factor includes items about emotional vulnerability, being bullied or shame
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-6-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-6-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Emotional Vulnerability factor, showing the latent-score distribution and response patterns for vulnerability and emotional-fragility items.">
     </figure>
 </div>
 
@@ -1159,7 +1159,7 @@ This scale had moderate reliability across the distribution, with some decline a
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-6-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-6-reliability.png" width="1000" alt="Reliability curve for the Emotional Vulnerability factor across the latent trait.">
     </figure>
 </div>
 
@@ -1171,7 +1171,7 @@ In the following correlation matrix, each cell displays the estimated Pearson co
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/factor-corr.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/factor-corr.png" width="1000" alt="Correlation heatmap of the extracted gender-themes factors.">
     </figure>
 </div>
 
@@ -1181,7 +1181,7 @@ The partial correlation between two variables is their correlation after elimina
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/partial-factor-corr.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/partial-factor-corr.png" width="1000" alt="Partial-correlation heatmap of the extracted gender-themes factors after controlling for the others.">
     </figure>
 </div>
 
@@ -1191,7 +1191,7 @@ Deriving a Markov network from the remaining variables yields the following stru
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-themes/markov-network.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-themes/markov-network.png" width="1000" alt="Network diagram showing conditional relationships among the extracted gender-themes factors.">
         <figcaption>Gender Themes Survey Markov Network</figcaption>
     </figure>
 </div>
@@ -1200,7 +1200,7 @@ A notable difference between this Markov network and [the one derived from the G
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/markov-network.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/markov-network.png" width="1000" alt="Network diagram showing conditional relationships among the extracted gender-satisfaction factors.">
         <figcaption>Gender Satisfaction Survey Markov Network</figcaption>
     </figure>
 </div>

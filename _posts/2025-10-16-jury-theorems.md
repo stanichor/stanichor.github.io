@@ -48,7 +48,7 @@ Rounders (those who gave answers like 10%, 15%, etc) systematically overestimate
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/jury-theorems/rounders-vs-non-rounders.png" width="600" alt="Alt text">
+        <img src="/assets/images/jury-theorems/rounders-vs-non-rounders.png" width="600" alt="Two-panel bar chart comparing how much official statistics are over- or underreported by rounders and non-rounders across European countries.">
     </figure>
 </div>
 

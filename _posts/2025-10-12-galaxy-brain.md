@@ -21,7 +21,7 @@ The simpler claim is this: Japan has lower per-capita GDP growth because it has 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/galaxy-brain/jfv_gdp_growth.png" width="400" alt="Alt Text">
+        <img src="/assets/images/galaxy-brain/jfv_gdp_growth.png" width="400" alt="Six-panel line chart comparing GDP growth, working-age population share, GDP per capita, total population, GDP per working-age adult, and working-age population across seven countries from 1991 to 2019.">
     </figure>
 </div>
 

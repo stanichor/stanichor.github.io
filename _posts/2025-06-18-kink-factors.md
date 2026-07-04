@@ -103,117 +103,117 @@ The following plots are what I call "Tailcalled diagrams". We create a standardi
 ### **Cis Men**  
 #### BDSM
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-bdsm.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-bdsm.png" width="700" alt="Tailcalled diagram for the cis-male BDSM factor, showing the latent-score distribution and item-response patterns for BDSM-related items.">
 </figure> 
 
 #### Hyperfeminity
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-hyperfemininity.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-hyperfemininity.png" width="700" alt="Tailcalled diagram for the cis-male hyperfemininity factor, showing the latent-score distribution and item-response patterns for hyperfeminine female traits.">
 </figure> 
 
 #### Sensuality/Romance
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-sensuality-romance.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-sensuality-romance.png" width="700" alt="Tailcalled diagram for the cis-male sensuality and romance factor, showing the latent-score distribution and item-response patterns for romantic and sensual items.">
 </figure> 
 
 #### Conventional Kink
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-conventional-kink.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-conventional-kink.png" width="700" alt="Tailcalled diagram for the cis-male conventional-kink factor, showing the latent-score distribution and item-response patterns for orgies, voyeurism, exhibitionism, and related items.">
 </figure> 
 
 #### Monsters/Animals
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-monsters-animals.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-monsters-animals.png" width="700" alt="Tailcalled diagram for the cis-male monsters and animals factor, showing the latent-score distribution and item-response patterns for monsters, furries, and bestiality-related items.">
 </figure> 
 
 #### Disgust
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-disgust.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-disgust.png" width="700" alt="Tailcalled diagram for the cis-male disgust factor, showing the latent-score distribution and item-response patterns for disgust-related kink items.">
 </figure> 
 
 #### Genderplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-genderplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-genderplay.png" width="700" alt="Tailcalled diagram for the cis-male genderplay factor, showing the latent-score distribution and item-response patterns for genderplay, sissification, futa, and pegging-related items.">
 </figure> 
 
 #### Incest/Ageplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-incest-ageplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-incest-ageplay.png" width="700" alt="Tailcalled diagram for the cis-male incest and ageplay factor, showing the latent-score distribution and item-response patterns for incest, ageplay, and nonconsent-related items.">
 </figure> 
 
 #### Gay
 <figure>
-    <img src="/assets/images/kink-factor-analysis/men-gay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/men-gay.png" width="700" alt="Tailcalled diagram for the cis-male gay factor, showing the latent-score distribution and item-response patterns for attraction-to-men items.">
 </figure> 
 
 
 ### **Cis Women**  
 #### BDSM
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-bdsm.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-bdsm.png" width="700" alt="Tailcalled diagram for the cis-female BDSM factor, showing the latent-score distribution and item-response patterns for BDSM-related items.">
 </figure> 
 
 #### Hyperfeminity
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-hyperfemininity.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-hyperfemininity.png" width="700" alt="Tailcalled diagram for the cis-female hyperfemininity factor, showing the latent-score distribution and item-response patterns for lesbians, curves, skirts, and related items.">
 </figure> 
 
 #### Sensuality/Romance
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-sensuality-romance.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-sensuality-romance.png" width="700" alt="Tailcalled diagram for the cis-female sensuality and romance factor, showing the latent-score distribution and item-response patterns for romantic and sensual items.">
 </figure> 
 
 #### Conventional Kink
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-conventional-kink.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-conventional-kink.png" width="700" alt="Tailcalled diagram for the cis-female conventional-kink factor, showing the latent-score distribution and item-response patterns for orgies, voyeurism, free use, and anonymous-sex items.">
 </figure> 
 
 #### Monsters/Animals
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-monsters-animals.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-monsters-animals.png" width="700" alt="Tailcalled diagram for the cis-female monsters and animals factor, showing the latent-score distribution and item-response patterns for monsters, bestiality, and furry-related items.">
 </figure> 
 
 #### Disgust
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-disgust.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-disgust.png" width="700" alt="Tailcalled diagram for the cis-female disgust factor, showing the latent-score distribution and item-response patterns for disgust-related kink items.">
 </figure> 
 
 #### Genderplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-genderplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-genderplay.png" width="700" alt="Tailcalled diagram for the cis-female genderplay factor, showing the latent-score distribution and item-response patterns for genderplay, sissification, futa, and pegging-related items.">
 </figure> 
 
 #### Incest/Ageplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-incest-ageplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-incest-ageplay.png" width="700" alt="Tailcalled diagram for the cis-female incest and ageplay factor, showing the latent-score distribution and item-response patterns for incest and ageplay items.">
 </figure> 
 
 #### Cum
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-cum.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-cum.png" width="700" alt="Tailcalled diagram for the cis-female cum factor, showing the latent-score distribution and item-response patterns for semen, creampie, blowjob, and bukkake items.">
 </figure> 
 
 #### Toys
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-toys.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-toys.png" width="700" alt="Tailcalled diagram for the cis-female toys factor, showing the latent-score distribution and item-response patterns for painful toys, electric toys, and sounding-related items.">
 </figure> 
 
 #### Sensory/Roleplay
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-sensory-roleplay.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-sensory-roleplay.png" width="700" alt="Tailcalled diagram for the cis-female sensory and roleplay factor, showing the latent-score distribution and item-response patterns for latex, leather, smells, textures, and roleplay items.">
 </figure> 
 
 #### Ethnicities
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-ethnicities.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-ethnicities.png" width="700" alt="Tailcalled diagram for the cis-female ethnicities factor, showing the latent-score distribution and item-response patterns for racial-preference items.">
 </figure> 
 
 #### Nonconsent
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-nonconsent.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-nonconsent.png" width="700" alt="Tailcalled diagram for the cis-female nonconsent factor, showing the latent-score distribution and item-response patterns for rapeplay, mindbreak, and bad-end items.">
 </figure> 
 
 #### Brutality
 <figure>
-    <img src="/assets/images/kink-factor-analysis/women-brutality.png" width="700">
+    <img src="/assets/images/kink-factor-analysis/women-brutality.png" width="700" alt="Tailcalled diagram for the cis-female brutality factor, showing the latent-score distribution and item-response patterns for violence, body horror, blood, and execution-related items.">
 </figure> 

@@ -30,7 +30,7 @@ In the paper, [Leveraging a more nuanced view of personality: Narrow characteris
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/mediation/personality-predictive-validity-fig-1.png" width="700" alt="Alt text">
+        <img src="/assets/images/mediation/personality-predictive-validity-fig-1.png" width="700" alt="Table comparing predictive strength for personality domain, facet, and item models across multiple life outcomes.">
     </figure>
 </div>
 
@@ -46,7 +46,7 @@ In the study, [Predicting training success: not much more than g](https://www.we
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/mediation/intelligence-predictive-validity-fig-1.png" width="600" alt="Alt text">
+        <img src="/assets/images/mediation/intelligence-predictive-validity-fig-1.png" width="600" alt="Regression results table comparing training-success models that use only g-like ability versus models that also include non-g components.">
     </figure>
 </div>
 
@@ -96,7 +96,7 @@ In the common pathway model, genetic and environmental influences on the indicat
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/mediation/independent-vs-common-pathway-models.png" width="800" alt="Alt text">
+        <img src="/assets/images/mediation/independent-vs-common-pathway-models.png" width="800" alt="Side-by-side path diagrams of a common-pathway genetic model and an independent-pathway genetic model for twin data.">
         <figcaption>A common pathway (left) and an independent pathway (right) genetic factor model.</figcaption>
     </figure>
 </div>

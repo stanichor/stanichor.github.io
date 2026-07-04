@@ -34,7 +34,7 @@ An anime can belong to multiple genres. Broad genres (e.g., Comedy, Action, Fant
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/anime-quality/genre-counts.png" width="600" alt="Counts of anime per genre">
+        <img src="/assets/images/anime-quality/genre-counts.png" width="600" alt="Bar chart showing how many anime in the dataset belong to each genre.">
     </figure>
 </div>
 
@@ -44,7 +44,7 @@ I regress anime quality on binary genre indicators yielding the following estima
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/anime-quality/multiple-regression-coefs.png" width="600" alt="Regression coefficients for genres with 95% error bars">
+        <img src="/assets/images/anime-quality/multiple-regression-coefs.png" width="600" alt="Dot-and-error-bar plot of genre regression coefficients for anime quality, with 95 percent confidence intervals and a vertical zero line.">
     </figure>
 </div>
 

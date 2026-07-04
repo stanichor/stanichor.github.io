@@ -396,7 +396,7 @@ This factor contained items about wanting to be a woman. Among the emotions one 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-0-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-0-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Affective Gender Identity factor, showing the latent-score distribution and response patterns for items about being or becoming a woman.">
     </figure>
 </div>
 
@@ -404,7 +404,7 @@ This scale has very high reliability across most levels of affective gender iden
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-0-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-0-reliability.png" width="1000" alt="Reliability curve for the Affective Gender Identity factor across the latent trait.">
     </figure>
 </div>
 
@@ -526,7 +526,7 @@ This factor contained items about sexual interest in BDSM-related activities. No
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-1-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-1-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the BDSM Interest factor, showing the latent-score distribution and response patterns for BDSM-related items.">
     </figure>
 </div>
 
@@ -534,7 +534,7 @@ This scale has high reliability for people with average and high interest in BDS
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-1-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-1-reliability.png" width="1000" alt="Reliability curve for the BDSM Interest factor across the latent trait.">
     </figure>
 </div>
 
@@ -759,7 +759,7 @@ This factor contained items endorsing masculine gender norms, expressing pride o
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-2-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-2-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Masculine Gender Norm Endorsement factor, showing the latent-score distribution and response patterns for male-role and gender-norm items.">
     </figure>
 </div>
 
@@ -767,7 +767,7 @@ This scale has high reliability for most levels of masculine gender norm endorse
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-2-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-2-reliability.png" width="1000" alt="Reliability curve for the Masculine Gender Norm Endorsement factor across the latent trait.">
     </figure>
 </div>
 
@@ -955,7 +955,7 @@ This factor contained items about various insecurities related to masculine gend
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-3-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-3-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Masculine Gender Role Insecurity factor, showing the latent-score distribution and response patterns for male-role insecurity items.">
     </figure>
 </div>
 
@@ -963,7 +963,7 @@ This scale has high reliability for people with moderately below-average to high
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-3-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-3-reliability.png" width="1000" alt="Reliability curve for the Masculine Gender Role Insecurity factor across the latent trait.">
     </figure>
 </div>
 
@@ -1079,7 +1079,7 @@ This factor contained capturing distress about one’s male gender or the desire
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-4-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-4-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Gender Dysphoria factor, showing the latent-score distribution and response patterns for dysphoria-related items.">
     </figure>
 </div>
 
@@ -1087,7 +1087,7 @@ This scale has high reliability for those with average-to-high levels of gender 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-4-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-4-reliability.png" width="1000" alt="Reliability curve for the Gender Dysphoria factor across the latent trait.">
     </figure>
 </div>
 
@@ -1139,7 +1139,7 @@ This factor contained items dealing with sexual interest in having sex with men 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-5-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-5-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Homosexuality factor, showing the latent-score distribution and response patterns for same-sex attraction items.">
     </figure>
 </div>
 
@@ -1147,7 +1147,7 @@ This scale had moderate reliability for the upper end of the distribution and at
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-5-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-5-reliability.png" width="1000" alt="Reliability curve for the Homosexuality factor across the latent trait.">
     </figure>
 </div>
 
@@ -1319,7 +1319,7 @@ While most of the items load positively on this factor are about various aspects
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-6-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-6-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Perceived Female Advantage factor, showing the latent-score distribution and response patterns for beliefs that women have social or practical advantages.">
     </figure>
 </div>
 
@@ -1327,7 +1327,7 @@ This scale had moderate reliability across the distribution. Given the number of
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-6-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-6-reliability.png" width="1000" alt="Reliability curve for the Perceived Female Advantage factor across the latent trait.">
     </figure>
 </div>
 
@@ -1402,7 +1402,7 @@ This factor contained all the items dealing with mental conditions, which all ha
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-7-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-7-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Mental Illness factor, showing the latent-score distribution and response patterns for mental-health-related items.">
     </figure>
 </div>
 
@@ -1410,7 +1410,7 @@ This scale has moderate reliability for the high end of the distribution, but lo
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-7-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-7-reliability.png" width="1000" alt="Reliability curve for the Mental Illness factor across the latent trait.">
     </figure>
 </div>
 
@@ -1532,7 +1532,7 @@ Items concerning sexual arousal from behaving in feminine ways or from imagining
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-8-tailcalled-diagram.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-8-tailcalled-diagram.png" width="1000" alt="Tailcalled diagram for the Autogynephilia factor, showing the latent-score distribution and response patterns for cross-gender erotic and identification items.">
     </figure>
 </div>
 
@@ -1540,7 +1540,7 @@ This scale had very high reliability for average-to-high levels of autogynephili
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-8-reliability.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-8-reliability.png" width="1000" alt="Reliability curve for the Autogynephilia factor across the latent trait.">
     </figure>
 </div>
 
@@ -1552,7 +1552,7 @@ In the following correlation matrix, each cell displays the estimated Pearson co
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/factor-corr.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/factor-corr.png" width="1000" alt="Correlation heatmap of the extracted gender-satisfaction factors.">
     </figure>
 </div>
 
@@ -1562,7 +1562,7 @@ The partial correlation between two variables is their correlation after elimina
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/partial-factor-corr.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/partial-factor-corr.png" width="1000" alt="Partial-correlation heatmap of the extracted gender-satisfaction factors after controlling for the others.">
     </figure>
 </div>
 
@@ -1580,7 +1580,7 @@ Deriving a Markov network from the remaining variables yields the following stru
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/gender-satisfaction/markov-network.png" width="1000" alt="Alt text">
+        <img src="/assets/images/gender-satisfaction/markov-network.png" width="1000" alt="Network diagram showing conditional relationships among the extracted gender-satisfaction factors.">
     </figure>
 </div>
 

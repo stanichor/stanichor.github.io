@@ -31,7 +31,7 @@ The short version:
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/rating-kde.png" width="500" alt="Kernel density plot of my movie ratings.">
+        <img src="/assets/images/movie-ratings/rating-kde.png" width="500" alt="Kernel-density plot of the author's movie ratings, showing a trimodal-looking distribution centered near 50.">
     </figure>
 </div>
 
@@ -49,7 +49,7 @@ One obvious thing accuracy should depend on is how many movies are in the traini
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/correlation_by_set_size.png" width="500" alt="Prediction accuracy by number of movies in the training set, with the x-axis on a log scale.">
+        <img src="/assets/images/movie-ratings/correlation_by_set_size.png" width="500" alt="Line chart showing prediction correlation as a function of training-set size on a log-scaled x-axis.">
     </figure>
 </div>
 
@@ -67,11 +67,11 @@ I tested several combinations. The broad result is that most preprocessing choic
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
     <figure style="text-align: center;">
-        <img src="/assets/images/movie-ratings/normalized_embedding_size.png" width="400" alt="Prediction accuracy by embedding size using normalized embeddings.">
+        <img src="/assets/images/movie-ratings/normalized_embedding_size.png" width="400" alt="Line chart showing prediction accuracy by embedding dimensionality for normalized embeddings.">
         <figcaption>Normalized embeddings</figcaption>
     </figure>
     <figure style="text-align: center;">
-        <img src="/assets/images/movie-ratings/normalized_embedding_size_with_interactions.png" width="400" alt="Prediction accuracy by embedding size using normalized embeddings with interaction terms.">
+        <img src="/assets/images/movie-ratings/normalized_embedding_size_with_interactions.png" width="400" alt="Line chart showing prediction accuracy by embedding dimensionality for normalized embeddings with interaction terms.">
         <figcaption>Normalized embeddings with interactions</figcaption>
     </figure>
 </div>
@@ -80,11 +80,11 @@ I tested several combinations. The broad result is that most preprocessing choic
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
     <figure style="text-align: center;">
-        <img src="/assets/images/movie-ratings/boxcox_normalized_embedding_size.png" width="400" alt="Prediction accuracy by embedding size using Box-Cox normalized embeddings.">
+        <img src="/assets/images/movie-ratings/boxcox_normalized_embedding_size.png" width="400" alt="Line chart showing prediction accuracy by embedding dimensionality for Box-Cox normalized embeddings.">
         <figcaption>Box-Cox normalized embeddings</figcaption>
     </figure>
     <figure style="text-align: center;">
-        <img src="/assets/images/movie-ratings/boxcox_normalized_embedding_size_with_interactions.png" width="400" alt="Prediction accuracy by embedding size using Box-Cox normalized embeddings with interaction terms.">
+        <img src="/assets/images/movie-ratings/boxcox_normalized_embedding_size_with_interactions.png" width="400" alt="Line chart showing prediction accuracy by embedding dimensionality for Box-Cox normalized embeddings with interaction terms.">
         <figcaption>Box-Cox normalized embeddings with interactions</figcaption>
     </figure>
 </div>
@@ -93,11 +93,11 @@ I tested several combinations. The broad result is that most preprocessing choic
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
     <figure style="text-align: center;">
-        <img src="/assets/images/movie-ratings/standardized_embedding_size.png" width="400" alt="Prediction accuracy by embedding size using standardized embeddings.">
+        <img src="/assets/images/movie-ratings/standardized_embedding_size.png" width="400" alt="Line chart showing prediction accuracy by embedding dimensionality for standardized embeddings.">
         <figcaption>Standardized embeddings</figcaption>
     </figure>
     <figure style="text-align: center;">
-        <img src="/assets/images/movie-ratings/boxcox_standardized_embedding_size.png" width="400" alt="Prediction accuracy by embedding size using Box-Cox standardized embeddings.">
+        <img src="/assets/images/movie-ratings/boxcox_standardized_embedding_size.png" width="400" alt="Line chart showing prediction accuracy by embedding dimensionality for Box-Cox standardized embeddings.">
         <figcaption>Box-Cox standardized embeddings</figcaption>
     </figure>
 </div>
@@ -110,7 +110,7 @@ The recsys is moderately predictive of how much I’ll like a movie, but it has 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/external-correlations.png" width="900" alt="Correlations between my movie ratings and ratings from external movie rating sites.">
+        <img src="/assets/images/movie-ratings/external-correlations.png" width="900" alt="Dot-and-interval plot showing correlations between the author's movie ratings and ratings from external movie sites.">
     </figure>
 </div>
 
@@ -120,7 +120,7 @@ How well do they work together?
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/multiplatform-prediction.png" width="500" alt="Prediction of my movie ratings using ratings from multiple external platforms.">
+        <img src="/assets/images/movie-ratings/multiplatform-prediction.png" width="500" alt="Scatterplot of predicted versus actual movie ratings using multiple external platforms as predictors.">
     </figure>
 </div>
 
@@ -130,7 +130,7 @@ Of course, I’d be remiss if I didn’t consider the possibility that there’s
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/latent-factor.png" width="500" alt="Relationship between latent external-rating factor scores and my movie ratings.">
+        <img src="/assets/images/movie-ratings/latent-factor.png" width="500" alt="Scatterplot of latent external-rating factor scores against the author's movie ratings.">
     </figure>
 </div>
 
@@ -153,7 +153,7 @@ Of course, there’s the problem of genres. Perhaps external ratings have biases
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/platforms-plus-genres.png" width="500">
+        <img src="/assets/images/movie-ratings/platforms-plus-genres.png" width="500" alt="Scatterplot of predicted versus actual movie ratings using external platform ratings plus genre indicators.">
     </figure>
 </div>
 
@@ -161,7 +161,7 @@ Adding genre information[^genre] did not produce evidence of improved performanc
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/latent-factor-plus-genres.png" width="500">
+        <img src="/assets/images/movie-ratings/latent-factor-plus-genres.png" width="500" alt="Scatterplot of predicted versus actual movie ratings using a latent external-rating factor plus genre indicators.">
     </figure>
 </div>
 
@@ -171,7 +171,7 @@ Are movies getting better or worse over time? I don’t know. [Other people](htt
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/predicted-ratings-by-year.png" width="500" alt="Predicted movie ratings by release year.">
+        <img src="/assets/images/movie-ratings/predicted-ratings-by-year.png" width="500" alt="Scatterplot or smooth trend of predicted movie ratings by release year, showing little overall relationship with year.">
     </figure>
 </div>
 
@@ -205,7 +205,7 @@ To determine this, I rated the movies I’ve seen using various star-rating syst
   <summary>2 stars</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/movie-ratings/histograms/2-star.png" width="1000">
+            <img src="/assets/images/movie-ratings/histograms/2-star.png" width="1000" alt="Histogram of movies rated on a 2-star scale.">
         </figure>
     </div>
 </details>
@@ -214,7 +214,7 @@ To determine this, I rated the movies I’ve seen using various star-rating syst
   <summary>3 stars</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/movie-ratings/histograms/3-star.png" width="1000">
+            <img src="/assets/images/movie-ratings/histograms/3-star.png" width="1000" alt="Histogram of movies rated on a 3-star scale.">
         </figure>
     </div>
 </details>
@@ -223,7 +223,7 @@ To determine this, I rated the movies I’ve seen using various star-rating syst
   <summary>5 stars</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/movie-ratings/histograms/5-star.png" width="1000">
+            <img src="/assets/images/movie-ratings/histograms/5-star.png" width="1000" alt="Histogram of movies rated on a 5-star scale.">
         </figure>
     </div>
 </details>
@@ -232,7 +232,7 @@ To determine this, I rated the movies I’ve seen using various star-rating syst
   <summary>7 stars</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/movie-ratings/histograms/7-star.png" width="1000">
+            <img src="/assets/images/movie-ratings/histograms/7-star.png" width="1000" alt="Histogram of movies rated on a 7-star scale.">
         </figure>
     </div>
 </details>
@@ -241,7 +241,7 @@ To determine this, I rated the movies I’ve seen using various star-rating syst
   <summary>9 stars</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/movie-ratings/histograms/9-star.png" width="1000">
+            <img src="/assets/images/movie-ratings/histograms/9-star.png" width="1000" alt="Histogram of movies rated on a 9-star scale.">
         </figure>
     </div>
 </details>
@@ -250,7 +250,7 @@ To determine this, I rated the movies I’ve seen using various star-rating syst
   <summary>10 stars</summary>
     <div style="text-align: center;">
         <figure>
-            <img src="/assets/images/movie-ratings/histograms/10-star.png" width="1000">
+            <img src="/assets/images/movie-ratings/histograms/10-star.png" width="1000" alt="Histogram of movies rated on a 10-star scale.">
         </figure>
     </div>
 </details>
@@ -261,7 +261,7 @@ Now let’s see how well the star ratings correlate with each other, as well as 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/raw-rating-system-correlations.png" width="1000">
+        <img src="/assets/images/movie-ratings/raw-rating-system-correlations.png" width="1000" alt="Correlation heatmap comparing the author's Resorter ratings with the observed 2-star, 3-star, 5-star, 7-star, 9-star, and 10-star ratings.">
     </figure>
 </div>
 
@@ -271,7 +271,7 @@ However, these are correlations between the observed ratings, not necessarily be
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/latent-rating-system-correlations.png" width="1000">
+        <img src="/assets/images/movie-ratings/latent-rating-system-correlations.png" width="1000" alt="Polychoric-correlation heatmap comparing the latent continuous judgments underlying the author's star-rating systems and Resorter ratings.">
     </figure>
 </div>
 
@@ -279,7 +279,7 @@ Most of the differences between the rating systems disappear once discretization
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/correlation-residuals.png" width="1000">
+        <img src="/assets/images/movie-ratings/correlation-residuals.png" width="1000" alt="Heatmap showing the difference between the polychoric and raw correlation matrices for the movie rating systems.">
     </figure>
 </div>
 
@@ -295,7 +295,7 @@ To model this, I assumed there was a latent movie-enjoyment factor. The Resorter
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/mermaid-diagram.png" width="1000">
+        <img src="/assets/images/movie-ratings/mermaid-diagram.png" width="1000" alt="Path diagram in which a latent movie-enjoyment factor predicts Resorter ratings directly and predicts star-rating systems through a shared latent star-rating judgment factor.">
     </figure>
 </div>
 
@@ -318,7 +318,7 @@ In [Item Response Theory](https://en.wikipedia.org/wiki/Item_response_theory), [
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/item-iics.png" width="1000">
+        <img src="/assets/images/movie-ratings/item-iics.png" width="1000" alt="Item-information curves showing how much measurement information each star-rating system provides across movie quality.">
     </figure>
 </div>
 
@@ -340,13 +340,13 @@ It's nice to see that the recsys works. Though, to make it work better, I'd have
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/mad_by_set_size.png" width="500">
+        <img src="/assets/images/movie-ratings/mad_by_set_size.png" width="500" alt="Line chart showing mean absolute deviation by training-set size.">
     </figure>
 </div>
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/movie-ratings/rmse_by_set_size.png" width="500">
+        <img src="/assets/images/movie-ratings/rmse_by_set_size.png" width="500" alt="Line chart showing root mean squared error by training-set size.">
     </figure>
 </div>
 

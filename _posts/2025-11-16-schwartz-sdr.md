@@ -34,13 +34,13 @@ Values have different levels of endorsement. Using the scoring method discussed 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/schwartz-sdr/svs-means.png" width="600" alt="Alt text">
+        <img src="/assets/images/schwartz-sdr/svs-means.png" width="600" alt="Bar chart of mean re-centered Schwartz Value Survey scores by value domain.">
     </figure>
 </div>
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/schwartz-sdr/pvq-means.png" width="600" alt="Alt text">
+        <img src="/assets/images/schwartz-sdr/pvq-means.png" width="600" alt="Bar chart of mean re-centered Portrait Values Questionnaire scores by value domain.">
     </figure>
 </div>
 
@@ -52,7 +52,7 @@ First, I modeled each factor (Social Desirability + the values) as correlated, w
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/schwartz-sdr/factor-corr.png" width="600" alt="Alt text">
+        <img src="/assets/images/schwartz-sdr/factor-corr.png" width="600" alt="Correlation heatmap showing relationships between social desirability and the Schwartz value factors.">
     </figure>
 </div>
 
@@ -306,7 +306,7 @@ Easydamus has made a diagram that conveys this quite neatly:
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/schwartz-sdr/easydamus-alignment.png" width="600" alt="Alt text">
+        <img src="/assets/images/schwartz-sdr/easydamus-alignment.png" width="600" alt="Scatterplot comparing Easydamus political alignment scores with estimated social-desirability scores.">
     </figure>
 </div>
 

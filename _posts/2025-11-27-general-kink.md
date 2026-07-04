@@ -17,7 +17,7 @@ Surveys of sexual interests frequently show a positive manifold: many items corr
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/general-kink-factor/item-corr.png" width="700" alt="Alt text">
+        <img src="/assets/images/general-kink-factor/item-corr.png" width="700" alt="Correlation heatmap showing the positive manifold among sexual-interest items.">
     </figure>
 </div>
 
@@ -42,8 +42,8 @@ I test these models using items from Tailcalled’s Gender Satisfaction survey. 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/general-kink-factor/factor-corr-base.png" width="400" alt="Alt text">
-        <img src="/assets/images/general-kink-factor/partial-factor-corr-base.png" width="400" alt="Alt text">
+        <img src="/assets/images/general-kink-factor/factor-corr-base.png" width="400" alt="Correlation heatmap of the baseline kink factors before adding a general kink factor.">
+        <img src="/assets/images/general-kink-factor/partial-factor-corr-base.png" width="400" alt="Partial-correlation heatmap of the baseline kink factors before adding a general kink factor.">
         <figcaption>The factor correlation (left) and the factor partial correlation (right) matrices.</figcaption>
     </figure>
 </div>
@@ -156,8 +156,8 @@ Right off the bat, I'm wary of this model. It's very similar to a bifactor model
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/general-kink-factor/factor-corr-2b.png" width="400" alt="Alt text">
-        <img src="/assets/images/general-kink-factor/partial-factor-corr-2b.png" width="400" alt="Alt text">
+        <img src="/assets/images/general-kink-factor/factor-corr-2b.png" width="400" alt="Correlation heatmap of the kink factors under Model 2b, with a freely loading general factor orthogonal to the specific factors.">
+        <img src="/assets/images/general-kink-factor/partial-factor-corr-2b.png" width="400" alt="Partial-correlation heatmap of the kink factors under Model 2b, with a freely loading general factor orthogonal to the specific factors.">
         <figcaption>The factor correlation (left) and the factor partial correlation (right) matrices for Model 2b.</figcaption>
     </figure>
 </div>
@@ -292,8 +292,8 @@ Model 2a is almost the same as Model 2b, except that the general factor is allow
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/general-kink-factor/factor-corr-2a.png" width="400" alt="Alt text">
-        <img src="/assets/images/general-kink-factor/partial-factor-corr-2a.png" width="400" alt="Alt text">
+        <img src="/assets/images/general-kink-factor/factor-corr-2a.png" width="400" alt="Correlation heatmap of the kink factors under Model 2a, with a freely loading general factor allowed to correlate with the specific factors.">
+        <img src="/assets/images/general-kink-factor/partial-factor-corr-2a.png" width="400" alt="Partial-correlation heatmap of the kink factors under Model 2a, with a freely loading general factor allowed to correlate with the specific factors.">
         <figcaption>The factor correlation (left) and the factor partial correlation (right) matrices for Model 2a.</figcaption>
     </figure>
 </div>
@@ -426,8 +426,8 @@ I have more hope for this model because it is similar to the one I use to model 
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/general-kink-factor/factor-corr-1b.png" width="400" alt="Alt text">
-        <img src="/assets/images/general-kink-factor/partial-factor-corr-1b.png" width="400" alt="Alt text">
+        <img src="/assets/images/general-kink-factor/factor-corr-1b.png" width="400" alt="Correlation heatmap of the kink factors under Model 1b, with an equal-loading general factor orthogonal to the specific factors.">
+        <img src="/assets/images/general-kink-factor/partial-factor-corr-1b.png" width="400" alt="Partial-correlation heatmap of the kink factors under Model 1b, with an equal-loading general factor orthogonal to the specific factors.">
         <figcaption>The factor correlation (left) and the factor partial correlation (right) matrices for Model 1b.</figcaption>
     </figure>
 </div>
@@ -560,8 +560,8 @@ Since Model 1b worked relatively well, it is natural to ask what happens when th
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/general-kink-factor/factor-corr-1a.png" width="400" alt="Alt text">
-        <img src="/assets/images/general-kink-factor/partial-factor-corr-1a.png" width="400" alt="Alt text">
+        <img src="/assets/images/general-kink-factor/factor-corr-1a.png" width="400" alt="Correlation heatmap of the kink factors under Model 1a, with an equal-loading general factor allowed to correlate with the specific factors.">
+        <img src="/assets/images/general-kink-factor/partial-factor-corr-1a.png" width="400" alt="Partial-correlation heatmap of the kink factors under Model 1a, with an equal-loading general factor allowed to correlate with the specific factors.">
         <figcaption>The factor correlation (left) and the factor partial correlation (right) matrices for Model 1a.</figcaption>
     </figure>
 </div>

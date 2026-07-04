@@ -79,7 +79,7 @@ Estimating the correlation with the Cognitive Ability Composite4 yields 0.85. Th
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/rationality/one-factor-jensen-method.png" width="800" alt="Scatterplot showing CART subtest factor loadings on the x-axis and correlations with Cognitive Ability Composite4 on the y-axis, with a positive fitted slope.">
+        <img src="/assets/images/rationality/one-factor-jensen-method.png" width="800" alt="Scatterplot of CART subtest factor loadings against correlations with the overall cognitive-ability composite, with a positive fitted line.">
     </figure>
 </div>
 
