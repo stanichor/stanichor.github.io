@@ -41,7 +41,11 @@ The long-run average rate throws away an important fact about our current situat
 
 If we exclude that problematic 27th Amendment, we get a current gap of 55 years, pushing the Lindy estimate to 2081. There is only one previous gap at least this long: the 61-year gap between the 12th and 13th Amendments.
 
-![Lindy-style estimate for the next U.S. amendment (excluding the 27th Amendment)](/assets/images/amendments/lindy-amendment-estimate-since-26th.png)
+<div style="text-align: center;">
+  <figure>
+    <img src="/assets/images/amendments/lindy-amendment-estimate-since-26th.png" alt="Lindy-style estimate for the next U.S. amendment, excluding the 27th Amendment." width="1000" />
+  </figure>
+</div>
 
 ## A Changing Amendment Rate
 
