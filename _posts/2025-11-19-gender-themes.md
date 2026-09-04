@@ -1205,7 +1205,7 @@ A notable difference between this Markov network and [the one derived from the G
     </figure>
 </div>
 
-I initially suspected this discrepancy might be due to the influence of Affective Gender Identity. However, after removing that factor from the analysis, the partial correlation between Autogynephilia and Masculine Gender Norm Endorsement was only −0.07—an outcome that, in retrospect, fits the expected path structure. Summing the paths between Autogynephilia and Masculine Gender Norm Endorsement gives $0.17 + (0.61 \times -.44) = -.10$.
+At first, I suspected this discrepancy might be due to the influence of Affective Gender Identity. After removing that factor from the analysis, the partial correlation between Autogynephilia and Masculine Gender Norm Endorsement was −0.07, an outcome that fits the expected path structure. Summing the paths between Autogynephilia and Masculine Gender Norm Endorsement gives $0.17 + (0.61 \times -.44) = -.10$.
 
 Even so, I'm still left wondering why the partial correlations between Autogynephilia and Gender Conservatism / Masculine Gender Norm Endorsement differ so much across surveys.
 
