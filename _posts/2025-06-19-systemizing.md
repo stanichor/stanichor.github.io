@@ -49,7 +49,7 @@ These results imply that the association between the EQ and autism may not refle
 
 ## Measurement Bias in the Systemizing Quotient
 
-The SQ does not measure a general drive to understand rule-based systems. Instead, many items measure interest in male-dominated technical domains—a distinction that matters. If men score higher on the SQ because the items are male-coded, then the observed sex differences may be artifacts of item content rather than cognitive style.
+The Systemizing Quotient does not measure a general tendency towards analyzing or constructing rule-based systems. Instead, many items measure interest in male-dominated domains. If men score higher on the SQ because the items are measuring male interests, then the observed sex differences are artifacts of item content rather than cognitive style.
 
 A factor analysis of the SQ reveals six correlated factors:
 - Technical Curiosity
