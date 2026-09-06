@@ -484,6 +484,9 @@
       const lead = document.createElement("p");
       lead.textContent = "🤨 This combination is unusually unlikely. Are you sure you entered the information correctly?";
       distanceWarning.appendChild(lead);
+      const caution = document.createElement("p");
+      caution.textContent = "If these values are correct, treat the estimate cautiously: this combination is unlike those in the training data.";
+      distanceWarning.appendChild(caution);
       const listLead = document.createElement("p");
       listLead.textContent = highlighted.length === 1 ?
         "The value that looks unusual is:" : "The values that look unusual are:";
