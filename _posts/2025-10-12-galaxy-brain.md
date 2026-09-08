@@ -6,7 +6,7 @@ permalink: /galaxy-brain/
 categories: 
 section: other
 related:
-  - /factor-analyses/
+  - /erogamer/
   - /metis/
   - /rationality/
 ---
