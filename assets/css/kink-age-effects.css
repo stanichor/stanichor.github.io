@@ -1,0 +1,515 @@
+.kink-age-explorer {
+  --kae-ink: #172033;
+  --kae-muted: #5c667a;
+  --kae-line: #d7deea;
+  --kae-soft: #f5f7fa;
+  --kae-focus: #0969da;
+  color: var(--kae-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.kink-age-intro {
+  max-width: 58rem;
+  margin: 0 0 1.35rem;
+  color: var(--kae-muted);
+  font-size: 1.03rem;
+}
+
+.kink-age-controls {
+  max-width: 32rem;
+  margin-bottom: 1.25rem;
+}
+
+.kink-age-controls label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 650;
+}
+
+.kink-age-picker {
+  position: relative;
+}
+
+.kink-age-picker-button {
+  display: flex;
+  width: 100%;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.58rem 0.75rem;
+  border: 1px solid #aeb8c8;
+  border-radius: 7px;
+  background: #fff;
+  color: var(--kae-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.kink-age-picker-button [data-role="item-button-label"] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kink-age-picker-button:focus-visible {
+  border-color: var(--kae-focus);
+  outline: 3px solid rgba(9, 105, 218, 0.18);
+  outline-offset: 0;
+}
+
+.kink-age-picker-button:disabled {
+  background: var(--kae-soft);
+  cursor: wait;
+}
+
+.kink-age-picker-caret {
+  flex: 0 0 auto;
+  transition: transform 120ms ease;
+}
+
+.kink-age-picker-button[aria-expanded="true"] .kink-age-picker-caret {
+  transform: rotate(180deg);
+}
+
+.kink-age-picker-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  left: 0;
+  max-height: 18rem;
+  overflow-y: auto;
+  padding: 0.3rem;
+  border: 1px solid #aeb8c8;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(23, 32, 51, 0.16);
+}
+
+.kink-age-picker-menu[hidden] {
+  display: none;
+}
+
+.kink-age-picker-option {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--kae-ink);
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.kink-age-picker-option:hover,
+.kink-age-picker-option:focus-visible {
+  background: var(--kae-soft);
+  outline: none;
+}
+
+.kink-age-picker-option[aria-selected="true"] {
+  background: #e8f1fb;
+  font-weight: 650;
+}
+
+.kink-age-chart-card {
+  padding: 1rem 1rem 0.85rem;
+  border: 1px solid var(--kae-line);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(31, 42, 68, 0.06);
+}
+
+.kink-age-chart-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.kink-age-chart-heading h2 {
+  margin: 0 0 0.15rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 1.15rem !important;
+  line-height: 1.3;
+}
+
+.kink-age-chart-heading p {
+  margin: 0;
+  color: var(--kae-muted);
+  font-size: 0.88rem;
+}
+
+.kink-age-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.kink-age-legend button {
+  display: inline-flex;
+  min-height: 2rem;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.52rem;
+  border: 1px solid var(--kae-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--kae-ink);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.kink-age-legend button:hover {
+  background: var(--kae-soft);
+}
+
+.kink-age-legend button:focus-visible {
+  outline: 3px solid rgba(9, 105, 218, 0.22);
+  outline-offset: 1px;
+}
+
+.kink-age-legend button[aria-pressed="false"] {
+  color: var(--kae-muted);
+  opacity: 0.58;
+}
+
+.kink-age-swatch {
+  width: 0.72rem;
+  height: 0.72rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--group-color);
+}
+
+.kink-age-plot {
+  position: relative;
+  min-height: 24rem;
+}
+
+.kink-age-plot svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 24rem;
+  overflow: visible;
+  touch-action: none;
+}
+
+.kink-age-grid-minor {
+  stroke: #667085;
+  stroke-opacity: 0.11;
+  stroke-width: 1;
+}
+
+.kink-age-grid-major {
+  stroke: #667085;
+  stroke-opacity: 0.25;
+  stroke-width: 1;
+}
+
+.kink-age-zero {
+  stroke: #424a57;
+  stroke-opacity: 0.7;
+  stroke-width: 1.5;
+}
+
+.kink-age-axis {
+  stroke: #606a79;
+  stroke-width: 1;
+}
+
+.kink-age-axis-text {
+  fill: #4d5767;
+  font-size: 13px;
+}
+
+.kink-age-axis-label {
+  fill: #273142;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.kink-age-ribbon {
+  opacity: 0.13;
+}
+
+.kink-age-series-line {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.kink-age-series-point {
+  stroke: #fff;
+  stroke-width: 0.8;
+}
+
+.kink-age-hover-line {
+  stroke: #273142;
+  stroke-dasharray: 4 4;
+  stroke-opacity: 0.55;
+  stroke-width: 1;
+}
+
+.kink-age-hover-point {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.kink-age-tooltip {
+  position: absolute;
+  z-index: 2;
+  top: 0.75rem;
+  min-width: 15.5rem;
+  max-width: 20rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 7px;
+  background: rgba(26, 32, 44, 0.96);
+  box-shadow: 0 7px 22px rgba(23, 32, 51, 0.22);
+  color: #fff;
+  font-size: 0.83rem;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+.kink-age-tooltip strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.kink-age-tooltip-row {
+  display: grid;
+  grid-template-columns: 0.7rem 5.1rem 1fr;
+  gap: 0.38rem;
+  align-items: baseline;
+}
+
+.kink-age-tooltip-row + .kink-age-tooltip-row {
+  margin-top: 0.25rem;
+}
+
+.kink-age-tooltip-row .kink-age-swatch {
+  align-self: center;
+  width: 0.58rem;
+  height: 0.58rem;
+}
+
+.kink-age-tooltip-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.kink-age-status {
+  margin: 0.5rem 0;
+  color: var(--kae-muted);
+}
+
+.kink-age-status[hidden] {
+  display: none;
+}
+
+.kink-age-status.is-error {
+  color: #a40e26;
+}
+
+.kink-age-footnote {
+  margin: 0.6rem 0 0;
+  color: var(--kae-muted);
+  font-size: 0.82rem;
+}
+
+.kink-contrast-card {
+  margin-top: 2rem;
+}
+
+.kink-contrast-item-control {
+  max-width: 32rem;
+  margin-top: 0.75rem;
+}
+
+.kink-contrast-item-control label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 650;
+}
+
+.kink-contrast-views {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.75rem 0 0.4rem;
+}
+
+.kink-contrast-views button {
+  min-height: 2.25rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--kae-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--kae-ink);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.kink-contrast-views button:hover {
+  background: var(--kae-soft);
+}
+
+.kink-contrast-views button:focus-visible {
+  outline: 3px solid rgba(9, 105, 218, 0.22);
+  outline-offset: 1px;
+}
+
+.kink-contrast-views button[aria-pressed="true"] {
+  border-color: #4a79a5;
+  background: #e8f1fb;
+  font-weight: 650;
+}
+
+.kink-contrast-method {
+  margin: 0.75rem 0 0.25rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--kae-line);
+  border-radius: 7px;
+  background: var(--kae-soft);
+  color: var(--kae-muted);
+  font-size: 0.9rem;
+}
+
+.kink-contrast-method summary {
+  color: var(--kae-ink);
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.kink-contrast-method ul {
+  margin: 0.65rem 0 0.45rem;
+  padding-left: 1.25rem;
+}
+
+.kink-contrast-method li + li {
+  margin-top: 0.3rem;
+}
+
+.kink-contrast-method p {
+  margin: 0.45rem 0 0;
+}
+
+.kink-contrast-plot {
+  position: relative;
+  max-width: 46rem;
+  min-height: 30rem;
+  margin: 0 auto;
+}
+
+.kink-contrast-plot svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 30rem;
+  overflow: visible;
+  touch-action: none;
+}
+
+.kink-contrast-point {
+  fill: #3b76af;
+  fill-opacity: 0.72;
+  stroke: #fff;
+  stroke-width: 0.8;
+}
+
+.kink-contrast-hover-point {
+  fill: #f28e2b;
+  stroke: #172033;
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.kink-contrast-selected-point {
+  fill: #f28e2b;
+  stroke: #172033;
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.kink-contrast-tooltip-row {
+  display: grid;
+  grid-template-columns: minmax(7.3rem, auto) 1fr;
+  gap: 0.65rem;
+}
+
+.kink-contrast-tooltip-row + .kink-contrast-tooltip-row {
+  margin-top: 0.25rem;
+}
+
+.kink-contrast-tooltip-value {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.kink-contrast-tooltip-subheading {
+  margin: 0.6rem 0 0.3rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  font-weight: 650;
+}
+
+@media (max-width: 700px) {
+  .kink-age-chart-card {
+    padding: 0.8rem 0.55rem 0.75rem;
+  }
+
+  .kink-age-chart-heading {
+    display: block;
+    padding: 0 0.25rem;
+  }
+
+  .kink-age-legend {
+    justify-content: flex-start;
+    margin-top: 0.7rem;
+  }
+
+  .kink-age-plot,
+  .kink-age-plot svg,
+  .kink-contrast-plot,
+  .kink-contrast-plot svg {
+    min-height: 20rem;
+  }
+
+  .kink-age-footnote {
+    padding: 0 0.25rem;
+  }
+
+  .kink-contrast-views {
+    padding: 0 0.25rem;
+  }
+}
+
+@media print {
+  .kink-age-controls,
+  .kink-contrast-views,
+  .kink-age-footnote {
+    display: none;
+  }
+
+  .kink-age-chart-card {
+    border: 0;
+    box-shadow: none;
+  }
+}
