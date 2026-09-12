@@ -255,7 +255,7 @@ This factor indicates a preference for physical smallness, which also seems to b
     </figure>
 </div>
 
-This factor indicates a preference for a woman who invests a lot in her appearance. Most of the indicators relate to styling (e.g., 'Red lipstick', 'Nail Polish', 'Jewelry') and garments (e.g., 'High Heels', 'Little Black Dresses', 'Tight Corsets'). Not just any styling or garments, but ones that are conventionally feminine, glamorous, and deliberately cultivated. 'Shaved legs' fits this pattern as well, suggesting an emphasis on grooming and maintenance rather than ornament alone. It's not just these constructed aspects of appearance that the factor focuses on, however, but also non-ornamental features (e.g., 'Long legs', 'Very large breasts'), suggesting that this is more than simply a preference for ornamentation. Rather, it seems to capture a preference for a glamorous, highly cultivated feminine ideal in which clothing, grooming, and bodily features all contribute to the overall presentation.
+This factor indicates a preference for a woman who invests a lot in her appearance. Most of the indicators relate to styling (e.g., 'Red lipstick', 'Nail Polish', 'Jewelry') and garments (e.g., 'High Heels', 'Little Black Dresses', 'Tight Corsets'). More specifically, there's a preference for women who style and adorn themselves in such a way as to appear more "glamorous". It's not just these ornamental aspects of appearance that the factor focuses on, however, but also non-ornamental features (e.g., 'Long legs', 'Very large breasts'), suggesting that this is more than simply a preference for ornamentation. Rather, it seems to capture a preference for a glamorous, highly cultivated feminine ideal in which clothing, grooming, and bodily features all contribute to the overall presentation.
 
 **Factor Loadings**
 
@@ -283,7 +283,7 @@ This factor indicates a preference for a woman who invests a lot in her appearan
     </figure>
 </div>
 
-This factor indicates a preference for not just youthfulness, but what seems to be an ingénue archetype. There appear to be three main components: an age component ('Young', 'Older women' (negative loading), 'Teenagers', 'Mature' (negative loading)); a 'delicate features' component ('Small Hands', 'Little noses', 'Slender', 'Comfortably Overweight' (negative loading)); and a racialized component ('Fair skin', 'Light eyes', 'Dark skin' (negative loading)). One indicator seems to combine all three of these components: 'Cheerleaders', which evokes youth, slender conventional attractiveness, and a culturally white-coded American feminine archetype. Taken together, the factor seems to capture a preference for a youthful, delicate, and fair-skinned femininity rather than youth alone.
+This factor indicates a preference for not just youthfulness, but what seems to be an ingénue archetype. There appear to be three main components: an age component ('Young', 'Older women' (negative loading), 'Teenagers', 'Mature' (negative loading)); a 'delicate features' component ('Small Hands', 'Little noses', 'Slender', 'Comfortably Overweight' (negative loading)); and a racialized component ('Fair skin', 'Light eyes', 'Dark skin' (negative loading)). One indicator even seems to combine all three of these components: 'Cheerleaders'. Taken together, the factor seems to capture a preference for a youthful, delicate, and fair-skinned femininity rather than youth alone.
 
 **Factor Loadings**
 
