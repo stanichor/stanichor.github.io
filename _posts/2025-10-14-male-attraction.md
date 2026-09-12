@@ -14,232 +14,381 @@ related:
 In [What Do We Desire in a Woman?](https://thingstoread.substack.com/p/what-do-we-desire-in-a-woman), Apple Pie conducted surveys on romantic preferences, asking participants to rate several traits based on how attractive they are. The following is a replication of the analysis using confirmatory factor analysis (CFA) and item response theory (IRT), rather than using principal components analysis (PCA) as Apple Pie did. PCA forces factors to be independent, while CFA allows factors to correlate. IRT also provides more item-level information.
 
 ## Factor Analysis Results
-I found 8 interpretable factors of male attraction towards women. I've labeled them by the archetypes that best exemplify them: 
-1. Curvy Girl
-2. Free Spirit
-3. Intellectual
-4. Amazon
-5. Nice Girl
-6. Girl Next Door
-7. Fashionista
-8. Innocent Girl
 
-For reference, here are the factors that Apple Pie found: 
-- Factor 0: The Overall Average
-- Factor 1: Skinny Girls vs BBWs
-- Factor 2: Vapid Chicks vs Great Personalities
-- Factor 3: The Barbie Dimension
-- Factor 4: The MILF Dimension
-- Factor 5: Temptresses vs Trad Wives
+Parallel analysis suggested eight factors.[^eight] Expand each factor below for its interpretation and loadings.
 
-Some similarities: 
-- Apple Pie's "Skinny Girls vs BBWs" factor most closely matched my "Curvy Girls" factor. 
-- Apple Pie's "Vapid Chicks vs Great Personalities" most closely matched my "Intellectual" factor.
-- Apple Pie's "Barbie" factor most closely matched my "Fashionista" factor.
-- Apple Pie's "MILF" factor most closely matched a mixture of my "Girl Next Door" factor and and a reversed version of my 'Innocent Girl' factor.
-- Apple Pie's "Temptresses vs Trad Wives" factor most closely matched a mixture of my "Innocent Girl" factor and my "Nice Girl" factor.
+<style>
+  .factor-result {
+    margin: 0 !important;
+    border-top: 1px solid #d0d7de;
+  }
 
-## Factor 1: Curvy Girls
-The following items loaded onto this factor: 
-- Fat thighs (0.85)
-- Unusually Curvaceous (0.85)
-- Big Bellies (0.85)
-- Wide hips (0.82)
-- Bulging booty (0.76)
-- Very large breasts (0.76)
-- Comfortably Overweight (0.75)
-- Heavyset (0.67)
-- Slender (-0.58)
-- Narrow hips (-0.51)
-- Tight little buns (-0.45)
-- Fertile (0.36)
-- Little Black Dresses (-0.32)
+  .factor-result:last-of-type {
+    border-bottom: 1px solid #d0d7de;
+  }
 
-This factor is straightforward. The items mostly focus on bodily features of the overweight, and the items focusing on thinness (e.g., 'Slender', 'Narrow hips') have negative loadings. As we can see in the Tailcalled diagram, a large number of items of varying difficulties means we're able to measure this factor pretty well.
+  .factor-result summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0.25rem;
+    cursor: pointer;
+    list-style: none;
+  }
 
-<div style="text-align: center;">
-    <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-curvy-girl.png" width="600" alt="Tailcalled diagram for the Curvy Girl attraction factor, showing the latent-score distribution and response patterns for body-shape items.">
-    </figure>
-</div>
+  .factor-result summary::-webkit-details-marker {
+    display: none;
+  }
 
-## Factor 2: Free Spirits
-The following items loaded onto this factor: 
-- Adventurous (0.72)
-- Artistic (0.71)
-- Enthusiastic (0.69)
-- A Good Dancer (0.68)
-- Musically Talented (0.61)
-- Extremely Amorous (0.55)
-- The Life of the Party (0.54)
-- Dangerous (0.40)
-- Unfaithful (0.28)
+  .factor-result summary h3 {
+    margin: 0 !important;
+    font-size: 1.25em;
+  }
 
-This factor is a bit more abstract. Looking at the items, I can't help but be reminded of the [Manic Pixie Dream Girl](https://tvtropes.org/pmwiki/pmwiki.php/Main/ManicPixieDreamGirl) (MPDG) trope, with the items about adventurousness, artistic talents, and especially the item about being 'Extremely Amorous', all various facets of the trope.
+  .factor-result summary::after {
+    content: "+";
+    margin-left: 1rem;
+    color: #57606a;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .factor-result[open] summary::after {
+    content: "-";
+  }
+
+  .factor-result > :not(summary) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .factor-result > :last-child {
+    margin-bottom: 1.5rem;
+  }
+</style>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="curvaceousness">Curvaceousness</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-free-spirit.png" width="600" alt="Tailcalled diagram for the Free Spirit attraction factor, showing the latent-score distribution and response patterns for adventurous, artistic, and party-oriented traits.">
+        <img src="/assets/images/male-attraction/visualized-curvaceousness.png" width="600">
     </figure>
 </div>
 
-## Factor 3: Intellectuals
-The following items loaded onto this factor: 
-- Educated (0.85)
-- Uneducated (-0.79)
-- Not so bright (-0.75)
-- Brilliant (0.72)
-- Witty (0.65)
-- Free Thinking (0.45)
-- Mature (0.34)
-- Simple Spoken (-0.27)
+This factor indicates a preference for curvier physiques over more slender physiques. Though, it's not *just* a preference for an hourglass figure, but also for greater body fat and overall body mass, as demonstrated by items such as 'Heavyset', 'Comfortably Overweight', and 'Big Bellies'. There doesn't appear to be a corresponding preference for excess muscle mass, as suggested by the fact that 'Athletic' loads negatively, albeit fairly weakly. All in all, this is a pretty straightforward factor.
 
-This is another straightforward factor. The positive-loading items are related to being smart, while the negative-loading items are related to being dumb. Despite the simplicity, we're not able to measure the factor well at the upper end; most men think intelligence is attractive, so it's difficult to determine who *really* loves intelligence.
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Unusually Curvaceous | 0.64 |
+| Fat thighs | 0.64 |
+| Big Bellies | 0.63 |
+| Slender | -0.62 |
+| Wide hips | 0.61 |
+| Heavyset | 0.56 |
+| Very large breasts | 0.53 |
+| Bulging booty | 0.53 |
+| Narrow hips | -0.50 |
+| Comfortably Overweight | 0.48 |
+| Tight little buns | -0.46 |
+| Little Black Dresses | -0.32 |
+| Athletic | -0.21 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="vivacity">Vivacity</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-intellectual.png" width="600" alt="Tailcalled diagram for the Intellectual attraction factor, showing the latent-score distribution and response patterns for intelligence-related traits.">
+        <img src="/assets/images/male-attraction/visualized-vivacity.png" width="600">
     </figure>
 </div>
 
-## Factor 4: Amazons
-The following items loaded onto this factor: 
-- Extremely Tall (0.67)
-- Long legs (0.41)
-- Broad shoulders (0.40)
-- Short (-0.39)
-- Heavyset (0.39)
-- Athletic (0.27)
+This factor indicates a preference for an extraverted, passionate, adventurous personality. This is obvious from the items that deal directly with personality, such as 'Adventurous' and 'Enthusiastic' (which load positively) and 'Shy' (which loads negatively), but we can learn more by looking at the other items. This is a very embodied, dare I say, Dionysian personality, as evidenced by items such as 'A Good Dancer', 'Artistic', 'The Life of the Party', 'Extremely Amorous', and 'Athletic'. There is a strong emphasis here on physicality, expressiveness, and social energy. Possibly because of this embodied aspect, with its emphasis on movement and physical activity, 'Comfortably Overweight' loads negatively. The negative loading of 'Fair skin' is especially interesting: it may reflect cultural stereotypes associating darker-skinned women with heat, sensuality, emotional expressiveness, dance, and danger. Why 'Dark skin' itself does not show up on this factor, however, is less clear.
 
-Yet another straightforward factor. I don't have any commentary.
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Adventurous | 0.54 |
+| Enthusiastic | 0.47 |
+| Artistic | 0.41 |
+| A Good Dancer | 0.41 |
+| The Life of the Party | 0.41 |
+| Shy | -0.38 |
+| Musically Talented | 0.37 |
+| Extremely Amorous | 0.30 |
+| Athletic | 0.26 |
+| Fair skin | -0.23 |
+| Comfortably Overweight | -0.21 |
+| Dangerous | 0.20 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="sophistication">Sophistication</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-amazon.png" width="600" alt="Tailcalled diagram for the Amazon attraction factor, showing the latent-score distribution and response patterns for tall, broad-shouldered, and athletic traits.">
+        <img src="/assets/images/male-attraction/visualized-sophistication.png" width="600">
     </figure>
 </div>
 
-## Factor 5: Nice Girls
-The following items loaded onto this factor: 
-- Kind (0.65)
-- Sympathetic (0.56)
-- Humorous (0.29)
-- Dangerous (-0.24)
+This factor indicates a preference for intelligence in all its forms: education, wit, humor, independent thought, etc. This is extremely obvious when we look at item pairs such as 'Educated' (positive loading) vs. 'Uneducated' (negative loading), or 'Brilliant' (positive loading) vs. 'Not so bright' (negative loading). Beyond book smarts, there's also a focus on *verbal* intelligence, as indicated by items such as 'Witty', 'Humorous', and 'Simple Spoken' (negative loading). It's not just about being smart, but about sounding smart as well.
 
-There aren't many items on this factor, and half of them have low loadings. Nevertheless, we can gather an idea of what the factor is measuring: niceness. Unfortunately, a low number of items + low loadings for some of them + low ceilings (most men find niceness attractive!) means we're not able to measure this factor well, *especially* at the upper end.
+'Wealthy' doesn't have anything to do with intelligence per se, but given the correlation between wealth and education, as well as the popular association of wealth with refinement and sophistication, the loading makes sense. Interestingly, 'Glasses' doesn't show up despite being one of *the* symbols of intelligence. I'm not sure why this is, especially since it *does* load on Masculinity.
+
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Uneducated | -0.68 |
+| Not so bright | -0.67 |
+| Educated | 0.65 |
+| Brilliant | 0.57 |
+| Witty | 0.53 |
+| Free Thinking | 0.35 |
+| Humorous | 0.35 |
+| Simple Spoken | -0.31 |
+| Wealthy | 0.28 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="masculinity">Masculinity</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-nice-girl.png" width="600" alt="Tailcalled diagram for the Nice Girl attraction factor, showing the latent-score distribution and response patterns for kindness and sympathy-related traits.">
+        <img src="/assets/images/male-attraction/visualized-masculinity.png" width="600">
     </figure>
 </div>
 
-## Factor 6: Girl Next Door
-The following items loaded onto this factor: 
-- Dark skin (0.51)
-- T-Shirt & Jeans (0.51)
-- Glasses (0.48)
-- Tight little buns (0.44)
-- Curly hair (0.40)
-- Ponytails (0.40)
-- Short hair (0.37)
-- Older women (0.37)
-- Dominant (0.36)
-- Red Hair (0.34)
-- Small Hands (0.33)
-- Short (0.31)
-- Broad shoulders (0.28)
+This factor indicates a preference for masculinity, or at least for a cluster of masculine-coded traits. There's a behavioral aspect, as indicated by items such as 'Dominant' and 'Submissive' (negative loading); a physical aspect, as indicated by items such as 'Broad shoulders', 'Extremely Tall', and 'Heavyset'; and a presentation aspect, as indicated by items such as 'Short hair' and 'T-Shirt & Jeans'. Taken together, the factor seems to capture a preference for women who are more physically imposing, dominant, and masculine in presentation. 'Glasses' also loads onto this factor, albeit fairly weakly, and I'm not sure why.
 
-This factor contains a lot of seemingly disparate items. As such, none of the items load especially high. 
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Submissive | -0.57 |
+| Broad shoulders | 0.54 |
+| Dominant | 0.46 |
+| Short hair | 0.44 |
+| T-Shirt & Jeans | 0.36 |
+| Extremely Tall | 0.36 |
+| Heavyset | 0.35 |
+| Glasses | 0.22 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="motherliness">Motherliness</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-girl-next-door.png" width="600" alt="Tailcalled diagram for the Girl Next Door attraction factor, showing the latent-score distribution and response patterns for casual and approachable female traits.">
+        <img src="/assets/images/male-attraction/visualized-motherliness.png" width="600">
     </figure>
 </div>
 
-## Factor 7: Fashionistas
-The following items loaded onto this factor: 
-- High Heels (0.86)
-- Nail Polish (0.75)
-- Red lipstick (0.71)
-- Little Black Dresses (0.60)
-- Jewelry (0.49)
-- Long legs (0.48)
-- Tight Corsets (0.44)
-- Shaved legs (0.42)
+This factor indicates a preference for traits associated with being a good mother and wife. There's a reproductive/childcare component ('Good with Children', 'Fertile', and 'Narrow hips' (negative loading)); a domestic component ('A Good Cook'); and an interpersonal component ('Kind' and 'Sympathetic' for the positive loadings, 'Unfaithful' and 'Dangerous' for the negative loadings). Taken together, these suggest a preference for someone nurturing, dependable, family-oriented, and safe as a long-term partner. There are also weak negative loadings for 'Free Thinking' and 'Dominant', which suggest that this preference may be associated with a more 'traditional' form of femininity.
 
-This factor deals with (fashionable?) clothes and accessories, along with sexy legs. Unfortunately for us, many men think these are attractive, so we have trouble measuring the high end of the spectrum.
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Good with Children | 0.60 |
+| Fertile | 0.49 |
+| Unfaithful | -0.41 |
+| A Good Cook | 0.41 |
+| Dangerous | -0.38 |
+| Kind | 0.38 |
+| Sympathetic | 0.32 |
+| Narrow hips | -0.24 |
+| Enthusiastic | 0.21 |
+| Free Thinking | -0.21 |
+| Dominant | -0.16 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="petiteness">Petiteness</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-fashionista.png" width="600" alt="Tailcalled diagram for the Fashionista attraction factor, showing the latent-score distribution and response patterns for makeup, heels, dresses, and related style items.">
+        <img src="/assets/images/male-attraction/visualized-petiteness.png" width="600">
     </figure>
 </div>
 
-## Factor 8: Innocent Girls
-The following items loaded onto this factor: 
-- Young (0.78)
-- Submissive (0.71)
-- Fertile (0.65)
-- Cheerleaders (0.60)
-- Small Hands (0.60)
-- Slender (0.59)
-- Teenagers (0.55)
-- Fair skin (0.50)
-- Good with Children (0.49)
-- A Good Cook (0.43)
-- Light eyes (0.42)
-- Little noses (0.40)
-- Dominant (-0.37)
-- Older women (-0.36)
-- Shy (0.35)
-- Dark skin (-0.35)
-- Short hair (-0.34)
-- Broad shoulders (-0.30)
+This factor indicates a preference for physical smallness, which also seems to be combined with a harmless, playful temperament. The strongest-loading items all relate to height in some way: 'Short' loads positively, while 'Long legs' and 'Extremely Tall' load negatively. The weaker-loading items, however, seem to point toward a sort of cuteness: being silly, kind, humorous, and sympathetic. The negative loading of 'Athletic' may reflect the same pattern, with a preference for physical smallness and cuteness being associated with a preference for someone less physically imposing or threatening.
 
-This factor contains items connected to youth (e.g., 'Young', 'Fertile', 'Teenagers') and (housewife-themed) submissiveness (e.g., 'Submissive', 'Good with Children', 'A Good Cook'). There are also items relating to traditional beauty standards (e.g., 'Slender', 'Fair skin', 'Broad shoulders' \[reversed]). Overall, the items measure the factor decently.
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Short | 0.44 |
+| Long legs | -0.42 |
+| Extremely Tall | -0.38 |
+| Silly | 0.25 |
+| Kind | 0.24 |
+| Humorous | 0.23 |
+| Sympathetic | 0.19 |
+| Athletic | -0.18 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="glamour">Glamour</h3></summary>
+
 
 <div style="text-align: center;">
     <figure>
-        <img src="/assets/images/male-attraction/tailcalled-diagram-innocent-girl.png" width="600" alt="Tailcalled diagram for the Innocent Girl attraction factor, showing the latent-score distribution and response patterns for youth, submissiveness, and traditional-femininity items.">
+        <img src="/assets/images/male-attraction/visualized-glamour.png" width="600">
     </figure>
 </div>
 
-## Internal consistency
-[Coefficient omega](https://en.wikipedia.org/wiki/Congeneric_reliability) is a measure of a scale's internal consistency. It represents the proportion of total variance in the responses that is explained by a single, underlying factor. If we calculate the coefficient omega for each factor, they end up clustering into three groups, giving us a sense of how coherent the factors are:
-- The Curvy Girl ($\omega = 0.54$) and Innocent Girl ($\omega = 0.55$) factors both have mediocre internal consistencies, albeit, the highest of the factors we've extracted. 
-- The Free Spirit ($\omega = 0.29$), Intellectual ($\omega = 0.26$), Girl Next Door ($\omega = 0.28$), and Fashionista ($\omega = 0.26$) factors have low internal consistencies. These factors didn't have as many items as the above two factors (an average of 9.5 vs 15.5). Additionally, they also have less items with particularly high loadings.
-- The Amazon ($\omega = 0.09$) and Nice Girl ($\omega = 0.04$) factors have atrocious internal consistencies. In addition ing a low number of items (4 and 6 respectively), they have few items with high loadings (they both have only 1 item with a loading over 0.60).
+This factor indicates a preference for a woman who invests a lot in her appearance. Most of the indicators relate to styling (e.g., 'Red lipstick', 'Nail Polish', 'Jewelry') and garments (e.g., 'High Heels', 'Little Black Dresses', 'Tight Corsets'). Not just any styling or garments, but ones that are conventionally feminine, glamorous, and deliberately cultivated. 'Shaved legs' fits this pattern as well, suggesting an emphasis on grooming and maintenance rather than ornament alone. It's not just these constructed aspects of appearance that the factor focuses on, however, but also non-ornamental features (e.g., 'Long legs', 'Very large breasts'), suggesting that this is more than simply a preference for ornamentation. Rather, it seems to capture a preference for a glamorous, highly cultivated feminine ideal in which clothing, grooming, and bodily features all contribute to the overall presentation.
 
-While these results may be discouraging, it's important to realize that the items weren't designed as a scale, merely as part of an exploratory data analysis process. Using the information gained from analyses like these, future researchers will be able to design better scales.
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| High Heels | 0.64 |
+| Red lipstick | 0.52 |
+| Nail Polish | 0.52 |
+| Little Black Dresses | 0.42 |
+| Shaved legs | 0.35 |
+| Jewelry | 0.35 |
+| Tight Corsets | 0.32 |
+| Long legs | 0.25 |
+| Very large breasts | 0.21 |
+
+</details>
+
+<details class="factor-result" markdown="1">
+<summary><h3 id="ingénue">Ingénue</h3></summary>
+
+
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/male-attraction/visualized-ingénue.png" width="600">
+    </figure>
+</div>
+
+This factor indicates a preference for not just youthfulness, but what seems to be an ingénue archetype. There appear to be three main components: an age component ('Young', 'Older women' (negative loading), 'Teenagers', 'Mature' (negative loading)); a 'delicate features' component ('Small Hands', 'Little noses', 'Slender', 'Comfortably Overweight' (negative loading)); and a racialized component ('Fair skin', 'Light eyes', 'Dark skin' (negative loading)). One indicator seems to combine all three of these components: 'Cheerleaders', which evokes youth, slender conventional attractiveness, and a culturally white-coded American feminine archetype. Taken together, the factor seems to capture a preference for a youthful, delicate, and fair-skinned femininity rather than youth alone.
+
+**Factor Loadings**
+
+| Trait | Loading |
+|---|---:|
+| Young | 0.57 |
+| Older women | -0.50 |
+| Dark skin | -0.47 |
+| Teenagers | 0.47 |
+| Cheerleaders | 0.42 |
+| Comfortably Overweight | -0.40 |
+| Small Hands | 0.38 |
+| Little noses | 0.35 |
+| Mature | -0.34 |
+| Light eyes | 0.32 |
+| Slender | 0.31 |
+| Fair skin | 0.28 |
+
+</details>
+
+### Comparison with Apple Pie
+
+Apple Pie's factors map most closely onto the factors found here as follows:
+
+| Apple Pie factor | Closest factor(s) here |
+|---|---|
+| Skinny Girls vs BBWs | Curvaceousness |
+| Vapid Chicks vs Great Personalities | Vivacity and Sophistication |
+| Barbie Dimension | Glamour |
+| MILF Dimension | Masculinity and low Ingénue |
+| Temptresses vs Trad Wives | Motherliness and Petiteness |
+
+## An Aside About Acquiescence
+
+At this point, I should mention [acquiescence bias](/acquiescence/). Acquiescence bias is the tendency to agree with statements in a questionnaire regardless of what those statements actually assert. For example, in this dataset, there are traits that are natural opposites: Tall vs. Short, Fair skin vs. Dark skin, Dominant vs. Submissive. A respondent high in acquiescence would say that they strongly prefer both tall women *and* short women, dominant women *and* submissive women, and so on. Here's a visualization:
+
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/male-attraction/acquiescence-opposite-pairs.png" width="600">
+    </figure>
+</div>
+
+Now, it's perfectly fine for someone to prefer many traits, even if they are 'opposites', but this doesn't help us determine the factors, that is, the substantive sources of covariation among preferences. In fact, acquiescence can obscure those factors, because a general tendency to endorse items will make all indicators *more* positively correlated with one another, regardless of their content.
+
+For this reason, I've modeled an acquiescence factor that affects all items equally, allowing this general endorsement tendency to be separated from the substantive preference factors. This seems to have been warranted, seeing as the common loading on the acquiescence factor was about 0.25 (94% posterior HDI: [0.23, 0.26]).
 
 ## Factor Correlation Matrix
 
-|                |   Curvy Girl |   Free Spirit |   Intellectual |   Amazon |   Nice Girl |   Girl Next Door |   Fashionista |   Innocent Girl |
-|----------------|--------------|---------------|----------------|----------|-------------|------------------|---------------|-----------------|
-| Curvy Girl     |         1    |          0.19 |           0.05 |     0.06 |        0.07 |             0.17 |          0.12 |           -0.22 |
-| Free Spirit    |         0.19 |          1    |           0.27 |     0.06 |        0.18 |             0.27 |          0.24 |            0.15 |
-| Intellectual   |         0.05 |          0.27 |           1    |     0.09 |        0.17 |             0.10 |         -0.06 |           -0.10 |
-| Amazon         |         0.06 |          0.06 |           0.09 |     1    |       -0.05 |             0.18 |         -0.01 |           -0.18 |
-| Nice Girl      |         0.07 |          0.18 |           0.17 |    -0.05 |        1    |             0.08 |          0.03 |            0.13 |
-| Girl Next Door |         0.17 |          0.27 |           0.10 |     0.18 |        0.08 |             1    |          0.20 |           -0.02 |
-| Fashionista    |         0.12 |          0.24 |          -0.06 |    -0.01 |        0.03 |             0.20 |          1    |            0.23 |
-| Innocent Girl  |        -0.22 |          0.15 |          -0.10 |    -0.18 |        0.13 |            -0.02 |          0.23 |            1    |
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/male-attraction/factor-correlation.png" width="800">
+    </figure>
+</div>
 
-Notable positive correlations include the ones between Free Spirit & Intellectual, Free Spirit & Girl Next Door, and Free Spirit & Fashionista. I don't know why these correlations appear.
-
-Notable negative correlations include the ones between Curvy Girl & Innocent Girl, and Amazon & Innocent Girl. This also makes sense: both the Curvy Girl archetype and the Amazon archetype are "big", and that's reflected in the items that load on them. Meanwhile, the Innocent Girl factor has items that reflect smallness, such as 'Slender', 'Small Hands', and 'Little noses'.
+Most of the correlations between preference factors make sense. The negative correlations between Masculinity & Ingénue, Ingénue & Curvaceousness, and Motherliness & Masculinity, are all unsurprising.
 
 ## Takeaways
 
-The scales can be improved substantially. While many factors need more items, others need items that specifically target the high end of the spectrum. One way to achieve this may be phrasing the traits as negative. For example, looking at the Intellectual factor, all the positive-loading items have positive connotations, while the negative-loading items have negative connotations. Adding items such as 'Know it all' and 'Pedantic', which are related to the factor, but generally viewed negatively, can help counter the ceiling effects we see. Additional potential changes include: 
-- For the Free Spirit factor, going off the MPDG trope, we can add items like 'Quirky', 'Eccentric', 'Energetic', etc.
-- For the Amazon factor, we can add more of the obvious items, such as 'Strong', 'Muscular', 'Big Biceps', etc.
-- For the Nice Girl factor, in addition to adding more items in general (e.g., 'Friendly'), we can also add positive-loading negative-connotation items (e.g., 'Bleeding-heart').
-- For the Girl Next Door factor, I'm not sure what items to add. We can try throwing things at the wall and seeing what sticks.
-- For the Fashionista factor, we can add more of the obvious items, such as 'Skirts', 'Makeup', etc.
-
-Another takeaway is that using more sophisticated methods yields deeper insights. Using confirmatory factor analysis, we were able to extract more factors from the data, and also see how those factors correlate. Using item response theory, we were able to see the flaws in the scales and how to improve them. More advanced methods lead to clearer, more informative results.
+To be honest, I'm not sure what to put here. I think I've said everything that needs to be said. I have no further opinions. Thanks for reading.
 
 *Thanks to [Apple Pie](https://thingstoread.substack.com/) for sharing the data!*
+
+## Appendix
+
+### Correlation Fishing
+
+Let's take a look at some of the correlations[^correlation] between preferences and other traits. First, preferences and personality. There isn't much going on here: the only correlations of note are that preferences for Vivacity seem to be positively correlated with both extraversion and openness.
+
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/male-attraction/preference-personality.png" width="600">
+    </figure>
+</div>
+
+Both relationships make sense given what the Vivacity factor captures: a preference for adventurousness, enthusiasm, sociability, artistic expression, and similar traits would probably be more common among men who are themselves more extraverted and open.
+
+The political items were:
+
+- Hierarchy: It is important for society to have a hierarchy.
+- Religion: Religion is very important in my life.
+- Euthanasia: People suffering from incurable diseases should have the right to be put painlessly to death.
+- Equality: We would have fewer problems if we treated people more equally.
+- Free speech: Free speech is important, and should be protected even if some people's feelings are hurt.
+- Compulsory schooling: Teenagers should be legally required to go to school.
+
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/male-attraction/preference-politics.png" width="600">
+    </figure>
+</div>
+
+Responses to the hierarchy item were positively correlated with the Ingénue and Motherliness factors and negatively correlated with the Masculinity factor. One fairly straightforward interpretation is that preference for hierarchy is associated with greater endorsement of traditional gender roles: Ingénue and Motherliness both describe fairly traditional feminine ideals, while the Masculinity factor, as you can tell by the name, does not.
+
+The other correlations of note were between responses to the equality item and the Masculinity factor (positive) and Ingénue factor (negative), seemingly the reverse of the pattern for hierarchy. There's also a positive correlation between responses to the euthanasia item and preference for Sophistication, which is... interesting.
+
+Finally, social desirability:
+
+<div style="text-align: center;">
+    <figure>
+        <img src="/assets/images/male-attraction/social-desirability.png" width="600">
+    </figure>
+</div>
+
+I'm not quite sure what to make of these correlations. Well, the negative correlation with the Ingénue factor makes some sense given some of its more... sus indicators. The positive correlation with Vivacity, however, confuses me. Unlike the Ingénue result, there isn't an obvious reason why giving socially desirable responses should be associated with a stronger (stated) preference for adventurous, expressive, and high-energy women (at least, when compared with the other factors). 
+
+[^eight]: So, *technically*, I should have modeled 7 factors + acquiescence, but I had already modeled the 8 factors before I decided to add the acquiescence factor, and the factors still seem crisp and interpretable, so I'll leave it be. Besides, for an exploratory analysis such as this, I'm fine with erring on the side of too many factors than too few.
+
+[^correlation]: Really, standardized regression coefficients between factor scores.
