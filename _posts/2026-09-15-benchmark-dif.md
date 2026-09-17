@@ -234,25 +234,21 @@ Observed scores are clipped to $[0.001,0.999]$ before fitting ([lines 196-197](h
 
 **Implemented residual vector**
 
-For every observed score, the code ([line 243](https://github.com/epoch-research/eci-public/blob/main/src/eci/fitting.py#L243) of the ECI implementation) supplies SciPy with the residual:
+For every observed score, the code ([line 243](https://github.com/epoch-research/eci-public/blob/main/src/eci/fitting.py#L243) of the ECI implementation) supplies SciPy with its residual:
 
 $$
 r_{mb}(\phi) = \mu_{mb}(\phi) - s_{mb}
 $$
 
-It appends one additional regularization residual ([lines 245-246](https://github.com/epoch-research/eci-public/blob/main/src/eci/fitting.py#L245-L246) of the ECI implementation):
+It also appends a residual used for regularization ([lines 245-246](https://github.com/epoch-research/eci-public/blob/main/src/eci/fitting.py#L245-L246) of the ECI implementation):
 
 $$
 r_\text{reg}(\phi) = \sqrt{\lambda \frac{1}{K} \sum_{k=1}^{K}\phi_k^2}
 $$
 
-where the default regularization strength is ([line 138](https://github.com/epoch-research/eci-public/blob/main/src/eci/fitting.py#L138) of the ECI implementation):
+where the default regularization strength, $\lambda$ is set to 0.1 ([line 138](https://github.com/epoch-research/eci-public/blob/main/src/eci/fitting.py#L138) of the ECI implementation).
 
-$$
-\lambda = 0.1
-$$
-
-Scipy's `least_squares` minimizes one half of the sum of squared residuals. Epoch's implemented objective is therefore:
+Scipy's `least_squares` minimizes one-half of the sum of squared residuals, so Epoch's actual implemented objective is:
 
 $$
 \begin{aligned}
@@ -262,15 +258,13 @@ $$
 \end{aligned}
 $$
 
-subject to the parameter bounds and the fixed Winogrande discrimination.
-
 **Public scale**
 
-After fitting, Epoch maps the raw capabilities to the ECI scale using Claude 3.5 Sonnet at 130 and GPT-5 at 150.
+After fitting, Epoch converts the raw capabilities to the official ECI scale using an affine transformation while setting Claude 3.5 Sonnet at 130 and GPT-5 at 150.
 
 **Exact MAP-equivalent model**
 
-Assume conditionally independent Gaussian score errors with fixed residual standard deviation $\sigma_\varepsilon$:
+A model's performance on a benchmark is modeled as:
 
 $$
 s_{mb}\mid\phi
@@ -278,7 +272,9 @@ s_{mb}\mid\phi
 \mathcal N\left(\mu_{mb}(\phi),\sigma_\varepsilon^2\right).
 $$
 
-The negative log-likelihood, ignoring constants, is:
+where $\sigma_\varepsilon$ is a fixed residual standard deviation.
+
+Ignoring constants, the negative log-likelihood is:
 
 $$
 -\log p(s\mid\phi)
@@ -389,13 +385,9 @@ Unfortunately, I first ended up doing taking the 'convenient' approach of settin
 <details class="model-step" markdown="1">
 <summary><h4 id="learning-the-scale">2. Learning the Residual Scale</h4></summary>
 
-The first model set $\sigma_\varepsilon=1$ because that was convenient. However, a residual standard deviation of 1 is absurdly large for scores bounded between 0 and 1. Furthermore, Epoch's objective doesn't actually tell us that $\sigma_\varepsilon$ should equal 1. It identifies only the ratio
+The first model set $\sigma_\varepsilon$ to 1 because that was convenient. However, a residual standard deviation of 1 is absurdly large for scores bounded between 0 and 1 (well, technically between 0.001 and 0.999). Given that only the ratio $\frac{\sigma_\varepsilon^2}{\tau^2}=\frac{\lambda}{K}$ matters, it might be better to let the model fit the residual standard deviation instead.
 
-$$
-\frac{\sigma_\varepsilon^2}{\tau^2}=\frac{\lambda}{K}.
-$$
-
-The second model I fit therefore assigns
+So, the second model I fit assigns
 
 $$
 \log\sigma_\varepsilon\sim\mathcal N(\log 0.1,1)
@@ -407,7 +399,7 @@ $$
 \tau=\sigma_\varepsilon\sqrt{\frac{K}{\lambda}}.
 $$
 
-Conditional on every value of $\sigma_\varepsilon$, the model preserves exactly the same variance-to-penalty ratio as Epoch, but now it can learn the appropriate residual variance from the data. Everything else remains unchanged: Winogrande's discrimination is fixed at 1, capabilities and difficulties remain bounded to $[-10,10]$, and the other discriminations remain bounded to $[0.1,10]$. As you can see, the MAP estimates still match Epoch's exactly, while the posterior mean estimates are much more reasonable, though there's a bend in the curve starting below an ECI of ~120 such that the Bayesian estimates are higher than Epoch's estimates.
+For any value of $\sigma_\varepsilon$, the model has the same variance-to-penalty ratio as Epoch, but now it can learn the appropriate residual variance from the data. Everything else remains unchanged: Winogrande's discrimination is fixed at 1, capabilities and difficulties remain bounded to $[-10,10]$, and the other discriminations remain bounded to $[0.1,10]$. As you can see, the MAP estimates still match Epoch's exactly, while the posterior mean estimates are much more reasonable, though there's a bend in the curve starting below an ECI of ~120 such that the Bayesian estimates are higher than Epoch's estimates.
 
 <div class="model-comparison-figures">
   <figure>
