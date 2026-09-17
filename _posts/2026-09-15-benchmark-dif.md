@@ -522,7 +522,7 @@ $$
 \ell_\alpha\sim\operatorname{Uniform}(2,36),
 $$
 
-which is measured in months. The correlation matrix is given by
+which is measured in months. The covariance function is given by
 
 $$
 K_{\alpha,tt'}
@@ -540,7 +540,7 @@ $$
 \kappa_b\sim\operatorname{HalfNormal}(0.5).
 $$
 
-The monthly discrimination is given by
+A benchmark's monthly discrimination is given by
 
 $$
 \log\alpha_{b,t}
@@ -548,7 +548,7 @@ $$
 a_{b,0}+\kappa_b\left(f_{b,t}-f_{b,t_{0b}}\right).
 $$
 
-The likelihood for observed scores becomes
+The likelihood for observed scores is
 
 $$
 s_{mb}
