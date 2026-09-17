@@ -466,7 +466,7 @@ $$
 \sum_m C_m+\sum_bD_b=0.
 $$
 
-This identifies the origin of the latent scale. Discriminations are modeled on their natural logarithmic scale:
+This identifies the origin of the latent scale. Discriminations are modeled on a logarithmic scale:
 
 $$
 s_\alpha\sim\operatorname{HalfNormal}(0.5),
@@ -483,13 +483,13 @@ $$
 \sum_b\log\alpha_b=0
 $$
 
-and the geometric mean discrimination is exactly one:
+and the geometric mean of the discriminations is one:
 
 $$
 \left(\prod_b\alpha_b\right)^{1/B}=1.
 $$
 
-This identifies the multiplicative scale symmetrically. It also gives discrimination shrinkage a more natural interpretation: $\alpha_b=2$ and $\alpha_b=0.5$ are equally far from 1 on the log scale. This static model becomes the foundation for the parameter-varying models. Also, our posterior mean estimates are finally lining up with Epoch's estimates, which is nice.
+This identifies the multiplicative scale. This static model becomes the foundation for the parameter-varying models. Also, our posterior mean estimates are finally lining up with Epoch's estimates, which is nice.
 
 <div class="model-comparison-figures">
   <figure>
@@ -522,7 +522,7 @@ $$
 \ell_\alpha\sim\operatorname{Uniform}(2,36),
 $$
 
-which is measured in months, with correlation
+which is measured in months. The correlation matrix is given by
 
 $$
 K_{\alpha,tt'}
@@ -530,7 +530,7 @@ K_{\alpha,tt'}
 \exp\left[-\frac{(t-t')^2}{2\ell_\alpha^2}\right]+10^{-4}I.
 $$
 
-Each benchmark has an independent GP trajectory $f_b$ with its own amplitude:
+Each benchmark has its own Gaussian process trajectory $f_b$:
 
 $$
 f_b\sim\mathcal N(\mathbf 0,K_\alpha),
@@ -540,7 +540,7 @@ $$
 \kappa_b\sim\operatorname{HalfNormal}(0.5).
 $$
 
-The monthly discrimination is
+The monthly discrimination is given by
 
 $$
 \log\alpha_{b,t}
@@ -548,7 +548,7 @@ $$
 a_{b,0}+\kappa_b\left(f_{b,t}-f_{b,t_{0b}}\right).
 $$
 
-Subtracting the GP value at the benchmark's first observed month makes the prior described above act on each benchmark's earliest discrimination. The likelihood for observed scores becomes
+The likelihood for observed scores becomes
 
 $$
 s_{mb}
@@ -559,7 +559,7 @@ s_{mb}
 \right).
 $$
 
-For comparisons with a static ECI discrimination, I use the geometric mean across a benchmark's supported months. This is the first stage of the final analysis.
+When a single discrimination is needed for a model (such as in the following graphs), I use the geometric mean across a benchmark’s supported months. This is the first stage of the final analysis.
 
 <div class="model-comparison-figures">
   <figure>
@@ -575,7 +575,7 @@ For comparisons with a static ECI discrimination, I use the geometric mean acros
 <details class="model-step" markdown="1">
 <summary><h4 id="two-stage-temporal-model">6. The Final Two-Stage Model</h4></summary>
 
-The analysis in this post uses a two-stage Bayesian model. Stage 1 is the model described immediately above. Rather than passing only its posterior means into Stage 2, I draw complete discrimination surfaces
+The analysis in this post uses a two-stage model. Stage 1 was the model described I just described above. For Stage 2, rather than passing only Stage 1's posterior means, I use discrimination draws
 
 $$
 \boldsymbol\alpha^{(q)}
@@ -583,9 +583,9 @@ $$
 \{\alpha^{(q)}_{b,t}:b=1,\ldots,B;\ t=1,\ldots,T\}.
 $$
 
-This preserves the posterior dependence among neighboring months and among benchmarks.
+This allows us to use and model the posterior distribution of Stage 1's results, rather than treating the posterior mean as the only possible set of discriminations.
 
-Each surface receives a benchmark-balanced normalization. If $\mathcal T_b$ is benchmark $b$'s supported calendar range, define the average log discrimination, $g^{(q)}$ as
+Each draw is normalized such that its geometric mean of the discriminations is equal to 1. If $\mathcal T_b$ is benchmark $b$’s supported calendar range, define the average log discrimination, $g^{(q)}$ as
 
 $$
 g^{(q)}
@@ -599,7 +599,7 @@ g^{(q)}
 \right].
 $$
 
-The surface we end up using is
+The draw we end up using is
 
 $$
 \widetilde\alpha^{(q)}_{b,t}
@@ -607,9 +607,9 @@ $$
 \exp\left[\log\alpha^{(q)}_{b,t}-g^{(q)}\right].
 $$
 
-This is one scale normalization for the entire surface, not a separate normalization within each month. This normalization makes the benchmark-balanced geometric mean discrimination equal to 1. It does not change relative differences between benchmarks or temporal changes within a benchmark; it only fixes the otherwise arbitrary unit of the latent scale.
+This normalization does not alter relative differences between benchmarks or temporal changes within a benchmark; it only fixes the otherwise arbitrary unit of the latent scale.
 
-For every propagated surface, I fit a conditional difficulty-varying model. The discrimination surface is fixed within that fit, while capabilities and average benchmark difficulties are re-estimated with the symmetric zero-sum prior. Difficulty deviations follow another shared-length-scale RBF process:
+For every propagated draw, I fit a model in which the difficulties can vary across time. The set of discriminations is fixed within that fit, while capabilities and benchmark difficulties are re-estimated. Difficulty deviations follow another shared-length-scale RBF process:
 
 $$
 \ell_D\sim\operatorname{Uniform}(2,36),
@@ -623,31 +623,25 @@ $$
 \omega_b\sim\operatorname{HalfNormal}(0.5).
 $$
 
-Let the raw temporal-difficulty surface be
+Let the raw temporal-difficulty be
 
 $$
 r_{b,t}=\omega_bh_{b,t}.
 $$
 
-The raw surface could absorb both benchmark averages and a movement shared by all benchmarks in a calendar month. To prevent that, I project it away from every additive benchmark and month effect. If $Q$ is an orthonormal basis for those effects over supported benchmark-month cells, then
-
-$$
-\boldsymbol\delta=(I-QQ^\top)\mathbf r.
-$$
-
-This imposes the constraints
+The raw temporal-difficulties could absorb both benchmark averages and a movement shared by all benchmarks in a calendar month. To prevent that, we impose the constraint
 
 $$
 \sum_{t\in\mathcal T_b}\delta_{b,t}=0
 $$
 
-for every benchmark. Thus, the deviations average to zero across each benchmark’s supported months and do not change its overall difficulty. It also imposes
+for every benchmark. Thus, the deviations average to zero across each benchmark’s supported months and do not change its overall difficulty. We also impose
 
 $$
 \sum_{b:(b,t)\text{ supported}}\delta_{b,t}=0
 $$
 
-for every month. Thus, within each month, the deviations average to zero across the benchmarks used in that month. The deviations therefore cannot say that all benchmarks became easier or harder together; they measure how benchmark difficulties change *relative* to one another. Monthly difficulty is then
+for every month. Thus, within each month, the deviations average to zero across the benchmarks used in that month. So deviations measure how benchmark difficulties change *relative* to one another. Monthly difficulty is then
 
 $$
 D_{b,t}=\bar D_b+\delta_{b,t},
