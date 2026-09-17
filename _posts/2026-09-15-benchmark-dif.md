@@ -193,6 +193,8 @@ In conclusion, the ECI remains a (very) useful summary of average benchmark perf
 
 I didn't begin with the final two-stage model. I started by reproducing Epoch's estimator as literally as possible, then changed one assumption at a time, to ensure I wasn't making any silly mistakes. Expand the steps below to follow the progression from the public ECI implementation to the two-stage model used in this post. (You *could* always just skip to the final model, but I think it's easier to go step-by-step.)
 
+The code, frozen data, and compact results for all six models are available in the [accompanying GitHub repository](https://github.com/stanichor/eci-temporal-invariance).
+
 <details class="model-step" markdown="1">
 <summary><h4 id="bayesianizing-eci">1. Bayesianizing the ECI</h4></summary>
 
@@ -264,7 +266,7 @@ subject to the parameter bounds and the fixed Winogrande discrimination.
 
 **Public scale**
 
-After fitting, Epoch maps the raw capabilities to the public scale using Claude 3.5 Sonnet at 130 and GPT-5 at 150.
+After fitting, Epoch maps the raw capabilities to the ECI scale using Claude 3.5 Sonnet at 130 and GPT-5 at 150.
 
 **Exact MAP-equivalent model**
 
@@ -286,7 +288,7 @@ $$
 \left[s_{mb}-\mu_{mb}(\phi)\right]^2.
 $$
 
-Place independent zero-centered Gaussian priors with a common standard deviation $\tau$ on the free parameters, truncated to the same bounds used by Epoch:
+We place independent Gaussian priors with a common standard deviation $\tau$ on the free parameters, subject to the same bounds used by Epoch:
 
 $$
 C_m\sim\operatorname{TruncatedNormal}(0,\tau^2;-10,10),
@@ -304,13 +306,13 @@ $$
 \operatorname{TruncatedNormal}(0,\tau^2;0.1,10)
 $$
 
-for each non-anchor benchmark. The anchor slope remains fixed:
+for each non-Winogrande benchmark. The Winogrande slope remains fixed:
 
 $$
 \alpha_{\text{Winogrande}}=1.
 $$
 
-Away from the truncation normalizing constants, the negative log-prior is:
+Away from the bounds, the negative log-prior is:
 
 $$
 -\log p(\phi)
@@ -361,15 +363,15 @@ $$
 }.
 $$
 
-It is important to note that there is no unique pair $(\sigma_\epsilon, \tau)$ implied by the ridge penalty. Only the ratio is implied by the MAP objective. It would be convenient to set $\sigma_\epsilon = 1$, however, since the scores lie in $[0, 1]$, a *residual* standard deviation of 1 would be *extremely* large on the observed scale. 
+It's important to note that there's no unique pair $(\sigma_\epsilon, \tau)$ implied by the objective. Only the ratio is implied. We could set $\sigma_\epsilon = 1$, but, since the scores lie in $[0.001, 0.999]$, a *residual* standard deviation of 1 would be *absurdly* large on the observed scale.
 
-The division by $K$ also matters. For example, if $K = 379$ and $\lambda = 0.1$, then setting $\epsilon_e = 1$ implies
+What's more, this also affects $\tau$. For example, if $K = 379$ and $\lambda = 0.1$, then setting $\epsilon_e = 1$ implies
 
 $$
 \tau = \sqrt{379/0.1} \approx 61.6
 $$
 
-This is nearly flat over the capability and difficulty bounds $[-10, 10]$ and the discrimination bounds $[0.1, 10]$. As such, the penalty isn't doing much.
+This is nearly flat over the capability and difficulty bounds $[-10, 10]$ and the discrimination bounds $[0.1, 10]$. As such, the penalty isn't really doing much.
 
 Unfortunately, I first ended up doing taking the 'convenient' approach of setting $\sigma_\epsilon = 1$, and so while the MAP estimates match exactly, the posterior means are all over the place.
 
@@ -387,7 +389,7 @@ Unfortunately, I first ended up doing taking the 'convenient' approach of settin
 <details class="model-step" markdown="1">
 <summary><h4 id="learning-the-scale">2. Learning the Residual Scale</h4></summary>
 
-The first model sets $\sigma_\varepsilon=1$ because that's convenient. However, a residual standard deviation of 1 is implausibly large for scores bounded between 0 and 1. Epoch's objective doesn't actually tell us that $\sigma_\varepsilon$ should equal 1. It identifies only the ratio
+The first model set $\sigma_\varepsilon=1$ because that was convenient. However, a residual standard deviation of 1 is absurdly large for scores bounded between 0 and 1. Furthermore, Epoch's objective doesn't actually tell us that $\sigma_\varepsilon$ should equal 1. It identifies only the ratio
 
 $$
 \frac{\sigma_\varepsilon^2}{\tau^2}=\frac{\lambda}{K}.
@@ -405,7 +407,7 @@ $$
 \tau=\sigma_\varepsilon\sqrt{\frac{K}{\lambda}}.
 $$
 
-Conditional on every value of $\sigma_\varepsilon$, the model preserves exactly the same variance-to-penalty ratio as Epoch, but now it can learn the overall concentration of the posterior from the data. Everything else remains unchanged: Winogrande's discrimination is fixed at 1, capabilities and difficulties remain bounded to $[-10,10]$, and the other discriminations remain bounded to $[0.1,10]$. As you can see, the MAP estimates still match Epoch's exactly, while the posterior mean estimates are much more reasonable, though there's a bend in the curve starting below an ECI of ~120 such that the Bayesian estimates are higher than Epoch's estimates.
+Conditional on every value of $\sigma_\varepsilon$, the model preserves exactly the same variance-to-penalty ratio as Epoch, but now it can learn the appropriate residual variance from the data. Everything else remains unchanged: Winogrande's discrimination is fixed at 1, capabilities and difficulties remain bounded to $[-10,10]$, and the other discriminations remain bounded to $[0.1,10]$. As you can see, the MAP estimates still match Epoch's exactly, while the posterior mean estimates are much more reasonable, though there's a bend in the curve starting below an ECI of ~120 such that the Bayesian estimates are higher than Epoch's estimates.
 
 <div class="model-comparison-figures">
   <figure>
@@ -511,7 +513,7 @@ This identifies the multiplicative scale symmetrically. It also gives discrimina
 <details class="model-step" markdown="1">
 <summary><h4 id="temporal-discriminations">5. Allowing Discriminations to Change Over Time</h4></summary>
 
-The first parameter-varying model keeps capabilities and difficulties static but allows benchmark discriminations to depend on model-release month. Let $t_{0b}$ be benchmark $b$'s earliest observed month. Its initial log discrimination receives the symmetric prior described above:
+The first parameter-varying model keeps capabilities and difficulties static but allows benchmark discriminations to depend on model-release month. Let $t_{0b}$ be benchmark $b$'s earliest observed month. Its initial log discrimination receives the prior described above:
 
 $$
 s_\alpha\sim\operatorname{HalfNormal}(0.5),
@@ -522,13 +524,13 @@ $$
 \sim\operatorname{ZeroSumNormal}(s_\alpha).
 $$
 
-Temporal change follows a stationary RBF Gaussian process. All benchmarks share one length scale,
+Temporal change follows a stationary RBF Gaussian process. All benchmarks share the same length scale,
 
 $$
 \ell_\alpha\sim\operatorname{Uniform}(2,36),
 $$
 
-measured in months, with correlation
+which is measured in months, with correlation
 
 $$
 K_{\alpha,tt'}
@@ -536,7 +538,7 @@ K_{\alpha,tt'}
 \exp\left[-\frac{(t-t')^2}{2\ell_\alpha^2}\right]+10^{-4}I.
 $$
 
-Each benchmark has an independent standardized GP trajectory $f_b$ and its own temporal amplitude:
+Each benchmark has an independent GP trajectory $f_b$ with its own amplitude:
 
 $$
 f_b\sim\mathcal N(\mathbf 0,K_\alpha),
@@ -554,7 +556,7 @@ $$
 a_{b,0}+\kappa_b\left(f_{b,t}-f_{b,t_{0b}}\right).
 $$
 
-Subtracting the GP value at the benchmark's first observed month makes the prior act directly on its earliest discrimination. The likelihood becomes
+Subtracting the GP value at the benchmark's first observed month makes the prior described above act on each benchmark's earliest discrimination. The likelihood for observed scores becomes
 
 $$
 s_{mb}
@@ -565,7 +567,7 @@ s_{mb}
 \right).
 $$
 
-For comparisons with a static ECI discrimination, I derive a single value afterward as the geometric mean across the benchmark's supported months. This is the first stage of the final analysis.
+For comparisons with a static ECI discrimination, I use the geometric mean across a benchmark's supported months. This is the first stage of the final analysis.
 
 <div class="model-comparison-figures">
   <figure>
@@ -581,7 +583,7 @@ For comparisons with a static ECI discrimination, I derive a single value afterw
 <details class="model-step" markdown="1">
 <summary><h4 id="two-stage-temporal-model">6. The Final Two-Stage Model</h4></summary>
 
-The analysis in this post uses a two-stage Bayesian model. Stage 1 is the model immediately above. Rather than passing only its posterior means into Stage 2, I draw complete discrimination surfaces
+The analysis in this post uses a two-stage Bayesian model. Stage 1 is the model described immediately above. Rather than passing only its posterior means into Stage 2, I draw complete discrimination surfaces
 
 $$
 \boldsymbol\alpha^{(q)}
@@ -589,9 +591,9 @@ $$
 \{\alpha^{(q)}_{b,t}:b=1,\ldots,B;\ t=1,\ldots,T\}.
 $$
 
-All benchmarks and months from a posterior draw travel together, preserving the posterior dependence among neighboring months and among benchmarks.
+This preserves the posterior dependence among neighboring months and among benchmarks.
 
-Each surface receives one global, benchmark-balanced normalization. If $\mathcal T_b$ is benchmark $b$'s supported calendar range, define the average log discrimination, $g^{(q)}$ as
+Each surface receives a benchmark-balanced normalization. If $\mathcal T_b$ is benchmark $b$'s supported calendar range, define the average log discrimination, $g^{(q)}$ as
 
 $$
 g^{(q)}
@@ -605,7 +607,7 @@ g^{(q)}
 \right].
 $$
 
-The propagated surface is
+The surface we end up using is
 
 $$
 \widetilde\alpha^{(q)}_{b,t}
@@ -613,7 +615,7 @@ $$
 \exp\left[\log\alpha^{(q)}_{b,t}-g^{(q)}\right].
 $$
 
-This is one scale normalization for the entire draw, not a separate normalization within each month. This normalization makes the benchmark-balanced geometric mean discrimination equal to 1. It does not change relative differences between benchmarks or temporal changes within a benchmark; it only fixes the otherwise arbitrary unit of the latent scale.
+This is one scale normalization for the entire surface, not a separate normalization within each month. This normalization makes the benchmark-balanced geometric mean discrimination equal to 1. It does not change relative differences between benchmarks or temporal changes within a benchmark; it only fixes the otherwise arbitrary unit of the latent scale.
 
 For every propagated surface, I fit a conditional difficulty-varying model. The discrimination surface is fixed within that fit, while capabilities and average benchmark difficulties are re-estimated with the symmetric zero-sum prior. Difficulty deviations follow another shared-length-scale RBF process:
 
@@ -641,19 +643,19 @@ $$
 \boldsymbol\delta=(I-QQ^\top)\mathbf r.
 $$
 
-This imposes the equal-supported-cell constraints
+This imposes the constraints
 
 $$
 \sum_{t\in\mathcal T_b}\delta_{b,t}=0
 $$
 
-for every benchmark and
+for every benchmark. Thus, the deviations average to zero across each benchmark’s supported months and do not change its overall difficulty. It also imposes
 
 $$
 \sum_{b:(b,t)\text{ supported}}\delta_{b,t}=0
 $$
 
-for every month. Monthly difficulty is
+for every month. Thus, within each month, the deviations average to zero across the benchmarks used in that month. The deviations therefore cannot say that all benchmarks became easier or harder together; they measure how benchmark difficulties change *relative* to one another. Monthly difficulty is then
 
 $$
 D_{b,t}=\bar D_b+\delta_{b,t},
@@ -685,7 +687,7 @@ p_2\left(
 \right).
 $$
 
-This is a modular, or cut-posterior, analysis. Information flows from the discrimination model into the difficulty model, but the difficulty model cannot update the discrimination trajectories. It is not the posterior of one conventional joint model: the same benchmark scores appear in both stages, and the capabilities and difficulties estimated in Stage 1 are not propagated into Stage 2. Stage 2 re-estimates them conditional on each complete discrimination surface. The pooled analysis currently uses 24 discrimination-surface imputations.
+This results in our final estimates, which, when we ignore changes in discriminations and difficulties over time, match Epoch's estimates pretty well.
 
 <div class="model-comparison-figures">
   <figure>
