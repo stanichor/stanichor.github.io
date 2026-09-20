@@ -6,6 +6,9 @@ permalink: /benchmark-dif/
 categories: 
 section: psychometrics-practical
 related:
+  - /psychometrics/
+  - /factor-analyses/
+  - /segregation/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/benchmark-dif.css' | relative_url }}">

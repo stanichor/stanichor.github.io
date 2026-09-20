@@ -8,9 +8,9 @@ redirect_from:
 categories: 
 section: other
 related:
-  - /mediation/
   - /factor-scores/
-  - /oblique/
+  - /benchmark-dif/
+  - /segregation/
 ---
 
 ## Rethinking the Human Development Index

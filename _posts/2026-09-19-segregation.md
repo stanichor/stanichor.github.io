@@ -6,6 +6,9 @@ permalink: /segregation/
 categories: 
 section: psychometrics-practical
 related:
+  - /factor-analyses/
+  - /benchmark-dif/
+  - /male-attraction/
 ---
 
 While reading [*A Wealth and Status-Based Model of Residential Segregation*](https://www.tandfonline.com/doi/abs/10.1080/00222500601188486), I noticed its discussion of Massey and Denton (1988), who reviewed 20 segregation indices and applied them to 1980 census data from 60 metropolitan statistical areas (MSAs). Using factor analysis, Massey and Denton classified these indices into five underlying dimensions: evenness, exposure, clustering, centralization, and concentration.
