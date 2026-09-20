@@ -342,7 +342,7 @@ Formula source: [Roberto (2015), *The Divergence Index*](https://arxiv.org/abs/1
 
 **Massey and Denton (1988) dimension:** Not included in their review
 
-This replaces each tract's composition in the information-theory index with the composition of its kernel-weighted local environment. Nearby tract populations receive more weight, tapering to zero at the specified radius. The primary analysis uses a 2-km radius.
+This replaces each tract's composition in the information-theory index with the composition of its kernel-weighted local environment.
 
 If $q_i$ is the focal-group proportion in tract $i$'s local environment,
 
@@ -359,7 +359,7 @@ Formula framework: [Reardon and O'Sullivan (2004), *Measures of Spatial Segregat
 
 **Massey and Denton (1988) dimension:** Not included in their review
 
-Spatial dissimilarity ($D_s$) measures the population-weighted absolute difference between each tract's local-environment composition and the metropolitan composition. It smooths across nearby tracts before assessing unevenness, making it less dependent on tract boundaries.
+Spatial dissimilarity ($D_s$) measures the population-weighted absolute difference between each tract's local-environment composition and the metropolitan composition. 
 
 $$D_s=\frac{\sum_i t_i|q_i-P|}{2TP(1-P)}$$
 
@@ -451,7 +451,7 @@ Formula sources: [Massey and Denton (1988)](https://doi.org/10.1093/sf/67.2.281)
 
 **Massey and Denton (1988) dimension:** Concentration
 
-Absolute concentration compares the average tract area occupied by focal-group members with the smallest and largest areas that could contain the same population under the observed tract structure. Let $\bar a_x=\sum_i x_i a_i/X$. Let $\bar a_{\min}$ and $\bar a_{\max}$ be the population-weighted mean areas obtained by filling, respectively, the smallest and largest tracts until the accumulated two-group population reaches $X$. Then
+Absolute concentration compares the average tract area occupied by focal-group members with the smallest and largest areas that could contain the same population under the observed tract structure. Let $\bar a_x=\sum_i x_i a_i/X$. Let $\bar a_{\min}$ and $\bar a_{\max}$ be the population-weighted mean areas obtained by filling the smallest and largest tracts respectively until the accumulated two-group population reaches $X$. Then
 
 $$\mathrm{ACO}=1-\frac{\bar a_x-\bar a_{\min}}{\bar a_{\max}-\bar a_{\min}}.$$
 
