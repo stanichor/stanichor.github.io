@@ -326,7 +326,7 @@ At this point, I should mention [acquiescence bias](/acquiescence/). Acquiescenc
     </figure>
 </div>
 
-Now, it's perfectly fine for someone to prefer many traits, even if they are 'opposites', but this doesn't help us determine the factors, that is, the substantive sources of covariation among preferences. In fact, acquiescence can obscure those factors, because a general tendency to endorse items will make all indicators *more* positively correlated with one another, regardless of their content.
+Now, it's perfectly fine for someone to prefer many traits, even if they are 'opposites', but this doesn't help us determine the factors, that is, the substantive sources of covariation among preferences. In fact, acquiescence will obscure those factors, because a general tendency to endorse items will make all indicators *more* positively correlated with one another, regardless of their content.
 
 For this reason, I've modeled an acquiescence factor that affects all items equally, allowing this general endorsement tendency to be separated from the substantive preference factors. This seems to have been warranted, seeing as the common loading on the acquiescence factor was about 0.25 (94% posterior HDI: [0.23, 0.26]).
 
