@@ -9,8 +9,8 @@ categories:
 section: psychometrics-practical
 related:
   - /general-kink/
-  - /gender-satisfaction/
-  - /gender-themes/
+  - /female-attraction/
+  - /male-attraction/
 ---
 
 In an [old tweet](https://twitter.com/Aella_Girl/status/1659045052180471808), Aella presented a factor analysis of her kink survey, identifying eight factors:

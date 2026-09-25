@@ -6,12 +6,12 @@ permalink: /male-attraction/
 categories: 
 section: psychometrics-practical
 related:
-  - /gender-satisfaction/
-  - /gender-themes/
-  - /general-kink/
+  - /female-attraction/
+  - /acquiescence/
+  - /kink-factors/
 ---
 
-In [What Do We Desire in a Woman?](https://thingstoread.substack.com/p/what-do-we-desire-in-a-woman), Apple Pie conducted surveys on romantic preferences, asking participants to rate several traits based on how attractive they are. The following is a replication of the analysis using confirmatory factor analysis (CFA) and item response theory (IRT), rather than using principal components analysis (PCA) as Apple Pie did. PCA forces factors to be independent, while CFA allows factors to correlate. IRT also provides more item-level information.
+In [What Do We Desire in a Woman?](https://thingstoread.substack.com/p/what-do-we-desire-in-a-woman), Apple Pie conducted surveys on romantic preferences, asking participants to rate several traits based on how attractive they are. The following is a replication of the analysis using confirmatory factor analysis (CFA) and item response theory (IRT), rather than using principal component analysis (PCA) as Apple Pie did. PCA forces factors to be orthogonal, while CFA allows factors to correlate. IRT also provides more item-level information.
 
 ## Factor Analysis Results
 
@@ -387,7 +387,7 @@ Finally, social desirability:
     </figure>
 </div>
 
-I'm not quite sure what to make of these correlations. Well, the negative correlation with the Ingénue factor makes some sense given some of its more... sus indicators. The positive correlation with Vivacity, however, confuses me. Unlike the Ingénue result, there isn't an obvious reason why giving socially desirable responses should be associated with a stronger (stated) preference for adventurous, expressive, and high-energy women (at least, when compared with the other factors). 
+I'm not quite sure what to make of these correlations. Well, the negative correlation with the Ingénue factor makes some sense given some of its more... sus indicators. The positive correlation with Vivacity, however, confuses me. Unlike the Ingénue result, there isn't an obvious reason why giving socially desirable responses should be associated with a stronger (stated) preference for adventurous, expressive, and high-energy women (at least, when compared with the other factors).
 
 [^eight]: So, *technically*, I should have modeled 7 factors + acquiescence, but I had already modeled the 8 factors before I decided to add the acquiescence factor, and the factors still seem crisp and interpretable, so I'll leave it be. Besides, for an exploratory analysis such as this, I'm fine with erring on the side of too many factors than too few.
 

@@ -7,11 +7,11 @@ categories:
 section: psychometrics-theoretical
 related:
   - /schwartz-sdr/
-  - /mediation/
-  - /factor-scores/
+  - /male-attraction/
+  - /female-attraction/
 ---
 
-Acquiescence bias, also known as yea-saying bias, is the tendency to agree with statements in a questionnaire regardless of what those statements assert. Evidence for this pattern is unambiguous. As social psychologist Jon Krosnick [noted](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.50.1.537), 
+Acquiescence bias, also known as yea-saying bias, is the tendency to agree with statements in a questionnaire regardless of what those statements assert. Evidence for this pattern is unambiguous. As social psychologist Jon Krosnick [noted](https://www.annualreviews.org/content/journals/10.1146/annurev.psych.50.1.537),
 
 > When people are asked to agree or disagree with pairs of statements stating mutually exclusive views (e.g. “I enjoy socializing” versus “I don’t enjoy socializing”), answers should be strongly negatively correlated. But across more than 40 studies, the average correlation was only -.22. Across 10 studies, an average of 52% of people agreed with an assertion, whereas only 42% disagreed with its opposite. In another eight studies, an average of 14% more people agreed with an assertion than expressed the same view in a corresponding forced-choice question. And averaging across seven studies, 22% agreed with both a statement and its reversal, whereas only 10% disagreed with both.
 > 
