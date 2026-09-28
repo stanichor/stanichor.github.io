@@ -21,7 +21,7 @@ Because items differ in their loadings, factor analysis estimates how strongly e
 
 This is a simple model, and can be extended. You can use factor analysis to test the assumption that the scale measures *only* one latent trait, or the assumption that the items are only related through the latent trait. You can even have hierarchical factors or incorporate item response theory, along with other advanced techniques. But even our simple model is an improvement over sum scoring.
 
-A practical approximation of single-factor analysis can be obtained through principal components analysis (PCA). While PCA and factor analysis have different assumptions and goals, in practice, they tend to agree (as long as we keep the factor analysis simple, as we're doing). Here's a Python function[^bartlett] that computes factor scores (for a single factor) from data (each observation is a row, each question a column):
+A practical approximation of single-factor analysis can be obtained through principal component analysis (PCA). While PCA and factor analysis have different assumptions and goals, in practice, they tend to agree (as long as we keep the factor analysis simple, as we're doing). Here's a Python function[^bartlett] that computes factor scores (for a single factor) from data (each observation is a row, each question a column):
 
 {% highlight python %}
 import numpy as np

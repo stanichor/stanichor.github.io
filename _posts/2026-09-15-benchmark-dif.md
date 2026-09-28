@@ -8,7 +8,7 @@ section: psychometrics-practical
 related:
   - /psychometrics/
   - /factor-analyses/
-  - /segregation/
+  - /benchmark-flags/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/benchmark-dif.css' | relative_url }}">
