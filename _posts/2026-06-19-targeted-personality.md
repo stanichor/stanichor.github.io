@@ -10,7 +10,7 @@ section: psychometrics-practical
 related:
   - /schwartz-values/
   - /gender-themes/
-  - /gender-satisfaction/
+  - /look-at-items/
 ---
 
 [Tailcalled created a new personality test](https://tailcalled.substack.com/p/which-personality-traits-are-real), the [Targeted Personality Test](https://www.onlinetests.me/test/pers0/). One of its purposes was to investigate the "realness" of personality traits without relying on the lexical hypothesis. This is done by asking people about concrete, narrow behaviors instead of abstract adjectives. I thought I'd also have a go at the data, both for robustness reasons and because it's fun.
