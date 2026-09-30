@@ -6,7 +6,7 @@ permalink: /rationality/
 categories: 
 section: rationalist
 related:
-  - /oblique/
+  - /oblique-iq/
   - /mediation/
   - /rat-iq/
 ---
@@ -131,7 +131,7 @@ The items in the Scientific Reasoning subtest assess:
 - falsification tendencies in the four-card selection task (two deontic and two nondeontic)
 - knowledge of the logic of converging evidence
 - the tendency to avoid drawing causal inferences from correlational evidence
-- the tendency to accurately asses the likelyhood ratio by processing P(D/~H)
+- the tendency to accurately assess the likelihood ratio by processing P(D/~H)
 - the tendency to use control-group reasoning
 - covariation detection ability
 

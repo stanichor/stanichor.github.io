@@ -7,7 +7,7 @@ categories:
 section: other
 related:
   - /not-ea/
-  - /rat-demos/
+  - /rat-demographics/
   - /true-atheism/
 ---
 
@@ -23,7 +23,7 @@ Now, the title of this post shouldn't be a surprise to anyone, but ever since th
 
 ## Political Leanings of Effective Altruists
 
-An obvious place to look is the political leanings of effective altruists themselves. Looking at the (semi-)yearly EA Surveys, [it has never been the case that more than 5% of effective altruists identify as either right or center-right](https://stanichor.net/rat-demos/#effective-altruism-3). Meanwhile, the proportion of effective altruists identifying as left, excluding for the moment center-left, varies between 25% and 40%. Including the center-left brings that figure to between 70% and 85%. So left-leaning effective altruists outnumber right-leaning effective altruists by, at minimum, about 14 to 1. That's *very* lopsided[^libertarian].
+An obvious place to look is the political leanings of effective altruists themselves. Looking at the (semi-)yearly EA Surveys, [it has never been the case that more than 5% of effective altruists identify as either right or center-right](https://stanichor.net/rat-demographics/#effective-altruism-3). Meanwhile, the proportion of effective altruists identifying as left, excluding for the moment center-left, varies between 25% and 40%. Including the center-left brings that figure to between 70% and 85%. So left-leaning effective altruists outnumber right-leaning effective altruists by, at minimum, about 14 to 1. That's *very* lopsided[^libertarian].
 
 <div style="text-align: center;">
     <figure>

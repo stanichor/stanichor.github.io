@@ -6,7 +6,7 @@ permalink: /true-atheism/
 categories: 
 section: other
 related:
-  - /rat-demos/
+  - /rat-demographics/
   - /not-ea/
   - /ea-left-wing/
 ---

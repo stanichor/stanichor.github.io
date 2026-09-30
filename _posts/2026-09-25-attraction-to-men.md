@@ -2,11 +2,13 @@
 layout: post
 title: "Factors of Attraction Towards Men: A Replication"
 date: 2026-09-25
-permalink: /female-attraction/
+permalink: /attraction-to-men/
+redirect_from:
+  - /female-attraction/
 categories: 
 section: psychometrics-practical
 related:
-  - /male-attraction/
+  - /attraction-to-women/
   - /acquiescence/
   - /kink-factors/
 ---

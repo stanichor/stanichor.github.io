@@ -2,13 +2,15 @@
 layout: post
 title: "Epistemic Aggregation Methods"
 date: 2025-10-16
-permalink: /jury-theorems/
+permalink: /epistemic-aggregation/
+redirect_from:
+  - /jury-theorems/
 categories: 
 section: other
 related:
-  - /higher/
+  - /level-k/
   - /rationality/
-  - /movie-recs/
+  - /simple-recsys/
 ---
 
 Modern societies rely on distributed judgment. Juries decide guilt, online users rate the credibility of news, and peer review relies on a community of scientists. A conceptual model of such epistemic aggregation methods is essential. It lets us ask precise questions: What properties make a crowd’s estimate more accurate than an individual’s? When do more participants help, and when do they amplify shared error? How can we design mechanisms that emphasize information rather than noise or ideology?

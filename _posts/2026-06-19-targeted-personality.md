@@ -2,11 +2,13 @@
 layout: post
 title: "Testing Tailcalled's Targeted Personality Test"
 date: 2026-06-19
-permalink: /tpt/
+permalink: /targeted-personality/
+redirect_from:
+  - /tpt/
 categories: 
 section: psychometrics-practical
 related:
-  - /schwartz-sdr/
+  - /schwartz-values/
   - /gender-themes/
   - /gender-satisfaction/
 ---
@@ -1777,4 +1779,3 @@ But for a trait like Easy-Goingness, something appears to have gone wrong. Peopl
 In this sense, traits like Art Appreciation, (Political) Conservatism, or Charisma seem real: when asked about them, people appear to have roughly the same idea of what they mean. Traits like Easy-Goingness, Adaptability, or Conformity seem much less real: everyone has a different idea of what they mean. More work to determine which personality traits are real, and to better reify the less real ones, seems warranted.
 
 [^reassignment]: To reassign the items, I fit a model in which items load on all factors. The item loadings have a spike-and-slab prior, and I count an item as assigned to a factor if its posterior loading on that factor has an absolute value greater than or equal to 0.10.
-

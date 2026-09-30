@@ -13,7 +13,7 @@ related:
 
 When researchers design a scale (a set of questions intended to measure some latent trait, such as anxiety, political ideology, or social trust), the simplest way to score the scale is to add up the answers[^1] (or take their average). This is the standard approach in psychology and most social sciences. Yet, it rests on a very strong assumption: that every item measures the trait equally well[^2].
 
-In reality, items vary considerably in how closely they track the underlying trait. Some questions capture the signal clearly, while others mostly capture noise. Consequently, when all items are treated equally, the measurement of the latent trait is degraded. 
+In reality, items vary considerably in how closely they track the underlying trait. Some questions capture the signal clearly, while others mostly capture noise. Consequently, when all items are treated equally, the measurement of the latent trait is degraded.
 
 We can improve the measurement of latent traits using factor analysis. It assumes that each individual has some unobserved level of one or more latent traits that we want to measure. Responses to each question or item are influenced by at least one of the traits to a certain degree, quantified by its *loading*, which is the correlation between the latent trait and item's response. We also assume that once we've accounted for the latent traits, the remaining variance in each item is just noise[^3].
 

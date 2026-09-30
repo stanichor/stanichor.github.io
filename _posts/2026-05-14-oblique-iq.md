@@ -2,13 +2,15 @@
 layout: post
 title: "Oblique Ways of Measuring Intelligence"
 date: 2026-05-14
-permalink: /oblique/
+permalink: /oblique-iq/
+redirect_from:
+  - /oblique/
 categories: 
 section: other
 related:
   - /rationality/
   - /acquiescence/
-  - /mediation/
+  - /rat-iq/
 ---
 
 If you want to measure someone’s intelligence, the standard approach is to give them an intelligence test, or some reasonably accurate proxy: a standardized test, an admissions test, a [rationality test](https://stanichor.net/rationality/), etc. But these are obviously measures of intelligence; the person taking them knows what you’re doing. What if you want to estimate someone’s intelligence without making it obvious that this is what you’re measuring?

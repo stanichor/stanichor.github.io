@@ -2,11 +2,13 @@
 layout: post
 title: "Schwartz Values and Social Desirability"
 date: 2025-11-16
-permalink: /schwartz-sdr/
+permalink: /schwartz-values/
+redirect_from:
+  - /schwartz-sdr/
 categories: 
 section: psychometrics-practical
 related:
-  - /tpt/
+  - /targeted-personality/
   - /mfq-2/
   - /acquiescence/
 ---

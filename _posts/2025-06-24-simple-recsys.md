@@ -122,4 +122,3 @@ For the books dataset, however, my approach failed completely. All prior means w
     - User Bias Regularization: 2e-4
     - User Factor Regularization: 0.5
     - Item Factor Regularization: 1e-2
-

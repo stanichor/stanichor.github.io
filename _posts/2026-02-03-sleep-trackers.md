@@ -2,13 +2,15 @@
 layout: post
 title: "Factor Analyzing Karpathy's Sleep Trackers"
 date: 2026-02-03
-permalink: /karpathy/
+permalink: /sleep-trackers/
+redirect_from:
+  - /karpathy/
 categories: 
 section: other
 related:
-  - /movie-recs/
+  - /factor-analyses/
   - /factor-scores/
-  - /oblique/
+  - /oblique-iq/
 ---
 
 In his [post](https://karpathy.bearblog.dev/finding-the-best-sleep-tracker/) reviewing four sleep trackers (Oura, Whoop, AutoSleep, and 8Sleep), Karpathy left out something very important: any serious attempt to evaluate accuracy. He covers the normality of the sleep-score distribution for each tracker, the range of scores given by each tracker, which ones are prone to ceiling effects, and even how strongly the trackers’ scores correlate with one another. But the closest he comes to evaluating accuracy is noting that the Oura and Whoop scores seem to correlate well with how he feels in the morning. That kind of validation is intuitive, but it is also unreliable. We all know [how fallible human judgment is](https://stanichor.net/earring/). There should be an objective way to measure how accurate each sleep tracker is.

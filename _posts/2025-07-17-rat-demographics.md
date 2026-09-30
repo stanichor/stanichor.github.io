@@ -2,9 +2,9 @@
 layout: post
 title: "Rationalist(-Adjacent) Demographics"
 date: 2025-07-17
-permalink: /rat-demos/
+permalink: /rat-demographics/
 redirect_from:
-  - /rat-demographics/
+  - /rat-demos/
 categories: 
 section: rationalist
 related:

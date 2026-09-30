@@ -8,7 +8,7 @@ redirect_from:
 categories: 
 section: other
 related:
-  - /rat-demos/
+  - /rat-demographics/
   - /gender-themes/
   - /gender-satisfaction/
 ---

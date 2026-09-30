@@ -8,7 +8,7 @@ section: psychometrics-practical
 related:
   - /gender-themes/
   - /general-kink/
-  - /male-attraction/
+  - /attraction-to-women/
 ---
 
 [Tailcalled](https://surveyanon.wordpress.com/) ran a "Gender satisfaction and other things" survey, so I decided to analyze the data. The responses came from 185 cis men recruited on Prolific. 
