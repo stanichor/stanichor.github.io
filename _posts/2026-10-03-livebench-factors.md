@@ -11,9 +11,9 @@ related:
   - /factor-analyses/
 ---
 
-[LiveBench](https://livebench.ai/#/) is an LLM benchmark with tasks grouped into categories. I’ll analyze its April 7, 2025 public release, which included 18 tasks across six categories. Item-level data were available for seven tasks across three categories: Coding (LCB Generation and Coding Completion), Language (Connections, Plot Unscrambling, and Typos), and Instruction Following (Paraphrase and Story Generation). I can’t analyze the other tasks because LiveBench didn’t release their item-level data, which is essential for this analysis.
+[LiveBench](https://livebench.ai/#/) is an LLM benchmark with tasks grouped into categories. I'll analyze its April 7, 2025 public release, which included 18 tasks across six categories. Item-level data were available for seven tasks across three categories: Coding (LCB Generation and Coding Completion), Language (Connections, Plot Unscrambling, and Typos), and Instruction Following (Paraphrase and Story Generation). Unfortunately, I can't analyze the other tasks because LiveBench didn't release their item-level data, which is essential for this kind of analysis.
 
-Here’s what each task involves:
+Here's what each task involves:
 
 <style>
   .display-note {
@@ -53,21 +53,21 @@ Here’s what each task involves:
 <details class="task-description" markdown="1">
 <summary><h3 id="lcb-generation">LCB Generation (Category: Coding)</h3></summary>
 
-The model receives a programming problem (typically from LiveCodeBench) and must write a complete solution. The submitted code is run against test cases. It scores `1` if it passes and `0` if it fails; there is no partial credit.
+The model receives a programming problem (typically from LiveCodeBench) and must write a complete solution which is then run against test cases. The model receives a score of `1` if it passes and `0` if it fails; there is no partial credit.
 
 </details>
 
 <details class="task-description" markdown="1">
 <summary><h3 id="coding-completion">Coding Completion (Category: Coding)</h3></summary>
 
-The model receives a programming problem and an almost-complete correct solution, which it must finish. Scoring is the same as for LCB Generation.
+The model receives a programming problem and a fragment of a correct solution, which it must complete. Scoring is the same as for LCB Generation.
 
 </details>
 
 <details class="task-description" markdown="1">
 <summary><h3 id="connections">Connections (Category: Language)</h3></summary>
 
-Connections works much like the NYT game of the same name. The model receives a shuffled list of words and must sort them into groups of four, with each group sharing a theme. For example:
+The Connections task works much like the NYT game of the same name. The model receives a shuffled list of words and must sort them into groups of four, with each group sharing a theme. For example:
 
 - `bass, cod, salmon, trout` → fish
 - `apple, banana, pear, peach` → fruit
@@ -92,7 +92,7 @@ where $d$ is the ordering distance and $n$ is the number of sentences.
 <details class="task-description" markdown="1">
 <summary><h3 id="typos">Typos (Category: Language)</h3></summary>
 
-The model receives text (usually based on a recent arXiv abstract) with synthetic spelling errors inserted. It must correct the misspellings while leaving everything else unchanged: no rewriting, punctuation changes, spelling-convention changes, commentary, or stylistic "improvements." The scorer gives `1` if the ground-truth text appears anywhere in the output and `0` otherwise. Thus, despite the instruction, extra surrounding text does not necessarily cause a failure.
+The model receives text (usually based on a recent arXiv abstract) with synthetic spelling errors inserted. It must correct the misspellings while leaving everything else unchanged. That means it shouldn't rewrite the text, change punctuation, change US spelling to UK spelling or vice versa, or add stylistic "improvements". The scorer gives `1` if the ground-truth text appears anywhere in the output and `0` otherwise. Thus, despite the instruction, extra surrounding text does not necessarily cause a failure.
 
 </details>
 
@@ -102,9 +102,9 @@ The model receives text (usually based on a recent arXiv abstract) with syntheti
 The model receives the beginning of a recent Guardian article and is asked to paraphrase it while following several mechanically verifiable instructions. For example:
 
 > Paraphrase this article.
-> Include a title. Use the words “course,” “media,” and “sun.” Write exactly three paragraphs. Begin the first paragraph with “hand.”
+> Include a title. Use the words "course," "media," and "sun." Write exactly three paragraphs. Begin the first paragraph with "hand."
 
-LiveBench scores compliance with the explicit instructions, not the quality of the paraphrase. It averages two components:
+LiveBench scores compliance with the explicit instructions, not the quality of the paraphrase. In fact, it doesn't care about the actual paraphrase at all; models can receive full credit without ever attempting to paraphrase the article. It averages two components:
 
 - Prompt-level accuracy: `1` only if every instruction was followed; otherwise `0`.
 - Instruction-level accuracy: the fraction of individual instructions followed.
@@ -118,7 +118,7 @@ The model receives a recent news article and is asked to generate a story based 
 
 </details>
 
-The seven tasks report different kinds of item scores. Here is how LiveBench’s published scores relate to the responses I use in this analysis:
+The seven tasks report different kinds of item scores. Here is how LiveBench's published scores relate to the responses I use in this analysis:
 
 | Task | LiveBench's published item score | Response used in this analysis |
 |---|---|---|
@@ -131,7 +131,7 @@ The seven tasks report different kinds of item scores. Here is how LiveBench’s
 | Story Generation | Same two-component score as Paraphrase | Instruction-level fraction only, modeled as ordered partial credit |
 
 
-I don’t like how Paraphrase and Story Generation are currently graded. Their published scores average instruction-level accuracy with an all-or-nothing prompt-level component, so missing just one instruction costs more than half the grade. I therefore use instruction-level accuracy alone.
+I don't like how Paraphrase and Story Generation are currently graded. Their published scores average instruction-level accuracy with an all-or-nothing prompt-level component, so missing just one instruction costs more than half the grade. I therefore use instruction-level accuracy alone.
 
 For Plot Unscrambling, I logit-transform the score using this count-adjusted formula:
 
@@ -139,7 +139,7 @@ $$
 \text{transformed score} = \log\left(\frac{n - D + \frac{1}{2}}{D + \frac{1}{2}}\right)
 $$
 
-where $D$ is the edit distance and $n$ is the number of sentences. The half-count adjustment keeps the transformed score finite at the endpoints. Although Plot Unscrambling has many possible scores, each item’s raw score lies on a discrete grid determined by its sentence count so treating the transformed score as continuous is an approximation.
+where $D$ is the edit distance and $n$ is the number of sentences.
 
 ## Determining the Number of Factors
 
@@ -153,7 +153,7 @@ However, some item pairs have no models in common, and others have only a few, m
     </figure>
 </div>
 
-Even 12–13 factors is a lot for seven tasks. I would have expected something closer to seven, so let’s look at the tasks individually to see where the extra dimensions might be coming from.
+Even 12–13 factors is a lot for seven tasks. I would have expected something closer to seven, so let's look at the tasks individually to see where the extra dimensions might be coming from.
 
 <p class="display-note">Select a task to see its Bayesian parallel analysis. The badge counts leading factors above the chance threshold in at least 95% of posterior draws.</p>
 
@@ -406,7 +406,7 @@ In [my post about flagging suspicious questions in AI benchmarks](/benchmark-fla
   </div>
 </div>
 
-<p class="display-note">All 494 items are counted. Percentages use each task’s total, including undefined correlations, and are rounded to whole numbers; rows may not sum to 100%.</p>
+<p class="display-note">All 494 items are counted. Percentages use each task's total, including undefined correlations, and are rounded to whole numbers; rows may not sum to 100%.</p>
 
 <div class="item-flag-table" role="region" aria-label="Item correlation flag counts by task" tabindex="0">
   <table>
@@ -428,7 +428,7 @@ The flags uncovered two Typos items with valid alternative answers, three LCB Ge
 
 ## Factor Structure
 
-Time to look at the factor structure. I’ll exclude the items I found problems with: `832610e9` and `0becbf34` from Typos; “Wrong Answer,” “Takahashi Quest,” and “Bad Juice” from LCB Generation; and `0d828b10`, `6c5eb0ac`, and `230fffb5` from Story Generation. Other problematic items may remain because I couldn’t inspect them. As noted above, every task except Typos is strongly unidimensional. A separate factor analysis of Typos produced factors that were hard to interpret, so for simplicity I’ll model each task, including Typos, with a single factor.
+Time to look at the factor structure. I'll exclude the items I found problems with: `832610e9` and `0becbf34` from Typos; "Wrong Answer," "Takahashi Quest," and "Bad Juice" from LCB Generation; and `0d828b10`, `6c5eb0ac`, and `230fffb5` from Story Generation. Other problematic items may remain because I couldn't inspect them. As noted above, every task except Typos is strongly unidimensional. A separate factor analysis of Typos produced factors that were hard to interpret, so for simplicity I'll model each task, including Typos, with a single factor.
 
 <figure>
   <img src="/assets/images/livebench-factor-analysis/correlated_tasks_factor_structure.svg" alt="Seven task factors each load onto their own item responses, and a heptagram-like network connects every pair of task factors with one of 21 freely estimated correlations." loading="lazy">
@@ -440,7 +440,7 @@ The item loadings in the correlated-task model look like this:
   <a href="/assets/images/livebench-factor-analysis/correlated_tasks_item_loadings.png" target="_blank" rel="noopener"><img src="/assets/images/livebench-factor-analysis/correlated_tasks_item_loadings.png" alt="Item loading distributions by task in the correlated-task model; points show posterior medians and vertical bars show 90% intervals, with zero-crossing intervals distinguished from positive intervals." loading="lazy"></a>
 </figure>
 
-Fourteen items have 90% loading intervals that include zero. That doesn’t mean they’re flawed, but it does make them worth a closer look. I’ve put my notes in a collapsible section so they don’t interrupt the main discussion.
+Fourteen items have 90% loading intervals that include zero. That doesn't mean they're flawed, but it does make them worth a closer look. I've put my notes in a collapsible section so they don't interrupt the main discussion.
 
 <style>
   .loading-audit { margin: 1rem 0 1.5rem; border-top: 1px solid #d0d7de; border-bottom: 1px solid #d0d7de; }
@@ -457,7 +457,7 @@ Fourteen items have 90% loading intervals that include zero. That doesn’t mean
 
 **Typos**
 
-- For the item with ID prefix `d889972c`, the corrupted `vectorfiel-based` is keyed as `vector field-based`, but some models correct it to `vector-field-based`, which seems like a valid alternative. Of the 77 model answers I could check, 51 were marked wrong; 3 of those otherwise match the key exactly and differ only in hyphenation. Since the prompt asks models to preserve stylistic choices, I’d call this ambiguous rather than a definite scoring error.
+- For the item with ID prefix `d889972c`, the corrupted `vectorfiel-based` is keyed as `vector field-based`, but some models correct it to `vector-field-based`, which seems like a valid alternative. Of the 77 model answers I could check, 51 were marked wrong; 3 of those otherwise match the key exactly and differ only in hyphenation. Since the prompt asks models to preserve stylistic choices, I'd call this ambiguous rather than a definite scoring error.
 - For the item with ID prefix `2b05709f`, `anbdhten` is keyed as `and the`, matching the original abstract. But `and then` is also a plausible correction in context. Of the 77 model answers I could check, 62 were marked wrong; 28 of those otherwise match the key exactly and differ only in using `and then`.
 - For `c705c2cb`, I found no key or scoring problem among the 77 archived answers I could check.
 - For the other eight Typos items, the public data provides neither prompts and keys nor archived answers, so I could not audit them.
@@ -478,7 +478,7 @@ The task-factor correlations look like this:
   <a href="/assets/images/livebench-factor-analysis/correlated_tasks_factor_correlations.png" target="_blank" rel="noopener"><img src="/assets/images/livebench-factor-analysis/correlated_tasks_factor_correlations.png" alt="Posterior correlations among the seven task factors; each cell shows the median correlation and its 90% interval on a vivid red-to-green scale." loading="lazy"></a>
 </figure>
 
-There’s a clear positive manifold, and parallel analysis of the *task-factor correlation matrix* supports one common factor. That suggests a hierarchical model in which a higher-order factor explains much of the correlation among tasks. Since LiveBench also groups tasks into categories, we could instead add Coding, Language, and Instruction Following domain factors. Those domains could correlate freely or load on an even higher-order factor.
+There's a clear positive manifold, and parallel analysis of the *task-factor correlation matrix* supports a single factor. This would imply a hierarchical model in which a higher-order factor explains the correlation among tasks. However, since LiveBench groups tasks into categories, we might instead add Coding, Language, and Instruction Following domain factors. Those domains could correlate freely or load on an even higher-order factor.
 
 <figure>
   <a href="/assets/images/livebench-factor-analysis/higher_order_model_structures.svg" target="_blank" rel="noopener"><img src="/assets/images/livebench-factor-analysis/higher_order_model_structures.svg" alt="Three proposed factor structures: one general factor above all seven tasks; three freely correlated domain factors above their respective tasks; and one grand factor above the three domains, which in turn explain their respective tasks." loading="lazy"></a>
@@ -492,9 +492,9 @@ The domain estimates help explain why. In the correlated-domains model, the doma
   <a href="/assets/images/livebench-factor-analysis/domain_correlations.png" target="_blank" rel="noopener"><img src="/assets/images/livebench-factor-analysis/domain_correlations.png" alt="Posterior correlations among the Coding, Language, and Instruction Following domains, with medians and 90% intervals." loading="lazy"></a>
 </figure>
 
-Even so, they can’t account for some of the task-factor correlations, as we’ll see below. In the grand-factor model, all three domain loadings are *very* close to 1; the lowest loading is *0.9993*. That leaves little domain-specific variance, so modeling the categories doesn’t seem to add much.
+Even so, they can't account for some of the task-factor correlations, as we'll see below. In the grand-factor model, all three domain loadings are *very* close to 1; the lowest loading is *0.9993*. That leaves little domain-specific variance, so modeling the categories doesn't seem to add much.
 
-That brings us back to the hierarchical model. It also fits worse than the correlated-task model, but I find it more plausible a priori. The positive manifold is what I’d expect from LLMs, and parallel analysis of the task-factor correlations supports one common factor. Its poorer fit suggests that the general factor alone misses some relationships between tasks. We can allow for those relationships by adding correlated residuals, so that selected task factors can correlate more than the general factor predicts.
+That brings us back to the hierarchical model. It also fits worse than the correlated-task model, but I find it more plausible a priori. The positive manifold is what I'd expect from LLMs, and parallel analysis of the task-factor correlations supports one common factor. Its poorer fit suggests that the general factor alone misses some relationships between tasks. We can allow for those relationships by adding correlated residuals, so that selected task factors can correlate more than the general factor predicts.
 
 To see which links might be worth including, I fit an exploratory hierarchical model with positive-only shrinkage priors on all 21 task-residual correlations:
 
@@ -502,7 +502,7 @@ To see which links might be worth including, I fit an exploratory hierarchical m
   <a href="/assets/images/livebench-factor-analysis/exploratory_residual_correlation_matrix.png" target="_blank" rel="noopener"><img src="/assets/images/livebench-factor-analysis/exploratory_residual_correlation_matrix.png" alt="Positive-only shrinkage fit: residual correlations among all seven task factors, with posterior medians and 90% intervals." loading="lazy"></a>
 </figure>
 
-The largest estimated residual correlations are Plot Unscrambling–Typos (+.52), LCB Generation–Coding Completion (+.29), and Connections–Story Generation (+.27). But Coding Completion’s loading on the general factor is almost one in this exploratory fit, leaving virtually no task-specific variance. Its +.29 residual correlation therefore adds only about +.002 to the implied correlation between the two tasks. I’ll include Plot–Typos and Connections–Story, but not LCB–Coding. Because the exploratory prior rules out negative residual correlations, an interval above zero is not, by itself, a reason to include a link.
+The largest estimated residual correlations are Plot Unscrambling–Typos (+.52), LCB Generation–Coding Completion (+.29), and Connections–Story Generation (+.27). But Coding Completion's loading on the general factor is almost one in this exploratory fit, leaving virtually no task-specific variance. Its +.29 residual correlation therefore adds only about +.002 to the implied correlation between the two tasks. I'll include Plot–Typos and Connections–Story, but not LCB–Coding. Because the exploratory prior rules out negative residual correlations, an interval above zero is not, by itself, a reason to include a link.
 
 In the final hierarchical model, only those two residual correlations are estimated, with priors that allow either sign. All other residual correlations are fixed at zero. The posterior estimates are:
 
@@ -535,7 +535,7 @@ The loadings of the seven tasks on the general factor in this fit are:
 | Paraphrase | .77 | [.74, .80] |
 | Story Generation | .86 | [.82, .89] |
 
-We can also ask how much of each task’s total-score variance is attributable to the general factor, its task-specific factor, or item-specific variation. This decomposition is for an equal-weighted sum of *underlying* item responses, not the observed mixed-format LiveBench score:
+We can also ask how much of each task's total-score variance is attributable to the general factor, its task-specific factor, or item-specific variation. This decomposition is for an equal-weighted sum of *underlying* item responses, not the observed mixed-format LiveBench score:
 
 <figure>
   <a href="/assets/images/livebench-factor-analysis/task_variance_decomposition.png" target="_blank" rel="noopener"><img src="/assets/images/livebench-factor-analysis/task_variance_decomposition.png" alt="Stacked bars for each task showing the posterior mean percentages of latent total-score variance attributable to the general factor, task-specific factor, and item-specific variation." loading="lazy"></a>
@@ -553,9 +553,9 @@ This compares Epoch's ECI with posterior-mean factor scores from the selected hi
 
 ## Takeaways
 
-Once again, benchmark item flags proved useful for finding problems. The task factors display a positive manifold, as expected. What’s more notable is the lack of clear domain factors beyond the general factor. Human cognitive ability is well modeled by g, but not perfectly: someone may be better at spatial tasks, and someone else better at verbal tasks, than their levels of g would predict. They could have the same g, yet if you needed to navigate an unfamiliar city or write an essay, you might have a clear choice between them.
+Once again, benchmark item flags proved useful for finding problems. The task factors display a positive manifold, as expected. What's more notable is the lack of clear domain factors beyond the general factor. Human cognitive ability is well modeled by g, but not perfectly: someone may be better at spatial tasks, and someone else better at verbal tasks, than their levels of g would predict. They could have the same g, yet if you needed to navigate an unfamiliar city or write an essay, you might have a clear choice between them.
 
-That distinction is much less apparent for the AI models and tasks tested here. LiveBench divides its tasks into categories, but I find little evidence that these categories capture distinct abilities. It doesn’t seem especially useful to say “use Model A for Coding and Model B for Language” when performance across those domains is so closely tied to general performance. Individual tasks can still differ: Plot Unscrambling and Typos, for example, are more closely related than the general factor alone predicts. But LCB Generation and Coding Completion do not show much extra association, despite both involving coding. The distinctions worth paying attention to seem to lie with particular tasks, not the broad category labels.
+That distinction is much less apparent for the AI models and tasks tested here. LiveBench divides its tasks into categories, but I find little evidence that these categories capture distinct abilities. It doesn't seem especially useful to say "use Model A for Coding and Model B for Language" when performance across those domains is so closely tied to general performance. Individual tasks can still differ: Plot Unscrambling and Typos, for example, are more closely related than the general factor alone predicts. But LCB Generation and Coding Completion do not show much extra association, despite both involving coding. The distinctions worth paying attention to seem to lie with particular tasks, not the broad category labels.
 
 ## Appendix
 
@@ -812,6 +812,6 @@ The seven task-factor information curves are overlaid on the same axes, so their
   <a href="/assets/images/livebench-factor-analysis/task-information-curves/story_generation.png" target="_blank" rel="noopener">Story Generation</a>
 </nav>
 
-[^coding-loading-rounding]: All values in the task-loading table are rounded to two decimal places. Coding Completion’s displayed 1.00 values are slightly below 1 before rounding.
+[^coding-loading-rounding]: All values in the task-loading table are rounded to two decimal places. Coding Completion's displayed 1.00 values are slightly below 1 before rounding.
 
 [^eci-one-version-match]: For this figure, I include ECI models with exactly one distinct model version in their benchmark records and ECI scores dated no later than April 7, 2025. I match version names to LiveBench after ignoring case and punctuation, but not version numbers or words. If several LiveBench runs match the same ECI model, I use the one with the most item responses. This leaves 38 ECI models before task-specific response requirements.
