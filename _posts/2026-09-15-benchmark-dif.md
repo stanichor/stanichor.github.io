@@ -7,7 +7,7 @@ categories:
 section: psychometrics-practical
 related:
   - /psychometrics/
-  - /factor-analyses/
+  - /livebench-factors/
   - /benchmark-flags/
 ---
 

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 565" role="img" aria-labelledby="title description">
+  <title id="title">Correlated-task factor model for seven LiveBench tasks</title>
+  <desc id="description">Seven task factors each point to their own item responses. A heptagram-like complete network connects every pair of task factors, representing the 21 freely estimated correlations.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #1e293b; }
+      .title { font-size: 27px; font-weight: 700; }
+      .subtitle { font-size: 15px; fill: #475569; }
+      .section { font-size: 17px; font-weight: 700; }
+      .factor { font-size: 16px; font-weight: 600; }
+      .item { font-size: 15px; fill: #334155; }
+      .number, .number text { font-size: 14px; font-weight: 700; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
+      .matrix-number { font-size: 14px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+      .note { font-size: 13px; fill: #475569; }
+      .row { fill: #fff; stroke: #dbe3eb; stroke-width: 1; }
+      .items { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1; }
+      .load { stroke: #64748b; stroke-width: 1.8; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1120" height="565" rx="18" fill="#fff"/>
+  <rect x="1" y="1" width="1118" height="563" rx="17" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <text class="title" x="38" y="52">Correlated-task factor model</text>
+  <text class="subtitle" x="38" y="79">One latent factor per task; each item loads on its task factor.</text>
+
+  <text class="section" x="38" y="116">Task factors and their item sets</text>
+
+  <rect class="row" x="38" y="130" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="157" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="158">1</text>
+  <text class="factor" x="105" y="163">LCB Generation</text>
+  <line class="load" x1="365" y1="157" x2="420" y2="157"/>
+  <rect class="items" x="432" y="140" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="162">item 1 · item 2 · …</text>
+
+  <rect class="row" x="38" y="190" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="217" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="218">2</text>
+  <text class="factor" x="105" y="223">Coding Completion</text>
+  <line class="load" x1="365" y1="217" x2="420" y2="217"/>
+  <rect class="items" x="432" y="200" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="222">item 1 · item 2 · …</text>
+
+  <rect class="row" x="38" y="250" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="277" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="278">3</text>
+  <text class="factor" x="105" y="283">Connections</text>
+  <line class="load" x1="365" y1="277" x2="420" y2="277"/>
+  <rect class="items" x="432" y="260" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="282">item 1 · item 2 · …</text>
+
+  <rect class="row" x="38" y="310" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="337" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="338">4</text>
+  <text class="factor" x="105" y="343">Plot Unscrambling</text>
+  <line class="load" x1="365" y1="337" x2="420" y2="337"/>
+  <rect class="items" x="432" y="320" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="342">item 1 · item 2 · …</text>
+
+  <rect class="row" x="38" y="370" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="397" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="398">5</text>
+  <text class="factor" x="105" y="403">Typos</text>
+  <line class="load" x1="365" y1="397" x2="420" y2="397"/>
+  <rect class="items" x="432" y="380" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="402">item 1 · item 2 · …</text>
+
+  <rect class="row" x="38" y="430" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="457" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="458">6</text>
+  <text class="factor" x="105" y="463">Paraphrase</text>
+  <line class="load" x1="365" y1="457" x2="420" y2="457"/>
+  <rect class="items" x="432" y="440" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="462">item 1 · item 2 · …</text>
+
+  <rect class="row" x="38" y="490" width="650" height="54" rx="9"/>
+  <circle cx="70" cy="517" r="18" fill="#4d7195"/>
+  <text class="number" x="70" y="518">7</text>
+  <text class="factor" x="105" y="523">Story Generation</text>
+  <line class="load" x1="365" y1="517" x2="420" y2="517"/>
+  <rect class="items" x="432" y="500" width="224" height="34" rx="6"/>
+  <text class="item" x="449" y="522">item 1 · item 2 · …</text>
+
+  <rect x="720" y="102" width="362" height="442" rx="12" fill="#f8fafc" stroke="#dbe3eb"/>
+  <text class="section" x="743" y="137">Task-factor correlations Φ</text>
+  <text class="subtitle" x="743" y="162">Every pair is free to correlate</text>
+
+  <path d="M901 225L981 263 M901 225L1000 350 M901 225L945 419 M901 225L857 419 M901 225L802 350 M901 225L821 263 M981 263L1000 350 M981 263L945 419 M981 263L857 419 M981 263L802 350 M981 263L821 263 M1000 350L945 419 M1000 350L857 419 M1000 350L802 350 M1000 350L821 263 M945 419L857 419 M945 419L802 350 M945 419L821 263 M857 419L802 350 M857 419L821 263 M802 350L821 263" fill="none" stroke="#a8bfd6" stroke-width="1.8" stroke-linecap="round"/>
+  <g fill="#4d7195">
+    <circle cx="901" cy="225" r="17"/><circle cx="981" cy="263" r="17"/>
+    <circle cx="1000" cy="350" r="17"/><circle cx="945" cy="419" r="17"/>
+    <circle cx="857" cy="419" r="17"/><circle cx="802" cy="350" r="17"/>
+    <circle cx="821" cy="263" r="17"/>
+  </g>
+  <g class="number">
+    <text x="901" y="226">1</text><text x="981" y="264">2</text>
+    <text x="1000" y="351">3</text><text x="945" y="420">4</text>
+    <text x="857" y="420">5</text><text x="802" y="351">6</text>
+    <text x="821" y="264">7</text>
+  </g>
+  <text class="note" x="743" y="487">21 lines = 21 estimated correlations</text>
+
+</svg>

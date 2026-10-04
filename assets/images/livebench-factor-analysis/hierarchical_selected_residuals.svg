@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 445" role="img" aria-labelledby="title description">
+  <title id="title">Seven-task hierarchy with two residual correlations</title>
+  <desc id="description">One general factor loads on all seven task factors. The only task-residual correlations are between Connections and Story Generation, and between Plot Unscrambling and Typos. Every task factor loads on its own items, which are omitted.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#64748b"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #1e293b; }
+      .title { font-size: 25px; font-weight: 700; }
+      .subtitle { font-size: 16px; fill: #475569; }
+      .task { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.5; }
+      .task-text { font-size: 18px; font-weight: 600; dominant-baseline: middle; }
+      .general { fill: #f4f0ff; stroke: #7c3aed; stroke-width: 2.5; }
+      .general-text { font-size: 20px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+      .loading { fill: none; stroke: #64748b; stroke-width: 2.3; marker-end: url(#arrow); }
+      .residual { fill: none; stroke: #a855c1; stroke-width: 3; stroke-dasharray: 8 5; stroke-linecap: round; }
+      .note { font-size: 15px; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="445" fill="#fff"/>
+  <text class="title" x="48" y="43">Hierarchical model with two residual links</text>
+  <text class="subtitle" x="48" y="69">A general factor explains shared task variation; two task pairs retain additional correlation.</text>
+
+  <path class="loading" d="M336 195L583 107"/>
+  <path class="loading" d="M336 203L583 151"/>
+  <path class="loading" d="M336 211L583 195"/>
+  <path class="loading" d="M336 219L583 239"/>
+  <path class="loading" d="M336 227L583 283"/>
+  <path class="loading" d="M336 235L583 327"/>
+  <path class="loading" d="M336 243L583 371"/>
+
+  <rect class="general" x="76" y="193" width="260" height="60" rx="13"/>
+  <text class="general-text" x="206" y="223">General factor</text>
+
+  <rect class="task" x="590" y="89" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="107">LCB Generation</text>
+  <rect class="task" x="590" y="133" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="151">Coding Completion</text>
+  <rect class="task" x="590" y="177" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="195">Paraphrase</text>
+  <rect class="task" x="590" y="221" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="239">Connections</text>
+  <rect class="task" x="590" y="265" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="283">Story Generation</text>
+  <rect class="task" x="590" y="309" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="327">Plot Unscrambling</text>
+  <rect class="task" x="590" y="353" width="350" height="36" rx="8"/>
+  <text class="task-text" x="607" y="371">Typos</text>
+
+  <path class="residual" d="M945 239C1002 239 1002 283 945 283"/>
+  <path class="residual" d="M945 327C1002 327 1002 371 945 371"/>
+
+  <line x1="54" y1="421" x2="94" y2="421" stroke="#64748b" stroke-width="2.3" marker-end="url(#arrow)"/>
+  <text class="note" x="105" y="426">Loading</text>
+  <line class="residual" x1="217" y1="421" x2="258" y2="421"/>
+  <text class="note" x="269" y="426">Residual correlation</text>
+  <text class="note" x="653" y="426">Each task’s item responses are omitted.</text>
+</svg>

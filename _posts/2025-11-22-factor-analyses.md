@@ -10,7 +10,7 @@ section: other
 related:
   - /factor-scores/
   - /benchmark-dif/
-  - /segregation/
+  - /livebench-factors/
 ---
 
 ## Rethinking the Human Development Index

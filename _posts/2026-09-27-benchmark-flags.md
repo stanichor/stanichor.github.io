@@ -8,7 +8,7 @@ section: psychometrics-practical
 related:
   - /benchmark-dif/
   - /psychometrics/
-  - /factor-scores/
+  - /livebench-factors/
 ---
 
 <style>
