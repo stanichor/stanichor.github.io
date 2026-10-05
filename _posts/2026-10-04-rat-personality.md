@@ -13,8 +13,8 @@ related:
 
 If you ask an LLM what the personality profile of rationalists is, they'll probably direct you to the [2012 LW Survey results](https://www.lesswrong.com/posts/x9FNKTEt68Rz6wQ6P/2012-survey-results), which state:
 
-> mean+standard_deviation (25% level, 50% level/median, 75% level) [n = number of data points]
-> [...]
+> mean+standard_deviation (25% level, 50% level/median, 75% level) [n = number of data points]<br>
+> [...]<br>
 > Big 5 (O): 60.6 + 25.7 (41, 65, 84) [n = 453]<br>
 > Big 5 (C): 35.2 + 27.5 (10, 30, 58) [n = 453]<br>
 > Big 5 (E): 30.3 + 26.7 (7, 22, 48) [n = 454]<br>
