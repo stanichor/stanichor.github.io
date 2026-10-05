@@ -9,7 +9,7 @@ categories:
 section: rationalist
 related:
   - /ea-left-wing/
-  - /not-ea/
+  - /rat-personality/
   - /rat-iq/
 ---
 
