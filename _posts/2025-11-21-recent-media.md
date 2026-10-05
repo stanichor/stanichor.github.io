@@ -3,8 +3,7 @@ layout: post
 title: "Why Consume Recent Media?"
 date: 2025-11-21
 permalink: /recent-media/
-categories: 
-section: media-analysis
+category: media-taste
 related:
   - /ai-slop/
   - /anime-quality/

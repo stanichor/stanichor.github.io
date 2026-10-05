@@ -3,8 +3,7 @@ layout: post
 title: "How to Spot Suspicious Questions in AI Benchmarks"
 date: 2026-09-27
 permalink: /benchmark-flags/
-categories: 
-section: psychometrics-practical
+category: ai-benchmarks
 related:
   - /benchmark-dif/
   - /psychometrics/

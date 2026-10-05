@@ -3,8 +3,7 @@ layout: post
 title: "Waiting for the 28th Amendment"
 date: 2026-07-05
 permalink: /amendments/
-categories: 
-section: other
+category: uncategorized
 related:
   - /fence/
   - /metis/

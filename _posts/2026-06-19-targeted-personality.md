@@ -5,8 +5,7 @@ date: 2026-06-19
 permalink: /targeted-personality/
 redirect_from:
   - /tpt/
-categories: 
-section: psychometrics-practical
+category: measurement
 related:
   - /schwartz-values/
   - /gender-themes/

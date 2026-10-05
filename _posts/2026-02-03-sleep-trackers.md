@@ -5,8 +5,7 @@ date: 2026-02-03
 permalink: /sleep-trackers/
 redirect_from:
   - /karpathy/
-categories: 
-section: other
+category: measurement
 related:
   - /factor-analyses/
   - /factor-scores/

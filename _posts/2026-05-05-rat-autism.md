@@ -5,8 +5,7 @@ date: 2026-05-05
 permalink: /rat-autism/
 redirect_from:
   - /autistic-rats/
-categories: 
-section: rationalist
+category: rationalism-ea
 related:
   - /rat-iq/
   - /systemizing/

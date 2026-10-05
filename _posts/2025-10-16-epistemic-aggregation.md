@@ -5,8 +5,7 @@ date: 2025-10-16
 permalink: /epistemic-aggregation/
 redirect_from:
   - /jury-theorems/
-categories: 
-section: other
+category: reasoning-decisions
 related:
   - /level-k/
   - /rationality/

@@ -3,8 +3,7 @@ layout: post
 title: "Understanding Acquiescence Bias"
 date: 2025-11-20
 permalink: /acquiescence/
-categories: 
-section: psychometrics-theoretical
+category: measurement
 related:
   - /schwartz-values/
   - /attraction-to-women/

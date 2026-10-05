@@ -3,8 +3,7 @@ layout: post
 title: "Revisiting the 2012 LessWrong Personality Results"
 date: 2026-10-04
 permalink: /rat-personality/
-categories: 
-section: rationalist
+category: rationalism-ea
 related:
   - /rat-autism/
   - /rat-iq/

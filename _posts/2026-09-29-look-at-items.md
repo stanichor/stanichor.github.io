@@ -3,8 +3,7 @@ layout: post
 title: "#AlwaysLookAtTheItems"
 date: 2026-09-29
 permalink: /look-at-items/
-categories: 
-section: other
+category: measurement
 related:
   - /mfq-2/
   - /systemizing/

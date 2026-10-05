@@ -3,8 +3,7 @@ layout: post
 title: "Use Factor Scores, Not Sum Scores"
 date: 2025-10-08
 permalink: /factor-scores/
-categories: 
-section: psychometrics-theoretical
+category: measurement
 related:
   - /mediation/
   - /ses/

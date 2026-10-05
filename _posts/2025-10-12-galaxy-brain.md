@@ -3,8 +3,7 @@ layout: post
 title: "Galaxy-Brained Explanations"
 date: 2025-10-12
 permalink: /galaxy-brain/
-categories: 
-section: other
+category: reasoning-decisions
 related:
   - /erogamer/
   - /metis/

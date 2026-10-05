@@ -3,8 +3,7 @@ layout: post
 title: "LiveBench Mostly Measures One General Ability"
 date: 2026-10-03
 permalink: /livebench-factors/
-categories: 
-section: other
+category: ai-benchmarks
 related:
   - /benchmark-dif/
   - /benchmark-flags/

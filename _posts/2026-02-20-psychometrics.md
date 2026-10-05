@@ -5,8 +5,7 @@ date: 2026-02-20
 permalink: /psychometrics/
 redirect_from:
   - /intro-psychometrics/
-categories: 
-section: psychometrics-theoretical
+category: measurement
 related:
   - /benchmark-flags/
   - /factor-scores/

@@ -5,8 +5,7 @@ date: 2025-11-27
 permalink: /general-kink/
 redirect_from:
   - /general-kink-factor/
-categories: 
-section: psychometrics-practical
+category: human-traits
 related:
   - /gender-satisfaction/
   - /gender-themes/

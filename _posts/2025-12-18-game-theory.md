@@ -5,8 +5,7 @@ date: 2025-12-18
 permalink: /game-theory/
 redirect_from:
   - /game-theory-morality/
-categories: 
-section: rant
+category: reasoning-decisions
 related:
   - /fence/
   - /earring/

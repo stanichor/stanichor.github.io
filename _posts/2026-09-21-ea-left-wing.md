@@ -3,8 +3,7 @@ layout: post
 title: "EA Is Pretty Left-Wing, Actually"
 date: 2026-09-21
 permalink: /ea-left-wing/
-categories: 
-section: other
+category: rationalism-ea
 related:
   - /not-ea/
   - /rat-demographics/

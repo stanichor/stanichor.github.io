@@ -5,8 +5,7 @@ date: 2025-11-16
 permalink: /schwartz-values/
 redirect_from:
   - /schwartz-sdr/
-categories: 
-section: psychometrics-practical
+category: human-traits
 related:
   - /targeted-personality/
   - /mfq-2/

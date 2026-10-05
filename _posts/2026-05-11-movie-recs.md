@@ -5,8 +5,7 @@ date: 2026-05-11
 permalink: /movie-recs/
 redirect_from:
   - /movie-ratings/
-categories: 
-section: media-analysis
+category: media-taste
 favorite: true
 related:
   - /simple-recsys/

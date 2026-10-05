@@ -3,8 +3,7 @@ layout: post
 title: "What makes a good anime?"
 date: 2025-10-10
 permalink: /anime-quality/
-categories: 
-section: media-analysis
+category: media-taste
 related:
   - /movie-recs/
   - /simple-recsys/

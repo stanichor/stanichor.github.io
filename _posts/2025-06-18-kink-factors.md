@@ -5,8 +5,7 @@ date: 2025-06-18
 permalink: /kink-factors/
 redirect_from:
   - /kink-factor-analysis/
-categories: 
-section: psychometrics-practical
+category: human-traits
 related:
   - /general-kink/
   - /attraction-to-men/

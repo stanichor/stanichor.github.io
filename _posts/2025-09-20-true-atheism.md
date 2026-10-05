@@ -3,8 +3,7 @@ layout: post
 title: "Philosophical Naturalism is Rare"
 date: 2025-09-20
 permalink: /true-atheism/
-categories: 
-section: other
+category: uncategorized
 related:
   - /rat-demographics/
   - /not-ea/

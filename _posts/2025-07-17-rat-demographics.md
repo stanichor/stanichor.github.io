@@ -5,8 +5,7 @@ date: 2025-07-17
 permalink: /rat-demographics/
 redirect_from:
   - /rat-demos/
-categories: 
-section: rationalist
+category: rationalism-ea
 related:
   - /ea-left-wing/
   - /rat-personality/

@@ -5,8 +5,7 @@ date: 2025-10-14
 permalink: /attraction-to-women/
 redirect_from:
   - /male-attraction/
-categories: 
-section: psychometrics-practical
+category: human-traits
 related:
   - /attraction-to-men/
   - /acquiescence/

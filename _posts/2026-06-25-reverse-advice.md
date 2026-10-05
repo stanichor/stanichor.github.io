@@ -3,8 +3,7 @@ layout: post
 title: "Contra Seemingly Everyone on Reversing Advice"
 date: 2026-06-25
 permalink: /reverse-advice/
-categories: 
-section: rant
+category: reasoning-decisions
 related:
   - /metis/
   - /game-theory/

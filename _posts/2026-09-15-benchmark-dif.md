@@ -3,8 +3,7 @@ layout: post
 title: "Do AI Benchmarks Measure the Same Thing Over Time?"
 date: 2026-09-15
 permalink: /benchmark-dif/
-categories: 
-section: psychometrics-practical
+category: ai-benchmarks
 related:
   - /psychometrics/
   - /livebench-factors/

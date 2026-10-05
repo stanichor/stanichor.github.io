@@ -3,8 +3,7 @@ layout: post
 title: "Factor Analysis of Segregation Measures: A Replication"
 date: 2026-09-19
 permalink: /segregation/
-categories: 
-section: psychometrics-practical
+category: uncategorized
 related:
   - /factor-analyses/
   - /benchmark-dif/

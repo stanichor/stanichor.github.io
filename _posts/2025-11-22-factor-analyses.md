@@ -5,8 +5,7 @@ date: 2025-11-22
 permalink: /factor-analyses/
 redirect_from:
   - /nice-factor-analyses/
-categories: 
-section: other
+category: measurement
 related:
   - /factor-scores/
   - /benchmark-dif/

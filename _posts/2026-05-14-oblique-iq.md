@@ -5,8 +5,7 @@ date: 2026-05-14
 permalink: /oblique-iq/
 redirect_from:
   - /oblique/
-categories: 
-section: other
+category: measurement
 related:
   - /rationality/
   - /acquiescence/

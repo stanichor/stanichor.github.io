@@ -3,8 +3,7 @@ layout: post
 title: "Building a Simple Recommendation System"
 date: 2025-06-24
 permalink: /simple-recsys/
-categories: 
-section: media-analysis
+category: media-taste
 related:
   - /movie-recs/
   - /anime-quality/

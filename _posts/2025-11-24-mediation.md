@@ -3,8 +3,7 @@ layout: post
 title: "Mediation as a Test of a Good Construct"
 date: 2025-11-24
 permalink: /mediation/
-categories: 
-section: psychometrics-theoretical
+category: measurement
 favorite: true
 related:
   - /ses/

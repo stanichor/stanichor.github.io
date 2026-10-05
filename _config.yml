@@ -28,10 +28,6 @@ github_username:  stanichor
 navigation:
   - text: "Home"
     url: "/"
-  - text: "Archive"
-    url: "/archive"
-  - text: "Interactives"
-    url: "/interactives/"
   - text: "About"
     url: "/about"
 

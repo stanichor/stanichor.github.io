@@ -3,8 +3,7 @@ layout: post
 title: "We Still Can't Measure Rationality"
 date: 2026-05-03
 permalink: /rationality/
-categories: 
-section: rationalist
+category: rationalism-ea
 related:
   - /oblique-iq/
   - /mediation/

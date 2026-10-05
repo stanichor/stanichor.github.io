@@ -5,8 +5,7 @@ date: 2025-06-19
 permalink: /systemizing/
 redirect_from:
   - /empathizing-systemizing-theory/
-categories: 
-section: psychometrics-practical
+category: human-traits
 related:
   - /rat-autism/
   - /nerd/

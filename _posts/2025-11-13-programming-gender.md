@@ -5,8 +5,7 @@ date: 2025-11-13
 permalink: /programming-gender/
 redirect_from:
   - /prog-lang-gender/
-categories: 
-section: other
+category: uncategorized
 related:
   - /rat-demographics/
   - /gender-themes/

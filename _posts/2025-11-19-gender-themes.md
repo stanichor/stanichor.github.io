@@ -3,8 +3,7 @@ layout: post
 title: "A Psychometric Analysis of Tailcalled's Gender Themes Survey"
 date: 2025-11-19
 permalink: /gender-themes/
-categories: 
-section: psychometrics-practical
+category: human-traits
 related:
   - /gender-satisfaction/
   - /general-kink/
