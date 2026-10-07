@@ -216,7 +216,8 @@
     const dc = baseline.states.findIndex((state) => state.abbr === "DC");
     scorePaths.dcDot.setAttribute("fill", scoreColor(current.theta[dc], limit));
     scorePaths.dcDot.classList.toggle("is-selected", selected === dc);
-    legend.innerHTML = `<span>${Math.exp(-limit).toFixed(2)}×</span><span class="sr-legend-bar" aria-hidden="true"></span><span>1×</span><span>${Math.exp(limit).toFixed(2)}×</span>`;
+    legend.innerHTML = `<span class="sr-legend-bar" aria-hidden="true"></span>
+      <span class="sr-legend-ticks"><span>${Math.exp(-limit).toFixed(2)}×</span><span>1×</span><span>${Math.exp(limit).toFixed(2)}×</span></span>`;
     const order = [...current.theta.keys()].sort((a, b) => current.theta[b] - current.theta[a]);
     if (selected === null) {
       highlights.hidden = false;

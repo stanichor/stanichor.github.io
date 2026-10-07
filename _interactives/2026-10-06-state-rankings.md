@@ -6,7 +6,7 @@ permalink: /state-rankings/
 categories:
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/state-rankings.css' | relative_url }}?v=21">
+<link rel="stylesheet" href="{{ '/assets/css/state-rankings.css' | relative_url }}?v=22">
 
 <div class="sr-app" data-state-rankings
      data-baseline="{{ '/assets/data/state-rankings/baseline.json' | relative_url }}"
@@ -174,4 +174,4 @@ The selected-state inflow/outflow ratio divides weighted arrivals by weighted de
 
 </details>
 
-<script src="{{ '/assets/js/state-rankings.js' | relative_url }}?v=14" defer></script>
+<script src="{{ '/assets/js/state-rankings.js' | relative_url }}?v=15" defer></script>
