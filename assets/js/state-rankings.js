@@ -13,6 +13,9 @@
   const networkTooltip = byRole("network-tooltip");
   const focusSelect = byRole("focus-state");
   const ranking = byRole("ranking");
+  const rankingTitle = byRole("ranking-title");
+  const rankingNote = byRole("ranking-note");
+  const pairHeadings = byRole("pair-column-headings");
   const connections = byRole("connections");
   const affinityRankingTitle = byRole("affinity-ranking-title");
   const affinityRankingNote = byRole("affinity-ranking-note");
@@ -26,15 +29,29 @@
   let current;
   let selected = null;
   let requestId = 0;
+  let pairRequestId = 0;
+  let pendingPairKey = null;
+  let pairResult = null;
   let debounce;
   const scorePaths = [];
   const affinityPaths = [];
   const selectionOutlines = [];
   let networkTypical = 1;
   let lastAffinityFocus = null;
+  let lastRankingFocus = null;
 
   const formatNumber = (value) => Math.round(value).toLocaleString("en-US");
   const formatScore = (theta) => `${Math.exp(theta).toFixed(2)}×`;
+  const formatRatio = (value) => {
+    if (value === null || Number.isNaN(value)) return "—";
+    if (value === Infinity) return "∞";
+    if (value === 0) return "0×";
+    if (value < .01) return "<0.01×";
+    return `${value.toLocaleString("en-US", {
+      minimumFractionDigits: value < 10 ? 2 : 1,
+      maximumFractionDigits: value < 10 ? 2 : 1,
+    })}×`;
+  };
   const makeSvg = (tag, attributes = {}) => {
     const element = document.createElementNS(SVG_NS, tag);
     for (const [name, value] of Object.entries(attributes)) element.setAttribute(name, String(value));
@@ -130,20 +147,19 @@
     stateLayer.appendChild(makeSvg("path", {
       d: geometry.borders, class: "sr-map-borders", "aria-hidden": "true",
     }));
-    if (isScore) {
-      const dc = baseline.states.findIndex((state) => state.abbr === "DC");
-      const [x, y] = geometry.states["11"].center;
-      const dot = makeSvg("circle", {cx: x, cy: y, r: 5, class: "sr-state sr-dc-dot",
-                                    tabindex: "0", role: "button", "aria-label": "District of Columbia"});
-      dot.addEventListener("click", () => selectState(dc));
-      dot.addEventListener("mousemove", (event) => showStateTooltip(event, dc));
-      dot.addEventListener("mouseleave", () => { tooltip.hidden = true; });
-      dot.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectState(dc); }
-      });
-      stateLayer.appendChild(dot);
-      collection.dcDot = dot;
-    }
+    const dc = baseline.states.findIndex((state) => state.abbr === "DC");
+    const [x, y] = geometry.states["11"].center;
+    const dot = makeSvg("circle", {cx: x, cy: y, r: 5, class: "sr-state sr-dc-dot",
+                                  tabindex: "0", role: "button", "aria-label": "District of Columbia"});
+    dot.addEventListener("click", () => selectState(dc));
+    dot.addEventListener("mousemove", (event) =>
+      isScore ? showStateTooltip(event, dc) : showAffinityTooltip(event, dc));
+    dot.addEventListener("mouseleave", () => { (isScore ? tooltip : networkTooltip).hidden = true; });
+    dot.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectState(dc); }
+    });
+    stateLayer.appendChild(dot);
+    collection.dcDot = dot;
     const selectionOutline = makeSvg("path", {
       class: "sr-selection-outline", visibility: "hidden", "aria-hidden": "true",
     });
@@ -215,6 +231,8 @@
     });
     const dc = baseline.states.findIndex((state) => state.abbr === "DC");
     scorePaths.dcDot.setAttribute("fill", scoreColor(current.theta[dc], limit));
+    scorePaths.dcDot.setAttribute("aria-label", scorePaths[dc].getAttribute("aria-label"));
+    scorePaths.dcDot.setAttribute("aria-pressed", selected === dc ? "true" : "false");
     scorePaths.dcDot.classList.toggle("is-selected", selected === dc);
     legend.innerHTML = `<span class="sr-legend-bar" aria-hidden="true"></span>
       <span class="sr-legend-ticks"><span>${Math.exp(-limit).toFixed(2)}×</span><span>1×</span><span>${Math.exp(limit).toFixed(2)}×</span></span>`;
@@ -276,6 +294,11 @@
       path.setAttribute("aria-pressed", selected === index ? "true" : "false");
       path.classList.toggle("is-selected", selected === index);
     });
+    const dc = baseline.states.findIndex((state) => state.abbr === "DC");
+    affinityPaths.dcDot.setAttribute("fill", affinityPaths[dc].getAttribute("fill"));
+    affinityPaths.dcDot.setAttribute("aria-label", affinityPaths[dc].getAttribute("aria-label"));
+    affinityPaths.dcDot.setAttribute("aria-pressed", selected === dc ? "true" : "false");
+    affinityPaths.dcDot.classList.toggle("is-selected", selected === dc);
     affinityLegend.hidden = selected === null;
     if (selected !== null) affinityLegend.innerHTML = `
       <span class="sr-affinity-legend-title">Affinity with ${baseline.states[selected].name}</span>
@@ -323,17 +346,71 @@
   }
 
   function renderRanking() {
-    const order = [...current.theta.keys()].sort((a, b) => current.theta[b] - current.theta[a]);
     ranking.replaceChildren();
-    order.forEach((index, rank) => {
-      const state = baseline.states[index];
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = `sr-rank-button${selected === index ? " is-selected" : ""}`;
-      button.innerHTML = `<span class="sr-rank-number">${rank + 1}.</span><span class="sr-rank-name">${state.name}</span><span class="sr-rank-score">${formatScore(current.theta[index])}</span>`;
-      button.addEventListener("click", () => selectState(index));
-      ranking.appendChild(button);
-    });
+    const isPairList = selected !== null;
+    ranking.classList.toggle("is-pair-list", isPairList);
+    pairHeadings.hidden = !isPairList;
+    if (!isPairList) {
+      rankingTitle.textContent = "All state scores";
+      rankingNote.textContent = "Click a state to connect the ranking to both maps.";
+      const order = [...current.theta.keys()].sort((a, b) => current.theta[b] - current.theta[a]);
+      order.forEach((index, rank) => {
+        const state = baseline.states[index];
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "sr-rank-button";
+        button.innerHTML = `<span class="sr-rank-number">${rank + 1}.</span><span class="sr-rank-name">${state.name}</span><span class="sr-rank-score">${formatScore(current.theta[index])}</span>`;
+        button.addEventListener("click", () => selectState(index));
+        ranking.appendChild(button);
+      });
+    } else {
+      const selectedName = baseline.states[selected].name;
+      rankingTitle.textContent = `Migration with ${selectedName}`;
+      const pairKey = `${current.fitId}:${selected}`;
+      if (!current.pairFlows && (!pairResult || pairResult.key !== pairKey)) {
+        rankingNote.textContent = "Loading direct pair comparisons for these filters…";
+        pairHeadings.hidden = true;
+        if (pendingPairKey !== pairKey) {
+          pendingPairKey = pairKey;
+          worker.postMessage({type: "pairs", id: ++pairRequestId, selected,
+                              filters: current.filters});
+        }
+        return;
+      }
+      if (pairResult?.key === pairKey && pairResult.error) {
+        rankingNote.textContent = pairResult.error;
+        pairHeadings.hidden = true;
+        return;
+      }
+      rankingNote.textContent = `Moves into ${selectedName} / moves out to each state. Ranked by population-adjusted ratio; — means too few movers or no departures.`;
+      pairHeadings.hidden = false;
+      const pairs = current.pairFlows ? baseline.states.map((state, index) => {
+        if (index === selected) return null;
+        const incoming = current.pairFlows[index][selected];
+        const outgoing = current.pairFlows[selected][index];
+        const sampled = current.pairSamples[index][selected] + current.pairSamples[selected][index];
+        const raw = sampled < 20 || outgoing === 0 ? null : incoming / outgoing;
+        const adjusted = raw === null ? null :
+          raw * current.population[selected] / current.population[index];
+        return {index, raw, adjusted, samples: sampled};
+      }).filter(Boolean).sort((a, b) =>
+        (b.adjusted ?? -1) - (a.adjusted ?? -1) ||
+          baseline.states[a.index].name.localeCompare(baseline.states[b.index].name)) :
+        pairResult.rows;
+      pairs.forEach(({index, raw, adjusted, samples}, rank) => {
+        const state = baseline.states[index];
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "sr-rank-button sr-pair-row";
+        button.title = `${state.name}: raw ${formatRatio(raw)}; population-adjusted ${formatRatio(adjusted)}` +
+          (samples === undefined ? "" : ` · ${formatNumber(samples)} sampled movers in this pair`);
+        button.innerHTML = `<span class="sr-rank-number">${adjusted === null ? "—" : `${rank + 1}.`}</span><span class="sr-rank-name">${state.name}</span><span class="sr-pair-value">${formatRatio(raw)}</span><span class="sr-pair-value sr-pair-adjusted">${formatRatio(adjusted)}</span>`;
+        button.addEventListener("click", () => selectState(index));
+        ranking.appendChild(button);
+      });
+    }
+    if (lastRankingFocus !== selected) ranking.scrollTop = 0;
+    lastRankingFocus = selected;
   }
 
   function renderCurrent() {
@@ -378,6 +455,13 @@
       worker.onmessage = (event) => {
         const message = event.data;
         if (message.type === "ready") { requestFit(); return; }
+        if (message.type === "pairs" || message.type === "pair-error") {
+          if (message.id !== pairRequestId) return;
+          pairResult = {key: pendingPairKey, rows: message.rows,
+                        error: message.type === "pair-error" ? message.message : null};
+          if (current && selected !== null) renderRanking();
+          return;
+        }
         if (message.type === "error" && message.id === 0) {
           setStatus(message.message, "error");
           return;
@@ -392,6 +476,10 @@
           setStatus(`Fewer than 300 reportable sampled movers match these filters. Choose a broader group to show a state ranking.`, "warning");
           sampleCount.textContent = `≥${formatNumber(message.sampledMovers)} reportable sampled movers`;
           ranking.replaceChildren();
+          rankingTitle.textContent = selected === null ? "All state scores" :
+            `Migration with ${baseline.states[selected].name}`;
+          rankingNote.textContent = "Choose a broader group to see pair comparisons.";
+          pairHeadings.hidden = true;
           connections.replaceChildren();
           highlights.replaceChildren();
           highlights.hidden = true;
@@ -404,6 +492,7 @@
           return;
         }
         current = message;
+        current.fitId = message.id;
         renderCurrent();
         const yearLabel = controls.elements.year.selectedOptions[0].textContent;
         if (message.exactCount) setStatus(`${yearLabel}: estimated from ${formatNumber(message.sampledMovers)} sampled interstate movers.`);
@@ -411,7 +500,9 @@
         else setStatus(`${yearLabel}: model-based combination of fitted subgroup effects.`);
       };
       worker.onerror = (event) => setStatus(`The model could not run: ${event.message}`, "error");
-      worker.postMessage({type: "init", baseline, effectsUrl: root.dataset.effects});
+      worker.postMessage({type: "init", baseline, effectsUrl: root.dataset.effects,
+                          pairFlowsUrl: root.dataset.pairFlows,
+                          pairDetailBase: root.dataset.pairDetailBase});
     } catch (error) {
       setStatus(error instanceof Error ? error.message : String(error), "error");
     }

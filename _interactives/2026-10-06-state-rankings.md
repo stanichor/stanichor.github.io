@@ -6,13 +6,15 @@ permalink: /state-rankings/
 categories:
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/state-rankings.css' | relative_url }}?v=22">
+<link rel="stylesheet" href="{{ '/assets/css/state-rankings.css' | relative_url }}?v=25">
 
 <div class="sr-app" data-state-rankings
      data-baseline="{{ '/assets/data/state-rankings/baseline.json' | relative_url }}"
      data-geometry="{{ '/assets/data/state-rankings/state-geometry.json' | relative_url }}?v=3"
      data-effects="{{ '/assets/data/state-rankings/effects.json' | relative_url }}?v=2"
-     data-worker="{{ '/assets/js/state-rankings-worker.js' | relative_url }}?v=2">
+     data-pair-flows="{{ '/assets/data/state-rankings/pair-flows.json' | relative_url }}?v=2"
+     data-pair-detail-base="{{ '/assets/data/state-rankings/pair-detail/' | relative_url }}"
+     data-worker="{{ '/assets/js/state-rankings-worker.js' | relative_url }}?v=6">
   <p class="sr-intro">Which state is the best to live in? All the other rankings will give you answers based on arbitrarily weighting various factors. I don’t do that. I base these rankings on migration data, that is, revealed preferences. As such, these rankings tell you which states people <em>actually</em> like, based on how they vote with their feet, rather than which states I <em>think</em> people will like.</p>
 
   <noscript><p class="sr-notice">The maps and subgroup controls require JavaScript.</p></noscript>
@@ -100,8 +102,11 @@ categories:
         <div class="sr-highlights" data-role="highlights" aria-live="polite" hidden></div>
       </div>
       <aside class="sr-ranking" aria-labelledby="sr-ranking-title">
-        <h3 id="sr-ranking-title">All state scores</h3>
-        <p>Click a state to connect the ranking to both maps.</p>
+        <h3 id="sr-ranking-title" data-role="ranking-title">All state scores</h3>
+        <p data-role="ranking-note">Click a state to connect the ranking to both maps.</p>
+        <div class="sr-pair-column-headings" data-role="pair-column-headings" hidden>
+          <span>State</span><span>Raw</span><span>Pop. adj.</span>
+        </div>
         <div class="sr-ranking-list" data-role="ranking"></div>
       </aside>
     </div>
@@ -172,6 +177,8 @@ Each demographic effect is fitted separately. When you combine filters, the effe
 
 The selected-state inflow/outflow ratio divides weighted arrivals by weighted departures. Unlike $S$, it does not adjust for population size or pair affinity. Filtered ratios are stabilized toward the all-person ratio; combined filters approximate the intersection by adding marginal effects.
 
+When you select a state, the adjacent list compares it with every other state. The raw ratio is moves **to** the selected state divided by moves **from** it for that pair. The population-adjusted ratio divides each direction by the population of its origin state before comparing them. These ratios use direct survey-weighted counts for the selected filters, even when the map scores for combined filters are approximations. Pairs with fewer than 20 sampled movers, or no moves out of the selected state, are left unranked.
+
 </details>
 
-<script src="{{ '/assets/js/state-rankings.js' | relative_url }}?v=15" defer></script>
+<script src="{{ '/assets/js/state-rankings.js' | relative_url }}?v=21" defer></script>

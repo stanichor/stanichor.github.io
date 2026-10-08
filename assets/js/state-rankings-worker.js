@@ -3,6 +3,11 @@
 const STATES = 51;
 let baseline;
 let effects;
+let pairFlows;
+let pairDetailBase;
+let populationPromise;
+const pairDetailPromises = new Map();
+const YEAR_INDEX = {"2022": 0, "2023": 1, "2024": 2};
 
 function selectedCount(rows, filter) {
   let total = 0;
@@ -60,6 +65,8 @@ function compute(filter) {
   if (isAll) return {theta: base.theta, affinity: base.affinity,
                      arrivals: base.arrivals, departures: base.departures,
                      inoutRatio: base.arrivals.map((value, index) => value / base.departures[index]),
+                     population: base.population, pairFlows: pairFlows.years[filter.year].all.flow,
+                     pairSamples: pairFlows.years[filter.year].all.samples,
                      sampledMovers: base.sample_movers, exactCount: true};
   const sampledMovers = isDefaultAge ? group.age_18_65["1"].n :
                         selectedCount(year.joint_counts, filter);
@@ -95,8 +102,60 @@ function compute(filter) {
       affinity[i][j] = affinity[j][i] = value;
     }
   }
-  return {theta, affinity, inoutRatio, sampledMovers, exactCount: isDefaultAge,
-          lowSample: sampledMovers < 2000};
+  return {theta, affinity, inoutRatio,
+          population: isDefaultAge ? pairFlows.years[filter.year].age_18_65.population : null,
+          pairFlows: isDefaultAge ? pairFlows.years[filter.year].age_18_65.flow : null,
+          pairSamples: isDefaultAge ? pairFlows.years[filter.year].age_18_65.samples : null,
+          sampledMovers, exactCount: isDefaultAge, lowSample: sampledMovers < 2000};
+}
+
+function matches(row, filter, start) {
+  if (filter.year !== "pooled" && row[0] !== YEAR_INDEX[filter.year]) return false;
+  const age = row[start];
+  return age >= filter.ageMin && age <= filter.ageMax &&
+    (!filter.sex || row[start + 1] === filter.sex) &&
+    (!filter.race || row[start + 2] === filter.race) &&
+    (!filter.education || row[start + 3] === filter.education) &&
+    (filter.nativity === -1 || row[start + 4] === filter.nativity);
+}
+
+async function loadJson(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error("Could not load the selected-state pair data.");
+  return response.json();
+}
+
+async function computePairs(selected, filter) {
+  if (!populationPromise) populationPromise = loadJson(`${pairDetailBase}populations.json?v=1`);
+  if (!pairDetailPromises.has(selected)) {
+    const abbr = baseline.states[selected].abbr.toLowerCase();
+    pairDetailPromises.set(selected, loadJson(`${pairDetailBase}pairs/${abbr}.json?v=1`));
+  }
+  const [populationRows, pairRows] = await Promise.all([
+    populationPromise, pairDetailPromises.get(selected),
+  ]);
+  const population = new Float64Array(STATES);
+  const incoming = new Float64Array(STATES);
+  const outgoing = new Float64Array(STATES);
+  const samples = new Uint32Array(STATES);
+  for (const row of populationRows) {
+    if (matches(row, filter, 2)) population[row[1]] += row[7];
+  }
+  for (const row of pairRows) {
+    if (!matches(row, filter, 3)) continue;
+    (row[2] ? incoming : outgoing)[row[1]] += row[8];
+    samples[row[1]] += row[9];
+  }
+  return baseline.states.map((state, index) => {
+    if (index === selected) return null;
+    const from = incoming[index], to = outgoing[index];
+    const raw = samples[index] < 20 || to === 0 ? null : from / to;
+    const adjusted = raw === null || population[index] === 0 || population[selected] === 0 ?
+      null : raw * population[selected] / population[index];
+    return {index, raw, adjusted, samples: samples[index]};
+  }).filter(Boolean).sort((a, b) =>
+    (b.adjusted ?? -1) - (a.adjusted ?? -1) ||
+      baseline.states[a.index].name.localeCompare(baseline.states[b.index].name));
 }
 
 self.onmessage = async (event) => {
@@ -104,11 +163,12 @@ self.onmessage = async (event) => {
   if (message.type === "init") {
     try {
       baseline = message.baseline;
-      const response = await fetch(message.effectsUrl);
-      if (!response.ok) {
-        throw new Error("Could not load the compact subgroup model.");
-      }
-      effects = await response.json();
+      pairDetailBase = message.pairDetailBase;
+      const [effectsResponse, pairResponse] = await Promise.all([
+        fetch(message.effectsUrl), fetch(message.pairFlowsUrl),
+      ]);
+      if (!effectsResponse.ok || !pairResponse.ok) throw new Error("Could not load the model data.");
+      [effects, pairFlows] = await Promise.all([effectsResponse.json(), pairResponse.json()]);
       self.postMessage({type: "ready"});
     } catch (error) {
       self.postMessage({type: "error", id: 0,
@@ -116,9 +176,20 @@ self.onmessage = async (event) => {
     }
     return;
   }
+  if (message.type === "pairs") {
+    try {
+      const rows = await computePairs(message.selected, message.filters);
+      self.postMessage({type: "pairs", id: message.id, rows});
+    } catch (error) {
+      self.postMessage({type: "pair-error", id: message.id,
+                        message: error instanceof Error ? error.message : String(error)});
+    }
+    return;
+  }
   if (message.type !== "compute") return;
   try {
-    self.postMessage({type: "result", id: message.id, ...compute(message.filters)});
+    self.postMessage({type: "result", id: message.id, filters: message.filters,
+                      ...compute(message.filters)});
   } catch (error) {
     self.postMessage({type: "error", id: message.id,
                       message: error instanceof Error ? error.message : String(error)});
