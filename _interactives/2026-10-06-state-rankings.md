@@ -15,7 +15,7 @@ categories:
      data-pair-flows="{{ '/assets/data/state-rankings/pair-flows.json' | relative_url }}?v=2"
      data-pair-detail-base="{{ '/assets/data/state-rankings/pair-detail/' | relative_url }}"
      data-worker="{{ '/assets/js/state-rankings-worker.js' | relative_url }}?v=6">
-  <p class="sr-intro">Which state is the best to live in? All the other rankings will give you answers based on arbitrarily weighting various factors. I don’t do that. I base these rankings on migration data, that is, revealed preferences. As such, these rankings tell you which states people <em>actually</em> like, based on how they vote with their feet, rather than which states I <em>think</em> people will like.</p>
+  <p class="sr-intro">Which state is the best to live in? All the other rankings will give you rankings based on arbitrarily weighting various factors. I don’t do that. I base these rankings on migration data, that is, revealed preferences. As such, these rankings tell you which states people <em>actually</em> like, based on how they vote with their feet, rather than which states I <em>think</em> people will like.</p>
 
   <noscript><p class="sr-notice">The maps and subgroup controls require JavaScript.</p></noscript>
 
