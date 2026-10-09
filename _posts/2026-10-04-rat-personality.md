@@ -44,7 +44,7 @@ For my representative sample, I'll use [Bogg & Vo (2014)](https://www.frontiersi
 
 As you can see, the online test assumed higher average Openness and lower average Conscientiousness and Agreeableness than the U.S. sample, so it made LessWrong's differences on those traits look smaller. And while the online test made rats look less Neurotic than average, their mean is almost exactly the U.S. mean.
 
-So, using the U.S. means and SDs, the median LessWrong score on each trait comes out to roughly:[^normal-percentiles]
+So, using the U.S. means and SDs, the median LessWrong score on each trait comes out to roughly:
 
 - 88th percentile (+1.2 SD) on Openness
 - 10th percentile (−1.3 SD) on Conscientiousness
@@ -60,10 +60,8 @@ So, using the U.S. means and SDs, the median LessWrong score on each trait comes
 
 The revised scores now match my intuitive sense of LessWrong users. LessWrong covers ideas outside the norm, and the Openness score now reflects that. Additionally, many users reported suffering from [akrasia](https://www.lesswrong.com/w/akrasia), which is also now reflected in the revised Conscientiousness score.
 
-What lesson should we draw from this? Perhaps, when an online test gives you a percentile, ask: compared with whom? If the comparison group is unusual (which it usually is), that number will give you a misleading picture of where you stand in relation to the the general population.
+What lesson should we draw from this? Perhaps, when an online test gives you a percentile, ask: compared with whom? If the comparison group is unusual (which it usually is), that number will give you a misleading picture of where you stand in relation to the general population.
 
 [^out-of-service]: Yes, that's the name of the website. Interestingly enough, it's still *in* service years later.
 
 [^score-reconstruction]: VincentYu reported the test's assumed means (SDs) on the 1–5 scale: O 3.85 (0.65), C 3.40 (0.76), E 3.30 (0.88), A 3.66 (0.70), and N 3.15 (0.85). I inverted the Gaussian percentile mapping over the BFI's possible scores, allowing for rounding in the published parameters. Of 2,112 nonmissing trait responses, 1,982 (94%) had a unique match; 95 were ambiguous and 35 unmatched. The charts omit the latter two groups.
-
-[^normal-percentiles]: Each z-score is the median reconstructed LessWrong raw score minus the U.S. mean, divided by the U.S. SD. The percentiles assume a normal U.S. score distribution; they are not empirical percentiles from Bogg & Vo's sample. The opening table uses the survey's reported median percentiles, while these medians use only scores that could be uniquely reconstructed from the public data.
