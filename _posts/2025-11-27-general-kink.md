@@ -32,9 +32,10 @@ These three sources have different implications and need to be handled different
 - If the positive manifold is due to a general factor, modeling said factor is appropriate.
 - If the positive manifold reflects domain overlap, the correct fix is to allow cross-loadings (permitting items to load on multiple factors).
 
-Since I already allow cross-loadings and since the datasets I work with often make it difficult to test for or model methodological issues, this post will focus on modeling the general factor that accounts for the positive manifold in sexual interest items.
+Since I already allow cross-loadings and the datasets I work with tend to make it difficult to model methodological issues, this post will focus on modeling the general factor that accounts of sexual interest items.
 
-There are several ways one might model the general factor of sexual interests: 
+There are several ways one might model the general factor of sexual interests:
+
 1. A general factor with equal loadings on all items. Furthermore, the general sexual interest factor may be correlated (Model 1a) or uncorrelated (Model 1b) with other specific factors.
 2. A general factor with freely varying loadings. Again, this factor may be correlated (Model 2a) or uncorrelated (Model 2b) with the other specific factors.
 3. A higher-order factor that influences only the lower-order factors, not individual items (Model 3).
@@ -281,7 +282,7 @@ Right off the bat, I'm wary of this model. It's very similar to a bifactor model
 <br>
 The biggest problem with this model is what it does to the Homosexuality factor. Previously, it had strong loadings with absolute magnitudes ranging from 0.46 to 0.78. Now the items barely load at all, and instead load strongly on the general factor, which is not ideal. A similar issue appears for other factors, especially the BDSM Interest and Autogynephilia factors. Previously all their loadings were at least 0.72 and 0.56 respectively, but in this model all BDSM Interest items fall below 0.72, and for the Autogynephilia factor five out of eight items fall below 0.56. This also isn't ideal.
 
-Why does this happen? In bifactor-like models, factors defined by only a few items, or whose items correlate with many others, often have their variance reassigned to the general factor. The model can fit the covariance structure more effectively by letting the general factor absorb most of the shared variance. As a result, factors like Homosexuality, BDSM Interest, and Autogynephilia end up with much smaller loadings even though their items within each factor are clearly related to one another as seen in simpler models.
+Why does this happen? In a bifactor model, the general factor loads on all the items, while the other factors only explain whatever covariance is left over. This is especially a problem for factors with relatively few items, or whose items also correlate with lots of other items. So, much of the variance that would have been attributed to Homosexuality, BDSM Interest, and Autogynephilia in the simpler models is instead attributed to the general factor, leaving them with much smaller loadings even though their items are clearly related to one another.
 
 ### Model 2a
 
