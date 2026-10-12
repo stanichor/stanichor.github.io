@@ -20,17 +20,19 @@ Surveys of sexual interests frequently show a positive manifold: many items corr
     </figure>
 </div>
 
-There are three conceptually distinct reasons this can happen.
-1. First, method variance (e.g., [acquiescence](https://stanichor.net/acquiescence/)[^acquiescence], socially desirable responding, question wording) can induce spurious positive correlations across otherwise unrelated items.
-2. Second, there may be a substantive general tendency toward endorsing a wide range of sexual interests. Some people may genuinely be more sexually curious and therefore endorse many different items.
+There are three reasons why this can happen.
+
+1. First, method variance (e.g., [acquiescence](https://stanichor.net/acquiescence/)[^acquiescence], socially desirable responding, question wording) can induce positive correlations across otherwise unrelated items.
+2. Second, there may actually be a general tendency toward endorsing a wide range of sexual interests. Some people may genuinely be more sexually curious and therefore endorse many different items.
 3. Third, items may share domain overlap (e.g., two items tap similar kinks), producing genuine inter-item correlations that are not strictly "general."
 
 These three sources have different implications and need to be handled differently.
-- If the manifold is mainly methodological, failing to model it will inflate correlations among factors, leading to misleadingly high factor-factor correlations.
-- If it is substantive, modeling it as a legitimate general factor is appropriate and will produce more informative analyses.
-- If the manifold reflects domain overlap, the correct fix is to allow cross-loadings (permitting items to load on multiple factors).
 
-Since I already allow cross-loadings and since the datasets I work with often make it difficult to test for or model methodological issues, this post will focus on modeling the general factor, whether it is substantive or methodological, that accounts for the positive manifold in sexual interest items.
+- If the positive manifold is caused by method variance, failing to model the method variance will inflate correlations among factors, leading to misleadingly high factor-factor correlations.
+- If the positive manifold is due to a general factor, modeling said factor is appropriate.
+- If the positive manifold reflects domain overlap, the correct fix is to allow cross-loadings (permitting items to load on multiple factors).
+
+Since I already allow cross-loadings and since the datasets I work with often make it difficult to test for or model methodological issues, this post will focus on modeling the general factor that accounts for the positive manifold in sexual interest items.
 
 There are several ways one might model the general factor of sexual interests: 
 1. A general factor with equal loadings on all items. Furthermore, the general sexual interest factor may be correlated (Model 1a) or uncorrelated (Model 1b) with other specific factors.
@@ -143,11 +145,7 @@ You'll notice that all the factors are fairly correlated with one another, and t
 
 ### Model 3
 
-Model 3 assumes that all common variance among items is mediated through the lower-order factors, and that the correlations among those factors are then explained by a higher-order factor. This structure implies a specific constraint: if an item does not load on any lower-order factor, it should not share common variance with items that do[^residual]. Any covariance between items must flow upward through a factor they share, whether a lower-order factor or the higher-order general factor.
-
-However, in this dataset, several items that do not load on any lower-order factor are nevertheless positively correlated with items that do. A higher-order model does not fit this pattern. Because the higher-order factor influences items only indirectly, through their lower-order factors, any item that does not load on a lower-order factor has no path through which the higher-order factor could affect it[^residual]. As a result, the model predicts zero (or near-zero) correlations between such orphan items and factor-loading items, which contradicts observed data.
-
-This indicates that the general covariance structure is not fully mediated by the lower-order factors and therefore cannot be captured by a standard higher-order model. A model with a general factor operating directly at the item level (e.g., Models 1a/1b or Models 2a/2b) is required to explain the pattern of correlations.
+The problem with Model 3 is that the higher-order factor can only affect an item *through* its lower-order factors. So if an item doesn't load on any lower-order factor, it shouldn't correlate with the other items[^residual]. But several items in this dataset do exactly that: they don't load on any of the lower-order factors, yet they're positively correlated with items that do. Model 3 can't explain these correlations, since the higher-order factor has no way of affecting those items. Models 1a/1b and 2a/2b don't have this problem, since their general factor loads directly on the items.
 
 ### Model 2b
 
@@ -685,11 +683,12 @@ Since Model 1b worked relatively well, it is natural to ask what happens when th
 </details>
 
 <br>
-Model 1a[^lex-luthor] seems to work the best. The loadings on the specific factors are higher than in Model 1b, and allowing the general factor to correlate with the other factors produces factor correlations that make sense. In the partial correlation matrix, the factors most strongly associated with the general factor are BDSM Interest and Autogynephilia. This makes sense: both of these domains are tightly tied to "kink-like" or paraphilic sexual interests, so a broad tendency toward unusual or intense sexual interests would naturally connect to them. One might initially expect the Homosexuality factor to have a high partial correlation with the general factor, since it is also composed of sexual arousal items. However, homosexuality is not really a kink[^gay] in the way that BDSM or autogynephilia are.
+Model 1a[^lex-luthor] seems to work the best. The loadings on the specific factors are higher than in Model 1b, and allowing the general factor to correlate with the other factors produces factor correlations that make sense. In the partial correlation matrix, the factors most strongly associated with the general factor are BDSM Interest and Autogynephilia. This makes sense: both of these domains are tightly tied to "kink-like" sexual interests, so a tendency toward unusual or intense sexual interests would naturally connect them. One might initially expect the Homosexuality factor to have a high partial correlation with the general factor, since it is also composed of sexual arousal items. However, homosexuality is not really a kink[^gay] in the way that BDSM or autogynephilia are.
 
 That said, Model 1a relies on an equal-loading general factor, which behaves very much like a method factor (similar to an acquiescence factor). In reality, I don't expect all sexual interest items to load equally on such a factor. Still, modeling things this way produces coherent results, and the general factor can still be *thought of as* a convenient statistical summary of how kinky someone is.
 
 ## Takeaways
+
 Bi-factor models performed poorly in this dataset, while equal-loading models performed surprisingly well. My decision to model acquiescence bias with an equal-loading model is therefore somewhat justified. Explicitly modeling sources of covariance produces clearer and more informative results. Analyses that include many sexual-interest items should probably try to model the general factor of sexual interests as well. 
 
 For another perspective on how to handle this general factor, see Tailcalled's post: [Controlling for the general factor of paraphilia](https://surveyanon.wordpress.com/2021/01/13/controlling-for-the-general-factor-of-paraphilia/).
