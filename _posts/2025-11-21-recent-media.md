@@ -10,26 +10,18 @@ related:
   - /movie-recs/
 ---
 
-In [Culture Is Not About Esthetics](https://gwern.net/culture-is-not-about-esthetics), Gwern argues that the supply of high-quality art from the past now exceeds the capacity of any individual to experience it. Someone who reads one award-winning science-fiction novel each week could spend nearly a decade working through only the winners and major contenders of the Hugo and Nebula Awards—and that is a tiny slice of a single genre. 
+# Why Consume Recent Media?
 
-Expanding to other genres produces a reading list longer than most people’s lifetimes. The same imbalance appears in other media: music, movies, television. The past contains enough proven material to occupy anyone indefinitely. If the sole goal were to extract as much artistic value as possible, a rational consumer would stay in the archives: the old material has known value, while new work is an uncertain bet.
+In [Culture Is Not About Esthetics](https://gwern.net/culture-is-not-about-esthetics), Gwern argues that there's already so much good art from the past that nobody could possibly get through it all. Reading one Hugo or Nebula-winning science fiction novel a week, including the major runner-ups and sequels, would keep you busy for years. And that's just one small part of one genre! You could do the same thing with movies, television, music, and so on. So why bother taking a chance on new media when you've already got more highly regarded older media than you could finish in a lifetime?
 
-Yet new work offers two advantages that older media cannot match: **synchrony with other people** and **contact with the present world**.
+I think Gwern's argument makes sense, but only if the enjoyment you get from the work itself is all that matters. There are at least two other things I value.
 
-## Shared Attention
+One is being able to talk about something with other people. A show that releases weekly gives everyone who watches it a chance to speculate about what's going to happen next, complain about whatever stupid decision a character made, and so on. People can do the same thing with an old show, of course, but they have to arrange to watch it around the same time. With recent media, a lot of that coordination happens for free: people tend to be paying attention to the same new releases.
 
-People implicitly coordinate their attention, which tends to converge on a small set of new releases. When a show releases weekly episodes, or when a movie enters theaters, it creates a period in which many people encounter the same story and ideas at roughly the same time. This produces a form of immediate common ground. Two strangers can ask each other what they are watching *right now* because the answer is likely to overlap. Asking about everything they have *ever* watched also produces overlap, but finding it requires far more work.
+And the timing can be part of what makes the media enjoyable in the first place. Consider the Drake-Kendrick rap beef. You can listen to the diss tracks today, but you can't really experience Kendrick dropping *Meet the Grahams* less than an hour after Drake dropped *Family Matters* in the same way people did when it happened.
 
-The shared timing also shapes the experience itself. A serial story released in intervals fosters anticipation, speculation, and collective interpretation. These reactions depend on the *shared* delay between releases. They disappear when the entire work arrives at once or when the viewer discovers it years later. For example, you simply had to be present during the Drake-Kendrick rap beef to fully experience the rapid back-and-forth; hearing the tracks long after the fact lacks the same impact. Even disappointment can create a bond: two people who disliked the same plot twist during the week can commiserate while the reactions are still fresh.
+The other reason is that I want to consume media about the world I actually live in. Take *Black Mirror*. An eighteenth-century writer could presumably have written excellent speculative fiction, but not an equivalent to *Black Mirror*, because they didn't know what smartphones, recommendation algorithms, and modern surveillance looked like. Much of the appeal comes from seeing things that already exist taken to some absurd (or perhaps not so absurd) conclusion.
 
-The work matters, but the synchronized attention surrounding it matters as well.
+This seems especially important for satire. You can read satire written hundreds of years ago and enjoy it, but if it's making fun of an event or person you've never heard of, you'll probably need someone to explain the context. A joke about something happening right now doesn't have that problem. Sometimes, by the time you've learned why an old joke was funny, it no longer is.
 
-## Contact With the Present
-
-New media can depict the world that exists at the time of its creation. A story produced today can incorporate technologies, social tensions, and everyday habits that did not exist decades ago. An 18th-century analogue to *Black Mirror* would not merely look different; it would lack the conceptual material—networked surveillance, algorithmic behavior-shaping, ubiquitous data trails—that makes the show meaningful to a modern audience.
-
-Satire, in particular, draws power from its proximity to current conditions. Its targets lose meaning as those conditions recede into history. Even non-satirical work gains resonance by engaging with the problems and patterns that shape contemporary life.
-
-## Conclusion
-
-Recent media offers something the archive of older work, no matter how high-quality, cannot: it lets people experience the same stories at the same moment without explicit coordination, and it reflects the state of the world they inhabit. For anyone who values experiencing stories together with others or seeing the present world reflected in media, new work deserves a place alongside the old.
+I think Gwern is right that, if all you care about is how good the media itself is, you're probably better off sticking mostly to older works that have already stood the test of time. But that's not all I care about! I also want to participate in the culture around the media, and to see how people are responding to the world we're currently living in. Even if a show from twenty years ago is "better" than whatever's airing this week, I might still get more enjoyment out of watching the latter. And if I wait twenty years to find out which of today's shows were actually good, I'll have missed much of what made watching them now worthwhile.
