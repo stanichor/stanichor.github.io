@@ -14,9 +14,9 @@ In [Culture Is Not About Esthetics](https://gwern.net/culture-is-not-about-esthe
 
 I think Gwern's argument makes sense, but only if the enjoyment you get from the work itself is all that matters. There are at least two other things I value.
 
-One is being able to talk about something with other people. A show that releases weekly gives everyone who watches it a chance to speculate about what's going to happen next, complain about whatever stupid decision a character made, and so on. People can do the same thing with an old show, of course, but they have to arrange to watch it around the same time. With recent media, a lot of that coordination happens for free: people tend to be paying attention to the same new releases.
+One is being able to talk about something with other people. A show that releases weekly gives everyone who watches it a chance to speculate about what's going to happen next, complain about whatever stupid decision a character made, and so on. People can do the same thing with an old show, of course, but they have to arrange to watch it around the same time. With recent media, that coordination happens automatically: people tend to be paying attention to the same new releases.
 
-And the timing can be part of what makes the media enjoyable in the first place. Consider the Drake-Kendrick rap beef. You can listen to the diss tracks today, but you can't really experience Kendrick dropping *Meet the Grahams* less than an hour after Drake dropped *Family Matters* in the same way people did when it happened.
+And the timing is part of what makes recent media enjoyable in the first place. Consider the Drake-Kendrick rap beef. You can listen to the diss tracks today, but you can't really experience Kendrick dropping *Meet the Grahams* less than an hour after Drake dropped *Family Matters* in the same way people did when it happened.
 
 The other reason is that I want to consume media about the world I actually live in. Take *Black Mirror*. An eighteenth-century writer could presumably have written excellent speculative fiction, but not an equivalent to *Black Mirror*, because they didn't know what smartphones, recommendation algorithms, and modern surveillance looked like. Much of the appeal comes from seeing things that already exist taken to some absurd (or perhaps not so absurd) conclusion.
 
