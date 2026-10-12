@@ -12,9 +12,9 @@ related:
   - /simple-recsys/
 ---
 
-Modern societies rely on distributed judgment. Juries decide guilt, online users rate the credibility of news, and peer review relies on a community of scientists. A conceptual model of such epistemic aggregation methods is essential. It lets us ask precise questions: What properties make a crowd’s estimate more accurate than an individual’s? When do more participants help, and when do they amplify shared error? How can we design mechanisms that emphasize information rather than noise or ideology?
+Modern societies rely on distributed judgment. Juries determine guilt, online users rate the credibility of news, and peer review relies on the judgments of a community of scientists. A conceptual model of such epistemic aggregation methods is essential. It would allow us to answer questions such as under what conditions a crowd’s estimate is more accurate than an individual’s, or how we can design mechanisms that emphasize information over noise or ideology.
 
-A useful starting point is looking at [jury theorems](https://plato.stanford.edu/entries/jury-theorems/). The simplest jury theorem is the [Condorcet jury theorem](https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem), which formalizes how group accuracy depends on individual competence and independence. It provides a minimal model: if each voter is more likely than not to be correct, and their votes are independent, then the majority vote converges on the truth as the group grows. We can think of epistemic aggregation methods as those that either increase the influence of more competent participants or reduce correlated error.
+A useful starting point is looking at [jury theorems](https://plato.stanford.edu/entries/jury-theorems/), the simplest of which is the [Condorcet jury theorem](https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem). The Condorcet jury theorem states that if each voter has the same probability of being correct, greater than 50%, and their votes are independent, then the majority vote converges on the truth as the group grows. We can think of epistemic aggregation methods as ways to either increase the influence of more competent participants or reduce correlated errors.
 
 Below are three examples.
 
