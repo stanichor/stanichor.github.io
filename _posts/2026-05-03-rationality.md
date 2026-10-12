@@ -14,11 +14,11 @@ I am, [I suppose](https://stanichor.net/not-an-ea/), a rationalist. In the olden
 
 ## Science
 
-One might think this is a solved problem. After all, there is a Rationality Quotient[^IQ]. The Rationality Quotient is intended to measure, what else, rationality, and its creator Keith Stanovich argues that rationality is distinct from intelligence: intelligence concerns algorithmic processing power, while rationality concerns whether beliefs and decisions conform to logic, probability, and instrumental goals. On this view, rationality is not merely being smart; it is using one’s cognitive machinery well. Yet a closer look casts doubt on the stronger claim that broad rationality, measured this way, is separable from intelligence.
+One might think this is a solved problem. After all, there is a Rationality Quotient[^IQ]. The Rationality Quotient is intended to measure – what else? – rationality, and its creator, Keith Stanovich, argues that rationality is distinct from intelligence: intelligence concerns algorithmic processing power, while rationality concerns whether beliefs and decisions conform to logic, probability, and instrumental goals. According to Stanovich, rationality isn't just about being smart; it involves using one's 'cognitive machinery' well. However, a closer look at the Rationality Quotient casts doubt on the claim that rationality, at least as measured by the Rationality Quotient, is really so distinct from intelligence.
 
 Conveniently, the book in which Stanovich introduces the Rationality Quotient, *The Rationality Quotient: Toward a Test of Rational Thinking*, contains enough published data to investigate the relationship between intelligence and rationality. In Table 12.4 (page 228), Stanovich displays the correlations among the short-form CART subtests; in Table 13.4 (page 242), Stanovich displays the correlations between CART subtests, the total score, and different cognitive measures. The cognitive measures included the SAT total score, a cognitive composite composed of the sum of the z-scores of three tasks (analogies, antonyms, word checklist) called Cognitive Ability Composite3, and a cognitive composite composed of those same tasks plus SAT total score, called Cognitive Ability Composite4.
 
-Looking at Table 13.4, the observed correlation between Cognitive Ability Composite4 and the CART total score is 0.705. That is already high by psychometric standards; it is in the same broad range as correlations between g and standardized tests, which are considered substantially g-loaded measures of intelligence[^g-SAT-correlation]. In other words, the CART appears g-loaded enough that it would probably function reasonably well as a rough intelligence proxy, which casts doubt on the supposed distinction between rationality and intelligence.
+Looking at Table 13.4, the observed correlation between Cognitive Ability Composite4 and the CART total score is 0.705. A correlation of 0.705 is high by psychometric standards. It's in the same range as correlations between *g* and standardized tests, which are considered good proxies of *g*[^g-SAT-correlation]. In other words, the CART is g-loaded enough that it would function well as an intelligence proxy, which casts doubt on the supposed distinction between rationality and intelligence.
 
 The relationship becomes even stronger if we estimate the correlation with latent rationality rather than the observed CART total score. Reconstructing the CART factor structure from the published correlation matrices, extracting[^extraction-method] one factor[^parallel-analysis] from the CART, and correlating it with Cognitive Ability Composite4 gives an estimated latent correlation of about 0.85. The exact estimate should not be overinterpreted, since Cognitive Ability Composite4 is still an observed composite rather than a latent g factor. But if cognitive ability were modeled latently using a broader battery, I would expect the latent CART-g correlation to be at least as high, and possibly higher. Either way, a latent correlation of about 0.85 is already difficult to reconcile with the claim that the CART measures broad rationality as a trait substantially distinct from intelligence.
 
@@ -48,11 +48,11 @@ The behavioral outcomes are the most pertinent here, because they are closest to
 
 Self-report measures do not directly measure our target outcome. Ideally, we'd like to know whether people are actually reasoning and deciding better, not merely whether they feel more rational or report using more rationality-flavored techniques. To its credit, the follow-up questionnaire did include performance-based rationality items. Unfortunately, the four questions were taken from Stanovich’s work, so they inherit the issues discussed above.
 
-A useful measure of rationality would need to do at least three things. First, it would need external validity: scores should predict real-world belief accuracy, decision quality, or goal achievement. Second, it would need incremental validity over cognitive ability: it should explain something important after controlling for g. Third, it would need to be sensitive to interventions: if a rationality intervention works, the measure should be able to detect improvement without merely tracking test familiarity. Existing measures do not seem to satisfy all three requirements.
+A useful measure of rationality would need external and incremental validity. That is, it should still predict important results (e.g., real-world belief accuracy, decision quality, or goal achievement) even after controlling for *g*. Existing measures don't seem to satisfy these requirements.
 
 ## Conclusion
 
-So, both the scientists and the rationalists have failed us. We still do not seem to have a clean measure of broad rationality[^caveat] as a trait distinct from intelligence. The problem has two parts. Measures that seem psychometrically rigorous often turn out to overlap heavily with cognitive ability. Measures used in intervention evaluations are often too self-reported or too narrow to tell us whether broad rationality actually improved.
+So, both the scientists and the rationalists have failed us. We still don't have a clean measure of rationality[^caveat] as a trait distinct from intelligence. Measures that are psychometrically rigorous turn out to overlap heavily with cognitive ability. Measures used in intervention evaluations are tend to be self-reports or too just narrow to tell us whether rationality itself has actually improved.
 
 Why does this matter? It means we can’t determine whether interventions, such as reading LessWrong, actually make people more rational[^narrow-skills]. Sure, people *feel* that some interventions work, but we can’t trust subjective impressions. We need external validation. And currently, we don’t even have the tools we’d need to obtain such proof. This seems unideal.
 
@@ -62,7 +62,8 @@ Why does this matter? It means we can’t determine whether interventions, such 
 
 ### One-Factor Model of the CART
 
-Using the published CART subtest correlations from Table 12.4 and fitting a one-factor model[^parallel-analysis] to the correlation matrix yields a factor with the following loadings: 
+Using the published CART subtest correlations from Table 12.4 and fitting a one-factor model[^parallel-analysis] to the correlation matrix yields a factor with the following loadings:
+
 - Reflection vs Intuition (0.68)
 - Scientific Reasoning (0.67)
 - Probabilistic Reasoning (0.64)
@@ -86,9 +87,10 @@ The x-axis shows each subtest’s loading on the extracted CART factor. The y-ax
 
 ### Two-Factor Model of the CART
 
-What if, instead of extracting one factor from the CART, we extract two? Then we get two factors which I will call **Analytic Thinking** and **Correct Beliefs**. The loadings are as follows: 
+What if, instead of extracting one factor from the CART, we extract two? Then we get two factors which I will call **Analytic Thinking** and **Correct Beliefs**. The loadings are as follows:
 
 #### Analytic Thinking
+
 - Reflection vs Intuition (0.70)
 - Scientific Reasoning (0.68)
 - Probabilistic Reasoning (0.65)
@@ -98,6 +100,7 @@ What if, instead of extracting one factor from the CART, we extract two? Then we
 - Disjunctive Reasoning (0.34)
 
 #### Correct Beliefs
+
 - Superstitious Thinking (0.63)
 - Antiscience Attitudes (0.56)
 - Conspiracy Beliefs (0.53)
@@ -110,13 +113,14 @@ The estimated correlations among Cognitive Ability Composite4, Analytic Thinking
 | Analytic Thinking            | 0.81                        | 1.00              | 0.67            |
 | Correct Beliefs              | 0.72                        | 0.67              | 1.00            |
 
-Extracting two factors does not really rescue discriminant validity. The more analytic factor remains highly correlated with Cognitive Ability Composite4, and even the Correct Beliefs factor has a substantial correlation with cognitive ability. Splitting the CART into “thinking style” and “belief accuracy” makes the structure more interpretable, but it does not produce a rationality factor cleanly separable from intelligence.
+Extracting two factors doesn't rescue discriminant validity. Both the Analytic Thinking factor and the Correct Beliefs factor are substantially correlated with the Cognitive Ability Composite4.
 
 ### Explanation of the CART Subtests
 
 #### Probabilistic and Statistical Reasoning
 
 The items in the Probablistic and Statistical Reasoning subtest assess: 
+
 - the ability to avoid probability matching tendencies and instead choose a maximizing strategy
 - the ability to avoid the gambler's fallacy
 - the ability to properly assign probabilities to conjunctions
@@ -127,6 +131,7 @@ The items in the Probablistic and Statistical Reasoning subtest assess:
 #### Scientific Reasoning
 
 The items in the Scientific Reasoning subtest assess: 
+
 - falsification tendencies in the four-card selection task (two deontic and two nondeontic)
 - knowledge of the logic of converging evidence
 - the tendency to avoid drawing causal inferences from correlational evidence
@@ -167,6 +172,7 @@ A food warehouse ships boxes of fresh and frozen strawberries. Assume that your 
 #### Probabilistic Numeracy
 
 **Sample Items**
+
 - For a person over age 60, the chances of getting shingles at some time in their life is 0.06. Out of 30,000 people, over age 60, about how many of them can be expected to get shingles?
 - Imagine that an unvaccinated person has a 10% chance of getting the flu and that the flu vaccine is 80% effective in preventing the flu. What are the chances that a person who has had the vaccine will still get the flu?
 
@@ -176,7 +182,7 @@ A food warehouse ships boxes of fresh and frozen strawberries. Assume that your 
 
 [^extraction-method]: I estimated this from the published CART subtest correlation matrix and the published correlations between each subtest and Cognitive Ability Composite4. I fit a one-factor model to the CART subtests, treated Cognitive Ability Composite4 as an observed external variable, and estimated its correlation with the latent CART factor. The fit was acceptable (TLI = 0.89, CFI = 0.92, RMSEA = 0.07). The estimate was 0.85. This should be interpreted as an *approximate*, possibly underestimated, correlation between rationality and cognitive ability, since the cognitive ability measure itself was not modeled latently.
 
-[^caveat]: We can measure rationality-adjacent *skills*, but we do not yet seem to have a clean, validated measure of broad rationality that is both distinct from intelligence and useful for evaluating rationality interventions.
+[^caveat]: We can measure rationality-adjacent *skills*, but we do not yet seem to have a clean, validated measure of a broad rationality that is both distinct from intelligence and useful for evaluating rationality interventions.
 
 [^g-SAT-correlation]: For example, if we look at the paper, [*Scholastic Assessment or g? The Relationship Between the Scholastic Assessment Test and General Cognitive Ability*](https://gwern.net/doc/iq/high/smpy/2004-frey.pdf), we see that in Study 1, the (corrected for nonlinearity) correlation between ASVAB and SAT scores was 0.85; in study 2, the (corrected for range restriction) correlation between SAT and Raven's Matrices scores was 0.72.
 
