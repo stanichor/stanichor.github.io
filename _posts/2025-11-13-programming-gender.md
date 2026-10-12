@@ -12,9 +12,9 @@ related:
   - /gender-satisfaction/
 ---
 
-People often claim that Rust is unusually popular among trans women. Every year, the [Stack Overflow Survey](https://survey.stackoverflow.co/) records, among other things, which languages developers use and their gender identity. This allows us to estimate how each language’s user base is distributed across gender identities. I examined the survey data to see whether it supports the perception of Rust's popularity among trans women.
+People often claim that Rust is unusually popular among trans women. Is it? The [Stack Overflow Survey](https://survey.stackoverflow.co/) asks developers which languages they use and their gender identity, so we can check. I used the 2017–2022 surveys to estimate the gender breakdown of each language's users. 
 
-Below, I plot language use by gender and year, with 94% credible intervals. The hierarchical model smooths the proportion estimates, which is especially helpful for languages with small sample sizes.
+Below are the estimates, with 94% credible intervals. I use a hierarchical model to partially pool the estimates across languages, since otherwise a handful of respondents can make an obscure language appear to have a very unusual gender distribution.
 
 ## What the Survey Shows
 
@@ -89,9 +89,9 @@ Below, I plot language use by gender and year, with 94% credible intervals. The 
 
 #### Summary
 
-Because most programmers are cis men, all languages show large proportions of cis-male respondents, typically above 90%. Nonetheless, Rust, Dart, Go, F#, and Delphi often appear at the top of the list. 
+Since most of the respondents are cis men, the proportion is above 90% for almost every language. Rust, Dart, Go, F#, and Delphi usually rank near the top.
 
-The more interesting pattern lies at the bottom of the rankings. R consistently appears among the languages with the smallest proportions of cis-male respondents. SAS and APL show the same tendency. These languages stand out because they attract relatively larger shares of respondents who are not cis men.
+R is almost always near the bottom, with SAS and APL also appearing near the bottom when they're included.
 
 ### Cis Women
 
@@ -164,7 +164,7 @@ The more interesting pattern lies at the bottom of the rankings. R consistently 
 
 #### Summary
 
-R attracts the largest proportions of cis-women respondents in almost every year. MATLAB, SAS, and Ruby also appear near the top. These languages are heavily used in statistical and scientific computing, which may partly explain their elevated proportions.
+R comes first in five of the six years, with SAS beating it in 2022. MATLAB and Ruby also show up repeatedly. I suspect the prominence of R, MATLAB, and SAS has something to do with their use in statistics and scientific computing.
 
 ### Trans Women
 
@@ -237,9 +237,10 @@ R attracts the largest proportions of cis-women respondents in almost every year
 
 #### Summary
 
-Rust appears frequently among the languages with the largest proportions of trans women respondents. Functional and functional-adjacent languages—Haskell, Erlang, Clojure, and Julia—also recur near the top.
+Rust does seem to live up to its reputation. It ranks in the top two from 2017 through 2020, and is #1 for three years in a row. Haskell and Erlang also show up quite a bit, along with Clojure and Julia.
 
-APL stands apart. Its estimated proportions of trans women respondents exceeded four percent in both years it was included, more than twice the typical Rust estimate. While APL has small sample sizes, the hierarchical model already shrinks extreme values toward the global mean. Its consistently large estimates therefore indicate a real underlying pattern.
+APL is even stranger. More than 4% of its respondents were trans women in both 2021 and 2022, compared with around 1–2% for Rust in the earlier years.
+While APL has small sample sizes, the hierarchical model already shrinks extreme values toward the global mean, so the large estimates should still be indicative of a real pattern.
 
 ### Trans Men
 
@@ -312,17 +313,17 @@ APL stands apart. Its estimated proportions of trans women respondents exceeded 
 
 #### Summary
 
-Fewer languages *consistently* rank highly in proportion of trans-male respondents, but APL, Clojure, Julia, and F# appear most often. Most languages have almost no trans-men respondents.
-
+The rankings for trans men are less consistent, partly because they're such a small share of the survey. APL is the exception, ranking first in both 2021 (7.3%) and 2022 (6.2%). Clojure, Julia, and F# also show up repeatedly.
 
 ## What Stands Out
 
-Three patterns emerge consistently:
-- Languages tied to statistics and scientific computing—R, SAS, MATLAB—contain the largest shares of cis-women respondents and the smallest shares of cis-men respondents.
-- Functional and functional-adjacent languages—Rust, APL, Haskell, Erlang—contain the largest shares of respondents who identify as trans women. APL shows this pattern most clearly; its proportions for trans woman respondents stand far above the baseline.
-- APL attracts unusually high proportions of all groups other than cis men. In the trans population, APL's proportions are several times larger than those of most other languages, even after smoothing. Across cis women, trans women, and trans men, APL consistently shows elevated proportions, marking it as an outlier.
+A few things worth noting:
 
-These patterns appear consistent with the perception that Rust draws disproportionately more trans-women programmers than most other languages. APL, however, shows an even greater overrepresentation among trans women.
+- Languages used in statistics and scientific computing (e.g., R, SAS, and MATLAB) rank relatively high for cis women and low for cis men.
+- Functional and functional-adjacent languages (e.g., Rust, APL, Haskell, Erlang) contain the largest shares of respondents who identify as trans women.
+- APL is the most unusual result. In 2021–2022, it ranks highly not only for trans women, but also for trans men and cis women. 
+
+So there's something to the Rust stereotype. APL, however, shows an even greater over-representation among trans women.
 
 ## Appendix: Modeling Decisions
 
@@ -355,6 +356,3 @@ Two shared parameters determine how languages relate to one another:
   - $\phi \sim \text{Dirichlet}(1,1,1,1)$
 - $\tau$: a concentration parameter controlling similarity between languages
   - $\tau \sim \text{HalfNormal}(\sigma)$
-
-If $\tau$ is large, languages tend to resemble the global pattern $\phi$.<br>
-If $\tau$ is small, languages are allowed to differ more substantially.
