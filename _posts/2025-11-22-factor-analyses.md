@@ -20,6 +20,8 @@ The main problem with the HDI is that its weighting of variables is essentially 
 
 Fortunately, some economists have taken an interest. The authors of [Using Spatial Factor Analysis to Measure Human Development](https://www.nber.org/system/files/working_papers/w23952/w23952.pdf) proposed a Bayesian factor analysis model as an alternative. The model estimates the weights for each indicator, incorporates spatial correlation (the assumption that neighboring countries resemble one another), and applies population weighting (the assumption that estimates for more populous countries should be more precise).
 
+Fortunately, some economists have actually tried to improve on the HDI. In [Using Spatial Factor Analysis to Measure Human Development](https://www.nber.org/system/files/working_papers/w23952/w23952.pdf), the authors propose a Bayesian factor analysis model that estimates the weights of each indicator from the data. It also accounts for spatial correlation (neighboring countries tend to resemble one another) and population size (treating estimates for more populous countries as more precise).
+
 <div style="text-align: center;">
     <figure>
         <img src="/assets/images/nice-factor-analyses/hdi-posterior-top-10.png" width="400" alt="Dot plot comparing official HDI ranks with the model-based probability that each country belongs in the top ten.">
@@ -28,7 +30,7 @@ Fortunately, some economists have taken an interest. The authors of [Using Spati
     </figure>
 </div>
 
-Although their rankings agree with the UN's for many countries, they diverge in notable ways. For example, the HDI ranks of Kiribati, the DRC, and Mongolia appear much too low, while those of Japan, Mexico, and Pakistan appear much too high.
+The resulting rankings mostly agree with the UN's, but there are some pretty large disagreements. According to the model, the HDI ranks Kiribati, the DRC, and Mongolia much too low, while ranking Japan, Mexico, and Pakistan much too high.
 
 It's nice (and rare) to see one of these measures that is actually statistically grounded.
 
@@ -61,9 +63,9 @@ This [survey](https://openpsych.net/files/papers/Zimmer_2024a.pdf) on belief in 
 - **Fakery**: 16 items related to hoaxes, faked historical events, and faked deaths
 - **Climate Change**: 10 questions pertaining to the theory of anthropogenic global warming and other miscellaneous topics.
 
-What makes this study interesting is that the author is a self-professed conspiracy theorist who is deeply embedded in that culture, allowing him to interpret the factors in ways outsiders are unlikely to. He considers the Generic Conspiracy factor uninteresting, noting that it mostly reflects the most widely endorsed beliefs.
+What makes this study interesting is that the author is a self-professed conspiracy theorist who is deeply embedded in that culture, allowing him to interpret the factors in ways outsiders are unlikely to.
 
-The Aliens & Satanism factor is, in his view, not really about aliens or Satanism at all. Instead, he frames it as the "mainstream conspiracy/QAnon/controlled opposition" narrative: a set of beliefs he sees as deliberate misdirection (some items obviously so, such as the claim that elites are reptilians). The Fakery factor, by contrast, represents a third position opposed to both the mainstream narrative (Generic Conspiracy) and the controlled-opposition narrative (Aliens & Satanism). It represents radical skepticism about historical narratives (though not necessarily the general arc of history) and doubt that events unfolded as historians describe.
+For example, he considers the Generic Conspiracy factor relatively uninteresting, since it mostly consists of the more widely believed conspiracy theories. The Aliens & Satanism factor, meanwhile, isn't really about aliens or Satanism, according to him. Rather, it represents what he calls the "mainstream conspiracy/QAnon/controlled opposition" narrative, which he believes consists of conspiracy theories deliberately spread to mislead people (e.g., the belief that elites are secretly reptilians). The Fakery factor represents a third position, skeptical of both the mainstream account of history and the alternative narratives promoted by the supposed controlled opposition. People high on this factor don't necessarily reject the broad outline of history, but they doubt that many historical events happened in the way we're told they did, or even happened at all.
 
 The Flat Earth factor extends this skepticism further, applying it to anything not directly observable. Neither the shape of the Earth, the existence of dinosaurs, nor the function of DNA are directly observable; these things must all be inferred from scientific evidence. If you can't collect or interpret any of this evidence yourself, and you believe that the establishment is lying all the time about everything, you may end up endorsing positions that load on this factor. This stance resembles a form of scientific anti-realism, which "applies chiefly to claims about the non-reality of unobservable entities such as electrons or genes, which are not detectable with human senses."
 
