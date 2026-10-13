@@ -18,7 +18,8 @@ A study[^1] on Schwartz values and social desirability responding offers an oppo
 
 ## Data
 
-In the study, 224 Italian respondents completed three questionnaires: the short version of the Balanced Inventory of Desirable Responding (BIDR), the Schwartz Value Survey (SVS), and the Portrait Values Questionnaire (PVQ). 
+In the study, 224 Italian respondents completed three questionnaires: the short version of the Balanced Inventory of Desirable Responding (BIDR), the Schwartz Value Survey (SVS), and the Portrait Values Questionnaire (PVQ).
+
 - The BIDR is a 16-item scale intended to measure impression management and self-deceptive enhancement, two aspects of social desirability responding. It contains items such as "I have some pretty awful habits" (reverse-scored) and "I always obey laws, even if I’m unlikely to get caught".
 - The SVS includes 58 items which contain a single value each along with a brief explanation in parentheses intended to clarify the meaning of the value, for example, "AN EXCITING LIFE (stimulating experiences)". Respondents are asked to rate the importance of each of the values on a 9-point scale from -1 (opposed to my values) to 7 (of supreme importance). 
 - The PVQ includes 40 descriptions of a person and their desires, for example, "He/She likes surprises. It is important to him/her to have an exciting life." Respondents rate their self-reported similarity to each description on a scale from 1 (not like me at all) to 6 (very much like me).
@@ -82,7 +83,7 @@ Below, I summarize each value factor. The tables list estimated loadings on the 
 | I am very confident in my judgements | -0.04 |
 | My first impressions of people usually turn out to be right | -0.01 |
 
-The BIDR items behaved as expected. Confessions of dishonesty ("I sometimes tell lies, if I have to [R]") and mention of manipulative behavior ("I have taken advantage of someone [R]") loaded strongly and negatively; claims of strict rule-following ("I always obey laws, even if I’m unlikely to get caught") loaded positively. Several items, however, barely registered on the factor.
+The BIDR items behaved as expected. Confessions of dishonesty ("I sometimes tell lies, if I have to [R]") and mention of manipulative behavior ("I have taken advantage of someone [R]") had strong negative loadings; claims of strict rule-following ("I always obey laws, even if I’m unlikely to get caught") loaded positively. Several items, however, had very low loadings.
 
 #### Universalism
 
@@ -242,7 +243,7 @@ Hedonism items loaded strongly on their factor and showed minimal loadings on so
 | He/She thinks it is important to do lots of different things in life. He/She always looks for new things to try. | 0.03 | 0.69 |
 | He/She likes surprises. It is important to him/her to have an exciting life. | 0.11 | 0.49 |
 
-Stimulation items loaded cleanly on their factor and showed minimal loadings on social desirability. Respondents appear comfortable admitting that adventure, novelty, and excitement matter to them.
+Stimulation items load strongly on their factor and showed low loadings on social desirability. Respondents seem comfortable admitting that novelty, adventure, and excitement matter to them.
 
 #### Self-Direction
 
