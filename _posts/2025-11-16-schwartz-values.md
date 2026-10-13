@@ -196,7 +196,7 @@ National security and social order items loaded strongly on the security factor.
 | It is important to him/her to be rich. He/She wants to have a lot of money and expensive things. | -0.02 | 0.72 |
 | He/She always wants to be the one who makes the decisions. He/She likes to be the leader. | 0.08 | 0.66 |
 
-Authority, leadership, and wealth all loaded strongly on the power factor. The item on "observing social norms" behaved differently: it loaded weakly on power but moderately on social desirability. Respondents might be treating "observing social norms" as an aspect of conformity rather than as an aspect of power.
+Authority, leadership, and wealth all loaded strongly on the power factor. "Observing social norms," however, loaded weakly on power and moderately on social desirability. My guess is that respondents interpreted it as more about conformity than power.
 
 #### Achievement
 
@@ -213,7 +213,7 @@ Authority, leadership, and wealth all loaded strongly on the power factor. The i
 | He/She thinks it is important to be ambitious. He/She wants to show how capable he/she is. | 0.08 | 0.69 |
 | It's very important to him/her to show his/her abilities. He/She wants people to admire what he/she does. | -0.14 | 0.60 |
 
-All items produced strong loadings on the achievement factor. Items that imply a desire to impress others loaded negatively on social desirability. This may be because claiming that one wants admiration appears boastful; respondents may downplay that desire even if they endorse other achievement-related goals.
+All items loaded strongly on the achievement factor. Interestingly, the items about wanting to impress others loaded *negatively* on social desirability. My guess is that admitting you want other people to admire you makes you look rather vain, so people concerned with giving socially desirable answers are less likely to admit it, even if they're otherwise quite achievement-oriented.
 
 #### Hedonism
 
