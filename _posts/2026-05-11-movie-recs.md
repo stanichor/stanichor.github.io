@@ -25,7 +25,6 @@ The short version:
 * Movie enjoyment doesn’t seem to have any significant relationship with when the movie was made.
 * Star ratings seem about as accurate as comparison-based ratings. 7 stars seems like enough for my purposes.
 
-
 ## What My Ratings Look Like
 
 <div style="text-align: center;">
@@ -58,9 +57,9 @@ The relationship looks fairly linear on a log scale over the observed range, tho
 
 Since the recsys uses PCA to reduce the dimensionality of the movie embeddings, I also need to choose how many dimensions to keep.
 
-Too few, and there isn’t enough information left to make accurate predictions. Too many, and the model can overfit. There are also preprocessing choices: should I apply a Box-Cox transformation to the original embedding features before PCA, to make them closer to normally distributed? Should the resulting embeddings be standardized, so each dimension has mean 0 and standard deviation 1, or normalized, so each movie vector has length 1?
+Too few, and there isn’t enough information left to make accurate predictions. Too many, and the model can overfit. There are also preprocessing choices: should I apply a Box-Cox transformation to the original embedding features before PCA, to make them closer to normally distributed? Should the resulting embeddings be standardized, so each dimension has mean 0 and standard deviation 1, or normalized, so each movie vector has length 1? 
 
-I tested several combinations. The broad result is that most preprocessing choices do not change the eventual performance ceiling very much: most methods plateau at correlations around 0.60 to 0.65. The exception is standardization, which produces an early optimum around 40 dimensions: performance improves at first, then declines noticeably until roughly 400 dimensions, before eventually starting to rise again.
+I tried various combinations. Most of them gave pretty much the same results, with correlations plateauing around 0.60 to 0.65. Standardization is weird, though. Performance peaks at around 40 dimensions, gets worse as I add more dimensions, and only starts recovering at around 400. I'm not sure why.
 
 ### Normalized embeddings
 
@@ -101,7 +100,7 @@ I tested several combinations. The broad result is that most preprocessing choic
     </figure>
 </div>
 
-Overall, it seems the exact embedding construction is not the main constraint. Beyond a certain point, prediction accuracy seems mostly limited by the amount of rating data, irreducible noise in my ratings, and possibly information missing from the embedding space itself.
+Anyway, fiddling with the embeddings doesn't seem to help much. I'd probably get more out of rating additional movies. Of course, there's still noise in my ratings, and the embeddings probably don't capture everything I care about.
 
 ## External Rating Sites as Predictors
 
@@ -176,7 +175,7 @@ Are movies getting better or worse over time? I don’t know. [Other people](htt
 
 I graph predicted ratings by year instead of actual ratings by year to reduce selection bias in which movies I actually watch. For example, most of the old movies I’ve watched have been with friends who have good taste in movies, so they’re selected to be among the better old movies. Conversely, many recent movies are movies I watched when I was young and had little control over what I watched, or when I had nothing better to do. Those movies might have been popular, but that doesn’t mean they were good.
 
-That said, this doesn’t eliminate selection bias entirely, since the model is still trained on the movies I chose to watch. If I’ve mostly watched unusually good old movies, then the model may learn that old-movie-associated features predict high ratings, even if the average old movie would not actually be unusually good for me.
+That said, this doesn’t eliminate selection bias entirely, since the model is still trained on the movies I’ve watched. If I’ve mostly watched unusually good old movies, the model may learn that features associated with old movies predict high ratings, even if the average old movie wouldn’t actually be unusually good to me.
 
 Overall, release year doesn’t seem to matter much. The dip in the very early 1900s is probably due to me watching *Arrival of a Train*, a very early film that isn’t that interesting. It is, literally, just a train arriving at a station.
 
@@ -264,7 +263,7 @@ Now let’s see how well the star ratings correlate with each other, as well as 
     </figure>
 </div>
 
-The correlations are pretty high! 
+The correlations are pretty high!
 
 However, these are correlations between the observed ratings, not necessarily between the underlying judgments that produced them. Since the star-rating systems force me to place movies into a limited number of categories, some information is inevitably lost. This process of discretization tends to attenuate correlations (that is, it makes them weaker). To address this, we can estimate the correlations that would exist if the observed ratings arose from discretizing underlying continuous judgments. These are known as [polychoric correlations](https://en.wikipedia.org/wiki/Polychoric_correlation).
 
@@ -288,9 +287,9 @@ While the polychoric correlations tell us that the rating systems are very simil
 
 Looking at the latent correlations, the star-rating systems are all much more correlated with each other than they are with the Resorter ratings. This is probably because the star-rating systems are all variations on the same method, while the Resorter ratings come from a different method.
 
-One way to think about this is that when I'm assigning star ratings, I'm first forming a general "how good is this movie?" judgment and only then mapping that judgment onto a particular rating scale. If that's true, then the different star-rating systems are not really independent measurements of movie enjoyment; they're different discretizations of the same underlying star-rating judgment.
+I doubt I'm making six independent judgments when I rate a movie using six different star-rating systems. I'm probably deciding how much I like it once, then translating that into the different scales. If that's true, then the different star-rating systems are not really independent measurements of movie enjoyment; they're different discretizations of the same underlying star-rating judgment.
 
-To model this, I assumed there was a latent movie-enjoyment factor. The Resorter rating loads directly on this factor, while the star-rating systems are mediated through a latent star-rating judgment factor. In other words, the star ratings are not treated as independent measurements of enjoyment; they are treated as different discretizations of a shared star-rating judgment, which is itself explained by underlying movie enjoyment. 
+To model this, I assumed there was a latent movie-enjoyment factor. The Resorter rating loads directly on this factor, while the star-rating systems are mediated through a latent star-rating judgment factor.
 
 <div style="text-align: center;">
     <figure>
@@ -311,7 +310,7 @@ The loadings are all quite similar, ranging from 0.94 to 0.97. Since they do not
 
 The correlation between the star-rating factor and the Resorter ratings remains 0.94, and the common loading of the star-rating systems on their factor is 0.95.
 
-So far we've established that the rating systems are measuring roughly the same underlying judgment. For example, a 10-star system can do a better job distinguishing between good movies because it allows finer distinctions: I can label one movie a 9 and another a 10, whereas under the 2-star system both would simply receive 2/2 stars. However, having more categories does not automatically mean more information; additional categories only help if they are used reliably.
+So far we've established that the rating systems are measuring roughly the same underlying judgment. But this doesn't mean the systems are equally useful. If I give two movies 2/2 stars, the ratings don't tell me which one I liked more. With 10 stars, I could at least give them different ratings. The question is whether I can actually do that reliably, or whether I'm just adding noise.
 
 In [Item Response Theory](https://en.wikipedia.org/wiki/Item_response_theory), [information](https://en.wikipedia.org/wiki/Item_response_theory#Information) is defined as the reciprocal of the squared [standard error of estimation](https://en.wikipedia.org/wiki/Standard_error). As such, higher information corresponds to more precise measurement. Graphing the information for each system gives the following:
 
@@ -323,11 +322,12 @@ In [Item Response Theory](https://en.wikipedia.org/wiki/Item_response_theory), [
 
 The 2-star ratings, predictably, provide the least information, and only over a fairly narrow range of movie quality (near the boundary between "liked" and "disliked"). So, for example, if I want to distinguish a 70th-percentile movie from a 95th-percentile movie, using 2-star ratings is an obviously bad choice, while 7-star ratings is a better choice. This matters because the rewatching problem is not primarily about distinguishing movies I like from movies I dislike; it is about distinguishing among movies I already know I like.
 
-What's interesting is that most of the gain in information appears to plateau around the 7-star system. We no longer see large increases in either information or range. So one might conclude that, for me, a 7-star rating system is "good enough": it seems to capture most of the information gained by adding additional categories, without requiring finer distinctions that may not be used reliably. 
+What's interesting is that most of the gain in information appears to plateau around the 7-star system. We no longer see large increases in either information or range. I think I'll go with 7 stars, then. Adding more categories doesn't seem to buy me much.
 
 ## Things I Still Want to Know
 
 It's nice to see that the recsys works. Though, to make it work better, I'd have to watch *a lot* more movies, which is unfortunate. The external movie raters aren't as good, but serviceable enough for recent movies. Anyway, I have more questions that I may eventually answer someday:
+
 - It seems all the regression methods have roughly the same level of predictiveness. But perhaps I just haven't looked hard enough? Maybe I need to use neural networks? Or a GP using ARD? Or something else?
 - What is the maximum amount of rating-relevant information it's possible to capture from the embeddings in principle?
 - What's the decay rate of movie enjoyment? It doesn’t make sense to compare movie instances (while it does make sense to compare movies), so I’d have to figure out the best number of Likert scale items to use.
@@ -349,10 +349,9 @@ It's nice to see that the recsys works. Though, to make it work better, I'd have
     </figure>
 </div>
 
-
 [^pallesen]: Jonatan Pallesen has also [compared his movie ratings against external movie sources](https://x.com/jonatanpallesen/status/2035264976110116889) and found that the correlations differ by a lot (Rotten Tomatoes - Audience: r = 0.24; Rotten Tomatoes - Critics: r = 0.36; IMDb: r = 0.45; criticker.com PSI: r = 0.69). I don't know why his correlations are so heterogenous. Also, perhaps I should try Criticker.
 
-[^accuracy-method]: So, how did I do this? For each set size, for each movie, I got a random set of movies (excluding the chosen movie), fit a regression to those movies and ratings, predicted the rating of the chosen movie, then calculated the accuracy statistics. 
+[^accuracy-method]: So, how did I do this? For each set size, for each movie, I got a random set of movies (excluding the chosen movie), fit a regression to those movies and ratings, predicted the rating of the chosen movie, then calculated the accuracy statistics.
 
 [^genre]: I encoded genres as broad, multi-hot indicators, so a movie could belong to multiple genres.
 
