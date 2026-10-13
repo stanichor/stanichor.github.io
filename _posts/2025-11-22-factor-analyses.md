@@ -18,8 +18,6 @@ The Human Development Index is intended to measure, well... human development (w
 
 The main problem with the HDI is that its weighting of variables is essentially arbitrary, and the index provides no representation of uncertainty in its rankings.
 
-Fortunately, some economists have taken an interest. The authors of [Using Spatial Factor Analysis to Measure Human Development](https://www.nber.org/system/files/working_papers/w23952/w23952.pdf) proposed a Bayesian factor analysis model as an alternative. The model estimates the weights for each indicator, incorporates spatial correlation (the assumption that neighboring countries resemble one another), and applies population weighting (the assumption that estimates for more populous countries should be more precise).
-
 Fortunately, some economists have actually tried to improve on the HDI. In [Using Spatial Factor Analysis to Measure Human Development](https://www.nber.org/system/files/working_papers/w23952/w23952.pdf), the authors propose a Bayesian factor analysis model that estimates the weights of each indicator from the data. It also accounts for spatial correlation (neighboring countries tend to resemble one another) and population size (treating estimates for more populous countries as more precise).
 
 <div style="text-align: center;">
