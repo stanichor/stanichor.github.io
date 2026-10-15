@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gwern Was Wrong About Star Ratings"
-date: 2026-10-14
+date: 2026-10-15
 permalink: /star-ratings/
 category: media-taste
 related:
