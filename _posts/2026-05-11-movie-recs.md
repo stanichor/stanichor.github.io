@@ -10,7 +10,7 @@ favorite: true
 related:
   - /simple-recsys/
   - /anime-quality/
-  - /recent-media/
+  - /star-ratings/
 ---
 
 I [built a movie recommendation system](https://stanichor.net/simple-recsys/). I'd like to know things about it. What do my ratings look like? How accurate is the recsys? How accurate could it be? How does it compare to external rating sites? Are newer movies better or worse for me? Let’s see.
