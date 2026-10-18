@@ -6,7 +6,6 @@ permalink: /movie-recs/
 redirect_from:
   - /movie-ratings/
 category: media-taste
-favorite: true
 related:
   - /simple-recsys/
   - /anime-quality/
