@@ -5,7 +5,7 @@ date: 2025-06-24
 permalink: /simple-recsys/
 category: media-taste
 related:
-  - /movie-recs/
+  - /predicting-movie-ratings/
   - /anime-quality/
   - /star-ratings/
 ---

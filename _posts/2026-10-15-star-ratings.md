@@ -5,7 +5,7 @@ date: 2026-10-15
 permalink: /star-ratings/
 category: media-taste
 related:
-  - /movie-recs/
+  - /predicting-movie-ratings/
   - /simple-recsys/
   - /factor-scores/
 ---
