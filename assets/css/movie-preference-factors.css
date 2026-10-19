@@ -1,0 +1,245 @@
+.markdown-body .preference-factors {
+  margin: 2rem 0 2.5rem;
+  padding: 1.35rem 0 1.15rem;
+  border-top: 2px solid #273f4c;
+  border-bottom: 1px solid #d9e2e6;
+  color: #263944;
+}
+
+.preference-factors *, .preference-factors *::before, .preference-factors *::after {
+  box-sizing: border-box;
+}
+
+.preference-factors-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-body .preference-factors h3,
+.markdown-body .preference-factors h4,
+.markdown-body .preference-factors p { margin-top: 0; }
+
+.markdown-body .preference-factors h3 {
+  margin-bottom: .18rem;
+  border: 0;
+  font-size: 1.26rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.preference-factors-subtitle,
+.preference-factors-counter {
+  color: #5c6c75;
+  font-size: .86rem;
+  line-height: 1.45;
+}
+.markdown-body .preference-factors-subtitle { margin-bottom: 0; }
+.preference-factors-counter { flex: none; font-variant-numeric: tabular-nums; }
+
+.preference-factors-controls {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-bottom: 1.2rem;
+}
+.preference-factors-controls label {
+  flex: none;
+  margin-right: .25rem;
+  color: #40535e;
+  font-size: .84rem;
+  font-weight: 700;
+}
+.preference-factors-controls select,
+.preference-factors-controls button {
+  min-height: 2.45rem;
+  border: 1px solid #bccbd2;
+  border-radius: 5px;
+  background: #fff;
+  color: #263944;
+  font: inherit;
+}
+.preference-factors-controls select {
+  flex: 1;
+  min-width: 0;
+  max-width: 31rem;
+  padding: .4rem .7rem;
+  font-size: .94rem;
+}
+.preference-factors-controls button {
+  flex: none;
+  width: 2.45rem;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+.preference-factors-controls button:hover:not(:disabled),
+.preference-factors-controls select:hover:not(:disabled) { border-color: #46728b; }
+.preference-factors-controls button:disabled { opacity: .38; cursor: default; }
+.preference-factors :focus-visible { outline: 2px solid #2b6e91; outline-offset: 2px; }
+
+.markdown-body .preference-factors h4 {
+  margin-bottom: 1rem;
+  border: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+.preference-factors-section-title {
+  margin: 0 0 .2rem;
+  color: #60717b;
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+}
+.markdown-body .preference-factors-note {
+  margin: 0 0 .65rem;
+  color: #687982;
+  font-size: .76rem;
+  line-height: 1.45;
+}
+
+.preference-factors-axis,
+.preference-factors-loading-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) 3.45rem;
+  gap: .75rem;
+  align-items: center;
+}
+.preference-factors-axis {
+  padding: 0 0 .25rem;
+  border-bottom: 1px solid #d7e2e7;
+  color: #687982;
+  font-size: .72rem;
+  font-variant-numeric: tabular-nums;
+}
+.preference-factors-axis-track {
+  display: flex;
+  justify-content: space-between;
+}
+.preference-factors-loading-row {
+  width: 100%;
+  min-height: 2.1rem;
+  padding: .35rem .15rem;
+  border: 0;
+  border-bottom: 1px solid #e4ebee;
+  background: transparent;
+  color: #315c72;
+  font: inherit;
+  font-size: .83rem;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+}
+.preference-factors-loading-row:hover { background: #f7fafb; color: #173e52; }
+.preference-factors-loading-name { min-width: 0; overflow-wrap: anywhere; }
+.preference-factors-loading-track {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  background: #f0f4f6;
+}
+.preference-factors-loading-track::before {
+  content: "";
+  position: absolute;
+  top: -.1rem;
+  bottom: -.1rem;
+  left: 50%;
+  width: 1px;
+  background: #aab8bf;
+  z-index: 1;
+}
+.preference-factors-loading-bar {
+  position: absolute;
+  top: .28rem;
+  left: var(--bar-left);
+  width: var(--bar-width);
+  height: .45rem;
+  background: var(--bar-color);
+}
+.preference-factors-loading-value {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.preference-factors-bottom {
+  display: grid;
+  gap: 1.55rem;
+  margin-top: 1.7rem;
+}
+.preference-factors-movie-columns,
+.preference-factors-related-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.65rem;
+}
+.preference-factors-small-title {
+  display: block;
+  margin-bottom: .25rem;
+  color: #60717b;
+  font-size: .75rem;
+  font-weight: 700;
+}
+.preference-factors-movie-columns ol { margin: 0; padding: 0; list-style: none; }
+.markdown-body .preference-factors-movie-columns li {
+  display: flex;
+  justify-content: space-between;
+  gap: .7rem;
+  margin: 0;
+  padding: .38rem 0;
+  border-bottom: 1px solid #e4ebee;
+  font-size: .84rem;
+  line-height: 1.35;
+}
+.preference-factors-movie-title { min-width: 0; overflow-wrap: anywhere; }
+.preference-factors-movie-effect {
+  flex: none;
+  color: #456e83;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.preference-factors-movie-columns > div:last-child .preference-factors-movie-effect { color: #9a624d; }
+.preference-factors-related button {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  gap: .75rem;
+  padding: .35rem 0;
+  border: 0;
+  border-bottom: 1px solid #e4ebee;
+  background: transparent;
+  color: #315c72;
+  font: inherit;
+  font-size: .83rem;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+.preference-factors-related button:hover { color: #173e52; background: #f7fafb; }
+.preference-factors-related button span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.preference-factors-related-r { flex: none; font-variant-numeric: tabular-nums; font-weight: 700; }
+.preference-factors-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  .preference-factors-head { display: block; }
+  .preference-factors-counter { display: block; margin-top: .35rem; }
+  .preference-factors-controls { flex-wrap: wrap; }
+  .preference-factors-controls label { width: 100%; }
+  .preference-factors-controls select { max-width: none; }
+  .preference-factors-loading-row,
+  .preference-factors-axis { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) 3.15rem; gap: .4rem; }
+  .preference-factors-movie-columns,
+  .preference-factors-related-columns { grid-template-columns: 1fr; gap: 1rem; }
+}

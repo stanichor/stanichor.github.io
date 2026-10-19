@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Predicting My Movie Ratings"
-date: 2026-10-15
+date: 2026-10-17
 permalink: /predicting-movie-ratings/
 category: media-taste
 related:
   - /simple-recsys/
   - /star-ratings/
-  - /earring/
+  - /movie-preferences/
 ---
 
 <style>

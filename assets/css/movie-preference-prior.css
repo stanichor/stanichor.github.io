@@ -1,0 +1,239 @@
+.markdown-body .preference-prior {
+  margin: 2rem 0 2.5rem;
+  padding: 1.35rem 0 1.15rem;
+  border-top: 2px solid #273f4c;
+  border-bottom: 1px solid #d9e2e6;
+  color: #263944;
+}
+
+.preference-prior *, .preference-prior *::before, .preference-prior *::after {
+  box-sizing: border-box;
+}
+
+.preference-prior-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-body .preference-prior h3,
+.markdown-body .preference-prior h4,
+.markdown-body .preference-prior p { margin-top: 0; }
+
+.markdown-body .preference-prior h3 {
+  margin-bottom: .18rem;
+  border: 0;
+  font-size: 1.26rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.preference-prior-subtitle,
+.preference-prior-counter {
+  color: #5c6c75;
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+.markdown-body .preference-prior-subtitle { margin-bottom: 0; }
+.preference-prior-counter { flex: none; font-variant-numeric: tabular-nums; }
+
+.preference-prior-controls {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-bottom: 1.2rem;
+}
+
+.preference-prior-controls label {
+  flex: none;
+  margin-right: .25rem;
+  color: #40535e;
+  font-size: .84rem;
+  font-weight: 700;
+}
+
+.preference-prior-controls select,
+.preference-prior-controls button {
+  min-height: 2.45rem;
+  border: 1px solid #bccbd2;
+  border-radius: 5px;
+  background: #fff;
+  color: #263944;
+  font: inherit;
+}
+
+.preference-prior-controls select {
+  flex: 1;
+  min-width: 0;
+  max-width: 31rem;
+  padding: .4rem .7rem;
+  font-size: .94rem;
+}
+
+.preference-prior-controls button {
+  flex: none;
+  width: 2.45rem;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.preference-prior-controls button:hover:not(:disabled),
+.preference-prior-controls select:hover:not(:disabled) { border-color: #46728b; }
+.preference-prior-controls button:disabled { opacity: .38; cursor: default; }
+.preference-prior :focus-visible { outline: 2px solid #2b6e91; outline-offset: 2px; }
+
+.markdown-body .preference-prior h4 {
+  margin-bottom: .1rem;
+  border: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.preference-prior-label {
+  margin: 0 0 .25rem;
+  color: #60717b;
+  font-size: .8rem;
+}
+
+.preference-prior-chart-wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.preference-prior-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1.25rem;
+  margin: -.1rem 0 .8rem 3.3rem;
+  color: #5d6e78;
+  font-size: .76rem;
+}
+
+.preference-prior-key { display: inline-flex; align-items: center; gap: .42rem; }
+.preference-prior-key::before { content: ""; display: block; width: 1rem; height: 3px; }
+.preference-prior-key-mean::before { background: #326785; }
+.preference-prior-key-zero::before { border-top: 2px dashed #ad745e; }
+.preference-prior-key-range::before { height: .65rem; background: #dceaf0; }
+
+.preference-prior-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: .35rem 0 1.1rem;
+  border-top: 1px solid #dbe4e8;
+  border-bottom: 1px solid #dbe4e8;
+}
+
+.preference-prior-stats > div {
+  min-width: 0;
+  padding: .72rem .9rem .8rem;
+  border-right: 1px solid #e5ecef;
+}
+.preference-prior-stats > div:first-child { padding-left: 0; }
+.preference-prior-stats > div:last-child { border-right: 0; }
+.preference-prior-stats span {
+  display: block;
+  margin-bottom: .25rem;
+  color: #60717b;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .035em;
+}
+.preference-prior-stats strong {
+  display: block;
+  color: #254d62;
+  font-size: 1.18rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.preference-prior-stats > div:last-child strong { font-size: 1rem; }
+
+.markdown-body .preference-prior-units {
+  margin: 0 0 1.5rem;
+  color: #5c6c75;
+  font-size: .79rem;
+  line-height: 1.5;
+}
+
+.preference-prior-section-title {
+  margin: 0 0 .55rem;
+  color: #60717b;
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+}
+
+.preference-prior-small-title {
+  display: block;
+  margin: 0 0 .25rem;
+  color: #60717b;
+  font-size: .75rem;
+  font-weight: 700;
+}
+.markdown-body .preference-prior-related-note {
+  margin: -.35rem 0 .75rem;
+  color: #687982;
+  font-size: .76rem;
+}
+.preference-prior-related-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+.preference-prior-related button {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  gap: .75rem;
+  padding: .32rem 0;
+  border: 0;
+  border-bottom: 1px solid #e4ebee;
+  background: transparent;
+  color: #315c72;
+  font: inherit;
+  font-size: .84rem;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+.preference-prior-related button:hover { color: #153b52; background: #f7fafb; }
+.preference-prior-related button span:first-child { overflow-wrap: anywhere; }
+.preference-prior-related-r { flex: none; font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.preference-prior-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 730px) {
+  .preference-prior-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .preference-prior-stats > div:nth-child(2) { border-right: 0; }
+  .preference-prior-stats > div:nth-child(n + 3) { border-top: 1px solid #e5ecef; }
+  .preference-prior-stats > div:nth-child(3) { padding-left: 0; }
+  .preference-prior-related-columns { grid-template-columns: 1fr; gap: 1.2rem; }
+}
+
+@media (max-width: 620px) {
+  .preference-prior-head { display: block; }
+  .preference-prior-counter { display: block; margin-top: .35rem; }
+  .preference-prior-controls { flex-wrap: wrap; }
+  .preference-prior-controls label { width: 100%; }
+  .preference-prior-controls select { max-width: none; }
+  .preference-prior-chart-wrap { overflow-x: auto; }
+  .preference-prior-chart-wrap svg { min-width: 600px; }
+  .preference-prior-legend { margin-left: 1.5rem; }
+}
+
