@@ -1,0 +1,152 @@
+.fsiq-calculator {
+  max-width: 44rem;
+  margin: 1.25rem 0 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.fsiq-form,
+.fsiq-result {
+  padding: 1.25rem;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.fsiq-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.fsiq-field {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 5.25rem;
+  padding: 0.5rem;
+  border: 3px solid;
+  color: #111;
+  font-weight: 600;
+  text-align: center;
+}
+
+.fsiq-field-overall {
+  grid-column: 2;
+  grid-row: 1;
+  border-color: #858585;
+  background: #dedede;
+}
+
+.fsiq-field-memory {
+  grid-column: 1;
+  grid-row: 2;
+  border-color: #5b8aba;
+  background: #b4c6df;
+}
+
+.fsiq-field-verbal {
+  grid-column: 2;
+  grid-row: 2;
+  border-color: #c84327;
+  background: #f78150;
+}
+
+.fsiq-field-spatial {
+  grid-column: 3;
+  grid-row: 2;
+  border-color: #329b27;
+  background: #9de98f;
+}
+
+.fsiq-field span {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.fsiq-field input {
+  box-sizing: border-box;
+  width: 5.5rem;
+  max-width: 100%;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #111;
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+}
+
+.fsiq-field input:focus-visible,
+.fsiq-form button:focus-visible {
+  outline: 3px solid rgba(9, 105, 218, 0.3);
+  outline-offset: 2px;
+}
+
+.fsiq-form button {
+  display: block;
+  margin: 1.2rem auto 0;
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #0969da;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fsiq-form button:hover {
+  background: #0550ae;
+}
+
+.fsiq-result {
+  margin-top: 1rem;
+  background: #f4f7fb;
+}
+
+.fsiq-result[hidden],
+.fsiq-range-note[hidden] {
+  display: none;
+}
+
+.fsiq-result-label,
+.fsiq-result-note,
+.fsiq-range-note {
+  margin: 0;
+}
+
+.fsiq-result-label {
+  font-weight: 600;
+}
+
+.fsiq-result-value {
+  margin: 0.3rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.fsiq-result-note,
+.fsiq-range-note {
+  color: #5c667a;
+  font-size: 0.9rem;
+}
+
+.fsiq-range-note {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .fsiq-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .fsiq-field {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
