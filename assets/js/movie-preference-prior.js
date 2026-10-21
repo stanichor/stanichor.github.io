@@ -17,11 +17,16 @@
   const content = root.querySelector('[data-role="content"]');
   const status = root.querySelector('[data-role="status"]');
   const svgNamespace = 'http://www.w3.org/2000/svg';
-  const syncEvent = 'stanichor:movie-dimension-selected';
+  const syncEvent = root.dataset.syncEvent || 'stanichor:movie-dimension-selected';
+  const selectionKey = root.dataset.selectionKey || 'movieDimensionSelection';
+  const displayDigits = Number(root.dataset.displayDigits || 3);
+  let chartAxis = { lower: -.8, upper: .8,
+    ticks: Array.from({ length: 9 }, (_, index) => (index - 4) / 5) };
 
-  function signed(value, digits = 3) {
-    const places = Math.abs(value) < .0005 ? 4 : digits;
-    return `${value < 0 ? '−' : '+'}${Math.abs(value).toFixed(places)}`;
+  function signed(value, digits = displayDigits) {
+    const places = digits === 2 ? 2 : Math.abs(value) < .0005 ? 4 : digits;
+    const signValue = digits === 2 ? Number(value.toFixed(2)) : value;
+    return `${signValue < 0 ? '−' : '+'}${Math.abs(value).toFixed(places)}`;
   }
 
   function svgElement(type, attributes) {
@@ -39,8 +44,7 @@
     const mu = dimension.mean;
     const sigma = dimension.sd;
     // Keep coefficients comparable while giving each density curve room to breathe.
-    const lower = -.8;
-    const upper = .8;
+    const { lower, upper, ticks } = chartAxis;
     const peakDensity = 1 / (sigma * Math.sqrt(2 * Math.PI));
     const roughStep = peakDensity * 1.15 / 4;
     const magnitude = 10 ** Math.floor(Math.log10(roughStep));
@@ -74,8 +78,7 @@
       label.textContent = tick === 0 ? '0' : value.toFixed(densityDecimals);
       parts.push(label);
     }
-    for (let tick = -4; tick <= 4; tick++) {
-      const value = tick / 5;
+    for (const value of ticks) {
       const position = x(value);
       parts.push(svgElement('line', {
         x1: position, x2: position, y1: 22, y2: baseline,
@@ -132,7 +135,7 @@
     chart.replaceChildren(...parts);
     chart.setAttribute('aria-label',
       `Gaussian preference coefficient distribution for ${dimension.name}; `
-      + `mean ${signed(mu)}, standard deviation ${sigma.toFixed(3)}, `
+      + `mean ${signed(mu)}, standard deviation ${sigma.toFixed(displayDigits)}, `
       + `middle 90 percent from ${signed(low90)} to ${signed(high90)}.`);
   }
 
@@ -149,6 +152,13 @@
           || !Number.isFinite(dimension.sd)
           || dimension.sd <= 0)) {
         throw new Error('Invalid preference dimensions');
+      }
+      if (Number.isFinite(prior.axis_min) && Number.isFinite(prior.axis_max)
+        && prior.axis_min < prior.axis_max && Array.isArray(prior.axis_ticks)
+        && prior.axis_ticks.every((tick) => Number.isFinite(tick)
+          && tick >= prior.axis_min && tick <= prior.axis_max)) {
+        chartAxis = { lower: prior.axis_min, upper: prior.axis_max,
+          ticks: prior.axis_ticks };
       }
 
       select.replaceChildren(...dimensions.map((dimension, index) => {
@@ -178,7 +188,7 @@
         counter.textContent = `${dimension.number} / ${dimensions.length}`;
         title.textContent = dimension.name;
         mean.textContent = signed(dimension.mean);
-        sd.textContent = dimension.sd.toFixed(3);
+        sd.textContent = dimension.sd.toFixed(displayDigits);
         positive.textContent = `${(dimension.positive_probability * 100).toFixed(0)}%`;
         range.textContent = `${signed(dimension.range_90[0])} to ${signed(dimension.range_90[1])}`;
         drawChart(dimension);
@@ -188,7 +198,7 @@
         next.disabled = index === dimensions.length - 1;
         status.textContent = `Showing preference dimension ${dimension.number}: ${dimension.name}`;
         if (notify) {
-          document.movieDimensionSelection = index;
+          document[selectionKey] = index;
           document.dispatchEvent(new CustomEvent(syncEvent, {
             detail: { index, source: 'preference-prior' },
           }));
@@ -207,7 +217,7 @@
           show(index, false);
         }
       });
-      const initial = document.movieDimensionSelection;
+      const initial = document[selectionKey];
       show(Number.isInteger(initial) && initial >= 0 && initial < dimensions.length ? initial : 0, false);
     })
     .catch(() => {

@@ -1,0 +1,84 @@
+.markdown-body .anime-consensus-chart {
+  margin: 1.4rem 0 1.9rem;
+  overflow-x: auto;
+}
+
+.anime-consensus-chart img {
+  display: block;
+  width: 100%;
+  max-width: 840px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.markdown-body .anime-consensus-chart figcaption {
+  margin-top: .35rem;
+  color: #60717b;
+  font-size: .82rem;
+  text-align: center;
+}
+
+.anime-consensus-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.3rem 0 1.6rem;
+}
+
+.anime-consensus-examples section {
+  min-width: 0;
+  padding: 1rem 1.1rem .8rem;
+  border: 1px solid #dbe4e8;
+  border-top: 3px solid #2e758e;
+  border-radius: 5px;
+  background: #f8fafb;
+}
+
+.anime-consensus-examples section + section { border-top-color: #bb6758; }
+
+.markdown-body .anime-consensus-examples h3 {
+  margin: 0 0 .6rem;
+  padding: 0;
+  border: 0;
+  color: #273f4c;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.anime-consensus-examples ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: anime-rank;
+}
+
+.anime-consensus-examples li {
+  display: grid;
+  grid-template-columns: 1.4rem minmax(0, 1fr) auto;
+  gap: .45rem;
+  align-items: baseline;
+  padding: .43rem 0;
+  border-top: 1px solid #e2e9ec;
+  color: #30434e;
+  font-size: .9rem;
+  line-height: 1.35;
+  counter-increment: anime-rank;
+}
+
+.anime-consensus-examples li::before {
+  content: counter(anime-rank) ".";
+  color: #72838b;
+  font-variant-numeric: tabular-nums;
+}
+
+.anime-consensus-examples li strong {
+  color: #263944;
+  font-size: .86rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 660px) {
+  .anime-consensus-chart img { min-width: 580px; }
+  .anime-consensus-examples { grid-template-columns: 1fr; gap: .85rem; }
+}

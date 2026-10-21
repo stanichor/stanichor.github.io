@@ -14,7 +14,8 @@
   const relatedNegative = root.querySelector('[data-role="related-negative"]');
   const content = root.querySelector('[data-role="content"]');
   const status = root.querySelector('[data-role="status"]');
-  const dimensionEvent = 'stanichor:movie-dimension-selected';
+  const dimensionEvent = root.dataset.syncEvent || 'stanichor:movie-dimension-selected';
+  const selectionKey = root.dataset.selectionKey || 'movieDimensionSelection';
   const loadingLimit = 1.2;
 
   function signed(value, digits = 2) {
@@ -51,7 +52,7 @@
 
     row.addEventListener('click', () => {
       const index = loading.dimension_number - 1;
-      document.movieDimensionSelection = index;
+      document[selectionKey] = index;
       document.dispatchEvent(new CustomEvent(dimensionEvent, {
         detail: { index, source: 'preference-factors' },
       }));
@@ -65,9 +66,14 @@
 
   function movieRow(movie) {
     const row = document.createElement('li');
-    const name = document.createElement('span');
+    const name = document.createElement(movie.url ? 'a' : 'span');
     name.className = 'preference-factors-movie-title';
     name.textContent = displayTitle(movie.title);
+    if (movie.url) {
+      name.href = movie.url;
+      name.target = '_blank';
+      name.rel = 'noopener noreferrer';
+    }
     const effect = document.createElement('span');
     effect.className = 'preference-factors-movie-effect';
     effect.textContent = signed(movie.effect);
@@ -82,7 +88,7 @@
     })
     .then((data) => {
       const factors = data.factors;
-      if (!Array.isArray(factors) || factors.length !== 28
+      if (!Array.isArray(factors) || factors.length !== Number(root.dataset.expectedCount || 28)
         || factors.some((factor, index) => factor.number !== index + 1)) {
         throw new Error('Invalid preference factors');
       }
@@ -118,6 +124,13 @@
         loadingList.replaceChildren(...loadings.map(loadingRow));
         positiveMovies.replaceChildren(...factor.positive_movies.map(movieRow));
         negativeMovies.replaceChildren(...factor.negative_movies.map(movieRow));
+        for (const list of [positiveMovies, negativeMovies]) {
+          if (list.children.length === 0) {
+            const empty = document.createElement('li');
+            empty.textContent = 'No strongly distinctive examples met the selection criteria.';
+            list.append(empty);
+          }
+        }
         relatedPositive.replaceChildren(...factor.related_positive.map(relatedButton));
         relatedNegative.replaceChildren(...factor.related_negative.map(relatedButton));
         previous.disabled = index === 0;
