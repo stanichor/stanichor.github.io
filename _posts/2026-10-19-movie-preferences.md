@@ -54,7 +54,7 @@ The interactive below lets you explore these dimensions and the tags most strong
 
 ## Coefficient Preference Prior
 
-Now that we have the movie dimensions, we can use them to predict people's tastes in movies. The problem is that most people haven't rated enough movies for ordinary linear regression to give reliable estimates of their preferences. Ridge regression solves this by applying an L2 penalty to the coefficients, discouraging large estimates. In Bayesian terms, that's equivalent to placing an isotropic Gaussian prior on the coefficients ($\mathbf{\beta} \sim \mathcal{N}(\mathbf{0}, \tau^2 I)$).
+Now that we have the movie dimensions, we can use them to predict people's tastes in movies. The problem is that most people haven't rated enough movies for ordinary linear regression to give reliable estimates of their preferences. Ridge regression solves this by applying an L2 penalty to the coefficients, discouraging large estimates. In Bayesian terms, that's equivalent to placing an isotropic Gaussian prior on the coefficients: $\mathbf{\beta} \sim \mathcal{N}(\mathbf{0}, \tau^2 I)$.
 
 In our case, though, we have reason to believe this isn't the best prior. For example, one of our dimensions is "Awful Films," and you'd expect that, on average, people don't like awful films. So, rather than assuming all preference coefficients are centered on zero and have the same variance, we'd like a prior that reflects how people's preferences actually vary. Sol has estimated such a prior for us.
 
