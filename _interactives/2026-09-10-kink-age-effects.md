@@ -97,6 +97,12 @@ categories:
       </div>
     </div>
 
+    <section class="kink-contrast-variance" aria-labelledby="kink-contrast-variance-title" aria-live="polite">
+      <h3 id="kink-contrast-variance-title">Share of equal-weight between-group variance</h3>
+      <div class="kink-contrast-variance-bar" data-role="contrast-variance-bar"></div>
+      <div class="kink-contrast-variance-legend" data-role="contrast-variance-legend"></div>
+    </section>
+
     <div class="kink-contrast-views" data-role="contrast-views" role="group" aria-label="Choose contrasts to compare">
       <button type="button" data-view="assigned-cis" aria-pressed="true">Assigned sex × cis/trans</button>
       <button type="button" data-view="assigned-gender" aria-pressed="false">Assigned sex × gender identity</button>
@@ -110,7 +116,7 @@ categories:
         <li><strong>Cis vs. trans:</strong> the average for cis respondents minus the average for trans respondents.</li>
         <li><strong>Gender identity:</strong> the average for men minus the average for women.</li>
       </ul>
-      <p>The values are latent-response standard deviations calculated from posterior-mean item-specific group effects. Uncertainty is not displayed.</p>
+      <p>The values are latent-response standard deviations calculated from posterior-mean item-specific group effects. Because the three contrasts form an orthonormal basis, each variance share is its squared contrast divided by the sum of all three squared contrasts. The shares describe equal-weight variation across the four groups. Uncertainty is not displayed.</p>
     </details>
 
     <div class="kink-contrast-plot" data-role="contrast-plot"></div>

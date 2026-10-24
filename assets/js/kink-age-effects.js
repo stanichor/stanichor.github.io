@@ -21,23 +21,28 @@
   const contrastPlot = root.querySelector("[data-role='contrast-plot']");
   const contrastStatus = root.querySelector("[data-role='contrast-status']");
   const contrastReadout = root.querySelector("[data-role='contrast-readout']");
+  const contrastVarianceBar = root.querySelector("[data-role='contrast-variance-bar']");
+  const contrastVarianceLegend = root.querySelector("[data-role='contrast-variance-legend']");
   const contrastButtons = Array.from(root.querySelectorAll("[data-role='contrast-views'] button"));
 
   const CONTRASTS = {
     assigned_sex: {
       label: "Assigned sex",
       negative: "AFAB",
-      positive: "AMAB"
+      positive: "AMAB",
+      color: "#8064a2"
     },
     cis_trans: {
       label: "Cis vs. trans",
       negative: "trans",
-      positive: "cis"
+      positive: "cis",
+      color: "#2a9d8f"
     },
     gender_identity: {
       label: "Gender identity",
       negative: "women",
-      positive: "men"
+      positive: "men",
+      color: "#e76f51"
     }
   };
   const CONTRAST_VIEWS = {
@@ -468,6 +473,52 @@
     return CONTRASTS[key][value > 0 ? "positive" : "negative"] + " higher";
   }
 
+  function renderContrastVariance() {
+    if (!selectedItem) return;
+    const values = itemContrasts(selectedItem);
+    const squared = {};
+    let total = 0;
+    Object.keys(CONTRASTS).forEach(function (key) {
+      squared[key] = values[key] ** 2;
+      total += squared[key];
+    });
+
+    contrastVarianceBar.replaceChildren();
+    contrastVarianceLegend.replaceChildren();
+    Object.keys(CONTRASTS).forEach(function (key) {
+      const share = total > 1e-12 ? squared[key] / total : 0;
+      const percentage = (share * 100).toFixed(1) + "%";
+      const segment = document.createElement("span");
+      segment.className = "kink-contrast-variance-segment";
+      segment.style.width = (share * 100) + "%";
+      segment.style.setProperty("--contrast-color", CONTRASTS[key].color);
+      segment.title = CONTRASTS[key].label + ": " + percentage;
+      contrastVarianceBar.appendChild(segment);
+
+      const item = document.createElement("div");
+      const swatch = document.createElement("span");
+      const label = document.createElement("span");
+      const value = document.createElement("span");
+      item.className = "kink-contrast-variance-item";
+      swatch.className = "kink-contrast-variance-swatch";
+      swatch.style.setProperty("--contrast-color", CONTRASTS[key].color);
+      label.textContent = CONTRASTS[key].label;
+      value.className = "kink-contrast-variance-value";
+      value.textContent = percentage;
+      item.append(swatch, label, value);
+      contrastVarianceLegend.appendChild(item);
+    });
+    contrastVarianceBar.setAttribute(
+      "aria-label",
+      total > 1e-12
+        ? Object.keys(CONTRASTS).map(function (key) {
+          return CONTRASTS[key].label + " " + (squared[key] / total * 100).toFixed(1) + " percent";
+        }).join(", ")
+        : "No between-group variance"
+    );
+    contrastVarianceBar.setAttribute("role", "img");
+  }
+
   function renderContrastTooltip(tooltip, hoverLayer, item, values, view, x, y, width) {
     hoverLayer.replaceChildren(svgElement("circle", {
       cx: x(values[view.x]),
@@ -710,6 +761,7 @@
       });
     });
     renderChart();
+    renderContrastVariance();
     renderContrastChart();
     updateUrlState();
   }
