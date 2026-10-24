@@ -115,45 +115,45 @@ The interactive below lets you explore the preference factors, see which anime g
 
 Modeling genre preferences allows us to do something interesting: estimate how 'good' various anime are after accounting for their genres. For example, we might suspect [people are unfairly prejudiced against yaoi](/anime-quality/). So we might want to see how 'good' a particular yaoi anime is after accounting for people's general dislike of the genre.
 
-For each anime, I took its smoothed average rating, subtracted the rating predicted by its genres, and standardized the difference across anime. This *genre-adjusted consensus* tells us which anime people like more or less than we'd expect from their genres. Here are selected examples with at least 100,000 MyAnimeList members and 5,000 training-user ratings each. The scores are in SDs across anime.
+I standardized ratings within each user, took each anime's smoothed average, and subtracted the score predicted by its genres. This *genre-adjusted consensus* tells us which anime people like more or less than we'd expect from their genres. Here are some selected extreme examples:
 
 <div class="anime-consensus-examples">
   <section aria-label="Anime liked more than their genres predict">
     <h3>More liked than their genres suggest</h3>
     <ol>
-      <li><span>Perfect Blue</span><strong>+3.95 SD</strong></li>
-      <li><span>Steins;Gate</span><strong>+3.73 SD</strong></li>
-      <li><span>Devilman Crybaby</span><strong>+3.59 SD</strong></li>
-      <li><span>Legend of the Galactic Heroes</span><strong>+3.29 SD</strong></li>
-      <li><span>Princess Mononoke</span><strong>+3.01 SD</strong></li>
-      <li><span>Wolf Children</span><strong>+3.00 SD</strong></li>
-      <li><span>Hunter x Hunter (2011)</span><strong>+2.90 SD</strong></li>
-      <li><span>Neon Genesis Evangelion</span><strong>+2.87 SD</strong></li>
-      <li><span>Gurren Lagann</span><strong>+2.85 SD</strong></li>
-      <li><span>I Want to Eat Your Pancreas</span><strong>+2.83 SD</strong></li>
+      <li><span>Legend of the Galactic Heroes</span><strong>+1.52 SD</strong></li>
+      <li><span>Steins;Gate</span><strong>+1.46 SD</strong></li>
+      <li><span>Hunter x Hunter (2011)</span><strong>+1.32 SD</strong></li>
+      <li><span>Perfect Blue</span><strong>+1.27 SD</strong></li>
+      <li><span>Gurren Lagann</span><strong>+1.23 SD</strong></li>
+      <li><span>Princess Mononoke</span><strong>+1.18 SD</strong></li>
+      <li><span>Wolf Children</span><strong>+1.13 SD</strong></li>
+      <li><span>Devilman Crybaby</span><strong>+1.06 SD</strong></li>
+      <li><span>I Want to Eat Your Pancreas</span><strong>+1.02 SD</strong></li>
+      <li><span>Neon Genesis Evangelion</span><strong>+0.85 SD</strong></li>
     </ol>
   </section>
   <section aria-label="Anime liked less than their genres predict">
     <h3>Less liked than their genres suggest</h3>
     <ol>
-      <li><span>Pupa</span><strong>−3.88 SD</strong></li>
-      <li><span>Taboo Tattoo</span><strong>−2.52 SD</strong></li>
-      <li><span>Boku no Pico</span><strong>−2.23 SD</strong></li>
-      <li><span>The Lost Village</span><strong>−2.04 SD</strong></li>
-      <li><span>Diabolik Lovers</span><strong>−1.98 SD</strong></li>
-      <li><span>Tokyo Ghoul:re (second season)</span><strong>−1.96 SD</strong></li>
-      <li><span>King's Game</span><strong>−1.84 SD</strong></li>
-      <li><span>Berserk (2016)</span><strong>−1.76 SD</strong></li>
-      <li><span>Dragon Ball GT</span><strong>−1.49 SD</strong></li>
-      <li><span>School Days</span><strong>−1.43 SD</strong></li>
+      <li><span>Pupa</span><strong>−1.97 SD</strong></li>
+      <li><span>King's Game</span><strong>−1.36 SD</strong></li>
+      <li><span>Taboo Tattoo</span><strong>−1.32 SD</strong></li>
+      <li><span>The Lost Village</span><strong>−1.17 SD</strong></li>
+      <li><span>Diabolik Lovers</span><strong>−1.10 SD</strong></li>
+      <li><span>Tokyo Ghoul:re (second season)</span><strong>−1.08 SD</strong></li>
+      <li><span>Boku no Pico</span><strong>−0.96 SD</strong></li>
+      <li><span>School Days</span><strong>−0.83 SD</strong></li>
+      <li><span>Berserk (2016)</span><strong>−0.74 SD</strong></li>
+      <li><span>Dragon Ball GT</span><strong>−0.72 SD</strong></li>
     </ol>
   </section>
 </div>
 
-We might also wonder what kinds of users have 'good taste.' If we use agreement with other viewers as a rough definition, which genre preferences go along with it? The chart shows the strongest correlations between users' genre-preference coefficients and their genre-adjusted consensus coefficients. People who especially like Drama, Mystery, and Slice of Life tend to agree more with the consensus; Horror enjoyers tend to agree less.
+We might also wonder what kinds of users have 'good taste.' If we use agreement with other viewers as a rough definition, which genre preferences go along with it? The chart shows the strongest correlations between users' genre-preference coefficients and their genre-adjusted consensus coefficients. People who especially like Drama, Slice of Life, and Mystery tend to agree more with the consensus; Ecchi and Horror enjoyers tend to agree less.
 
 <link rel="stylesheet" href="/assets/css/anime-consensus.css">
 <figure class="anime-consensus-chart">
-  <img src="/assets/images/anime-preferences/genre-consensus-correlations.png" width="840" height="680" alt="Bar chart of correlations between users' genre preferences and their preference for genre-adjusted consensus. Drama, Mystery, and Slice of Life have the strongest positive correlations, around 0.6 to 0.7; Horror has the strongest negative correlation, minus 0.41.">
+  <img src="/assets/images/anime-preferences/genre-consensus-correlations.png" width="840" height="680" alt="Bar chart of correlations between users' genre preferences and their preference for genre-adjusted consensus. Drama and Slice of Life have the strongest positive correlations, both 0.55; Ecchi and Horror have the strongest negative correlations, about minus 0.36.">
   <figcaption>The ten strongest positive and four strongest negative correlations in the fitted preference prior.</figcaption>
 </figure>
