@@ -7,8 +7,8 @@ redirect_from:
   - /general-kink-factor/
 category: human-traits
 related:
-  - /gender-satisfaction/
-  - /gender-themes/
+  - /tailcalled-gender/
+  - /acquiescence/
   - /kink-factors/
 ---
 

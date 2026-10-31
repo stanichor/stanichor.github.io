@@ -8,7 +8,7 @@ redirect_from:
 category: measurement
 related:
   - /schwartz-values/
-  - /gender-themes/
+  - /tailcalled-gender/
   - /look-at-items/
 ---
 
