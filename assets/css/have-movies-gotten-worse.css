@@ -1,0 +1,95 @@
+.media-taste {
+  margin: 28px 0;
+  padding: 20px;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  background: #fff;
+  color: #24292f;
+}
+.media-taste .media-taste-title {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.media-taste button:focus-visible,
+.media-taste input:focus-visible,
+.media-taste-svg:focus-visible {
+  outline: 2px solid #0969da;
+  outline-offset: 3px;
+}
+.media-taste-viewport { min-width: 0; position: relative; }
+.media-taste-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  font-family: inherit;
+  touch-action: pan-y;
+}
+.media-taste-svg text { fill: #57606a; font-size: 12px; }
+.media-taste-svg .media-taste-axis-title { fill: #24292f; font-size: 13px; }
+.media-taste-svg .media-taste-credit { fill: #657680; font-size: 10px; }
+.media-taste-grid { stroke: #e5e7eb; stroke-width: 1; }
+.media-taste-axis { stroke: #8c959f; stroke-width: 1; }
+.media-taste-curve { fill: none; stroke-width: 2.5; stroke-linejoin: round; }
+.media-taste-curve.is-muted { opacity: .18; }
+.media-taste-curve.is-selected { stroke-width: 3.2; }
+.media-taste-leader { fill: none; stroke-width: 1; opacity: .7; pointer-events: none; }
+.media-taste-leader.is-muted { opacity: .16; }
+.media-taste-direct-label { cursor: pointer; }
+.media-taste-direct-label rect { fill: transparent; }
+.media-taste-direct-label:hover rect,
+.media-taste-direct-label.is-selected rect { fill: #eaf2f7; }
+.media-taste-direct-label:focus-visible { outline: none; }
+.media-taste-direct-label:focus-visible rect { stroke: #0969da; stroke-width: 2; }
+.media-taste-direct-label.is-muted { opacity: .38; }
+.media-taste-svg .media-taste-direct-text { font-size: 11px; fill: #24485f; font-weight: 600; }
+.media-taste-annotation { pointer-events: none; }
+.media-taste-annotation line { stroke: #91a3af; stroke-width: 1; }
+.media-taste-svg .media-taste-annotation text { fill: #536773; font-size: 11px; }
+.media-taste-bar { fill: #7396a9; }
+.media-taste-bar.is-recent { fill: #205f82; }
+.media-taste-bar.is-selected { fill: #123f5a; }
+.media-taste-tooltip {
+  position: absolute;
+  z-index: 1;
+  padding: 7px 10px;
+  border-radius: 4px;
+  background: #24292f;
+  color: #fff;
+  box-shadow: 0 2px 8px #0002;
+  font-size: .8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.media-taste-bar:focus-visible { outline: 2px solid #0969da; outline-offset: 2px; }
+.media-taste figcaption,
+.media-taste-status {
+  margin: 10px 0 0;
+  color: #57606a;
+  font-size: .8rem;
+  line-height: 1.5;
+}
+.media-taste figcaption p { margin: 0 0 5px; }
+.media-taste-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.media-taste-footer .media-taste-status { margin: 0; }
+.media-taste-download {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 5px;
+  background: #f6f8fa;
+  color: #354852;
+  font: inherit;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.media-taste-download:hover { background: #eaf2f7; }
+.media-taste-download:disabled { opacity: .6; cursor: wait; }
+.media-taste-download-error { color: #b42318; font-size: .8rem; }
+@media (max-width: 600px) {
+  .media-taste { margin: 22px 0; padding: 12px 8px; }
+  .media-taste-svg .media-taste-annotation text { font-size: 10px; }
+}

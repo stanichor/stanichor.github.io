@@ -5,7 +5,7 @@ date: 2025-10-10
 permalink: /anime-quality/
 category: media-taste
 related:
-  - /movie-recs/
+  - /have-movies-gotten-worse/
   - /simple-recsys/
   - /recent-media/
 ---
@@ -18,7 +18,8 @@ I obtained the rating data from [Anime Recommendation Database 2020](https://www
 
 $ r\_{u,i} = \mu + b_u + b_i + p_u^\top q_i + \epsilon_{u,i}$
 
-where: 
+where:
+
 - $r_{u,i}$ is the rating user $u$ gave item $i$
 - $\mu$ is the global mean rating
 - $b_u$ is the user bias

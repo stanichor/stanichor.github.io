@@ -7,7 +7,7 @@ category: media-taste
 related:
   - /ai-slop/
   - /anime-quality/
-  - /movie-recs/
+  - /have-movies-gotten-worse/
 ---
 
 In [Culture Is Not About Esthetics](https://gwern.net/culture-is-not-about-esthetics), Gwern argues that there's already so much good art from the past that nobody could possibly get through it all. Reading one Hugo or Nebula-winning science fiction novel a week, including the major runner-ups and sequels, would keep you busy for years. And that's just one small part of one genre! You could do the same thing with movies, television, music, and so on. So why bother taking a chance on new media when you've already got more highly regarded older media than you could finish in a lifetime?
